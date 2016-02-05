@@ -23,7 +23,7 @@ SITE HEADER
 			<div class="top-header-wrapper">
 				<section class="top-header">
 					<div class="site-branding">
-						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/logo-pleiades-digital2.png" alt="Pleiades Digital - Online Marketing Agency"></a>
+						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/logo-pleiades-digital.png" alt="Pleiades Digital - Online Marketing Agency"></a>
 					</div><!-- class="site-branding" -->
 
 					<div class="main-menu-wrap">

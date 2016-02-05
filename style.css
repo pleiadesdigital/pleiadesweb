@@ -492,81 +492,92 @@ a:hover, a:active {
 /* line 4, sass/navigation/_menus.scss */
 .main-navigation {
   position: relative;
-  float: left;
+  float: right;
   width: 100%;
   height: 100%;
   display: block;
   clear: both;
 }
-/* line 13, sass/navigation/_menus.scss */
+/* line 12, sass/navigation/_menus.scss */
 .main-navigation ul {
-  height: 100%;
   list-style: none;
-  margin: 0;
-  padding-left: 0;
+  float: right;
+  margin: 0px;
+  padding: 0px 20px 0px 0px;
 }
-/* line 18, sass/navigation/_menus.scss */
+/* line 17, sass/navigation/_menus.scss */
 .main-navigation ul li {
+  height: 100px;
   float: left;
   position: relative;
-  height: 100px;
+  padding: 0px;
   margin: 0px;
-  background: rgba(231, 202, 113, 0.2);
 }
-/* line 24, sass/navigation/_menus.scss */
+/* line 23, sass/navigation/_menus.scss */
 .main-navigation ul li a {
   display: block;
-  padding: 30px 15px;
   height: 100%;
-  font-size: 14px;
-  font-size: 1.4rem;
   text-decoration: none;
   border-top: 5px solid transparent;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1em;
+  color: #f2f2f2;
+  font-weight: 500;
+  overflow: hidden;
+  padding: 35px 20px;
+  -moz-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
 }
-/* line 33, sass/navigation/_menus.scss */
+/* line 36, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > a {
   border-top: 5px solid tomato;
 }
-/* line 36, sass/navigation/_menus.scss */
+/* line 39, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul {
   display: block;
 }
-/* line 41, sass/navigation/_menus.scss */
+/* line 44, sass/navigation/_menus.scss */
 .main-navigation ul ul {
+  height: auto;
   position: absolute;
   left: 0;
   z-index: 99999;
   display: none;
-  float: left;
-  padding: 0;
+  float: right;
+  padding: 0px;
+  background: rgba(38, 38, 38, 0.6);
+  border-top: 1px solid rgba(242, 242, 242, 0.1);
 }
-/* line 49, sass/navigation/_menus.scss */
+/* line 54, sass/navigation/_menus.scss */
+.main-navigation ul ul li {
+  height: auto;
+}
+/* line 56, sass/navigation/_menus.scss */
 .main-navigation ul ul li a {
-  width: 200px;
+  width: 130px;
+  padding: 15px 20px;
+  color: #d9d9d9;
+  font-size: 0.8em;
 }
-/* line 51, sass/navigation/_menus.scss */
+/* line 61, sass/navigation/_menus.scss */
 .main-navigation ul ul li a:hover {
   color: tomato;
+  border-top-color: transparent;
 }
-/* line 57, sass/navigation/_menus.scss */
+/* line 68, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: 100%;
   top: 0;
+  border-left: 1px solid rgba(120, 120, 120, 0.3);
+  border-top: none;
 }
-/* line 66, sass/navigation/_menus.scss */
+/* line 79, sass/navigation/_menus.scss */
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
-.main-navigation .current_page_item > a:hover,
-.main-navigation .current-menu-item > a:hover {
-  background: white;
-  color: #313131;
-}
-/* line 78, sass/navigation/_menus.scss */
-.main-navigation ul ul .current_page_parent,
-.main-navigation .current_page_parent .current_page_item > a {
-  color: #fff;
-  background: #313131;
-  background: #303030;
+.main-navigation .current_page_ancestor > a {
+  border-top: 5px solid tomato;
 }
 
 /* SMALL MENU */
@@ -614,7 +625,7 @@ header .fullheight {
   background-size: cover;
   overflow: hidden;
 }
-/* line 7, sass/site/primary/_header.scss */
+/* line 6, sass/site/primary/_header.scss */
 header .fullheight div.top-header-wrapper {
   width: 100%;
   height: 100px;
@@ -631,15 +642,16 @@ header .fullheight div.top-header-wrapper:before, header .fullheight div.top-hea
 header .fullheight div.top-header-wrapper:after {
   clear: both;
 }
-/* line 14, sass/site/primary/_header.scss */
+/* line 13, sass/site/primary/_header.scss */
 header .fullheight div.top-header-wrapper section.top-header {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 0px;
+  width: 100%;
   height: 100%;
-  margin: 0px;
+  margin: 0px auto;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
@@ -652,7 +664,7 @@ header .fullheight div.top-header-wrapper section.top-header .site-branding {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 33.33333%;
+  width: 25%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
@@ -674,8 +686,8 @@ header .fullheight div.top-header-wrapper section.top-header .main-menu-wrap {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
-  float: left;
+  width: 75%;
+  float: right;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
   display: block;
