@@ -1,0 +1,244 @@
+/*PREVIOUS*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+/*NEW FROM wplucy8*/
+
+// NAVIGATION
+
+	.main-navigation {
+		border: 1px solid teal;
+		display: block;
+		float: right;
+		width: auto;
+		height: 100%;
+		@include clearfix;
+		padding: 0px;
+		margin: 0px;
+		ul {
+			display: block;
+			float: right;
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+			li {
+				height: 100%;
+				float: left;
+				position: relativel;
+				padding: 0px;
+				margin: 0px;
+				a {
+					display: inline-block;
+					padding: 30px 25px 40px;
+					//margin-right: 10px;
+					height: 100%;
+					border-top: 5px solid transparent;
+					text-decoration: none;
+					text-align: center;
+					font-family: $font_copy;
+					font-size: 0.9em;
+					color: $white;
+					font-weight: 600;
+					overflow: hidden;
+					@include transition-property(all);
+					@include transition-duration(0.4s);
+					@include transition-timing-function(ease-in);
+					&:hover {
+						
+					}
+				} //a
+				&:hover > a {
+					border-top: 5px solid $yellowdark;
+				}
+			} //li
+		} //ul
+
+		/* Small menu. */
+		/*
+		.menu-toggle {
+			@include breakpoint($small+1) { 
+				display: none;
+			} //breakpoint 650px
+		} //.menu-toggle
+		ul {
+			@include breakpoint(max-width $small) {
+				display: none;
+			} //breakpoint 650px
+		} //ul
+*/
+		.menu-toggle { //delete afterwards!!
+			display: none;
+		}
+		.main-navigation ul {
+			display: block;
+		}
+
+		// MEDIA QUERIES .main-navigation
+		@include breakpoint($wide) {	
+			border: 1px solid darkmagenta;
+			height: auto;
+			ul {
+				border: 1px solid gold;
+				//height: 96px;
+				li {
+					border: 1px solid tomato;
+					a {
+						border-top: 5px solid transparent;
+					}
+				}
+				ul {
+					top: 96px;
+					a {
+						width: 200px;
+						padding: 20px 10px 20px 20px;
+						color: $grey;
+						background: rgba($black, 0.5);
+					}
+				} //ul
+			} //ul
+
+		}
+
+	} //.main-navigation
+
+
+
+/* Small menu. */
+/* .menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+} */
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

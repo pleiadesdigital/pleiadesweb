@@ -1,0 +1,793 @@
+/*!
+Theme Name: Pleiades Web
+Theme URI: http://underscores.me/
+Author: Ronaldo Ortiz
+Author URI: http://www.pleiadesweb.com
+Description: Pleiades Web THEME
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pleiadesweb
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Imports
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+  ## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/* line 5, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* line 1, sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 7, sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 11, sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 26, sass/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 34, sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 39, sass/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 44, sass/_normalize.scss */
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* line 48, sass/_normalize.scss */
+a:visited {
+  color: inherit;
+}
+
+/* line 51, sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 56, sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 60, sass/_normalize.scss */
+b,
+strong {
+  font-weight: 500;
+}
+
+/* line 65, sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 69, sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 74, sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 78, sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 86, sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 90, sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 94, sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 98, sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 102, sass/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 106, sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 111, sass/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 115, sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 123, sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 133, sass/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 137, sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 142, sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 150, sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 155, sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 161, sass/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/* line 165, sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 171, sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 176, sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 181, sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 186, sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+}
+
+/* line 192, sass/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 197, sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 201, sass/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 205, sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 210, sass/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/* line 1, sass/layout/_frontpage.scss */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/* line 1, sass/typography/_typography.scss */
+body,
+button,
+input,
+select,
+textarea {
+  color: black;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+/* line 1, sass/typography/_headings.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+/* line 4, sass/typography/_headings.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  color: #262626;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* line 1, sass/typography/_copy.scss */
+p {
+  margin-bottom: 10px;
+}
+
+/* line 5, sass/typography/_copy.scss */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 17, sass/typography/_copy.scss */
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+/* line 28, sass/typography/_copy.scss */
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+/* line 33, sass/typography/_copy.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+/* line 38, sass/typography/_copy.scss */
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+/* line 43, sass/typography/_copy.scss */
+big {
+  font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+/* line 1, sass/navigation/_links.scss */
+a {
+  color: #7f7f7f;
+}
+/* line 4, sass/navigation/_links.scss */
+a:visited {
+  color: #7f7f7f;
+}
+/* line 7, sass/navigation/_links.scss */
+a:hover, a:focus, a:active {
+  color: #bfbfbf;
+}
+/* line 12, sass/navigation/_links.scss */
+a:focus {
+  outline: 0;
+}
+/* line 15, sass/navigation/_links.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+/* line 4, sass/navigation/_menus.scss */
+.main-navigation {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  display: block;
+  clear: both;
+}
+/* line 13, sass/navigation/_menus.scss */
+.main-navigation ul {
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+/* line 18, sass/navigation/_menus.scss */
+.main-navigation ul li {
+  float: left;
+  position: relative;
+  height: 100px;
+  margin: 0px;
+  background: rgba(231, 202, 113, 0.2);
+}
+/* line 24, sass/navigation/_menus.scss */
+.main-navigation ul li a {
+  display: block;
+  padding: 30px 15px;
+  height: 100%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  border-top: 5px solid transparent;
+}
+/* line 33, sass/navigation/_menus.scss */
+.main-navigation ul li:hover > a {
+  border-top: 5px solid tomato;
+}
+/* line 36, sass/navigation/_menus.scss */
+.main-navigation ul li:hover > ul {
+  display: block;
+}
+/* line 41, sass/navigation/_menus.scss */
+.main-navigation ul ul {
+  position: absolute;
+  left: 0;
+  z-index: 99999;
+  display: none;
+  float: left;
+  padding: 0;
+}
+/* line 49, sass/navigation/_menus.scss */
+.main-navigation ul ul li a {
+  width: 200px;
+}
+/* line 51, sass/navigation/_menus.scss */
+.main-navigation ul ul li a:hover {
+  color: tomato;
+}
+/* line 57, sass/navigation/_menus.scss */
+.main-navigation ul ul ul {
+  left: 100%;
+  top: 0;
+}
+/* line 66, sass/navigation/_menus.scss */
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_item > a:hover,
+.main-navigation .current-menu-item > a:hover {
+  background: white;
+  color: #313131;
+}
+/* line 78, sass/navigation/_menus.scss */
+.main-navigation ul ul .current_page_parent,
+.main-navigation .current_page_parent .current_page_item > a {
+  color: #fff;
+  background: #313131;
+  background: #303030;
+}
+
+/* SMALL MENU */
+/* line 90, sass/navigation/_menus.scss */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  /* line 95, sass/navigation/_menus.scss */
+  .main-navigation ul {
+    display: none;
+    padding-left: 0px;
+  }
+
+  /* line 99, sass/navigation/_menus.scss */
+  .menu-toggle {
+    display: block;
+  }
+}
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+/* line 2, sass/site/primary/_header.scss */
+header .fullheight {
+  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+/* line 7, sass/site/primary/_header.scss */
+header .fullheight div.top-header-wrapper {
+  width: 100%;
+  height: 100px;
+  display: block;
+  padding: 0px;
+  background-color: rgba(38, 38, 38, 0.3);
+}
+/* line 12, sass/mixins/_mixins-master.scss */
+header .fullheight div.top-header-wrapper:before, header .fullheight div.top-header-wrapper:after {
+  content: '';
+  display: table;
+}
+/* line 17, sass/mixins/_mixins-master.scss */
+header .fullheight div.top-header-wrapper:after {
+  clear: both;
+}
+/* line 14, sass/site/primary/_header.scss */
+header .fullheight div.top-header-wrapper section.top-header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 0px;
+  height: 100%;
+  margin: 0px;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+header .fullheight div.top-header-wrapper section.top-header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 20, sass/site/primary/_header.scss */
+header .fullheight div.top-header-wrapper section.top-header .site-branding {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 0px 10px 10px;
+}
+/* line 29, sass/site/primary/_header.scss */
+header .fullheight div.top-header-wrapper section.top-header .site-branding img {
+  width: 220px;
+  height: auto;
+}
+/* line 34, sass/site/primary/_header.scss */
+header .fullheight div.top-header-wrapper section.top-header .main-menu-wrap {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  float: right;
+}
+/* line 45, sass/site/primary/_header.scss */
+header .fullheight .hgroup {
+  padding: 100px 0px;
+}
+/* line 47, sass/site/primary/_header.scss */
+header .fullheight .hgroup h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 4em;
+  font-weight: 500;
+  color: #f2f2f2;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+  text-shadow: #262626 0px 0px 20px;
+}
+/* line 58, sass/site/primary/_header.scss */
+header .fullheight .hgroup h2 {
+  color: #f2f2f2;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4em;
+  width: 400px;
+  margin: 0px auto;
+  padding: 15px 5px;
+  border: 1px dotted white;
+  background: rgba(38, 38, 38, 0.5);
+}
+/* line 70, sass/site/primary/_header.scss */
+header .fullheight .hgroup p {
+  text-align: center;
+}
+/* line 72, sass/site/primary/_header.scss */
+header .fullheight .hgroup p img {
+  padding-top: 50px;
+  max-width: 50px;
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+/* line 1, sass/site/primary/_posts-and-pages.scss */
+.sticky {
+  display: block;
+}
+
+/* line 5, sass/site/primary/_posts-and-pages.scss */
+.hentry {
+  margin: 0 0 1.5em;
+}
+
+/* line 9, sass/site/primary/_posts-and-pages.scss */
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 14, sass/site/primary/_posts-and-pages.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+/* line 19, sass/site/primary/_posts-and-pages.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+/* line 25, sass/site/primary/_posts-and-pages.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+/* line 1, sass/site/primary/_asides.scss */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+/* line 1, sass/site/primary/_comments.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* line 4, sass/site/primary/_comments.scss */
+.bypostauthor {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/

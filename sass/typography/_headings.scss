@@ -1,0 +1,10 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+#{headings()} {
+	font-family: $font_title;
+	@include font-size(1.4);
+	color: $greydark;
+	font-weight: 500;
+	margin-bottom: 10px;
+}

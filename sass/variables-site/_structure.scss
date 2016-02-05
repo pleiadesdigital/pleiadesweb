@@ -1,0 +1,18 @@
+//$size__site-main: 100%;
+//$size__site-sidebar: 25%;
+
+@include border-box-sizing;
+
+// SUSY setup
+$susy: (
+	columns: 12,
+	container: 1200px,
+	gutters: 1/4,
+	gutter-position: inside
+);
+	
+// SETUP brekpoint
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;

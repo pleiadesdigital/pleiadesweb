@@ -1,0 +1,33 @@
+{
+  "name": "pleiadesweb",
+  "version": "1.0.0",
+  "description": "_s theme with gulp, sass, and others",
+  "main": "front-page.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pleiadesdigital/pleiadesweb.git"
+  },
+  "keywords": [
+    "sass",
+    "gulp",
+    "wordpress"
+  ],
+  "author": "Ronaldo Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pleiadesdigital/pleiadesweb/issues"
+  },
+  "homepage": "https://github.com/pleiadesdigital/pleiadesweb#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-if": "^2.0.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.2.0",
+    "path": "^0.12.7"
+  }
+}
