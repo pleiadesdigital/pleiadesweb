@@ -90,13 +90,17 @@
 .menu-toggle {
   display: none;
 }
+.main-mavigation ul {
+  display: block;
+}
 
 @include breakpoint(max-width 600px) {
   .main-navigation ul {
     display: none;
     padding-left: 0px;
   }
-  .menu-toggle {
+  .menu-toggle,
+  .main-navigation.toggled ul {
     display: block;
   }
 }

@@ -586,15 +586,21 @@ a:hover, a:active {
   display: none;
 }
 
+/* line 93, sass/navigation/_menus.scss */
+.main-mavigation ul {
+  display: block;
+}
+
 @media (max-width: 600px) {
-  /* line 95, sass/navigation/_menus.scss */
+  /* line 98, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
     padding-left: 0px;
   }
 
-  /* line 99, sass/navigation/_menus.scss */
-  .menu-toggle {
+  /* line 102, sass/navigation/_menus.scss */
+  .menu-toggle,
+  .main-navigation.toggled ul {
     display: block;
   }
 }
