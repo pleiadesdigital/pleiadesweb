@@ -28,9 +28,11 @@ SITE HEADER
 
 					<div class="main-menu-wrap">
 						<nav id="site-navigation" class="main-navigation" role="navigation">
-							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e('<i class="fa fa-align-justify"></i>', 'pleiadesweb'); ?></button>
-							<!-- MAIN MENU -->
+							<div class="centerdiv">
+								<!-- MAIN MENU -->
 								<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+							</div>
+								
 						</nav><!-- #site-navigation -->
 					</div><!-- class="menutemp" -->
 				</section><!-- class="top-header" -->

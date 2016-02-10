@@ -498,25 +498,33 @@ a:hover, a:active {
   display: block;
   clear: both;
 }
-/* line 12, sass/navigation/_menus.scss */
-.main-navigation ul {
-  list-style: none;
-  float: right;
-  margin: 0px;
-  padding: 0px 20px 0px 0px;
+/* line 13, sass/navigation/_menus.scss */
+.main-navigation .centerdiv {
+  display: block;
+  margin: 0px auto;
+  width: auto;
+  text-align: center;
+  float: none;
 }
-/* line 17, sass/navigation/_menus.scss */
-.main-navigation ul li {
-  height: 100px;
-  float: left;
-  position: relative;
+/* line 20, sass/navigation/_menus.scss */
+.main-navigation .centerdiv ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+}
+/* line 25, sass/navigation/_menus.scss */
+.main-navigation .centerdiv ul li {
+  display: inline-block;
+  height: auto;
   padding: 0px;
   margin: 0px;
 }
-/* line 23, sass/navigation/_menus.scss */
-.main-navigation ul li a {
+/* line 30, sass/navigation/_menus.scss */
+.main-navigation .centerdiv ul li a {
   display: block;
-  height: 100%;
+  padding: 30px 20px 0px;
+  height: 100px;
   text-decoration: none;
   border-top: 5px solid transparent;
   font-family: "Titillium Web", sans-serif;
@@ -524,81 +532,31 @@ a:hover, a:active {
   color: #f2f2f2;
   font-weight: 500;
   overflow: hidden;
-  padding: 35px 20px;
   -moz-transition-duration: 0.7s;
   -o-transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 36, sass/navigation/_menus.scss */
-.main-navigation ul li:hover > a {
-  border-top: 5px solid tomato;
-}
-/* line 39, sass/navigation/_menus.scss */
-.main-navigation ul li:hover > ul {
-  display: block;
-}
-/* line 44, sass/navigation/_menus.scss */
-.main-navigation ul ul {
-  height: auto;
-  position: absolute;
-  left: 0;
-  z-index: 99999;
-  display: none;
-  float: right;
-  padding: 0px;
-  background: rgba(38, 38, 38, 0.6);
-  border-top: 1px solid rgba(242, 242, 242, 0.1);
-}
-/* line 54, sass/navigation/_menus.scss */
-.main-navigation ul ul li {
-  height: auto;
-}
-/* line 56, sass/navigation/_menus.scss */
-.main-navigation ul ul li a {
-  width: 130px;
-  padding: 15px 20px;
-  color: #d9d9d9;
-  font-size: 0.8em;
-}
-/* line 61, sass/navigation/_menus.scss */
-.main-navigation ul ul li a:hover {
-  color: tomato;
-  border-top-color: transparent;
-}
-/* line 68, sass/navigation/_menus.scss */
-.main-navigation ul ul ul {
-  left: 100%;
-  top: 0;
-  border-left: 1px solid rgba(120, 120, 120, 0.3);
-  border-top: none;
-}
-/* line 79, sass/navigation/_menus.scss */
-.main-navigation .current_page_item > a,
-.main-navigation .current-menu-item > a,
-.main-navigation .current_page_ancestor > a {
-  border-top: 5px solid tomato;
-}
 
 /* SMALL MENU */
-/* line 90, sass/navigation/_menus.scss */
+/* line 53, sass/navigation/_menus.scss */
 .menu-toggle {
   display: none;
 }
 
-/* line 93, sass/navigation/_menus.scss */
+/* line 56, sass/navigation/_menus.scss */
 .main-mavigation ul {
   display: block;
 }
 
 @media (max-width: 600px) {
-  /* line 98, sass/navigation/_menus.scss */
+  /* line 61, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
     padding-left: 0px;
   }
 
-  /* line 102, sass/navigation/_menus.scss */
+  /* line 65, sass/navigation/_menus.scss */
   .menu-toggle,
   .main-navigation.toggled ul {
     display: block;
@@ -634,10 +592,15 @@ header .fullheight {
 /* line 6, sass/site/primary/_header.scss */
 header .fullheight div.top-header-wrapper {
   width: 100%;
-  height: 100px;
+  height: auto;
   display: block;
   padding: 0px;
-  background-color: rgba(38, 38, 38, 0.3);
+}
+@media (min-width: 989px) {
+  /* line 6, sass/site/primary/_header.scss */
+  header .fullheight div.top-header-wrapper {
+    background-color: rgba(38, 38, 38, 0.5);
+  }
 }
 /* line 12, sass/mixins/_mixins-master.scss */
 header .fullheight div.top-header-wrapper:before, header .fullheight div.top-header-wrapper:after {
@@ -648,15 +611,13 @@ header .fullheight div.top-header-wrapper:before, header .fullheight div.top-hea
 header .fullheight div.top-header-wrapper:after {
   clear: both;
 }
-/* line 13, sass/site/primary/_header.scss */
+/* line 16, sass/site/primary/_header.scss */
 header .fullheight div.top-header-wrapper section.top-header {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 0px;
-  width: 100%;
-  height: 100%;
   margin: 0px auto;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
@@ -665,48 +626,69 @@ header .fullheight div.top-header-wrapper section.top-header:after {
   display: block;
   clear: both;
 }
-/* line 20, sass/site/primary/_header.scss */
-header .fullheight div.top-header-wrapper section.top-header .site-branding {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-  display: block;
-  padding: 0px;
-  margin: 0px;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  padding: 0px 10px 10px;
+@media (min-width: 990px) {
+  /* line 21, sass/site/primary/_header.scss */
+  header .fullheight div.top-header-wrapper section.top-header .site-branding {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    padding: 0px 10px 10px;
+  }
+  /* line 32, sass/site/primary/_header.scss */
+  header .fullheight div.top-header-wrapper section.top-header .site-branding img {
+    margin: 0px auto;
+  }
 }
-/* line 29, sass/site/primary/_header.scss */
-header .fullheight div.top-header-wrapper section.top-header .site-branding img {
-  width: 220px;
-  height: auto;
+@media (max-width: 989px) {
+  /* line 38, sass/site/primary/_header.scss */
+  header .fullheight div.top-header-wrapper section.top-header .site-branding img {
+    display: block;
+    margin: 0px auto;
+  }
 }
-/* line 34, sass/site/primary/_header.scss */
-header .fullheight div.top-header-wrapper section.top-header .main-menu-wrap {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 75%;
-  float: right;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-  display: block;
-  padding: 0px;
-  margin: 0px;
-  height: 100%;
-  float: right;
+@media (min-width: 990px) {
+  /* line 46, sass/site/primary/_header.scss */
+  header .fullheight div.top-header-wrapper section.top-header .main-menu-wrap {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 75%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    height: 100px;
+    float: right;
+  }
 }
-/* line 45, sass/site/primary/_header.scss */
+@media (max-width: 989px) {
+  /* line 46, sass/site/primary/_header.scss */
+  header .fullheight div.top-header-wrapper section.top-header .main-menu-wrap {
+    display: block;
+    margin: 10px auto 0px;
+    float: none;
+    clear: both;
+    height: 90px;
+    background-color: rgba(38, 38, 38, 0.3);
+  }
+}
+/* line 70, sass/site/primary/_header.scss */
 header .fullheight .hgroup {
   padding: 100px 0px;
 }
-/* line 47, sass/site/primary/_header.scss */
+/* line 72, sass/site/primary/_header.scss */
 header .fullheight .hgroup h1 {
   font-family: "Titillium Web", sans-serif;
   font-size: 4em;
@@ -718,7 +700,7 @@ header .fullheight .hgroup h1 {
   padding-bottom: 0px;
   text-shadow: #262626 0px 0px 20px;
 }
-/* line 58, sass/site/primary/_header.scss */
+/* line 83, sass/site/primary/_header.scss */
 header .fullheight .hgroup h2 {
   color: #f2f2f2;
   text-align: center;
@@ -730,11 +712,11 @@ header .fullheight .hgroup h2 {
   border: 1px dotted white;
   background: rgba(38, 38, 38, 0.5);
 }
-/* line 70, sass/site/primary/_header.scss */
+/* line 95, sass/site/primary/_header.scss */
 header .fullheight .hgroup p {
   text-align: center;
 }
-/* line 72, sass/site/primary/_header.scss */
+/* line 97, sass/site/primary/_header.scss */
 header .fullheight .hgroup p img {
   padding-top: 50px;
   max-width: 50px;

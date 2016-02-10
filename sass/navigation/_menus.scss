@@ -9,78 +9,41 @@
   display: block;
   clear: both;
   // UL 1st level
-  ul {
-    list-style: none;
-    float: right;
-    margin: 0px;
-    padding: 0px 20px 0px 0px;
-    li {
-      height: 100px;
-      float: left;
-      position: relative;
-      padding: 0px;
-      margin: 0px;
-      a {
-        display: block;
-        height: 100%;
-        text-decoration: none;
-        border-top: 5px solid transparent;
-        font-family: $font_copy;
-        font-size: 1em;
-        color: $snow;
-        font-weight: 500;
-        overflow: hidden;
-        padding: 35px 20px;
-        @include transition-duration(0.7s);
-      } //a 1st level
-      &:hover > a {
-        border-top: 5px solid tomato;
-      } //&:hover > a
-      &:hover > ul {
-        display: block;
-      }
-    } //li 1st level
-    // UL 2nd level
+
+  .centerdiv {
+    display: block;
+    margin: 0px auto;
+    width: auto;
+    text-align: center;
+    float: none;
+    // UL 1st level
     ul {
-      height: auto;
-      position: absolute;
-      left: 0;
-      z-index: 99999;
-      display: none;
-      float: right;
+      list-style: none;
+      margin: 0px;
       padding: 0px;
-      background: rgba($greydark, 0.6);
-      border-top: 1px solid rgba($snow, 0.1);
+      height: auto;
       li {
+        display: inline-block;
         height: auto;
+        padding: 0px;
+        margin: 0px;
         a {
-          width: 130px;
-          padding: 15px 20px;
-          color: darken($snow, 10);
-          font-size: 0.8em;
-          &:hover {
-            color: tomato;
-            border-top-color: transparent; 
-          }
-        } //a 2nd level
-      } //li 2nd level
-    // UL 3rd level
-      ul {
-        left: 100%;
-        top: 0;
-        border-left: 1px solid rgba(120, 120, 120, 0.3);
-        border-top: none;
-      } //ul 3rd level
-    } //ul 2nd level
-  } //ul 1st level
+          display: block;
+          padding: 30px 20px 0px;
+          height: 100px;
+          text-decoration: none;
+          border-top: 5px solid transparent;
+          font-family: $font_copy;
+          font-size: 1em;
+          color: $snow;
+          font-weight: 500;
+          overflow: hidden;
+          @include transition-duration(0.7s);
+        }
+      }
+    }
+  } //.centerdiv
 
-  // HOVER states
-
-  .current_page_item > a,
-  .current-menu-item > a,
-  .current_page_ancestor > a {
-    border-top: 5px solid tomato;
-  }
 
 } //.main-navigation
 
