@@ -2,7 +2,7 @@
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  position: relative;
+  //position: relative;
   float: right;
   width: 100%;
   height: 100%;
@@ -10,18 +10,20 @@
   clear: both;
   // UL 1st level
 
-  .centerdiv {
+  /*.centerdiv {
+    position: relative;
     display: block;
     margin: 0px auto;
     width: auto;
     text-align: center;
-    float: none;
+    float: none;*/
     // UL 1st level
     ul {
       list-style: none;
+      width: auto;
+      float: right;
       margin: 0px;
       padding: 0px;
-      height: auto;
       li {
         display: inline-block;
         height: auto;
@@ -29,7 +31,7 @@
         margin: 0px;
         a {
           display: block;
-          padding: 30px 20px 0px;
+          padding: 30px 15px 0px 15px;
           height: 100px;
           text-decoration: none;
           border-top: 5px solid transparent;
@@ -39,11 +41,54 @@
           font-weight: 500;
           overflow: hidden;
           @include transition-duration(0.7s);
-        }
-      }
-    }
-  } //.centerdiv
+        } //a 1st level
+        &:hover > a {
+          border-top: 5px solid tomato;
+        } //&:hover > a
+        &:hover > ul {
+          display: block;
+        } //
+      } //li 1st level 
+      // ul 2nd level
+      ul {
+        height: auto;
+        position: absolute;
+        left: 0;
+        z-index: 99999;
+        display: none;
+        float: right;
+        padding: 0px;
+        background: rgba($greydark, 0.6);
+        border-top: 1px solid rgba($snow, 0.1);
+        li {
+          height: auto;
+          a {
+            width: 130px;
+            padding-top: 15px 20px;
+            color: darken($snow, 10);
+            font-size: 0.8em;
+            &:hover {
+              color: tomato;
+              border-top-color: transparent;
+            }
+          }
+        } //li 1nd level
+        ul {
+          left: 0;
+          top: 0;
+          border-left: 1px solid rgba(120, 120, 120, 0.3);
+          border-top: none;
+        } //ul 3rd level
+      } //ul 2nd level
+    } //ul 1st level
+  // } //.centerdiv
 
+  // HOVER states
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a {
+    border-top: 5px solid tomato;
+  }
 
 } //.main-navigation
 

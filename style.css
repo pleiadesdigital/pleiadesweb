@@ -491,39 +491,38 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 /* line 4, sass/navigation/_menus.scss */
 .main-navigation {
-  position: relative;
   float: right;
   width: 100%;
   height: 100%;
   display: block;
   clear: both;
+  /*.centerdiv {
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    width: auto;
+    text-align: center;
+    float: none;*/
 }
-/* line 13, sass/navigation/_menus.scss */
-.main-navigation .centerdiv {
-  display: block;
-  margin: 0px auto;
-  width: auto;
-  text-align: center;
-  float: none;
-}
-/* line 20, sass/navigation/_menus.scss */
-.main-navigation .centerdiv ul {
+/* line 21, sass/navigation/_menus.scss */
+.main-navigation ul {
   list-style: none;
+  width: auto;
+  float: right;
   margin: 0px;
   padding: 0px;
-  height: auto;
 }
-/* line 25, sass/navigation/_menus.scss */
-.main-navigation .centerdiv ul li {
+/* line 27, sass/navigation/_menus.scss */
+.main-navigation ul li {
   display: inline-block;
   height: auto;
   padding: 0px;
   margin: 0px;
 }
-/* line 30, sass/navigation/_menus.scss */
-.main-navigation .centerdiv ul li a {
+/* line 32, sass/navigation/_menus.scss */
+.main-navigation ul li a {
   display: block;
-  padding: 30px 20px 0px;
+  padding: 30px 15px 0px 15px;
   height: 100px;
   text-decoration: none;
   border-top: 5px solid transparent;
@@ -537,26 +536,75 @@ a:hover, a:active {
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
+/* line 45, sass/navigation/_menus.scss */
+.main-navigation ul li:hover > a {
+  border-top: 5px solid tomato;
+}
+/* line 48, sass/navigation/_menus.scss */
+.main-navigation ul li:hover > ul {
+  display: block;
+}
+/* line 53, sass/navigation/_menus.scss */
+.main-navigation ul ul {
+  height: auto;
+  position: absolute;
+  left: 0;
+  z-index: 99999;
+  display: none;
+  float: right;
+  padding: 0px;
+  background: rgba(38, 38, 38, 0.6);
+  border-top: 1px solid rgba(242, 242, 242, 0.1);
+}
+/* line 63, sass/navigation/_menus.scss */
+.main-navigation ul ul li {
+  height: auto;
+}
+/* line 65, sass/navigation/_menus.scss */
+.main-navigation ul ul li a {
+  width: 130px;
+  padding-top: 15px 20px;
+  color: #d9d9d9;
+  font-size: 0.8em;
+}
+/* line 70, sass/navigation/_menus.scss */
+.main-navigation ul ul li a:hover {
+  color: tomato;
+  border-top-color: transparent;
+}
+/* line 76, sass/navigation/_menus.scss */
+.main-navigation ul ul ul {
+  left: 0;
+  top: 0;
+  border-left: 1px solid rgba(120, 120, 120, 0.3);
+  border-top: none;
+}
+/* line 87, sass/navigation/_menus.scss */
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a {
+  border-top: 5px solid tomato;
+}
 
 /* SMALL MENU */
-/* line 53, sass/navigation/_menus.scss */
+/* line 98, sass/navigation/_menus.scss */
 .menu-toggle {
   display: none;
 }
 
-/* line 56, sass/navigation/_menus.scss */
+/* line 101, sass/navigation/_menus.scss */
 .main-mavigation ul {
   display: block;
 }
 
 @media (max-width: 600px) {
-  /* line 61, sass/navigation/_menus.scss */
+  /* line 106, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
     padding-left: 0px;
   }
 
-  /* line 65, sass/navigation/_menus.scss */
+  /* line 110, sass/navigation/_menus.scss */
   .menu-toggle,
   .main-navigation.toggled ul {
     display: block;
