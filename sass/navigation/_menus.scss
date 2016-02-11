@@ -1,6 +1,8 @@
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+
+// BASE MENU STRUCTURE
 .main-navigation {
   position: relative;
   float: right;
@@ -81,6 +83,25 @@
   .current_page_ancestor > a {
     border-top: 5px solid tomato;
   }
+
+  // MEDIA QUERIES
+  @include breakpoint(1200px) {
+    border: 1px solid magenta;
+  
+  } //breakpoint(1200px)
+  
+  @include breakpoint($laptop) {
+    border: 1px solid orange;
+  }
+  
+  @include breakpoint($tablet) {
+    border: 1px solid aqua;
+  }
+
+  @include breakpoint($iphone) {
+    border: 1px solid yellow;
+  }
+
 
 } //.main-navigation
 

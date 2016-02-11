@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -489,7 +489,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
-/* line 4, ../../sass/navigation/_menus.scss */
+/* line 6, ../../sass/navigation/_menus.scss */
 .main-navigation {
   position: relative;
   float: right;
@@ -498,14 +498,14 @@ a:hover, a:active {
   display: block;
   clear: both;
 }
-/* line 12, ../../sass/navigation/_menus.scss */
+/* line 14, ../../sass/navigation/_menus.scss */
 .main-navigation ul {
   list-style: none;
   float: right;
   margin: 0px;
   padding: 0px 20px 0px 0px;
 }
-/* line 17, ../../sass/navigation/_menus.scss */
+/* line 19, ../../sass/navigation/_menus.scss */
 .main-navigation ul li {
   height: 100px;
   float: left;
@@ -513,7 +513,7 @@ a:hover, a:active {
   padding: 0px;
   margin: 0px;
 }
-/* line 23, ../../sass/navigation/_menus.scss */
+/* line 25, ../../sass/navigation/_menus.scss */
 .main-navigation ul li a {
   display: block;
   height: 100%;
@@ -530,15 +530,15 @@ a:hover, a:active {
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-/* line 36, ../../sass/navigation/_menus.scss */
+/* line 38, ../../sass/navigation/_menus.scss */
 .main-navigation ul li:hover > a {
   border-top: 5px solid tomato;
 }
-/* line 39, ../../sass/navigation/_menus.scss */
+/* line 41, ../../sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul {
   display: block;
 }
-/* line 44, ../../sass/navigation/_menus.scss */
+/* line 46, ../../sass/navigation/_menus.scss */
 .main-navigation ul ul {
   height: auto;
   position: absolute;
@@ -550,55 +550,79 @@ a:hover, a:active {
   background: rgba(38, 38, 38, 0.6);
   border-top: 1px solid rgba(242, 242, 242, 0.1);
 }
-/* line 54, ../../sass/navigation/_menus.scss */
+/* line 56, ../../sass/navigation/_menus.scss */
 .main-navigation ul ul li {
   height: auto;
 }
-/* line 56, ../../sass/navigation/_menus.scss */
+/* line 58, ../../sass/navigation/_menus.scss */
 .main-navigation ul ul li a {
   width: 130px;
   padding: 15px 20px;
   color: #d9d9d9;
   font-size: 0.8em;
 }
-/* line 61, ../../sass/navigation/_menus.scss */
+/* line 63, ../../sass/navigation/_menus.scss */
 .main-navigation ul ul li a:hover {
   color: tomato;
   border-top-color: transparent;
 }
-/* line 68, ../../sass/navigation/_menus.scss */
+/* line 70, ../../sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: 100%;
   top: 0;
   border-left: 1px solid rgba(120, 120, 120, 0.3);
   border-top: none;
 }
-/* line 79, ../../sass/navigation/_menus.scss */
+/* line 81, ../../sass/navigation/_menus.scss */
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
   border-top: 5px solid tomato;
 }
+@media (min-width: 1200px) {
+  /* line 6, ../../sass/navigation/_menus.scss */
+  .main-navigation {
+    border: 1px solid magenta;
+  }
+}
+@media (min-width: 990px) and (max-width: 1199px) {
+  /* line 6, ../../sass/navigation/_menus.scss */
+  .main-navigation {
+    border: 1px solid orange;
+  }
+}
+@media (min-width: 770px) and (max-width: 989px) {
+  /* line 6, ../../sass/navigation/_menus.scss */
+  .main-navigation {
+    border: 1px solid aqua;
+  }
+}
+@media (max-width: 769px) {
+  /* line 6, ../../sass/navigation/_menus.scss */
+  .main-navigation {
+    border: 1px solid yellow;
+  }
+}
 
 /* SMALL MENU */
-/* line 90, ../../sass/navigation/_menus.scss */
+/* line 111, ../../sass/navigation/_menus.scss */
 .menu-toggle {
   display: none;
 }
 
-/* line 93, ../../sass/navigation/_menus.scss */
+/* line 114, ../../sass/navigation/_menus.scss */
 .main-mavigation ul {
   display: block;
 }
 
 @media (max-width: 600px) {
-  /* line 98, ../../sass/navigation/_menus.scss */
+  /* line 119, ../../sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
     padding-left: 0px;
   }
 
-  /* line 102, ../../sass/navigation/_menus.scss */
+  /* line 123, ../../sass/navigation/_menus.scss */
   .menu-toggle,
   .main-navigation.toggled ul {
     display: block;
@@ -659,7 +683,7 @@ header .fullheight div.top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
