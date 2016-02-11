@@ -10,6 +10,9 @@ header {
 			padding: 0px;
 			background-color: rgba($greydark, 0.3);
 			@include clearfix;
+			@include breakpoint(max-width 989px) {
+				height: 200px;
+			}
 			section.top-header {
 				@include container;
 				display: block;
@@ -17,28 +20,48 @@ header {
 				width: 100%;
 				height: 100%;
 				margin: 0px auto;
+				// SITE BRANDING
 				.site-branding {
-					@include span(3);
-					display: block;
-					padding: 0px;
-					margin: 0px;
-					height: 100%;
-					float: left;
-					overflow: hidden;
-					padding: 0px 10px 10px	;
-					img {
+					@include breakpoint(990px) {
+						@include span(3);
+						display: block;
+						padding: 0px;
+						margin: 0px;
+						height: 100%;
+						float: left;
+						overflow: hidden;
+						padding: 0px 10px 10px	;
+						img {
+							width: 220px;
+							height: auto;
+						} //img
+					}	//breakpoint(989px)
+
+					@include breakpoint(600px 989px) {
+						float: none;
+						clear: both;
+						display: block;					
 						width: 220px;
-						height: auto;
-					}
+						height: 100px;
+						margin: 0px auto;
+						img {
+
+						}
+
+					} //breakpoint(600px 989px)
+
+
 				} //.site-branding
 				.main-menu-wrap {
-					@include span(9 at 4 of 12);
-					display: block;
-					padding: 0px;
-					margin: 0px;
-					height: 100%;
-					float: right;
-				} //.menutemp
+					@include breakpoint(990px) {
+						@include span(9 at 4 of 12);
+						display: block;
+						padding: 0px;
+						margin: 0px;
+						height: 100%;
+						float: right;
+					} //breakpoint(1200px)
+				} //.main-menu-wrap
 			} //section.top-header
 		} //div.top-header-wrapper
 		

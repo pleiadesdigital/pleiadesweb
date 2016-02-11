@@ -10,12 +10,35 @@
   height: 100%;
   display: block;
   clear: both;
+  @include breakpoint(600px 989px) {
+    border: 1px solid DodgerBlue;
+    display: block;
+    float: none;
+    clear: both;
+    max-width: 700px;
+    height: 100px;
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+  }
+
   // UL 1st level
   ul {
-    list-style: none;
-    float: right;
-    margin: 0px;
-    padding: 0px 20px 0px 0px;
+    @include breakpoint(990px) {
+      list-style: none;
+      float: right;
+      margin: 0px;
+      padding: 0px 20px 0px 0px;
+    }
+    @include breakpoint(600px 989px) {
+      border: 1px solid tomato;
+      display: inline-block;
+      width: auto;
+      margin: 0px auto;
+      float: none;
+      clear: both;
+      list-style: none;
+    }
     li {
       height: 100px;
       float: left;
@@ -86,23 +109,23 @@
 
   // MEDIA QUERIES
   @include breakpoint(1200px) {
-    border: 1px solid magenta;
+    //border: 1px solid magenta;
     ul {
-      border: 1px solid lime;
+      //border: 1px solid lime;
     }
   
   } //breakpoint(1200px)
   
   @include breakpoint($laptop) {
-    border: 1px solid orange;
+    //border: 1px solid orange;
   }
   
   @include breakpoint($tablet) {
-    border: 1px solid aqua;
+    //border: 1px solid aqua;
   }
 
   @include breakpoint($iphone) {
-    border: 1px solid yellow;
+    //border: 1px solid yellow;
   }
 
 
