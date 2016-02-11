@@ -584,6 +584,10 @@ a:hover, a:active {
   .main-navigation {
     border: 1px solid magenta;
   }
+  /* line 90, ../../sass/navigation/_menus.scss */
+  .main-navigation ul {
+    border: 1px solid lime;
+  }
 }
 @media (min-width: 990px) and (max-width: 1199px) {
   /* line 6, ../../sass/navigation/_menus.scss */
@@ -605,24 +609,24 @@ a:hover, a:active {
 }
 
 /* SMALL MENU */
-/* line 111, ../../sass/navigation/_menus.scss */
+/* line 114, ../../sass/navigation/_menus.scss */
 .menu-toggle {
   display: none;
 }
 
-/* line 114, ../../sass/navigation/_menus.scss */
+/* line 117, ../../sass/navigation/_menus.scss */
 .main-mavigation ul {
   display: block;
 }
 
 @media (max-width: 600px) {
-  /* line 119, ../../sass/navigation/_menus.scss */
+  /* line 122, ../../sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
     padding-left: 0px;
   }
 
-  /* line 123, ../../sass/navigation/_menus.scss */
+  /* line 126, ../../sass/navigation/_menus.scss */
   .menu-toggle,
   .main-navigation.toggled ul {
     display: block;

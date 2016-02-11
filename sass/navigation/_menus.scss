@@ -87,6 +87,9 @@
   // MEDIA QUERIES
   @include breakpoint(1200px) {
     border: 1px solid magenta;
+    ul {
+      border: 1px solid lime;
+    }
   
   } //breakpoint(1200px)
   
