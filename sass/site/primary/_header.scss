@@ -10,8 +10,14 @@ header {
 			padding: 0px;
 			background-color: rgba($greydark, 0.3);
 			@include clearfix;
-			@include breakpoint(max-width 989px) {
+			@include breakpoint($tablet) {
 				height: 190px;
+				padding: 0px;
+				margin: 0px;
+			}
+			@include breakpoint($iphone) {
+				position: relative;
+				height: 115px;
 				padding: 0px;
 				margin: 0px;
 			}
@@ -23,40 +29,59 @@ header {
 				height: 100%;
 				margin: 0px auto;
 				// SITE BRANDING
+
+				// Laptop & Desktop
 				.site-branding {
-					@include breakpoint(990px) {
+					@include breakpoint($laptop) {
 						@include span(3);
 						display: block;
 						padding: 0px;
 						margin: 0px;
-						height: 100%;
+						width: 230px;
+						height: auto;
 						float: left;
 						overflow: hidden;
-						padding: 0px 10px 10px	;
+						padding: 0px 10px 0px;
 						img {
-							width: 220px;
+							width: auto;
 							height: auto;
+							padding-top: 5px;
 						} //img
 					}	//breakpoint(989px)
 
-					@include breakpoint(600px 989px) {
+					// Tablet
+					@include breakpoint($tablet) {
 						float: none;
 						clear: both;
 						display: block;					
-						width: 220px;
-						height: 100px;
+						width: 250px;
+						height: auto;
 						margin: 0px auto;
 						img {
-							width: 240px;
+							width: auto;
 							height: auto;
-						}
+							padding-top: 10px;
+						} //img
+					} //breakpoint($tablet)
 
-					} //breakpoint(600px 989px)
-
+					// iPhone
+					@include breakpoint($iphone) {
+						float: none;
+						clear: both;
+						display: block;					
+						width: 250px;
+						height: auto;
+						margin: 0px auto;
+						img {
+							width: auto;
+							height: auto;
+							padding-top: 10px;
+						} //img
+					} //breakpoint($iphone)
 
 				} //.site-branding
 				.main-menu-wrap {
-					@include breakpoint(990px) {
+					@include breakpoint($laptop) {
 						@include span(9 at 4 of 12);
 						display: block;
 						padding: 0px;

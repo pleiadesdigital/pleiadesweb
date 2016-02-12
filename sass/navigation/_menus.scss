@@ -4,21 +4,30 @@
 
 // BASE MENU STRUCTURE
 .main-navigation {
-  position: relative;
   float: right;
-  width: 100%;
-  height: 100%;
-  display: block;
+  // width: 100%;
+  // height: 100%;
+  // display: block;
   clear: both;
-  @include breakpoint(600px 989px) {
+  @include breakpoint($tablet) {
     display: block;
     float: none;
     clear: both;
     height: 70px;
-    margin: 25px auto 0px;
+    margin: 20px auto 0px;
     padding: 0px;
     text-align: center;
-  }
+  } //breakpoint($tablet)
+  @include breakpoint($iphone) {
+    display: block;
+    float: none;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    /* height: 70px;
+    margin: 20px auto 0px;
+    padding: 0px;*/
+  } //breakpoint($iphone)
 
   // UL 1st level
   ul {
@@ -113,28 +122,7 @@
   .current_page_ancestor > a {
     border-top: 5px solid tomato;
   }
-
-  // MEDIA QUERIES
-  @include breakpoint(1200px) {
-    //border: 1px solid magenta;
-    ul {
-      //border: 1px solid lime;
-    }
   
-  } //breakpoint(1200px)
-  
-  @include breakpoint($laptop) {
-    //border: 1px solid orange;
-  }
-  
-  @include breakpoint($tablet) {
-    //border: 1px solid aqua;
-  }
-
-  @include breakpoint($iphone) {
-    //border: 1px solid yellow;
-  }
-
 
 } //.main-navigation
 
@@ -148,7 +136,7 @@
   display: block;
 }
 
-@include breakpoint(max-width 600px) {
+@include breakpoint($iphone) {
   .main-navigation ul {
     display: none;
     padding-left: 0px;
@@ -158,6 +146,33 @@
     display: block;
   }
 }
+
+/* Small menu styles */
+
+@include breakpoint($iphone) {
+  .menu-toggle {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    color: $black;
+    font-weight: 100;
+  }
+
+
+
+} //breakpoint($iphone) 
+
+
+
+
+
+
 
 
 
