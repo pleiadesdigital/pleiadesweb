@@ -11,13 +11,11 @@
   display: block;
   clear: both;
   @include breakpoint(600px 989px) {
-    border: 1px solid DodgerBlue;
     display: block;
     float: none;
     clear: both;
-    max-width: 700px;
-    height: 100px;
-    margin: 0px auto;
+    height: 70px;
+    margin: 25px auto 0px;
     padding: 0px;
     text-align: center;
   }
@@ -31,7 +29,6 @@
       padding: 0px 20px 0px 0px;
     }
     @include breakpoint(600px 989px) {
-      border: 1px solid tomato;
       display: inline-block;
       width: auto;
       margin: 0px auto;
@@ -44,7 +41,10 @@
       float: left;
       position: relative;
       padding: 0px;
-      margin: 0px;
+      margin: 0px 1px;
+      @include breakpoint(600px 989px) {
+        height: auto;
+      }
       a {
         display: block;
         height: 100%;
@@ -57,13 +57,16 @@
         overflow: hidden;
         padding: 35px 20px;
         @include transition-duration(0.7s);
+        @include breakpoint(600px 989px) {
+          padding: 20px 20px;
+        } //breakpoint(600px 989px)
       } //a 1st level
       &:hover > a {
         border-top: 5px solid tomato;
       } //&:hover > a
       &:hover > ul {
         display: block;
-      }
+      } 
     } //li 1st level
     // UL 2nd level
     ul {
@@ -80,9 +83,12 @@
         height: auto;
         a {
           width: 130px;
-          padding: 15px 20px;
+          padding: 25px 20px;
           color: darken($snow, 10);
           font-size: 0.8em;
+          @include breakpoint(600px 989px) {
+            padding: 15px 20px;
+          }
           &:hover {
             color: tomato;
             border-top-color: transparent; 
@@ -93,6 +99,7 @@
       ul {
         left: 100%;
         top: 0;
+        margin-left: 1px;
         border-left: 1px solid rgba(120, 120, 120, 0.3);
         border-top: none;
       } //ul 3rd level

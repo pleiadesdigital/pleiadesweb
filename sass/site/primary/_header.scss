@@ -11,7 +11,9 @@ header {
 			background-color: rgba($greydark, 0.3);
 			@include clearfix;
 			@include breakpoint(max-width 989px) {
-				height: 200px;
+				height: 190px;
+				padding: 0px;
+				margin: 0px;
 			}
 			section.top-header {
 				@include container;
@@ -45,7 +47,8 @@ header {
 						height: 100px;
 						margin: 0px auto;
 						img {
-
+							width: 240px;
+							height: auto;
 						}
 
 					} //breakpoint(600px 989px)
