@@ -372,6 +372,121 @@ body {
   height: 100%;
 }
 
+/* line 6, sass/layout/_frontpage.scss */
+#welcome {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f2f2f2), color-stop(100%, #ffffff));
+  background-image: -moz-linear-gradient(bottom, #f2f2f2, #ffffff);
+  background-image: -webkit-linear-gradient(bottom, #f2f2f2, #ffffff);
+  background-image: linear-gradient(to top, #f2f2f2, #ffffff);
+}
+/* line 8, sass/layout/_frontpage.scss */
+#welcome article {
+  text-align: center;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0px;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+#welcome article:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (max-width: 699px) {
+  /* line 8, sass/layout/_frontpage.scss */
+  #welcome article {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  #welcome article:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+/* line 21, sass/layout/_frontpage.scss */
+#services {
+  padding-top: 30px;
+}
+/* line 23, sass/layout/_frontpage.scss */
+#services h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3em;
+  color: #58555a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 31, sass/layout/_frontpage.scss */
+#services #showroom {
+  border: 1px solid maroon;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, sass/mixins/_mixins-master.scss */
+#services #showroom:before, #services #showroom:after {
+  content: '';
+  display: table;
+}
+/* line 17, sass/mixins/_mixins-master.scss */
+#services #showroom:after {
+  clear: both;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+#services #showroom:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 35, sass/layout/_frontpage.scss */
+#services #showroom section {
+  border: 1px solid teal;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 3.33333%;
+  padding-right: 3.33333%;
+}
+/* line 36, sass/layout/_frontpage.scss */
+#services #showroom section h2 {
+  font-size: 1.6em;
+  text-transform: normal;
+  color: black;
+}
+@media (min-width: 700px) and (max-width: 989px) {
+  /* line 35, sass/layout/_frontpage.scss */
+  #services #showroom section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 699px) {
+  /* line 35, sass/layout/_frontpage.scss */
+  #services #showroom section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
