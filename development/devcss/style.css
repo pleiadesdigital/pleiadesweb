@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -578,7 +578,7 @@ a:hover, a:active {
 }
 /* line 73, ../../sass/navigation/_menus.scss */
 .main-navigation ul li:hover > a {
-  border-top: 5px solid tomato;
+  border-top: 5px solid #d0a540;
 }
 /* line 76, ../../sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul {
@@ -615,7 +615,7 @@ a:hover, a:active {
 }
 /* line 101, ../../sass/navigation/_menus.scss */
 .main-navigation ul ul li a:hover {
-  color: tomato;
+  color: #d0a540;
   border-top-color: transparent;
 }
 /* line 108, ../../sass/navigation/_menus.scss */
@@ -630,7 +630,7 @@ a:hover, a:active {
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
-  border-top: 5px solid tomato;
+  border-top: 5px solid #d0a540;
 }
 
 /* SMALL MENU */
@@ -679,7 +679,7 @@ a:hover, a:active {
   }
   /* line 165, ../../sass/navigation/_menus.scss */
   .menu-toggle:hover {
-    color: tomato;
+    color: #d0a540;
   }
 
   /* line 169, ../../sass/navigation/_menus.scss */
@@ -699,27 +699,36 @@ a:hover, a:active {
     margin: 0px;
     padding: 0px;
     height: auto;
+    border-bottom: 1px solid #7f7f7f;
   }
-  /* line 185, ../../sass/navigation/_menus.scss */
+  /* line 186, ../../sass/navigation/_menus.scss */
   .main-navigation ul li a {
     padding: 0px;
     margin: 0px;
     height: auto;
     padding: 20px 5px;
     border-top: none;
-    background: rgba(38, 38, 38, 0.7);
+    background: rgba(242, 242, 242, 0.9);
+    color: #262626;
+    font-weight: 300;
+    font-size: 1.6em;
+    text-transform: uppercase;
   }
-  /* line 192, ../../sass/navigation/_menus.scss */
+  /* line 197, ../../sass/navigation/_menus.scss */
   .main-navigation ul li a:hover {
-    color: tomato;
+    color: #f2f2f2;
     border: none;
-    background: rgba(122, 19, 0, 0.3);
+    background: rgba(196, 147, 33, 0.6);
   }
-  /* line 198, ../../sass/navigation/_menus.scss */
+  /* line 203, ../../sass/navigation/_menus.scss */
   .main-navigation ul li:hover > a {
     border: none;
   }
-  /* line 205, ../../sass/navigation/_menus.scss */
+  /* line 208, ../../sass/navigation/_menus.scss */
+  .main-navigation ul ul.sub-menu {
+    display: none !important;
+  }
+  /* line 214, ../../sass/navigation/_menus.scss */
   .main-navigation .current_page_item > a,
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
@@ -799,7 +808,7 @@ header .fullheight div.top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
   content: " ";
   display: block;

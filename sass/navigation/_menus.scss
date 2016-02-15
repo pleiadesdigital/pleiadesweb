@@ -71,7 +71,7 @@
         } //breakpoint(600px 989px)
       } //a 1st level
       &:hover > a {
-        border-top: 5px solid tomato;
+        border-top: 5px solid $yellowmed;
       } //&:hover > a
       &:hover > ul {
         display: block;
@@ -99,7 +99,7 @@
             padding: 15px 20px;
           }
           &:hover {
-            color: tomato;
+            color: $yellowmed;
             border-top-color: transparent; 
           }
         } //a 2nd level
@@ -119,7 +119,7 @@
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
-    border-top: 5px solid tomato;
+    border-top: 5px solid $yellowmed;
   }
   
 
@@ -163,7 +163,7 @@
     font-weight: 100;
     @include transition-duration(0.7s);
     &:hover {
-      color: tomato;
+      color: $yellowmed;
     } //&:hover
   } //.menu-toggle 
   main-navigation.toggled .nav-menu {
@@ -182,23 +182,32 @@
         margin: 0px;
         padding: 0px;
         height: auto;
+        border-bottom: 1px solid $grey;
         a {
           padding: 0px;
           margin: 0px;
           height: auto;
           padding: 20px 5px;
           border-top: none;
-          background: rgba($greydark, 0.7);
+          background: rgba($snow, 0.9);
+          color: $greydark;
+          font-weight: 300;
+          font-size: 1.6em;
+          text-transform: uppercase;
           &:hover {
-            color: tomato;
+            color: $snow;
             border: none;
-            background: rgba(darken(tomato, 40), 0.3);
+            background: rgba($yellowdark, 0.6);
           } //&:hover 
         } // a 1st level
         &:hover > a {
           border: none;
         } //&:hover > a
       } //li 1st level
+      // UL 2nd level
+      ul.sub-menu {
+        display: none !important;
+      } // ul.sub-menu second level
     } //ul first level
 
       // HOVER states
