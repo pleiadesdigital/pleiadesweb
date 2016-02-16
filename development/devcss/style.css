@@ -425,7 +425,6 @@ body {
 }
 /* line 31, ../../sass/layout/_frontpage.scss */
 #services #showroom {
-  border: 1px solid maroon;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -446,44 +445,148 @@ body {
   clear: both;
 }
 /* line 35, ../../sass/layout/_frontpage.scss */
-#services #showroom section {
-  border: 1px solid teal;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33.33333%;
-  float: left;
-  padding-left: 3.33333%;
-  padding-right: 3.33333%;
-}
-/* line 36, ../../sass/layout/_frontpage.scss */
 #services #showroom section h2 {
   font-size: 1.6em;
   text-transform: normal;
   color: black;
 }
-@media (min-width: 700px) and (max-width: 989px) {
-  /* line 35, ../../sass/layout/_frontpage.scss */
+@media (min-width: 990px) {
+  /* line 34, ../../sass/layout/_frontpage.scss */
   #services #showroom section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 50%;
+    width: 33.33333%;
     float: left;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1.85185%;
+    padding-right: 1.85185%;
+    /* CSS3 effect model */
   }
-}
-@media (max-width: 699px) {
-  /* line 35, ../../sass/layout/_frontpage.scss */
-  #services #showroom section {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    padding-left: 10%;
-    padding-right: 10%;
+  /* line 42, ../../sass/layout/_frontpage.scss */
+  #services #showroom section .view {
+    width: auto;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background: #FFFFFF "http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/bgimg.jpg" no-repeat center center;
+  }
+  /* line 49, ../../sass/layout/_frontpage.scss */
+  #services #showroom section .view .mask,
+  #services #showroom section .view .content {
+    width: auto;
+    height: 250px;
+    position: absolute;
+    overflow: visible;
+    top: 0;
+    left: 0;
+  }
+  /* line 58, ../../sass/layout/_frontpage.scss */
+  #services #showroom section .view img {
+    display: block;
+    position: relative;
+  }
+  /* line 62, ../../sass/layout/_frontpage.scss */
+  #services #showroom section .view h2 {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0px 0px -10px;
+  }
+  /* line 72, ../../sass/layout/_frontpage.scss */
+  #services #showroom section .view p {
+    font-size: 12px;
+    position: relative;
+    color: #f2f2f2;
+    padding: 10px 20px 20px;
+    margin-left: -15px;
+    text-align: center;
+  }
+  /* line 80, ../../sass/layout/_frontpage.scss */
+  #services #showroom section .view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    margin-left: -15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    text-transform: lowercase;
+    -moz-box-shadow: black 0px 0px 1px;
+    -webkit-box-shadow: black 0px 0px 1px;
+    box-shadow: black 0px 0px 1px;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  /* line 90, ../../sass/layout/_frontpage.scss */
+  #services #showroom section .view a.info:hover {
+    color: #146dc4;
+  }
+  /* line 98, ../../sass/layout/_frontpage.scss */
+  #services #showroom section div.view-tenth img {
+    transform: scaleY(1);
+    transition: all 0.7s ease-in-out;
+  }
+  /* line 102, ../../sass/layout/_frontpage.scss */
+  #services #showroom section div.view-tenth .mask {
+    background-color: #003d77;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 0;
+  }
+  /* line 107, ../../sass/layout/_frontpage.scss */
+  #services #showroom section div.view-tenth h2 {
+    transform: scale(0);
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  /* line 111, ../../sass/layout/_frontpage.scss */
+  #services #showroom section div.view-tenth p {
+    opacity: 0;
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  /* line 116, ../../sass/layout/_frontpage.scss */
+  #services #showroom section div.view-tenth a.info {
+    opacity: 0;
+    transform: scale(0);
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  /* line 121, ../../sass/layout/_frontpage.scss */
+  #services #showroom section div.view-tenth:hover img {
+    transform: scale(10);
+    opacity: 0.1;
+  }
+  /* line 124, ../../sass/layout/_frontpage.scss */
+  #services #showroom section div.view-tenth:hover img.mask {
+    opacity: 1;
+  }
+  /* line 128, ../../sass/layout/_frontpage.scss */
+  #services #showroom section div.view-tenth:hover .mask {
+    opacity: 1;
+  }
+  /* line 131, ../../sass/layout/_frontpage.scss */
+  #services #showroom section div.view-tenth:hover h2, #services #showroom section div.view-tenth:hover p, #services #showroom section div.view-tenth:hover a.info {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -937,8 +1040,8 @@ header .fullheight div.top-header-wrapper section.top-header:after {
     box-sizing: border-box;
     width: 25%;
     float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
+    padding-left: 0.46296%;
+    padding-right: 0.46296%;
     display: block;
     padding: 0px;
     margin: 0px;
@@ -997,8 +1100,8 @@ header .fullheight div.top-header-wrapper section.top-header:after {
     box-sizing: border-box;
     width: 75%;
     float: right;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
+    padding-left: 0.46296%;
+    padding-right: 0.46296%;
     display: block;
     padding: 0px;
     margin: 0px;
@@ -1047,6 +1150,14 @@ header .fullheight .hgroup p img {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
+/* line 1, ../../sass/site/primary/_footer.scss */
+.site-footer {
+  background-color: #58555a;
+  min-height: 300px;
+  width: 100%;
+  margin-top: 100px;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

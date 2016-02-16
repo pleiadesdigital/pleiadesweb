@@ -29,7 +29,6 @@ body {
 		margin-bottom: 20px;
 	}
 	#showroom {
-		border: 1px solid maroon;
 		@include clearfix;
 		@include container;
 		section {
@@ -38,15 +37,111 @@ body {
 				text-transform: normal;
 				color: $black;
 			} //h2
-			border: 1px solid teal;
-			@include span(1 of 3);
-			@include breakpoint($tablet) {
-				@include span (1 of 2);
-			} //breakpoint($tablet)
-			@include breakpoint($iphone) {
-				@include span (1 of 1);
-			} //breakpoint($iphone) 
+			@include breakpoint($laptop) {
+				@include span(1 of 3);
+				.view {
+					width: auto;
+					height: 250px;
+					overflow: hidden;
+					position: relative;
+					text-align: center;
+					background: #FFFFFF ("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/bgimg.jpg") no-repeat center center;
+					.mask,
+					.content {
+						width: auto;
+						height: 250px;
+						position: absolute;
+						overflow: visible;
+						top: 0;
+						left: 0;
+					} //.mask, .content
+					img {
+						display: block;
+						position: relative;
+					} //img
+					h2 {
+						text-transform: uppercase;
+						color: #FFFFFF;
+						text-align: center;
+						position: relative;
+						font-size: 17px;
+						padding: 10px;
+						background: rgba(0, 0, 0, 0.8);
+						margin: 20px 0px 0px -10px;
+					} //h2
+					p {
+						font-size: 12px;
+						position: relative;
+						color: $snow;
+						padding: 10px 20px 20px;
+						margin-left: -15px;
+						text-align: center;
+					} //p
+					a.info {
+						display: inline-block;
+						text-decoration: none;
+						padding: 7px 14px;
+						margin-left: -15px;
+						background: rgba(0, 0, 0, 0.7);
+						color: #FFFFFF;
+						text-transform: lowercase;
+						@include box-shadow($black 0px 0px 1px);
+						@include single-transition();
+						&:hover {
+							color: $bluelight;
+						} //&:hover
+					} //a.info 
+				} //div.view
+
+				/* CSS3 effect model */
+				div.view-tenth {
+					img {
+						transform: scaleY(1);
+						transition: all 0.7s ease-in-out;
+					} //img
+					.mask {
+						background-color: rgba($blue, 1);
+						@include single-transition();
+						opacity: 0;
+					} //.mask
+					h2 {
+						transform: scale(0);
+						@include single-transition();
+					} //h2
+					p {
+						opacity: 0;
+						@include transform(scale(0));
+						@include single-transition();	
+					} //p
+					a.info {
+						opacity: 0;
+						transform: scale(0);
+						@include single-transition();
+					}
+					&:hover img {
+						transform: scale(10);
+						opacity: 0.1;
+						&.mask {
+							opacity: 1;
+						} //&.mask
+					} //&:hover img
+					&:hover .mask {
+						opacity: 1;
+					} //&:hover .mask
+					&:hover h2, 
+					&:hover p,
+					&:hover a.info {
+						transform: scale(1);
+						opacity: 1;
+					} //&:hover h2, &:hover p, &:hover a.info
+				} //div.view-tenth
+				 
+
+			} //breakpoint($laptop) 
 		} //section
+
+		
+
 	} //#showroom 
 
 } //#services 
