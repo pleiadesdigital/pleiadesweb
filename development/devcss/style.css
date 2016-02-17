@@ -425,6 +425,7 @@ body {
 }
 /* line 31, ../../sass/layout/_frontpage.scss */
 #services #showroom {
+  border: 2px solid yellow;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -445,13 +446,17 @@ body {
   clear: both;
 }
 /* line 35, ../../sass/layout/_frontpage.scss */
+#services #showroom section {
+  /* CSS3 effect model */
+}
+/* line 36, ../../sass/layout/_frontpage.scss */
 #services #showroom section h2 {
   font-size: 1.6em;
   text-transform: normal;
   color: black;
 }
 @media (min-width: 990px) {
-  /* line 34, ../../sass/layout/_frontpage.scss */
+  /* line 35, ../../sass/layout/_frontpage.scss */
   #services #showroom section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -460,134 +465,160 @@ body {
     float: left;
     padding-left: 1.85185%;
     padding-right: 1.85185%;
-    /* CSS3 effect model */
   }
-  /* line 42, ../../sass/layout/_frontpage.scss */
+}
+@media (min-width: 700px) and (max-width: 989px) {
+  /* line 35, ../../sass/layout/_frontpage.scss */
+  #services #showroom section {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 2.77778%;
+    padding-right: 2.77778%;
+  }
+}
+/* line 48, ../../sass/layout/_frontpage.scss */
+#services #showroom section .view {
+  border: 1px solid magenta;
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background: #FFFFFF "http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/bgimg.jpg" no-repeat center center;
+}
+@media (min-width: 700px) and (max-width: 989px) {
+  /* line 48, ../../sass/layout/_frontpage.scss */
   #services #showroom section .view {
     width: auto;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    background: #FFFFFF "http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/bgimg.jpg" no-repeat center center;
+    margin: 20px auto;
   }
-  /* line 49, ../../sass/layout/_frontpage.scss */
-  #services #showroom section .view .mask,
-  #services #showroom section .view .content {
-    width: auto;
-    height: 250px;
-    position: absolute;
-    overflow: visible;
-    top: 0;
-    left: 0;
+}
+@media (max-width: 699px) {
+  /* line 48, ../../sass/layout/_frontpage.scss */
+  #services #showroom section .view {
+    width: 350px;
+    margin: 20px auto;
   }
-  /* line 58, ../../sass/layout/_frontpage.scss */
-  #services #showroom section .view img {
-    display: block;
-    position: relative;
-  }
-  /* line 62, ../../sass/layout/_frontpage.scss */
-  #services #showroom section .view h2 {
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0px 0px -10px;
-  }
-  /* line 72, ../../sass/layout/_frontpage.scss */
-  #services #showroom section .view p {
-    font-size: 12px;
-    position: relative;
-    color: #f2f2f2;
-    padding: 10px 20px 20px;
-    margin-left: -15px;
-    text-align: center;
-  }
-  /* line 80, ../../sass/layout/_frontpage.scss */
-  #services #showroom section .view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    margin-left: -15px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #FFFFFF;
-    text-transform: lowercase;
-    -moz-box-shadow: black 0px 0px 1px;
-    -webkit-box-shadow: black 0px 0px 1px;
-    box-shadow: black 0px 0px 1px;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  /* line 90, ../../sass/layout/_frontpage.scss */
-  #services #showroom section .view a.info:hover {
-    color: #146dc4;
-  }
-  /* line 98, ../../sass/layout/_frontpage.scss */
-  #services #showroom section div.view-tenth img {
-    transform: scaleY(1);
-    transition: all 0.7s ease-in-out;
-  }
-  /* line 102, ../../sass/layout/_frontpage.scss */
-  #services #showroom section div.view-tenth .mask {
-    background-color: #003d77;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-    opacity: 0;
-  }
-  /* line 107, ../../sass/layout/_frontpage.scss */
-  #services #showroom section div.view-tenth h2 {
-    transform: scale(0);
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  /* line 111, ../../sass/layout/_frontpage.scss */
-  #services #showroom section div.view-tenth p {
-    opacity: 0;
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  /* line 116, ../../sass/layout/_frontpage.scss */
-  #services #showroom section div.view-tenth a.info {
-    opacity: 0;
-    transform: scale(0);
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-  }
-  /* line 121, ../../sass/layout/_frontpage.scss */
-  #services #showroom section div.view-tenth:hover img {
-    transform: scale(10);
-    opacity: 0.1;
-  }
-  /* line 124, ../../sass/layout/_frontpage.scss */
-  #services #showroom section div.view-tenth:hover img.mask {
-    opacity: 1;
-  }
-  /* line 128, ../../sass/layout/_frontpage.scss */
-  #services #showroom section div.view-tenth:hover .mask {
-    opacity: 1;
-  }
-  /* line 131, ../../sass/layout/_frontpage.scss */
-  #services #showroom section div.view-tenth:hover h2, #services #showroom section div.view-tenth:hover p, #services #showroom section div.view-tenth:hover a.info {
-    transform: scale(1);
-    opacity: 1;
-  }
+}
+/* line 64, ../../sass/layout/_frontpage.scss */
+#services #showroom section .view .mask,
+#services #showroom section .view .content {
+  width: auto;
+  height: 250px;
+  position: absolute;
+  overflow: visible;
+  top: 0;
+  left: 0;
+}
+/* line 73, ../../sass/layout/_frontpage.scss */
+#services #showroom section .view img {
+  display: block;
+  position: relative;
+}
+/* line 77, ../../sass/layout/_frontpage.scss */
+#services #showroom section .view h2 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 20px 0px 0px -10px;
+}
+/* line 87, ../../sass/layout/_frontpage.scss */
+#services #showroom section .view p {
+  font-size: 12px;
+  position: relative;
+  color: #f2f2f2;
+  padding: 10px 20px 20px;
+  margin-left: -15px;
+  text-align: center;
+}
+/* line 95, ../../sass/layout/_frontpage.scss */
+#services #showroom section .view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  margin-left: -15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  text-transform: lowercase;
+  -moz-box-shadow: black 0px 0px 1px;
+  -webkit-box-shadow: black 0px 0px 1px;
+  box-shadow: black 0px 0px 1px;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 105, ../../sass/layout/_frontpage.scss */
+#services #showroom section .view a.info:hover {
+  color: #146dc4;
+}
+/* line 112, ../../sass/layout/_frontpage.scss */
+#services #showroom section div.view-tenth img {
+  transform: scaleY(1);
+  transition: all 0.7s ease-in-out;
+}
+/* line 116, ../../sass/layout/_frontpage.scss */
+#services #showroom section div.view-tenth .mask {
+  background-color: #003d77;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 0;
+}
+/* line 121, ../../sass/layout/_frontpage.scss */
+#services #showroom section div.view-tenth h2 {
+  transform: scale(0);
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 125, ../../sass/layout/_frontpage.scss */
+#services #showroom section div.view-tenth p {
+  opacity: 0;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 130, ../../sass/layout/_frontpage.scss */
+#services #showroom section div.view-tenth a.info {
+  opacity: 0;
+  transform: scale(0);
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 135, ../../sass/layout/_frontpage.scss */
+#services #showroom section div.view-tenth:hover img {
+  transform: scale(10);
+  opacity: 0.1;
+}
+/* line 138, ../../sass/layout/_frontpage.scss */
+#services #showroom section div.view-tenth:hover img.mask {
+  opacity: 1;
+}
+/* line 142, ../../sass/layout/_frontpage.scss */
+#services #showroom section div.view-tenth:hover .mask {
+  opacity: 1;
+}
+/* line 145, ../../sass/layout/_frontpage.scss */
+#services #showroom section div.view-tenth:hover h2, #services #showroom section div.view-tenth:hover p, #services #showroom section div.view-tenth:hover a.info {
+  transform: scale(1);
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
