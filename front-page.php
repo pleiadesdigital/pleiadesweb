@@ -10,6 +10,7 @@
 				</article><!-- class="copycontent" -->
 			</div><!-- class="scene" -->
 
+			<!-- SERVICES -->
 			<section class="scene" id="services">
 				<h2>Lo que ofrecemos</h2>
 				<div id="showroom">
@@ -50,7 +51,22 @@
 		      </section><!-- id="audioprom" -->
 			
 				</div>
+			</section><!-- SERVICES -->
+
+			<section id="cta-frontpage">
+				<article class="cta-front">
+					<h3>Las mejores herramientas profesionales para tu empresa</h3>
+					<p>Solicita una cotización gratuita y sin compromiso.</p>
+					
+					<!-- CTA-button -->
+					<div class="cta-view view-sixth">
+						<a href="#" class="cta-info">Contáctenos ahora</a>
+					</div>
+					
+				</article>				
 			</section>
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

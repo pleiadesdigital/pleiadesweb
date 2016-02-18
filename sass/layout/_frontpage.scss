@@ -17,7 +17,6 @@ body {
 
 
 // SERVICES
-
 #services {
 	padding-top: 30px;
 	h2 {
@@ -29,7 +28,6 @@ body {
 		margin-bottom: 20px;
 	}
 	#showroom {
-		border: 2px solid yellow;
 		@include clearfix;
 		@include container;
 		section {
@@ -46,7 +44,6 @@ body {
 			}
 			
 			.view {
-				border: 1px solid magenta;
 				height: 250px;
 				width: auto;
 				@include breakpoint($tablet) {
@@ -114,7 +111,7 @@ body {
 					transition: all 0.7s ease-in-out;
 				} //img
 				.mask {
-					background-color: rgba($blue, 1);
+					background-color: rgba($yellowmed, 0.9);
 					@include single-transition();
 					opacity: 0;
 				} //.mask
@@ -158,6 +155,43 @@ body {
 	} //#showroom 
 
 } //#services 
+
+// CALL TO ACTION
+#cta-frontpage {
+	margin: 50px 0px;
+	width: 100%;
+	min-height: 300px;
+	@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax1.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

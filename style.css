@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -389,7 +389,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #welcome article:after {
   content: " ";
   display: block;
@@ -402,7 +402,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   #welcome article:after {
     content: " ";
     display: block;
@@ -410,11 +410,11 @@ body {
   }
 }
 
-/* line 21, sass/layout/_frontpage.scss */
+/* line 20, sass/layout/_frontpage.scss */
 #services {
   padding-top: 30px;
 }
-/* line 23, sass/layout/_frontpage.scss */
+/* line 22, sass/layout/_frontpage.scss */
 #services h2 {
   text-transform: uppercase;
   font-weight: 300;
@@ -423,9 +423,8 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 31, sass/layout/_frontpage.scss */
+/* line 30, sass/layout/_frontpage.scss */
 #services #showroom {
-  border: 2px solid yellow;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -439,24 +438,24 @@ body {
 #services #showroom:after {
   clear: both;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #services #showroom:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 35, sass/layout/_frontpage.scss */
+/* line 33, sass/layout/_frontpage.scss */
 #services #showroom section {
   /* CSS3 effect model */
 }
-/* line 36, sass/layout/_frontpage.scss */
+/* line 34, sass/layout/_frontpage.scss */
 #services #showroom section h2 {
   font-size: 1.6em;
   text-transform: normal;
   color: black;
 }
 @media (min-width: 990px) {
-  /* line 35, sass/layout/_frontpage.scss */
+  /* line 33, sass/layout/_frontpage.scss */
   #services #showroom section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -468,7 +467,7 @@ body {
   }
 }
 @media (min-width: 700px) and (max-width: 989px) {
-  /* line 35, sass/layout/_frontpage.scss */
+  /* line 33, sass/layout/_frontpage.scss */
   #services #showroom section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -479,9 +478,8 @@ body {
     padding-right: 2.77778%;
   }
 }
-/* line 48, sass/layout/_frontpage.scss */
+/* line 46, sass/layout/_frontpage.scss */
 #services #showroom section .view {
-  border: 1px solid magenta;
   height: 250px;
   width: auto;
   overflow: hidden;
@@ -490,20 +488,20 @@ body {
   background: #FFFFFF "http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/bgimg.jpg" no-repeat center center;
 }
 @media (min-width: 700px) and (max-width: 989px) {
-  /* line 48, sass/layout/_frontpage.scss */
+  /* line 46, sass/layout/_frontpage.scss */
   #services #showroom section .view {
     width: auto;
     margin: 20px auto;
   }
 }
 @media (max-width: 699px) {
-  /* line 48, sass/layout/_frontpage.scss */
+  /* line 46, sass/layout/_frontpage.scss */
   #services #showroom section .view {
     width: 350px;
     margin: 20px auto;
   }
 }
-/* line 64, sass/layout/_frontpage.scss */
+/* line 61, sass/layout/_frontpage.scss */
 #services #showroom section .view .mask,
 #services #showroom section .view .content {
   width: auto;
@@ -513,12 +511,12 @@ body {
   top: 0;
   left: 0;
 }
-/* line 73, sass/layout/_frontpage.scss */
+/* line 70, sass/layout/_frontpage.scss */
 #services #showroom section .view img {
   display: block;
   position: relative;
 }
-/* line 77, sass/layout/_frontpage.scss */
+/* line 74, sass/layout/_frontpage.scss */
 #services #showroom section .view h2 {
   text-transform: uppercase;
   color: #FFFFFF;
@@ -529,7 +527,7 @@ body {
   background: rgba(0, 0, 0, 0.8);
   margin: 20px 0px 0px -10px;
 }
-/* line 87, sass/layout/_frontpage.scss */
+/* line 84, sass/layout/_frontpage.scss */
 #services #showroom section .view p {
   font-size: 12px;
   position: relative;
@@ -538,7 +536,7 @@ body {
   margin-left: -15px;
   text-align: center;
 }
-/* line 95, sass/layout/_frontpage.scss */
+/* line 92, sass/layout/_frontpage.scss */
 #services #showroom section .view a.info {
   display: inline-block;
   text-decoration: none;
@@ -555,25 +553,25 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 105, sass/layout/_frontpage.scss */
+/* line 102, sass/layout/_frontpage.scss */
 #services #showroom section .view a.info:hover {
   color: #146dc4;
 }
-/* line 112, sass/layout/_frontpage.scss */
+/* line 109, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth img {
   transform: scaleY(1);
   transition: all 0.7s ease-in-out;
 }
-/* line 116, sass/layout/_frontpage.scss */
+/* line 113, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth .mask {
-  background-color: #003d77;
+  background-color: rgba(208, 165, 64, 0.9);
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
   opacity: 0;
 }
-/* line 121, sass/layout/_frontpage.scss */
+/* line 118, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth h2 {
   transform: scale(0);
   -moz-transition: all 1s;
@@ -581,7 +579,7 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 125, sass/layout/_frontpage.scss */
+/* line 122, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth p {
   opacity: 0;
   -moz-transform: scale(0);
@@ -593,7 +591,7 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 130, sass/layout/_frontpage.scss */
+/* line 127, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth a.info {
   opacity: 0;
   transform: scale(0);
@@ -602,23 +600,35 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 135, sass/layout/_frontpage.scss */
+/* line 132, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth:hover img {
   transform: scale(10);
   opacity: 0.1;
 }
-/* line 138, sass/layout/_frontpage.scss */
+/* line 135, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth:hover img.mask {
   opacity: 1;
 }
-/* line 142, sass/layout/_frontpage.scss */
+/* line 139, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth:hover .mask {
   opacity: 1;
 }
-/* line 145, sass/layout/_frontpage.scss */
+/* line 142, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth:hover h2, #services #showroom section div.view-tenth:hover p, #services #showroom section div.view-tenth:hover a.info {
   transform: scale(1);
   opacity: 1;
+}
+
+/* line 160, sass/layout/_frontpage.scss */
+#cta-frontpage {
+  margin: 50px 0px;
+  width: 100%;
+  min-height: 300px;
+  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*--------------------------------------------------------------
@@ -1057,7 +1067,7 @@ header .fullheight div.top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
@@ -1184,7 +1194,7 @@ header .fullheight .hgroup p img {
 /* line 1, sass/site/primary/_footer.scss */
 .site-footer {
   background-color: #58555a;
-  min-height: 300px;
+  min-height: 700px;
   width: 100%;
   margin-top: 100px;
 }
