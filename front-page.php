@@ -43,7 +43,7 @@
 		      	<div class="view view-tenth">
 			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/audio-y-video-para-marketing.jpg" />
 			      	<div class="mask">
-				        <h2>Audio Promocional para Radio&nbsp;y Video</h2>
+				        <h2>Audio Promocional para Radio&nbsp;y&nbsp;Video</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
 								<a href="#" class="info">Leer más</a>
 							</div>
@@ -55,12 +55,11 @@
 
 			<section id="cta-frontpage">
 				<article class="cta-front">
-					<h3>Las mejores herramientas profesionales para tu empresa</h3>
-					<p>Solicita una cotización gratuita y sin compromiso.</p>
+					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>
 					
 					<!-- CTA-button -->
-					<div class="cta-view view-sixth">
-						<a href="#" class="cta-info">Contáctenos ahora</a>
+					<div class="cta-button">
+						<a href="#" class="cta-info">Contáctanos</a>
 					</div>
 					
 				</article>				
