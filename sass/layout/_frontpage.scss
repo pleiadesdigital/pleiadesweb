@@ -97,10 +97,12 @@ body {
 					background: rgba(0, 0, 0, 0.7);
 					color: #FFFFFF;
 					text-transform: lowercase;
-					//@include box-shadow($black 0px 0px 1px);
-					@include single-transition();
+					font-weight: 600;
+					//@include single-transition();
+					//@include transition-duration(3s);
 					&:hover {
-						color: $bluelight;
+						color: $bluemed;
+						background: rgba($snow, 1);
 					} //&:hover
 				} //a.info 
 			} //div.view
@@ -128,6 +130,10 @@ body {
 					opacity: 0;
 					transform: scale(0);
 					@include single-transition();
+					@include transition-duration(0.5s);
+					&:hover {
+						@include transition-duration(0.5s);
+					}
 				}
 				&:hover img {
 					transform: scale(10);

@@ -20,6 +20,7 @@ SITE HEADER
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="fullheight">
+		
 			<div class="top-header-wrapper">
 				<section class="top-header">
 					<div class="site-branding">
@@ -34,7 +35,8 @@ SITE HEADER
 						</nav><!-- #site-navigation -->
 					</div><!-- class="menutemp" -->
 				</section><!-- class="top-header" -->
-			</div>
+			</div><!-- .top-header-wrapper -->	
+
 			<div class="hgroup">
 				<h1 class="site-title">Pleiades digital</h1>
 				<h2>agencia de marketing a tu medida</h2>
