@@ -11,6 +11,8 @@ SITE HEADER
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjEcnBmAHgm_LfegO9o84NLPAfBLwVjSY"></script>
+
 <?php wp_head(); ?>
 </head>
 
@@ -19,7 +21,7 @@ SITE HEADER
 <!-- 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pleiadesweb' ); ?></a> -->
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="fullheight">
+		<div class="<?php if (is_front_page()) { echo "fullheight"; } else { echo "normalheader"; }?>">
 		
 			<div class="top-header-wrapper">
 				<section class="top-header">

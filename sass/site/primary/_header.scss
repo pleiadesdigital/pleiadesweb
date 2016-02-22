@@ -1,5 +1,11 @@
 header {
 	position: relative;
+	.normalheader {
+		border: 1px solid darkmagenta;
+		.hgroup {
+			display: none;
+		}
+	}
 	.fullheight {
 		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg');
 		//min-height: 600px;
@@ -71,7 +77,6 @@ header {
 							padding-top: 10px;
 						} //img
 					} //breakpoint($tablet)
-
 					// iPhone
 					@include breakpoint($iphone) {
 						float: none;
@@ -86,7 +91,6 @@ header {
 							padding-top: 10px;
 						} //img
 					} //breakpoint($iphone)
-
 				} //.site-branding
 				.main-menu-wrap {
 					@include breakpoint($laptop) {
@@ -99,8 +103,7 @@ header {
 					} //breakpoint(1200px)
 				} //.main-menu-wrap
 			} //section.top-header
-		} //div.top-header-wrapper
-		
+		} //div.top-header-wrapper	
 		.hgroup {
 			padding: 15% 0px;
 			margin-top: 10%;
@@ -125,7 +128,6 @@ header {
 				padding: 15px 5px;
 				border: 1px dotted $white;
 				background: rgba($greydark, 0.5);
-
 			} //h2
 			p {
 				text-align: center;
@@ -135,6 +137,13 @@ header {
 				} //img
 			} //p
 		} //.hgroup 
-
 	} //.fullheight
+
+
 } //header
+
+
+
+
+
+
