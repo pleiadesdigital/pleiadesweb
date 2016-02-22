@@ -10,16 +10,13 @@ header {
 
 		div.top-header-wrapper {
 			width: 100%;
-			height: auto;
+			height: 100px;
 			display: block;
 			position: absolute;
 			top: 0;
 			left: 0;
 			padding: 0px;
-			@include breakpoint(989px) {
-				background-color: rgba($greydark, 0.5);
-			}
-			
+			background-color: rgba($greydark, 0.3);
 			@include clearfix;
 			@include breakpoint($tablet) {
 				height: 190px;
@@ -35,45 +32,19 @@ header {
 				@include container;
 				display: block;
 				padding: 0px;
+				width: 100%;
+				height: 100%;
 				margin: 0px auto;
 
 				// SITE BRANDING
 
 				// Laptop & Desktop
 				.site-branding {
-<<<<<<< HEAD
-
-					@include breakpoint($medium) {
-=======
 					@include breakpoint($laptop) {
->>>>>>> altmenu1
 						@include span(3);
 						display: block;
 						padding: 0px;
 						margin: 0px;
-<<<<<<< HEAD
-						height: 100px;
-						float: left;
-						overflow: hidden;
-						padding: 0px 10px 10px	;
-						img {
-							margin: 0px auto;
-						} //img
-					} //breakpoint($medium)
-
-					@include breakpoint(max-width 989px) {
-						img {
-							display: block;
-							margin: 0px auto;
-						}
-					} //breakpoint(max-width 989px)
-
-
-				} //.site-branding
-				.main-menu-wrap {
-
-					@include breakpoint($medium) {
-=======
 						width: 230px;
 						height: auto;
 						float: left;
@@ -119,32 +90,14 @@ header {
 				} //.site-branding
 				.main-menu-wrap {
 					@include breakpoint($laptop) {
->>>>>>> altmenu1
 						@include span(9 at 4 of 12);
 						display: block;
 						padding: 0px;
 						margin: 0px;
-<<<<<<< HEAD
-						height: 100px;
-						float: right;
-					} //breakpoint($medium)
-
-					@include breakpoint(max-width 989px) {
-						display: block;
-						margin: 10px auto 0px;
-						float: none;
-						clear: both;
-						height: 90px;
-						background-color: rgba($greydark, 0.3);
-					}
-					
-				} //.menutemp
-=======
 						height: 100%;
 						float: right;
 					} //breakpoint(1200px)
 				} //.main-menu-wrap
->>>>>>> altmenu1
 			} //section.top-header
 		} //div.top-header-wrapper
 		

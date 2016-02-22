@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -389,7 +389,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #welcome article:after {
   content: " ";
   display: block;
@@ -402,7 +402,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
   #welcome article:after {
     content: " ";
     display: block;
@@ -438,7 +438,7 @@ body {
 #services #showroom:after {
   clear: both;
 }
-/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #services #showroom:after {
   content: " ";
   display: block;
@@ -649,7 +649,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #cta-frontpage .cta-front:after {
   content: " ";
   display: block;
@@ -720,7 +720,7 @@ body {
   margin-right: auto;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #porque-nos .porque-nos-content:after {
   content: " ";
   display: block;
@@ -910,25 +910,7 @@ a:hover, a:active {
 .main-navigation {
   float: right;
   clear: both;
-  /*.centerdiv {
-    position: relative;
-    display: block;
-    margin: 0px auto;
-    width: auto;
-    text-align: center;
-    float: none;*/
 }
-<<<<<<< HEAD
-/* line 21, ../../sass/navigation/_menus.scss */
-.main-navigation ul {
-  list-style: none;
-  width: auto;
-  float: right;
-  margin: 0px;
-  padding: 0px;
-}
-/* line 27, ../../sass/navigation/_menus.scss */
-=======
 @media (min-width: 700px) and (max-width: 989px) {
   /* line 6, ../../sass/navigation/_menus.scss */
   .main-navigation {
@@ -975,10 +957,10 @@ a:hover, a:active {
   }
 }
 /* line 48, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
 .main-navigation ul li {
-  display: inline-block;
-  height: auto;
+  height: 100px;
+  float: left;
+  position: relative;
   padding: 0px;
   margin: 0px 1px;
 }
@@ -988,15 +970,10 @@ a:hover, a:active {
     height: auto;
   }
 }
-<<<<<<< HEAD
-/* line 32, ../../sass/navigation/_menus.scss */
-=======
 /* line 57, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
 .main-navigation ul li a {
   display: block;
-  padding: 30px 15px 0px 15px;
-  height: 100px;
+  height: 100%;
   text-decoration: none;
   border-top: 5px solid transparent;
   font-family: "Titillium Web", sans-serif;
@@ -1004,14 +981,12 @@ a:hover, a:active {
   color: #f2f2f2;
   font-weight: 500;
   overflow: hidden;
+  padding: 35px 20px;
   -moz-transition-duration: 0.7s;
   -o-transition-duration: 0.7s;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
 }
-<<<<<<< HEAD
-/* line 45, ../../sass/navigation/_menus.scss */
-=======
 @media (min-width: 600px) and (max-width: 989px) {
   /* line 57, ../../sass/navigation/_menus.scss */
   .main-navigation ul li a {
@@ -1019,23 +994,14 @@ a:hover, a:active {
   }
 }
 /* line 73, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
 .main-navigation ul li:hover > a {
   border-top: 5px solid #d0a540;
 }
-<<<<<<< HEAD
-/* line 48, ../../sass/navigation/_menus.scss */
-.main-navigation ul li:hover > ul {
-  display: block;
-}
-/* line 53, ../../sass/navigation/_menus.scss */
-=======
 /* line 76, ../../sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul {
   display: block;
 }
 /* line 81, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
 .main-navigation ul ul {
   height: auto;
   position: absolute;
@@ -1047,20 +1013,6 @@ a:hover, a:active {
   background: rgba(38, 38, 38, 0.6);
   border-top: 1px solid rgba(242, 242, 242, 0.1);
 }
-<<<<<<< HEAD
-/* line 63, ../../sass/navigation/_menus.scss */
-.main-navigation ul ul li {
-  height: auto;
-}
-/* line 65, ../../sass/navigation/_menus.scss */
-.main-navigation ul ul li a {
-  width: 130px;
-  padding-top: 15px 20px;
-  color: #d9d9d9;
-  font-size: 0.8em;
-}
-/* line 70, ../../sass/navigation/_menus.scss */
-=======
 /* line 91, ../../sass/navigation/_menus.scss */
 .main-navigation ul ul li {
   height: auto;
@@ -1079,28 +1031,19 @@ a:hover, a:active {
   }
 }
 /* line 101, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
 .main-navigation ul ul li a:hover {
   color: #d0a540;
   border-top-color: transparent;
 }
-<<<<<<< HEAD
-/* line 76, ../../sass/navigation/_menus.scss */
-=======
 /* line 108, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
 .main-navigation ul ul ul {
-  left: 0;
+  left: 100%;
   top: 0;
   margin-left: 1px;
   border-left: 1px solid rgba(120, 120, 120, 0.3);
   border-top: none;
 }
-<<<<<<< HEAD
-/* line 87, ../../sass/navigation/_menus.scss */
-=======
 /* line 119, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
 .main-navigation .current_page_item > a,
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
@@ -1108,41 +1051,24 @@ a:hover, a:active {
 }
 
 /* SMALL MENU */
-<<<<<<< HEAD
-/* line 98, ../../sass/navigation/_menus.scss */
-=======
 /* line 131, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
 .menu-toggle {
   display: none;
 }
 
-<<<<<<< HEAD
-/* line 101, ../../sass/navigation/_menus.scss */
-=======
 /* line 134, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
 .main-mavigation ul {
   display: block;
 }
 
-<<<<<<< HEAD
-@media (max-width: 600px) {
-  /* line 106, ../../sass/navigation/_menus.scss */
-=======
 @media (max-width: 699px) {
   /* line 139, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
   .main-navigation ul {
     display: none;
     padding-left: 0px;
   }
 
-<<<<<<< HEAD
-  /* line 110, ../../sass/navigation/_menus.scss */
-=======
   /* line 143, ../../sass/navigation/_menus.scss */
->>>>>>> altmenu1
   .menu-toggle,
   .main-navigation.toggled ul {
     display: block;
@@ -1266,18 +1192,13 @@ header .fullheight {
 /* line 11, ../../sass/site/primary/_header.scss */
 header .fullheight div.top-header-wrapper {
   width: 100%;
-  height: auto;
+  height: 100px;
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   padding: 0px;
-}
-@media (min-width: 989px) {
-  /* line 6, ../../sass/site/primary/_header.scss */
-  header .fullheight div.top-header-wrapper {
-    background-color: rgba(38, 38, 38, 0.5);
-  }
+  background-color: rgba(38, 38, 38, 0.3);
 }
 /* line 12, ../../sass/mixins/_mixins-master.scss */
 header .fullheight div.top-header-wrapper:before, header .fullheight div.top-header-wrapper:after {
@@ -1288,9 +1209,6 @@ header .fullheight div.top-header-wrapper:before, header .fullheight div.top-hea
 header .fullheight div.top-header-wrapper:after {
   clear: both;
 }
-<<<<<<< HEAD
-/* line 16, ../../sass/site/primary/_header.scss */
-=======
 @media (min-width: 700px) and (max-width: 989px) {
   /* line 11, ../../sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper {
@@ -1308,86 +1226,30 @@ header .fullheight div.top-header-wrapper:after {
   }
 }
 /* line 31, ../../sass/site/primary/_header.scss */
->>>>>>> altmenu1
 header .fullheight div.top-header-wrapper section.top-header {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 0px;
+  width: 100%;
+  height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (min-width: 990px) {
-<<<<<<< HEAD
-  /* line 21, ../../sass/site/primary/_header.scss */
-=======
   /* line 42, ../../sass/site/primary/_header.scss */
->>>>>>> altmenu1
   header .fullheight div.top-header-wrapper section.top-header .site-branding {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 25%;
     float: left;
-<<<<<<< HEAD
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
-    display: block;
-    padding: 0px;
-    margin: 0px;
-    height: 100px;
-    float: left;
-    overflow: hidden;
-    padding: 0px 10px 10px;
-  }
-  /* line 32, ../../sass/site/primary/_header.scss */
-  header .fullheight div.top-header-wrapper section.top-header .site-branding img {
-    margin: 0px auto;
-  }
-}
-@media (max-width: 989px) {
-  /* line 38, ../../sass/site/primary/_header.scss */
-  header .fullheight div.top-header-wrapper section.top-header .site-branding img {
-    display: block;
-    margin: 0px auto;
-  }
-}
-@media (min-width: 990px) {
-  /* line 46, ../../sass/site/primary/_header.scss */
-  header .fullheight div.top-header-wrapper section.top-header .main-menu-wrap {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 75%;
-    float: right;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
-    display: block;
-    padding: 0px;
-    margin: 0px;
-    height: 100px;
-    float: right;
-  }
-}
-@media (max-width: 989px) {
-  /* line 46, ../../sass/site/primary/_header.scss */
-  header .fullheight div.top-header-wrapper section.top-header .main-menu-wrap {
-    display: block;
-    margin: 10px auto 0px;
-    float: none;
-    clear: both;
-    height: 90px;
-    background-color: rgba(38, 38, 38, 0.3);
-  }
-}
-/* line 70, ../../sass/site/primary/_header.scss */
-=======
     padding-left: 0.46296%;
     padding-right: 0.46296%;
     display: block;
@@ -1458,16 +1320,11 @@ header .fullheight div.top-header-wrapper section.top-header:after {
   }
 }
 /* line 104, ../../sass/site/primary/_header.scss */
->>>>>>> altmenu1
 header .fullheight .hgroup {
   padding: 15% 0px;
   margin-top: 10%;
 }
-<<<<<<< HEAD
-/* line 72, ../../sass/site/primary/_header.scss */
-=======
 /* line 107, ../../sass/site/primary/_header.scss */
->>>>>>> altmenu1
 header .fullheight .hgroup h1 {
   font-family: "Titillium Web", sans-serif;
   font-size: 4em;
@@ -1479,11 +1336,7 @@ header .fullheight .hgroup h1 {
   padding-bottom: 0px;
   text-shadow: #262626 0px 0px 20px;
 }
-<<<<<<< HEAD
-/* line 83, ../../sass/site/primary/_header.scss */
-=======
 /* line 118, ../../sass/site/primary/_header.scss */
->>>>>>> altmenu1
 header .fullheight .hgroup h2 {
   color: #f2f2f2;
   text-align: center;
@@ -1495,19 +1348,11 @@ header .fullheight .hgroup h2 {
   border: 1px dotted white;
   background: rgba(38, 38, 38, 0.5);
 }
-<<<<<<< HEAD
-/* line 95, ../../sass/site/primary/_header.scss */
-header .fullheight .hgroup p {
-  text-align: center;
-}
-/* line 97, ../../sass/site/primary/_header.scss */
-=======
 /* line 130, ../../sass/site/primary/_header.scss */
 header .fullheight .hgroup p {
   text-align: center;
 }
 /* line 132, ../../sass/site/primary/_header.scss */
->>>>>>> altmenu1
 header .fullheight .hgroup p img {
   padding-top: 50px;
   max-width: 50px;
@@ -1530,7 +1375,7 @@ header .fullheight .hgroup p img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 .site-footer .footer-content:after {
   content: " ";
   display: block;

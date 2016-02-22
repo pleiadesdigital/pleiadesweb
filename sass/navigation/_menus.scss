@@ -4,10 +4,6 @@
 
 // BASE MENU STRUCTURE
 .main-navigation {
-<<<<<<< HEAD
-  //position: relative;
-=======
->>>>>>> altmenu1
   float: right;
   // width: 100%;
   // height: 100%;
@@ -34,17 +30,6 @@
   } //breakpoint($iphone)
 
   // UL 1st level
-<<<<<<< HEAD
-
-  /*.centerdiv {
-    position: relative;
-    display: block;
-    margin: 0px auto;
-    width: auto;
-    text-align: center;
-    float: none;*/
-    // UL 1st level
-=======
   ul {
     @include breakpoint($laptop) {
       list-style: none;
@@ -93,73 +78,19 @@
       } 
     } //li 1st level
     // UL 2nd level
->>>>>>> altmenu1
     ul {
-      list-style: none;
-      width: auto;
+      height: auto;
+      position: absolute;
+      left: 0;
+      z-index: 99999;
+      display: none;
       float: right;
-      margin: 0px;
       padding: 0px;
+      background: rgba($greydark, 0.6);
+      border-top: 1px solid rgba($snow, 0.1);
       li {
-        display: inline-block;
         height: auto;
-        padding: 0px;
-        margin: 0px;
         a {
-<<<<<<< HEAD
-          display: block;
-          padding: 30px 15px 0px 15px;
-          height: 100px;
-          text-decoration: none;
-          border-top: 5px solid transparent;
-          font-family: $font_copy;
-          font-size: 1em;
-          color: $snow;
-          font-weight: 500;
-          overflow: hidden;
-          @include transition-duration(0.7s);
-        } //a 1st level
-        &:hover > a {
-          border-top: 5px solid tomato;
-        } //&:hover > a
-        &:hover > ul {
-          display: block;
-        } //
-      } //li 1st level 
-      // ul 2nd level
-      ul {
-        height: auto;
-        position: absolute;
-        left: 0;
-        z-index: 99999;
-        display: none;
-        float: right;
-        padding: 0px;
-        background: rgba($greydark, 0.6);
-        border-top: 1px solid rgba($snow, 0.1);
-        li {
-          height: auto;
-          a {
-            width: 130px;
-            padding-top: 15px 20px;
-            color: darken($snow, 10);
-            font-size: 0.8em;
-            &:hover {
-              color: tomato;
-              border-top-color: transparent;
-            }
-          }
-        } //li 1nd level
-        ul {
-          left: 0;
-          top: 0;
-          border-left: 1px solid rgba(120, 120, 120, 0.3);
-          border-top: none;
-        } //ul 3rd level
-      } //ul 2nd level
-    } //ul 1st level
-  // } //.centerdiv
-=======
           width: 130px;
           padding: 25px 20px;
           color: darken($snow, 10);
@@ -183,7 +114,6 @@
       } //ul 3rd level
     } //ul 2nd level
   } //ul 1st level
->>>>>>> altmenu1
 
   // HOVER states
   .current_page_item > a,
@@ -290,19 +220,3 @@
 
   } //main-navigation
 } //breakpoint($iphone) 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
