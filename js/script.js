@@ -1,1 +1,1 @@
-function telecaster(){return"I will have a telecaster deluxe sunburst! I have to HAVE THIS ONE!!!"}function atajo(){return"I'll meet her sooner than later!"}function guitar(){return"I will have a stratocaster deluxe ash in pearl"}function amp(){return"My VOX amp is in its way!! I will be amazing when it gets here!!"}
+jQuery(function(){var e=jQuery(window).height();jQuery(".fullheight").css("height",e)});

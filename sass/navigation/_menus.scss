@@ -1,14 +1,40 @@
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+
+// BASE MENU STRUCTURE
 .main-navigation {
+<<<<<<< HEAD
   //position: relative;
+=======
+>>>>>>> altmenu1
   float: right;
-  width: 100%;
-  height: 100%;
-  display: block;
+  // width: 100%;
+  // height: 100%;
+  // display: block;
   clear: both;
+  @include breakpoint($tablet) {
+    display: block;
+    float: none;
+    clear: both;
+    height: 70px;
+    margin: 20px auto 0px;
+    padding: 0px;
+    text-align: center;
+  } //breakpoint($tablet)
+  @include breakpoint($iphone) {
+    display: block;
+    float: none;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    /* height: 70px;
+    margin: 20px auto 0px;
+    padding: 0px;*/
+  } //breakpoint($iphone)
+
   // UL 1st level
+<<<<<<< HEAD
 
   /*.centerdiv {
     position: relative;
@@ -18,6 +44,56 @@
     text-align: center;
     float: none;*/
     // UL 1st level
+=======
+  ul {
+    @include breakpoint($laptop) {
+      list-style: none;
+      float: right;
+      margin: 0px;
+      padding: 0px 20px 0px 0px;
+    }
+    @include breakpoint($tablet) {
+      display: inline-block;
+      width: auto;
+      margin: 0px auto;
+      float: none;
+      clear: both;
+      list-style: none;
+    }
+    li {
+      height: 100px;
+      float: left;
+      position: relative;
+      padding: 0px;
+      margin: 0px 1px;
+      @include breakpoint(600px 989px) {
+        height: auto;
+      }
+      a {
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        border-top: 5px solid transparent;
+        font-family: $font_copy;
+        font-size: 1em;
+        color: $snow;
+        font-weight: 500;
+        overflow: hidden;
+        padding: 35px 20px;
+        @include transition-duration(0.7s);
+        @include breakpoint(600px 989px) {
+          padding: 20px 20px;
+        } //breakpoint(600px 989px)
+      } //a 1st level
+      &:hover > a {
+        border-top: 5px solid $yellowmed;
+      } //&:hover > a
+      &:hover > ul {
+        display: block;
+      } 
+    } //li 1st level
+    // UL 2nd level
+>>>>>>> altmenu1
     ul {
       list-style: none;
       width: auto;
@@ -30,6 +106,7 @@
         padding: 0px;
         margin: 0px;
         a {
+<<<<<<< HEAD
           display: block;
           padding: 30px 15px 0px 15px;
           height: 100px;
@@ -82,13 +159,39 @@
       } //ul 2nd level
     } //ul 1st level
   // } //.centerdiv
+=======
+          width: 130px;
+          padding: 25px 20px;
+          color: darken($snow, 10);
+          font-size: 0.8em;
+          @include breakpoint($tablet) {
+            padding: 15px 20px;
+          }
+          &:hover {
+            color: $yellowmed;
+            border-top-color: transparent; 
+          }
+        } //a 2nd level
+      } //li 2nd level
+    // UL 3rd level
+      ul {
+        left: 100%;
+        top: 0;
+        margin-left: 1px;
+        border-left: 1px solid rgba(120, 120, 120, 0.3);
+        border-top: none;
+      } //ul 3rd level
+    } //ul 2nd level
+  } //ul 1st level
+>>>>>>> altmenu1
 
   // HOVER states
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
-    border-top: 5px solid tomato;
+    border-top: 5px solid $yellowmed;
   }
+  
 
 } //.main-navigation
 
@@ -102,7 +205,7 @@
   display: block;
 }
 
-@include breakpoint(max-width 600px) {
+@include breakpoint($iphone) {
   .main-navigation ul {
     display: none;
     padding-left: 0px;
@@ -112,6 +215,87 @@
     display: block;
   }
 }
+
+/* Small menu styles */
+
+@include breakpoint($iphone) {
+  .menu-toggle {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    color: $black;
+    font-weight: 100;
+    @include transition-duration(0.7s);
+    &:hover {
+      color: $yellowmed;
+    } //&:hover
+  } //.menu-toggle 
+  main-navigation.toggled .nav-menu {
+    display: block;
+    //border-top: 1px solid $white;
+  }
+
+  .main-navigation {
+    // UL 1st LEVEL 
+    ul {
+      display: none;
+      padding-left: 0px;
+      margin-top: 10px;
+      li {
+        float: none;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        border-bottom: 1px solid $grey;
+        a {
+          padding: 0px;
+          margin: 0px;
+          height: auto;
+          padding: 20px 5px;
+          border-top: none;
+          background: rgba($snow, 0.9);
+          color: $greydark;
+          font-weight: 300;
+          font-size: 1.6em;
+          text-transform: uppercase;
+          &:hover {
+            color: $snow;
+            border: none;
+            background: rgba($yellowdark, 0.6);
+          } //&:hover 
+        } // a 1st level
+        &:hover > a {
+          border: none;
+        } //&:hover > a
+      } //li 1st level
+      // UL 2nd level
+      ul.sub-menu {
+        display: none !important;
+      } // ul.sub-menu second level
+    } //ul first level
+
+      // HOVER states
+    .current_page_item > a,
+    .current-menu-item > a,
+    .current_page_ancestor > a {
+      border-top: none;
+    }
+
+
+  } //main-navigation
+} //breakpoint($iphone) 
+
+
+
+
+
+
 
 
 

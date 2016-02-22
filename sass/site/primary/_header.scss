@@ -1,30 +1,57 @@
 header {
+	position: relative;
 	.fullheight {
 		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg');
 		//min-height: 600px;
 		overflow: hidden;
+		@include display-flex();
+		@include align-items(center);
+		@include justify-content(center);
+
 		div.top-header-wrapper {
 			width: 100%;
 			height: auto;
 			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
 			padding: 0px;
 			@include breakpoint(989px) {
 				background-color: rgba($greydark, 0.5);
 			}
 			
 			@include clearfix;
+			@include breakpoint($tablet) {
+				height: 190px;
+				padding: 0px;
+				margin: 0px;
+			}
+			@include breakpoint($iphone) {
+				height: 115px;
+				padding: 0px;
+				margin: 0px;
+			}
 			section.top-header {
 				@include container;
 				display: block;
 				padding: 0px;
 				margin: 0px auto;
+
+				// SITE BRANDING
+
+				// Laptop & Desktop
 				.site-branding {
+<<<<<<< HEAD
 
 					@include breakpoint($medium) {
+=======
+					@include breakpoint($laptop) {
+>>>>>>> altmenu1
 						@include span(3);
 						display: block;
 						padding: 0px;
 						margin: 0px;
+<<<<<<< HEAD
 						height: 100px;
 						float: left;
 						overflow: hidden;
@@ -46,10 +73,58 @@ header {
 				.main-menu-wrap {
 
 					@include breakpoint($medium) {
+=======
+						width: 230px;
+						height: auto;
+						float: left;
+						overflow: hidden;
+						padding: 0px 10px 0px;
+						img {
+							width: auto;
+							height: auto;
+							padding-top: 5px;
+						} //img
+					}	//breakpoint(989px)
+
+					// Tablet
+					@include breakpoint($tablet) {
+						float: none;
+						clear: both;
+						display: block;					
+						width: 250px;
+						height: auto;
+						margin: 0px auto;
+						img {
+							width: auto;
+							height: auto;
+							padding-top: 10px;
+						} //img
+					} //breakpoint($tablet)
+
+					// iPhone
+					@include breakpoint($iphone) {
+						float: none;
+						clear: both;
+						display: block;					
+						width: 250px;
+						height: auto;
+						margin: 0px auto;
+						img {
+							width: auto;
+							height: auto;
+							padding-top: 10px;
+						} //img
+					} //breakpoint($iphone)
+
+				} //.site-branding
+				.main-menu-wrap {
+					@include breakpoint($laptop) {
+>>>>>>> altmenu1
 						@include span(9 at 4 of 12);
 						display: block;
 						padding: 0px;
 						margin: 0px;
+<<<<<<< HEAD
 						height: 100px;
 						float: right;
 					} //breakpoint($medium)
@@ -64,11 +139,18 @@ header {
 					}
 					
 				} //.menutemp
+=======
+						height: 100%;
+						float: right;
+					} //breakpoint(1200px)
+				} //.main-menu-wrap
+>>>>>>> altmenu1
 			} //section.top-header
 		} //div.top-header-wrapper
 		
 		.hgroup {
-			padding: 100px 0px;
+			padding: 15% 0px;
+			margin-top: 10%;
 			h1 {
 				font-family: $font-copy;
 				font-size: 4em;

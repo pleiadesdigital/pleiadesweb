@@ -86,24 +86,31 @@ function pleiadesweb_scripts() {
 
 
 
-// JAVASCRIPT
+	// JAVASCRIPT
 
-wp_enqueue_script( 'pleiadesweb-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), '20150206', true );
-
+	// Superfish
+	wp_enqueue_script( 'pleiadesweb-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jquery'), '20150206', true );
 	wp_enqueue_script( 'pleiadesweb-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('pleiadesweb-superfish'), '20150206', true );
 
-
-
+	// Navigation
 	wp_enqueue_script( 'pleiadesweb-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
+	//Link focus
 	wp_enqueue_script( 'pleiadesweb-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+	//Scrollmagic
+	wp_enqueue_script( 'pleiadesweb-scrollmagic', get_template_directory_uri() . '/js/jquery.scrollmagic.min.js', array('jquery'), '20160115', true );
+
+	//TweenMax
+	wp_enqueue_script( 'pleiadesweb-tweenmax', get_template_directory_uri() . '/js/jquery.tweenmax.min.js', array('jquery'), '20160115', true );
+
+	// CUSTOM script
 	wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/script.js', array(), '20150115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-}
+} //pleiadesweb_scripts()
 add_action( 'wp_enqueue_scripts', 'pleiadesweb_scripts' );
 
 
