@@ -1,16 +1,20 @@
 header {
+	position: relative;
 	.fullheight {
 		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg');
 		//min-height: 600px;
 		overflow: hidden;
-		/* @include display-flex();
+		@include display-flex();
 		@include align-items(center);
-		@include justify-content(center); */
+		@include justify-content(center);
 
 		div.top-header-wrapper {
 			width: 100%;
 			height: 100px;
 			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
 			padding: 0px;
 			background-color: rgba($greydark, 0.3);
 			@include clearfix;
@@ -20,7 +24,6 @@ header {
 				margin: 0px;
 			}
 			@include breakpoint($iphone) {
-				position: relative;
 				height: 115px;
 				padding: 0px;
 				margin: 0px;
@@ -100,6 +103,7 @@ header {
 		
 		.hgroup {
 			padding: 15% 0px;
+			margin-top: 10%;
 			h1 {
 				font-family: $font-copy;
 				font-size: 4em;

@@ -3,6 +3,8 @@ body {
 	width: 100%;
 	height: 100%;	
 }
+
+// WELCOME 
 #welcome {
 	@include background-image(linear-gradient(bottom, $snow, $white));	
 	article {
@@ -14,7 +16,6 @@ body {
 		} //breakpoint($iphone)
 	} //article
 } //#welcome
-
 
 // SERVICES
 #services {
@@ -153,11 +154,6 @@ body {
 				} //&:hover h2, &:hover p, &:hover a.info
 			} //div.view-tenth				 
 		} //section
-
-@include breakpoint($laptop) {
-} //breakpoint($laptop) 
-		
-
 	} //#showroom 
 
 } //#services 
@@ -165,7 +161,7 @@ body {
 // CALL TO ACTION
 
 #cta-frontpage {
-	margin: 50px 0px;
+	margin: 50px 0px 0px;
 	width: 100%;
 	min-height: 300px;
 	padding-top: 50px;
@@ -211,6 +207,63 @@ body {
 	} //.cta-front
 } //#cta-frontpage
 
+// POR QUE NOSOTROS
+#porque-nos {
+	background-color: $snow;
+	padding: 30px 2em 3em;
+	.porque-nos-content {
+		@include container();
+		margin: 0px auto;
+		h2 {
+			margin-top: 20px;
+			margin-bottom: 40px;
+			font-weight: 500;
+			color: $blue;
+			text-transform: uppercase;
+			text-align: center;
+			@include text-shadow();
+			font-size: 2rem;
+		} //h2
+		img {
+			max-width: 50%;
+			max-height: 40%;
+			float: left;
+			padding: 20px 0px 0px 30px;
+		} //img
+		ul {
+			list-style: none;
+			margin: 10px 2em 0px 0px;
+			padding: 0px;
+			height: auto;
+			width: 43%;
+			float: right;
+			li {
+				@include clearfix;
+				margin-bottom: 10px;
+				display: block;
+				padding: 0px;
+				border-bottom: 1px solid darken($snow, 20);
+				i {
+					width: 10%;
+					height: 100%;
+					float: left;
+					font-size: 30pt;
+					padding-top: 5px;
+					color: rgba(12, 12, 96, 0.4);
+					vertical-align: middle;
+					font-weight: 300;
+				} //i
+				p {
+					display: inline;
+					width: 85%;
+					float: right;
+					font-size: 1.1em;
+					text-align: justify;
+				} //p
+			} //li
+		} //ul
+	} //.porque-nos-content
+} //#porque-nos
 
 
 

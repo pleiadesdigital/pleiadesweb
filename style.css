@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -372,7 +372,7 @@ body {
   height: 100%;
 }
 
-/* line 6, sass/layout/_frontpage.scss */
+/* line 8, sass/layout/_frontpage.scss */
 #welcome {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -381,7 +381,7 @@ body {
   background-image: -webkit-linear-gradient(bottom, #f2f2f2, #ffffff);
   background-image: linear-gradient(to top, #f2f2f2, #ffffff);
 }
-/* line 8, sass/layout/_frontpage.scss */
+/* line 10, sass/layout/_frontpage.scss */
 #welcome article {
   text-align: center;
   max-width: 70%;
@@ -389,20 +389,20 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #welcome article:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (max-width: 699px) {
-  /* line 8, sass/layout/_frontpage.scss */
+  /* line 10, sass/layout/_frontpage.scss */
   #welcome article {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   #welcome article:after {
     content: " ";
     display: block;
@@ -410,11 +410,11 @@ body {
   }
 }
 
-/* line 20, sass/layout/_frontpage.scss */
+/* line 21, sass/layout/_frontpage.scss */
 #services {
   padding-top: 30px;
 }
-/* line 22, sass/layout/_frontpage.scss */
+/* line 23, sass/layout/_frontpage.scss */
 #services h2 {
   text-transform: uppercase;
   font-weight: 300;
@@ -423,7 +423,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 30, sass/layout/_frontpage.scss */
+/* line 31, sass/layout/_frontpage.scss */
 #services #showroom {
   max-width: 1200px;
   margin-left: auto;
@@ -438,24 +438,24 @@ body {
 #services #showroom:after {
   clear: both;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #services #showroom:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 33, sass/layout/_frontpage.scss */
+/* line 34, sass/layout/_frontpage.scss */
 #services #showroom section {
   /* CSS3 effect model */
 }
-/* line 34, sass/layout/_frontpage.scss */
+/* line 35, sass/layout/_frontpage.scss */
 #services #showroom section h2 {
   font-size: 1.6em;
   text-transform: normal;
   color: black;
 }
 @media (min-width: 990px) {
-  /* line 33, sass/layout/_frontpage.scss */
+  /* line 34, sass/layout/_frontpage.scss */
   #services #showroom section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -467,7 +467,7 @@ body {
   }
 }
 @media (min-width: 700px) and (max-width: 989px) {
-  /* line 33, sass/layout/_frontpage.scss */
+  /* line 34, sass/layout/_frontpage.scss */
   #services #showroom section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -478,7 +478,7 @@ body {
     padding-right: 2.77778%;
   }
 }
-/* line 46, sass/layout/_frontpage.scss */
+/* line 47, sass/layout/_frontpage.scss */
 #services #showroom section .view {
   height: 250px;
   width: auto;
@@ -488,20 +488,20 @@ body {
   background: #FFFFFF "http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/bgimg.jpg" no-repeat center center;
 }
 @media (min-width: 700px) and (max-width: 989px) {
-  /* line 46, sass/layout/_frontpage.scss */
+  /* line 47, sass/layout/_frontpage.scss */
   #services #showroom section .view {
     width: auto;
     margin: 20px auto;
   }
 }
 @media (max-width: 699px) {
-  /* line 46, sass/layout/_frontpage.scss */
+  /* line 47, sass/layout/_frontpage.scss */
   #services #showroom section .view {
     width: 350px;
     margin: 20px auto;
   }
 }
-/* line 61, sass/layout/_frontpage.scss */
+/* line 62, sass/layout/_frontpage.scss */
 #services #showroom section .view .mask,
 #services #showroom section .view .content {
   width: auto;
@@ -511,12 +511,12 @@ body {
   top: 0;
   left: 0;
 }
-/* line 70, sass/layout/_frontpage.scss */
+/* line 71, sass/layout/_frontpage.scss */
 #services #showroom section .view img {
   display: block;
   position: relative;
 }
-/* line 74, sass/layout/_frontpage.scss */
+/* line 75, sass/layout/_frontpage.scss */
 #services #showroom section .view h2 {
   text-transform: uppercase;
   color: #FFFFFF;
@@ -527,7 +527,7 @@ body {
   background: rgba(0, 0, 0, 0.8);
   margin: 20px 0px 0px -10px;
 }
-/* line 84, sass/layout/_frontpage.scss */
+/* line 85, sass/layout/_frontpage.scss */
 #services #showroom section .view p {
   font-size: 12px;
   position: relative;
@@ -536,7 +536,7 @@ body {
   margin-left: -15px;
   text-align: center;
 }
-/* line 92, sass/layout/_frontpage.scss */
+/* line 93, sass/layout/_frontpage.scss */
 #services #showroom section .view a.info {
   display: inline-block;
   text-decoration: none;
@@ -547,17 +547,17 @@ body {
   text-transform: lowercase;
   font-weight: 600;
 }
-/* line 103, sass/layout/_frontpage.scss */
+/* line 104, sass/layout/_frontpage.scss */
 #services #showroom section .view a.info:hover {
   color: #0064c4;
   background: #f2f2f2;
 }
-/* line 111, sass/layout/_frontpage.scss */
+/* line 112, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth img {
   transform: scaleY(1);
   transition: all 0.7s ease-in-out;
 }
-/* line 115, sass/layout/_frontpage.scss */
+/* line 116, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth .mask {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuMCIgeDI9IjEuMCIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNjRjNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDkxMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -571,7 +571,7 @@ body {
   transition: all 1s;
   opacity: 0;
 }
-/* line 120, sass/layout/_frontpage.scss */
+/* line 121, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth h2 {
   transform: scale(0);
   -moz-transition: all 1s;
@@ -579,7 +579,7 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 124, sass/layout/_frontpage.scss */
+/* line 125, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth p {
   opacity: 0;
   -moz-transform: scale(0);
@@ -591,7 +591,7 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 129, sass/layout/_frontpage.scss */
+/* line 130, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth a.info {
   opacity: 0;
   transform: scale(0);
@@ -604,35 +604,35 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 134, sass/layout/_frontpage.scss */
+/* line 135, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth a.info:hover {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 138, sass/layout/_frontpage.scss */
+/* line 139, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth:hover img {
   transform: scale(10);
   opacity: 0.1;
 }
-/* line 141, sass/layout/_frontpage.scss */
+/* line 142, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth:hover img.mask {
   opacity: 1;
 }
-/* line 145, sass/layout/_frontpage.scss */
+/* line 146, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth:hover .mask {
   opacity: 1;
 }
-/* line 148, sass/layout/_frontpage.scss */
+/* line 149, sass/layout/_frontpage.scss */
 #services #showroom section div.view-tenth:hover h2, #services #showroom section div.view-tenth:hover p, #services #showroom section div.view-tenth:hover a.info {
   transform: scale(1);
   opacity: 1;
 }
 
-/* line 167, sass/layout/_frontpage.scss */
+/* line 163, sass/layout/_frontpage.scss */
 #cta-frontpage {
-  margin: 50px 0px;
+  margin: 50px 0px 0px;
   width: 100%;
   min-height: 300px;
   padding-top: 50px;
@@ -642,26 +642,26 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 173, sass/layout/_frontpage.scss */
+/* line 169, sass/layout/_frontpage.scss */
 #cta-frontpage .cta-front {
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #cta-frontpage .cta-front:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (max-width: 699px) {
-  /* line 173, sass/layout/_frontpage.scss */
+  /* line 169, sass/layout/_frontpage.scss */
   #cta-frontpage .cta-front {
     padding: 15px 0px 20px 0px;
   }
 }
-/* line 179, sass/layout/_frontpage.scss */
+/* line 175, sass/layout/_frontpage.scss */
 #cta-frontpage .cta-front h3 {
   text-align: center;
   color: #f2f2f2;
@@ -672,18 +672,18 @@ body {
   font-size: 1.8em;
 }
 @media (max-width: 699px) {
-  /* line 179, sass/layout/_frontpage.scss */
+  /* line 175, sass/layout/_frontpage.scss */
   #cta-frontpage .cta-front h3 {
     font-size: 1.4em;
     text-shadow: 0, 0, 0, "false", "transparent";
   }
 }
-/* line 192, sass/layout/_frontpage.scss */
+/* line 188, sass/layout/_frontpage.scss */
 #cta-frontpage .cta-front .cta-button {
   text-align: center;
   margin-top: 40px;
 }
-/* line 195, sass/layout/_frontpage.scss */
+/* line 191, sass/layout/_frontpage.scss */
 #cta-frontpage .cta-front .cta-button a {
   border: 3px solid #f2f2f2;
   -moz-border-radius: 15px;
@@ -701,11 +701,92 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 203, sass/layout/_frontpage.scss */
+/* line 199, sass/layout/_frontpage.scss */
 #cta-frontpage .cta-front .cta-button a:hover {
   border: 3px solid #003d77;
   background-color: rgba(0, 61, 119, 0.5);
   color: #f2f2f2;
+}
+
+/* line 211, sass/layout/_frontpage.scss */
+#porque-nos {
+  background-color: #f2f2f2;
+  padding: 30px 2em 3em;
+}
+/* line 214, sass/layout/_frontpage.scss */
+#porque-nos .porque-nos-content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0px auto;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+#porque-nos .porque-nos-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 217, sass/layout/_frontpage.scss */
+#porque-nos .porque-nos-content h2 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  color: #003d77;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 1px #aaaaaa;
+  font-size: 2rem;
+}
+/* line 227, sass/layout/_frontpage.scss */
+#porque-nos .porque-nos-content img {
+  max-width: 50%;
+  max-height: 40%;
+  float: left;
+  padding: 20px 0px 0px 30px;
+}
+/* line 233, sass/layout/_frontpage.scss */
+#porque-nos .porque-nos-content ul {
+  list-style: none;
+  margin: 10px 2em 0px 0px;
+  padding: 0px;
+  height: auto;
+  width: 43%;
+  float: right;
+}
+/* line 240, sass/layout/_frontpage.scss */
+#porque-nos .porque-nos-content ul li {
+  margin-bottom: 10px;
+  display: block;
+  padding: 0px;
+  border-bottom: 1px solid #bfbfbf;
+}
+/* line 12, sass/mixins/_mixins-master.scss */
+#porque-nos .porque-nos-content ul li:before, #porque-nos .porque-nos-content ul li:after {
+  content: '';
+  display: table;
+}
+/* line 17, sass/mixins/_mixins-master.scss */
+#porque-nos .porque-nos-content ul li:after {
+  clear: both;
+}
+/* line 246, sass/layout/_frontpage.scss */
+#porque-nos .porque-nos-content ul li i {
+  width: 10%;
+  height: 100%;
+  float: left;
+  font-size: 30pt;
+  padding-top: 5px;
+  color: rgba(12, 12, 96, 0.4);
+  vertical-align: middle;
+  font-weight: 300;
+}
+/* line 256, sass/layout/_frontpage.scss */
+#porque-nos .porque-nos-content ul li p {
+  display: inline;
+  width: 85%;
+  float: right;
+  font-size: 1.1em;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -1089,7 +1170,11 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-/* line 2, sass/site/primary/_header.scss */
+/* line 1, sass/site/primary/_header.scss */
+header {
+  position: relative;
+}
+/* line 3, sass/site/primary/_header.scss */
 header .fullheight {
   background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1097,15 +1182,21 @@ header .fullheight {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
-  /* @include display-flex();
-  @include align-items(center);
-  @include justify-content(center); */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-/* line 10, sass/site/primary/_header.scss */
+/* line 11, sass/site/primary/_header.scss */
 header .fullheight div.top-header-wrapper {
   width: 100%;
   height: 100px;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 0px;
   background-color: rgba(38, 38, 38, 0.3);
 }
@@ -1119,7 +1210,7 @@ header .fullheight div.top-header-wrapper:after {
   clear: both;
 }
 @media (min-width: 700px) and (max-width: 989px) {
-  /* line 10, sass/site/primary/_header.scss */
+  /* line 11, sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper {
     height: 190px;
     padding: 0px;
@@ -1127,15 +1218,14 @@ header .fullheight div.top-header-wrapper:after {
   }
 }
 @media (max-width: 699px) {
-  /* line 10, sass/site/primary/_header.scss */
+  /* line 11, sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper {
-    position: relative;
     height: 115px;
     padding: 0px;
     margin: 0px;
   }
 }
-/* line 28, sass/site/primary/_header.scss */
+/* line 31, sass/site/primary/_header.scss */
 header .fullheight div.top-header-wrapper section.top-header {
   max-width: 1200px;
   margin-left: auto;
@@ -1146,14 +1236,14 @@ header .fullheight div.top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (min-width: 990px) {
-  /* line 39, sass/site/primary/_header.scss */
+  /* line 42, sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper section.top-header .site-branding {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1171,7 +1261,7 @@ header .fullheight div.top-header-wrapper section.top-header:after {
     overflow: hidden;
     padding: 0px 10px 0px;
   }
-  /* line 50, sass/site/primary/_header.scss */
+  /* line 53, sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper section.top-header .site-branding img {
     width: auto;
     height: auto;
@@ -1179,7 +1269,7 @@ header .fullheight div.top-header-wrapper section.top-header:after {
   }
 }
 @media (min-width: 700px) and (max-width: 989px) {
-  /* line 39, sass/site/primary/_header.scss */
+  /* line 42, sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper section.top-header .site-branding {
     float: none;
     clear: both;
@@ -1188,7 +1278,7 @@ header .fullheight div.top-header-wrapper section.top-header:after {
     height: auto;
     margin: 0px auto;
   }
-  /* line 65, sass/site/primary/_header.scss */
+  /* line 68, sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper section.top-header .site-branding img {
     width: auto;
     height: auto;
@@ -1196,7 +1286,7 @@ header .fullheight div.top-header-wrapper section.top-header:after {
   }
 }
 @media (max-width: 699px) {
-  /* line 39, sass/site/primary/_header.scss */
+  /* line 42, sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper section.top-header .site-branding {
     float: none;
     clear: both;
@@ -1205,7 +1295,7 @@ header .fullheight div.top-header-wrapper section.top-header:after {
     height: auto;
     margin: 0px auto;
   }
-  /* line 80, sass/site/primary/_header.scss */
+  /* line 83, sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper section.top-header .site-branding img {
     width: auto;
     height: auto;
@@ -1213,7 +1303,7 @@ header .fullheight div.top-header-wrapper section.top-header:after {
   }
 }
 @media (min-width: 990px) {
-  /* line 88, sass/site/primary/_header.scss */
+  /* line 91, sass/site/primary/_header.scss */
   header .fullheight div.top-header-wrapper section.top-header .main-menu-wrap {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1229,11 +1319,12 @@ header .fullheight div.top-header-wrapper section.top-header:after {
     float: right;
   }
 }
-/* line 101, sass/site/primary/_header.scss */
+/* line 104, sass/site/primary/_header.scss */
 header .fullheight .hgroup {
   padding: 15% 0px;
+  margin-top: 10%;
 }
-/* line 103, sass/site/primary/_header.scss */
+/* line 107, sass/site/primary/_header.scss */
 header .fullheight .hgroup h1 {
   font-family: "Titillium Web", sans-serif;
   font-size: 4em;
@@ -1245,7 +1336,7 @@ header .fullheight .hgroup h1 {
   padding-bottom: 0px;
   text-shadow: #262626 0px 0px 20px;
 }
-/* line 114, sass/site/primary/_header.scss */
+/* line 118, sass/site/primary/_header.scss */
 header .fullheight .hgroup h2 {
   color: #f2f2f2;
   text-align: center;
@@ -1257,11 +1348,11 @@ header .fullheight .hgroup h2 {
   border: 1px dotted white;
   background: rgba(38, 38, 38, 0.5);
 }
-/* line 126, sass/site/primary/_header.scss */
+/* line 130, sass/site/primary/_header.scss */
 header .fullheight .hgroup p {
   text-align: center;
 }
-/* line 128, sass/site/primary/_header.scss */
+/* line 132, sass/site/primary/_header.scss */
 header .fullheight .hgroup p img {
   padding-top: 50px;
   max-width: 50px;
@@ -1284,7 +1375,7 @@ header .fullheight .hgroup p img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 .site-footer .footer-content:after {
   content: " ";
   display: block;
