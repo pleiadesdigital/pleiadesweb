@@ -29,8 +29,8 @@ get_header(); ?>
 				<p>Calle 15, Calacoto</p>
 				<p>La Paz - Bolivia</p>
 				<br />
-				<p>Oficina: +591-2-2916262</p>
-				<p>Correo Electrónico: <a href="mailto:contacto@telcatinnova.com" target="_top">contacto@telcatinnova.com</a></p>
+				<p>Telf: +591-77799006</p>
+				<p>Correo Electrónico: <a href="mailto:info@pleiadesdigital.com" target="_top">info@pleiadesdigital.com</a></p>
 			</div>
 
 			<!-- FORM -->

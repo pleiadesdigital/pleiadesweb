@@ -104,6 +104,11 @@ function pleiadesweb_scripts() {
 	//TweenMax
 	wp_enqueue_script( 'pleiadesweb-tweenmax', get_template_directory_uri() . '/js/jquery.tweenmax.min.js', array('jquery'), '20160115', true );
 
+	// GOOGLE Maps scripts
+	wp_enqueue_script("google-maps-scripts", get_stylesheet_directory_uri() . '/js/map.js', array('jquery'), true);
+
+
+
 	// CUSTOM script
 	wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/script.js', array(), '20150115', true );
 
