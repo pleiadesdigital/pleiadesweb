@@ -23,7 +23,7 @@ get_header(); ?>
 			</div><!-- id=contact-map -->
 
 			<!-- ADDRESS -->
-			<div id="contact-address">
+			<!-- <div id="contact-address">
 				<h3>Información de Contacto</h3>
 				<p>Edif. Torre Ketal, oficina #302</p>
 				<p>Calle 15, Calacoto</p>
@@ -31,10 +31,10 @@ get_header(); ?>
 				<br />
 				<p>Telf: +591-77799006</p>
 				<p>Correo Electrónico: <a href="mailto:info@pleiadesdigital.com" target="_top">info@pleiadesdigital.com</a></p>
-			</div>
+			</div> -->
 
 			<!-- FORM -->
-			<div id="contact-form">
+			<div class="contact-info">
 				<?php the_content(); ?>
 			</div>
 

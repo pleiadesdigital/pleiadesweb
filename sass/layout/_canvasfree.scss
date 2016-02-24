@@ -13,10 +13,67 @@
 			height: 100%;
 			width: 100%;
 			margin: 0px;
-			padding: 0px; 
-
+			padding: 0px;
+			h2 {
+				margin: 0px;
+				padding: 0px;
+				font-size: 18px;
+				font-weight: 500;
+				margin-bottom: 5px;
+				color: $blue;
+			} //h2
+			p {
+				margin: 0px;
+				padding: 0px;
+				line-height: 1.4;
+			} //p
 		}
 	} //#contact-map
+
+	// CONTACT INFO
+	.contact-info {
+		border: 1px solid green;
+		@include container();
+		width: 100%;
+		padding: 0px;
+		// FORM Styles
+		.wpcf7 {
+			border: 2px solid lime;
+			@include clearfix();
+			//@include span(6);
+			form {
+				width: 60%;
+				border: 3px solid magenta;
+				margin: 0px auto;
+				p.input {
+					border: 1px solid darkmagenta;
+					width: 32%;
+					float: left;
+					display: inline;
+					text-align: center;
+					margin-right: 1%;
+					&:last-child {
+						margin-right: 0px;
+					}
+
+				}
+
+				p.txt {
+					border: 2px solid aqua;
+					width: 500px;
+					clear: both;
+					float: none;
+				}
+				p.send {
+					width: 500px;
+					border: 1px solid fuchsia;
+					clear: both;
+					float: none;
+				}
+
+			} //form
+		} //.wpcf7
+	} //#contact-form 
 
 
 } //#contact-main
