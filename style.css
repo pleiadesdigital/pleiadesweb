@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -389,7 +389,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #welcome article:after {
   content: " ";
   display: block;
@@ -402,7 +402,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   #welcome article:after {
     content: " ";
     display: block;
@@ -445,7 +445,7 @@ body {
 #services #showroom:after {
   clear: both;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #services #showroom:after {
   content: " ";
   display: block;
@@ -656,7 +656,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #cta-frontpage .cta-front:after {
   content: " ";
   display: block;
@@ -727,7 +727,7 @@ body {
   margin-right: auto;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #porque-nos .porque-nos-content:after {
   content: " ";
   display: block;
@@ -887,22 +887,19 @@ body {
 }
 /* line 34, sass/layout/_canvasfree.scss */
 #contact-main .contact-info {
-  border: 1px solid green;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   padding: 0px;
+  margin-top: 20px;
+  background-color: white;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #contact-main .contact-info:after {
   content: " ";
   display: block;
   clear: both;
-}
-/* line 40, sass/layout/_canvasfree.scss */
-#contact-main .contact-info .wpcf7 {
-  border: 2px solid lime;
 }
 /* line 12, sass/mixins/_mixins-master.scss */
 #contact-main .contact-info .wpcf7:before, #contact-main .contact-info .wpcf7:after {
@@ -915,36 +912,119 @@ body {
 }
 /* line 44, sass/layout/_canvasfree.scss */
 #contact-main .contact-info .wpcf7 form {
-  width: 60%;
-  border: 3px solid magenta;
+  width: 80%;
   margin: 0px auto;
 }
-/* line 48, sass/layout/_canvasfree.scss */
+/* line 47, sass/layout/_canvasfree.scss */
 #contact-main .contact-info .wpcf7 form p.input {
-  border: 1px solid darkmagenta;
-  width: 32%;
+  width: 49%;
   float: left;
   display: inline;
+  margin-right: 1.5%;
   text-align: center;
-  margin-right: 1%;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  overflow: hidden;
 }
-/* line 55, sass/layout/_canvasfree.scss */
-#contact-main .contact-info .wpcf7 form p.input:last-child {
+/* line 56, sass/layout/_canvasfree.scss */
+#contact-main .contact-info .wpcf7 form p.input input[type=text],
+#contact-main .contact-info .wpcf7 form p.input input[type=email],
+#contact-main .contact-info .wpcf7 form p.input input[type=tel] {
+  border: none;
+  border: 3px solid #58555a;
+  font-weight: 300;
+  background: #e5e5e5;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1em;
+  font-family: "Titillium Web", sans-serif;
+  color: #002344;
+  width: 100%;
+  margin: 5px auto 0px;
+  display: inline-block;
+}
+/* line 71, sass/layout/_canvasfree.scss */
+#contact-main .contact-info .wpcf7 form p.input input[type=text]:focus,
+#contact-main .contact-info .wpcf7 form p.input input[type=email]:focus,
+#contact-main .contact-info .wpcf7 form p.input input[type=tel]:focus {
+  outline: none;
+  background-color: #f8f2e4;
+}
+/* line 77, sass/layout/_canvasfree.scss */
+#contact-main .contact-info .wpcf7 form p.last {
   margin-right: 0px;
 }
-/* line 61, sass/layout/_canvasfree.scss */
+/* line 80, sass/layout/_canvasfree.scss */
 #contact-main .contact-info .wpcf7 form p.txt {
-  border: 2px solid aqua;
-  width: 500px;
+  width: 100%;
   clear: both;
   float: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
 }
-/* line 67, sass/layout/_canvasfree.scss */
+/* line 87, sass/layout/_canvasfree.scss */
+#contact-main .contact-info .wpcf7 form p.txt textarea {
+  border: none;
+  border: 3px solid #58555a;
+  font-weight: 300;
+  background: #e5e5e5;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1.3em;
+  font-family: "Titillium Web", sans-serif;
+  color: #002344;
+  width: 100%;
+  max-height: 200px;
+  margin: 10px auto 0px;
+}
+/* line 100, sass/layout/_canvasfree.scss */
+#contact-main .contact-info .wpcf7 form p.txt textarea:focus {
+  outline: none;
+  background-color: #f8f2e4;
+}
+/* line 106, sass/layout/_canvasfree.scss */
 #contact-main .contact-info .wpcf7 form p.send {
-  width: 500px;
-  border: 1px solid fuchsia;
+  width: 100%;
   clear: both;
   float: none;
+  padding: 0px;
+  margin-top: 20px;
+}
+/* line 112, sass/layout/_canvasfree.scss */
+#contact-main .contact-info .wpcf7 form p.send input[type=submit] {
+  border: none;
+  border: 3px solid black;
+  clear: both;
+  float: none;
+  display: block;
+  margin: 0px auto;
+  height: 100%;
+  padding: 20px 50px;
+  font-weight: 600;
+  font-size: 1.2em;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  background: transparent;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 127, sass/layout/_canvasfree.scss */
+#contact-main .contact-info .wpcf7 form p.send input[type=submit]:focus {
+  outline: none;
+}
+/* line 130, sass/layout/_canvasfree.scss */
+#contact-main .contact-info .wpcf7 form p.send input[type=submit]:hover {
+  background-color: #003d77;
+  color: #f2f2f2;
+  border: 3px solid #003d77;
 }
 
 /*--------------------------------------------------------------
@@ -1384,7 +1464,7 @@ header .normalheader .top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 header .normalheader .top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
@@ -1531,7 +1611,7 @@ header .fullheight div.top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
@@ -1670,7 +1750,7 @@ header .fullheight .hgroup p img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 .site-footer .footer-content:after {
   content: " ";
   display: block;
