@@ -854,9 +854,9 @@ body {
 #contact-main {
   width: 100%;
   min-height: 500px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
-/* line 7, sass/layout/_canvasfree.scss */
+/* line 6, sass/layout/_canvasfree.scss */
 #contact-main h2 {
   text-align: center;
   padding: 20px 0px;
@@ -865,7 +865,7 @@ body {
   color: #003d77;
   font-family: "Titillium Web", sans-serif;
 }
-/* line 17, sass/layout/_canvasfree.scss */
+/* line 16, sass/layout/_canvasfree.scss */
 #contact-main #contact-info {
   display: block;
   max-width: 1200px;
@@ -880,28 +880,28 @@ body {
   display: block;
   clear: both;
 }
-/* line 22, sass/layout/_canvasfree.scss */
+/* line 21, sass/layout/_canvasfree.scss */
 #contact-main #contact-info .contact-address {
   display: block;
   width: auto;
   margin: 0px auto;
   text-align: center;
 }
-/* line 33, sass/layout/_canvasfree.scss */
+/* line 32, sass/layout/_canvasfree.scss */
 #contact-main #contact-map {
   width: 100%;
-  height: 400px;
+  height: 450px;
   margin: 0px;
   padding: 0px;
 }
-/* line 38, sass/layout/_canvasfree.scss */
+/* line 37, sass/layout/_canvasfree.scss */
 #contact-main #contact-map #map-canvas {
   height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
-/* line 43, sass/layout/_canvasfree.scss */
+/* line 42, sass/layout/_canvasfree.scss */
 #contact-main #contact-map #map-canvas h2 {
   margin: 0px;
   padding: 0px;
@@ -910,24 +910,32 @@ body {
   margin-bottom: 5px;
   color: #003d77;
 }
-/* line 51, sass/layout/_canvasfree.scss */
+/* line 50, sass/layout/_canvasfree.scss */
 #contact-main #contact-map #map-canvas p {
   margin: 0px;
   padding: 0px;
   line-height: 1.4;
 }
-/* line 60, sass/layout/_canvasfree.scss */
+/* line 59, sass/layout/_canvasfree.scss */
 #contact-main .contact-form {
+  width: 100%;
+  padding: 30px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 67, sass/layout/_canvasfree.scss */
+#contact-main .contact-form .wpcf7 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  padding: 0px;
-  margin-top: 20px;
-  background-color: white;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
-#contact-main .contact-form:after {
+#contact-main .contact-form .wpcf7:after {
   content: " ";
   display: block;
   clear: both;
@@ -951,6 +959,7 @@ body {
   float: left;
   display: inline;
   padding: 0px;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2em;
@@ -966,6 +975,7 @@ body {
     float: left;
     padding-left: 2.77778%;
     padding-right: 2.77778%;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 699px) {
@@ -978,14 +988,14 @@ body {
     margin: 20px auto 20px;
   }
 }
-/* line 91, sass/layout/_canvasfree.scss */
+/* line 93, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.input input[type=text],
 #contact-main .contact-form .wpcf7 form p.input input[type=email],
 #contact-main .contact-form .wpcf7 form p.input input[type=tel] {
   border: none;
-  border: 3px solid #58555a;
+  border: 3px solid white;
   font-weight: 300;
-  background: #e5e5e5;
+  background: rgba(229, 229, 229, 0.5);
   padding: 10px;
   margin-top: 5px;
   font-size: 1em;
@@ -1003,18 +1013,18 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 108, sass/layout/_canvasfree.scss */
+/* line 110, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.input input[type=text]:focus,
 #contact-main .contact-form .wpcf7 form p.input input[type=email]:focus,
 #contact-main .contact-form .wpcf7 form p.input input[type=tel]:focus {
   outline: none;
   background-color: #f8f2e4;
 }
-/* line 114, sass/layout/_canvasfree.scss */
+/* line 116, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.last {
   margin-right: 0px;
 }
-/* line 117, sass/layout/_canvasfree.scss */
+/* line 119, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.txt {
   width: 94%;
   clear: both;
@@ -1022,14 +1032,15 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2em;
-  margin: 10px auto 0px;
+  margin: 20px auto 0px;
+  color: white;
 }
-/* line 125, sass/layout/_canvasfree.scss */
+/* line 128, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.txt textarea {
   border: none;
-  border: 3px solid #58555a;
+  border: 3px solid white;
   font-weight: 300;
-  background: #e5e5e5;
+  background: rgba(229, 229, 229, 0.5);
   padding: 10px;
   margin-top: 5px;
   font-size: 1.3em;
@@ -1047,12 +1058,12 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 140, sass/layout/_canvasfree.scss */
+/* line 143, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.txt textarea:focus {
   outline: none;
   background-color: #f8f2e4;
 }
-/* line 146, sass/layout/_canvasfree.scss */
+/* line 149, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send {
   width: 100%;
   clear: both;
@@ -1060,10 +1071,10 @@ body {
   padding: 0px;
   margin-top: 20px;
 }
-/* line 152, sass/layout/_canvasfree.scss */
+/* line 155, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send input[type=submit] {
   border: none;
-  border: 3px solid black;
+  border: 3px solid white;
   clear: both;
   float: none;
   display: block;
@@ -1072,10 +1083,11 @@ body {
   padding: 20px 50px;
   font-weight: 600;
   font-size: 1.2em;
+  color: #f2f2f2;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.2);
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
@@ -1085,14 +1097,14 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 167, sass/layout/_canvasfree.scss */
+/* line 171, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send input[type=submit]:focus {
   outline: none;
 }
-/* line 170, sass/layout/_canvasfree.scss */
+/* line 174, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send input[type=submit]:hover {
-  background-color: #003d77;
-  color: #f2f2f2;
+  background-color: rgba(0, 61, 119, 0.5);
+  color: white;
   border: 3px solid #003d77;
 }
 
