@@ -1,3 +1,142 @@
+/* STYLES FOR CANVAS FREE PAGE TEMPLATE*/
+
+
+
+// LA EMPRESA
+#la-empresa {
+	width: 100%;
+	min-height: 500px;
+	padding-bottom: 0px;
+	// PAGE Title
+		h2 {
+			text-align: center;
+			padding: 20px 0px;
+			font-size: 3em;
+			font-weight: 400;
+			color: $blue;
+			font-family: $font_copy;
+	} //h2
+} //#la-empresa
+
+
+
+// SERVICIOS
+#servicios {
+	width: 100%;
+	min-height: 500px;
+	
+	// PAGE Title
+	h2 {
+		text-align: center;
+		padding: 20px 0px;
+		font-size: 3em;
+		font-weight: 400;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		color: $blue;
+		font-family: $font_copy;
+	} //h2
+
+	.intro {
+		width: 100%;
+		height: auto;
+		.intro-info {
+			@include container();
+			padding-bottom: 50px;
+			.content-center {
+				@include clearfix();
+				margin: 10px auto;
+				width: 950px;
+				img {
+					width: 350px;
+					height: auto;
+					float: left;
+				} //img		
+				article {
+					max-width: 580px;
+					float: right;
+					padding: 0px 2em;
+					p {
+						text-align: justify;
+						line-height: 1.6;
+						font-size: 0.9em;
+						font-weight: 300;
+					} //p
+					ul {
+						margin-left: 20px;
+						li {
+							list-style: square;
+							text-align: justify;
+							line-height: 1.6;
+							font-size: 0.9em;
+							font-weight: 300;
+							margin-bottom: 5px;
+						} //li
+					} //ul
+				}	//.content-center 
+			} //article
+
+		} //.intro-info
+	} //.intro
+
+	.cta {
+		width: 100%;
+		min-height: 400px;
+		padding-top: 100px;
+		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax3.jpg');
+		.cta-info {
+			border: 1px solid $white;
+			@include container(90%);
+			h3 {
+				color: $white;
+				font-weight: 600;
+				text-align: center;
+				line-height: 2;
+				text-transform: uppercase;
+				font-size: 1.8em;
+
+			}
+		}
+
+
+
+	} //.cta
+
+
+
+	.services {
+		border: 1px solid $bluemed;
+		width: 100%;
+		min-height: 400px;
+	} //.services
+
+	.extra {
+		border: 1px solid maroon;
+		width: 100%;
+		min-height: 400px;
+	} //.extra
+
+} //#servicios
+
+
+// PREGUNTAS FRECUENTES
+#preguntas-frecuentes {
+	width: 100%;
+	min-height: 500px;
+	padding-bottom: 0px;
+	// PAGE Title
+		h2 {
+			text-align: center;
+			padding: 20px 0px;
+			font-size: 3em;
+			font-weight: 400;
+			color: $blue;
+			font-family: $font_copy;
+	} //h2
+} //#preguntas-frecuentes
+
+
+// CONTACT
 #contact-main {
 	width: 100%;
 	min-height: 500px;
@@ -10,6 +149,8 @@
 			font-weight: 400;
 			color: $blue;
 			font-family: $font_copy;
+			margin-top: 10px;
+			margin-bottom: 20px;
 		} //h2
 
 	// CONTACT INFO
@@ -182,7 +323,4 @@
 			} //form
 		} //.wpcf7
 	} //#contact-form 
-
-
 } //#contact-main
-

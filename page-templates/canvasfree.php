@@ -9,11 +9,84 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 
-<!-- 	CONTACTO -->
+<!-- 	LA EMPRESA -->
+<?php if (is_page('la-empresa')) { ?>
+		<?php the_post(); ?>
+		<div id="la-empresa" class="clearfix">
 
+			<!-- Page title -->
+			<?php the_title("<h2>", "</h2>", true); ?>
+
+
+
+
+			
+
+		</div><!-- id="la-empresa" -->
+	<?php } ?>
+
+
+<!-- 	SERVICIOS -->
+<?php if (is_page('servicios')) { ?>
+		<?php the_post(); ?>
+		<div id="servicios">
+
+			<!-- Page title -->
+			<?php the_title("<h2>", "</h2>", true); ?>
+
+			<article class="intro">
+				<div class="intro-info">
+					<div class="content-center">
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/servicios-intro.jpg" alt="Servicios de Marketing de vanguardia">
+						<article class="txt-content">
+							<?php $query = new WP_Query(); ?>
+							<?php $query->the_post(); ?>
+							<?php the_content(); ?>
+						</article>
+					</div> <!-- .content-center -->
+				</div>
+			</article>
+			<article class="cta">
+				<div class="cta-info">
+					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>				
+					<div class="cta-button">
+						<a href="#" class="cta-info">Contáctanos</a>
+					</div> <!-- .cta-button -->
+				</div>
+			</article>			
+			<article class="services">
+				<div class="services-info"></div>
+			</article>
+			
+			<article class="extra">
+				<div class="extra-info"></div>
+			</article>
+
+
+			
+
+		</div><!-- id="servicios" -->
+	<?php } ?>
+
+
+<!-- 	PREGUNTAS FRECUENTES -->
+<?php if (is_page('preguntas-frecuentes')) { ?>
+		<?php the_post(); ?>
+		<div id="preguntas-frecuentes">
+
+			<!-- Page title -->
+			<?php the_title("<h2>", "</h2>", true); ?>
+
+
+
+		</div><!-- id="preguntas-frecuentes" -->
+	<?php } ?>
+
+
+<!-- 	CONTACTO -->
 <?php if (is_page('contacto')) { ?>
 		<?php the_post(); ?>
-		<div id="contact-main" class="clearfix">
+		<div id="contact-main">
 
 			<!-- Page title -->
 			<?php the_title("<h2>", "</h2>", true); ?>
