@@ -18,6 +18,106 @@
 	} //h2
 } //#la-empresa
 
+// LA EMPRESA
+#la-empresa {
+	width: 100%;
+	min-height: 500px;
+	// PAGE Title
+	h2 {
+		text-align: center;
+		padding: 20px 0px;
+		font-size: 3em;
+		font-weight: 400;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		color: $blue;
+		font-family: $font_copy;
+	} //h2
+
+	// INTRO
+	.intro {
+		width: 100%;
+		height: auto;
+		padding-bottom: 30px;
+		.intro-info {
+			@include container(60%);
+			.content-center {
+				margin: 20px 0px;
+				p {
+					font-size: 2em;
+					text-align: center;
+					line-height: 1.5;
+					font-style: italic;
+					font-weight: 300;
+					color: $greymed;
+				} //p
+			} //.content-center
+		} //.intro-info
+	} //.intro
+
+	// CTA
+	.cta {
+		width: 100%;
+		min-height: 400px;
+		padding-top: 100px;
+		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax4.jpg');
+		.cta-info {
+			border: 1px solid $white;
+			@include container(90%);
+			h3 {
+				color: $white;
+				font-weight: 600;
+				text-align: center;
+				line-height: 2;
+				text-transform: uppercase;
+				font-size: 1.8em;
+			}
+			.cta-button {
+				text-align: center;
+			}
+		}
+	} //.cta
+
+	// ABOUT
+	.about {
+		width: 100%;
+		//min-height: 400px;
+		.about-info {
+			border: 2px solid DarkGoldenRod;
+			@include container();
+			@include clearfix();
+			padding: 50px 100px;
+			img {
+				width: 350px;
+				height: auto;
+				float: left;
+			} //img
+			.txt-content {
+				border: 1px solid green;
+				float: right;
+			}
+		} //.about-info
+	} //.about
+
+	// CLIENTES
+	.clientes {
+		width: 100%;
+		//min-height: 400px;
+		background-color: darken($snow, 10);
+		.clientes-info {
+			border: 2px solid DarkGoldenRod;
+			@include container();
+			@include clearfix();
+			padding: 50px 100px;
+			.txt-content {
+				border: 1px solid green;
+				float: right;
+			}
+		} //.about-info
+	} //.about
+
+
+} //#la-empresa 
 
 
 // SERVICIOS
@@ -94,15 +194,9 @@
 				line-height: 2;
 				text-transform: uppercase;
 				font-size: 1.8em;
-
 			}
 		}
-
-
-
 	} //.cta
-
-
 
 	.services {
 		border: 1px solid $bluemed;
@@ -115,7 +209,6 @@
 		width: 100%;
 		min-height: 400px;
 	} //.extra
-
 } //#servicios
 
 

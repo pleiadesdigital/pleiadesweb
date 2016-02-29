@@ -17,17 +17,51 @@ get_header(); ?>
 			<!-- Page title -->
 			<?php the_title("<h2>", "</h2>", true); ?>
 
+			<!-- INTRO -->
+			<article class="intro">
+				<div class="intro-info">
+					<article class="content-center">
+						<?php echo get_post_meta($post->ID, 'intro_text', true); ?>
+					</article> <!-- .content-center -->
+				</div><!-- class="intro-info" -->
+			</article><!-- class="intro" -->
 
+			<!-- CTA -->
+			<section class="cta">
+				<div class="cta-info">
+					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>				
+					<div class="cta-button">
+						<a href="#">Contáctanos</a>
+					</div> <!-- .cta-button -->
+				</div>
+			</section>
 
+			<!-- ABOUT -->
+			<section class="about">
+				<div class="about-info">
+					<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/sobre-empresa.jpg" alt="Servicios de Marketing de vanguardia">
+					<article class="txt-content">
+						<?php $query = new WP_Query(); ?>
+						<?php $query->the_post(); ?>
+						<?php the_content(); ?>
+					</article>
+				</div>
+			</section>
 
-			
+			<!-- CLIENTES -->
+			<section class="clientes">
+				<div class="clientes-info">
+					<?php $query = new WP_Query(); ?>
+					<?php $query->the_post(); ?>
+					<?php the_content(); ?>
+					</article>
+				</div>
+			</section>
 
 		</div><!-- id="la-empresa" -->
-	<?php } ?>
-
 
 <!-- 	SERVICIOS -->
-<?php if (is_page('servicios')) { ?>
+<?php } elseif (is_page('servicios')) { ?>
 		<?php the_post(); ?>
 		<div id="servicios">
 
@@ -46,6 +80,7 @@ get_header(); ?>
 					</div> <!-- .content-center -->
 				</div>
 			</article>
+
 			<article class="cta">
 				<div class="cta-info">
 					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>				
@@ -53,7 +88,8 @@ get_header(); ?>
 						<a href="#" class="cta-info">Contáctanos</a>
 					</div> <!-- .cta-button -->
 				</div>
-			</article>			
+			</article>
+
 			<article class="services">
 				<div class="services-info"></div>
 			</article>
@@ -62,15 +98,10 @@ get_header(); ?>
 				<div class="extra-info"></div>
 			</article>
 
-
-			
-
 		</div><!-- id="servicios" -->
-	<?php } ?>
-
 
 <!-- 	PREGUNTAS FRECUENTES -->
-<?php if (is_page('preguntas-frecuentes')) { ?>
+<?php } elseif (is_page('preguntas-frecuentes')) { ?>
 		<?php the_post(); ?>
 		<div id="preguntas-frecuentes">
 
@@ -80,11 +111,9 @@ get_header(); ?>
 
 
 		</div><!-- id="preguntas-frecuentes" -->
-	<?php } ?>
-
 
 <!-- 	CONTACTO -->
-<?php if (is_page('contacto')) { ?>
+<?php } elseif (is_page('contacto')) { ?>
 		<?php the_post(); ?>
 		<div id="contact-main">
 
@@ -116,7 +145,8 @@ get_header(); ?>
 			</div>
 
 		</div><!-- id="contact-main" -->
-	<?php } ?>
+<?php } ?>
+
 
 	</main><!-- #main -->
 </div><!-- #primary -->
