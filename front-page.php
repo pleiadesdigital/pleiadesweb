@@ -14,9 +14,7 @@
 			<section class="scene" id="services">
 				<h2>Lo que ofrecemos</h2>
 				<div id="showroom">
-
 					<section id="webdev">
-
 						<div class="view view-tenth">
 							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/audio-y-video-para-marketing.jpg" />
 							<div class="mask">
@@ -68,7 +66,6 @@
 			</section>
 
 			<!-- POR QUÉ NOSOTROS -->		
-	
 			<section id="porque-nos">
 				<article class="porque-nos-content">
 					<h2>¿Por qué nosotros?</h2>

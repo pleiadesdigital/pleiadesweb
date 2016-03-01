@@ -46,24 +46,31 @@ get_header(); ?>
 					</div> <!-- .content-center -->
 				</div>
 			</article>
+
 			<article class="cta">
 				<div class="cta-info">
-					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>				
-					<div class="cta-button">
-						<a href="#" class="cta-info">Contáctanos</a>
-					</div> <!-- .cta-button -->
+					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>
+					<!-- CTA-button -->
+					<div class="cta-services">
+						<a href="#">Contáctanos</a>
+					</div>
 				</div>
-			</article>			
-			<article class="services">
-				<div class="services-info"></div>
+			</article>
+
+			<article class="serv-desc">
+				<div class="serv-desc-info">
+					<ul>
+						<li><div>Service 1</div></li>
+						<li><div>Service 2</div></li>
+						<li><div>Service 3</div></li>
+					</ul>
+				</div>
 			</article>
 			
 			<article class="extra">
 				<div class="extra-info"></div>
 			</article>
 
-
-			
 
 		</div><!-- id="servicios" -->
 	<?php } ?>
