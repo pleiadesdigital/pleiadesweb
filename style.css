@@ -867,12 +867,168 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
-/* line 23, sass/layout/_canvasfree.scss */
+/* line 22, sass/layout/_canvasfree.scss */
+#la-empresa {
+  width: 100%;
+  min-height: 500px;
+}
+/* line 26, sass/layout/_canvasfree.scss */
+#la-empresa h2 {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 3em;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #003d77;
+  font-family: "Titillium Web", sans-serif;
+}
+/* line 38, sass/layout/_canvasfree.scss */
+#la-empresa .intro {
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+}
+/* line 42, sass/layout/_canvasfree.scss */
+#la-empresa .intro .intro-info {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+#la-empresa .intro .intro-info:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 44, sass/layout/_canvasfree.scss */
+#la-empresa .intro .intro-info .content-center {
+  margin: 20px 0px;
+}
+/* line 46, sass/layout/_canvasfree.scss */
+#la-empresa .intro .intro-info .content-center p {
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 300;
+  color: #58555a;
+}
+/* line 59, sass/layout/_canvasfree.scss */
+#la-empresa .cta {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 100px;
+  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 64, sass/layout/_canvasfree.scss */
+#la-empresa .cta .cta-info {
+  border: 1px solid white;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+#la-empresa .cta .cta-info:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 67, sass/layout/_canvasfree.scss */
+#la-empresa .cta .cta-info h3 {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2;
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+/* line 75, sass/layout/_canvasfree.scss */
+#la-empresa .cta .cta-info .cta-button {
+  text-align: center;
+}
+/* line 82, sass/layout/_canvasfree.scss */
+#la-empresa .about {
+  width: 100%;
+}
+/* line 85, sass/layout/_canvasfree.scss */
+#la-empresa .about .about-info {
+  border: 2px solid DarkGoldenRod;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 100px;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+#la-empresa .about .about-info:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 12, sass/mixins/_mixins-master.scss */
+#la-empresa .about .about-info:before, #la-empresa .about .about-info:after {
+  content: '';
+  display: table;
+}
+/* line 17, sass/mixins/_mixins-master.scss */
+#la-empresa .about .about-info:after {
+  clear: both;
+}
+/* line 90, sass/layout/_canvasfree.scss */
+#la-empresa .about .about-info img {
+  width: 350px;
+  height: auto;
+  float: left;
+}
+/* line 95, sass/layout/_canvasfree.scss */
+#la-empresa .about .about-info .txt-content {
+  border: 1px solid green;
+  float: right;
+}
+/* line 103, sass/layout/_canvasfree.scss */
+#la-empresa .clientes {
+  width: 100%;
+  background-color: #d9d9d9;
+}
+/* line 107, sass/layout/_canvasfree.scss */
+#la-empresa .clientes .clientes-info {
+  border: 2px solid DarkGoldenRod;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 100px;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+#la-empresa .clientes .clientes-info:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 12, sass/mixins/_mixins-master.scss */
+#la-empresa .clientes .clientes-info:before, #la-empresa .clientes .clientes-info:after {
+  content: '';
+  display: table;
+}
+/* line 17, sass/mixins/_mixins-master.scss */
+#la-empresa .clientes .clientes-info:after {
+  clear: both;
+}
+/* line 112, sass/layout/_canvasfree.scss */
+#la-empresa .clientes .clientes-info .txt-content {
+  border: 1px solid green;
+  float: right;
+}
+
+/* line 123, sass/layout/_canvasfree.scss */
 #servicios {
   width: 100%;
   min-height: 500px;
 }
-/* line 28, sass/layout/_canvasfree.scss */
+/* line 128, sass/layout/_canvasfree.scss */
 #servicios h2 {
   text-align: center;
   padding: 20px 0px;
@@ -883,12 +1039,12 @@ body {
   color: #003d77;
   font-family: "Titillium Web", sans-serif;
 }
-/* line 40, sass/layout/_canvasfree.scss */
+/* line 140, sass/layout/_canvasfree.scss */
 #servicios .intro {
   width: 100%;
   height: auto;
 }
-/* line 43, sass/layout/_canvasfree.scss */
+/* line 143, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info {
   max-width: 1200px;
   margin-left: auto;
@@ -901,7 +1057,7 @@ body {
   display: block;
   clear: both;
 }
-/* line 46, sass/layout/_canvasfree.scss */
+/* line 146, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info .content-center {
   margin: 10px auto;
   width: 950px;
@@ -915,30 +1071,30 @@ body {
 #servicios .intro .intro-info .content-center:after {
   clear: both;
 }
-/* line 50, sass/layout/_canvasfree.scss */
+/* line 150, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info .content-center img {
   width: 350px;
   height: auto;
   float: left;
 }
-/* line 55, sass/layout/_canvasfree.scss */
+/* line 155, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info .content-center article {
   max-width: 580px;
   float: right;
   padding: 0px 2em;
 }
-/* line 59, sass/layout/_canvasfree.scss */
+/* line 159, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info .content-center article p {
   text-align: justify;
   line-height: 1.6;
   font-size: 0.9em;
   font-weight: 300;
 }
-/* line 65, sass/layout/_canvasfree.scss */
+/* line 165, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info .content-center article ul {
   margin-left: 20px;
 }
-/* line 67, sass/layout/_canvasfree.scss */
+/* line 167, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info .content-center article ul li {
   list-style: square;
   text-align: justify;
@@ -947,7 +1103,7 @@ body {
   font-weight: 300;
   margin-bottom: 5px;
 }
-/* line 83, sass/layout/_canvasfree.scss */
+/* line 183, sass/layout/_canvasfree.scss */
 #servicios .cta {
   width: 100%;
   min-height: 400px;
@@ -958,7 +1114,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 88, sass/layout/_canvasfree.scss */
+/* line 188, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info {
   max-width: 90%;
   margin-left: auto;
@@ -979,7 +1135,7 @@ body {
 #servicios .cta .cta-info:after {
   clear: both;
 }
-/* line 91, sass/layout/_canvasfree.scss */
+/* line 191, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info h3 {
   color: white;
   font-weight: 600;
@@ -988,13 +1144,13 @@ body {
   text-transform: uppercase;
   font-size: 1.8em;
 }
-/* line 99, sass/layout/_canvasfree.scss */
+/* line 199, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info .cta-services {
   text-align: center;
   margin-top: 40px;
   display: block;
 }
-/* line 103, sass/layout/_canvasfree.scss */
+/* line 203, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info .cta-services a {
   border: 3px solid #f2f2f2;
   -moz-border-radius: 15px;
@@ -1012,18 +1168,18 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 111, sass/layout/_canvasfree.scss */
+/* line 211, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info .cta-services a:hover {
   border: 3px solid lime;
   background-color: rgba(0, 255, 0, 0.5);
   color: #f2f2f2;
 }
-/* line 122, sass/layout/_canvasfree.scss */
+/* line 222, sass/layout/_canvasfree.scss */
 #servicios .serv-desc {
   width: 100%;
   padding: 30px 0px 30px;
 }
-/* line 125, sass/layout/_canvasfree.scss */
+/* line 225, sass/layout/_canvasfree.scss */
 #servicios .serv-desc .serv-desc-info {
   max-width: 70%;
   margin-left: auto;
@@ -1044,7 +1200,7 @@ body {
   display: block;
   clear: both;
 }
-/* line 129, sass/layout/_canvasfree.scss */
+/* line 229, sass/layout/_canvasfree.scss */
 #servicios .serv-desc .serv-desc-info ul li {
   border: 1px solid maroon;
   -moz-box-sizing: border-box;
@@ -1055,7 +1211,7 @@ body {
   padding-left: 1.85185%;
   padding-right: 1.85185%;
 }
-/* line 133, sass/layout/_canvasfree.scss */
+/* line 233, sass/layout/_canvasfree.scss */
 #servicios .serv-desc .serv-desc-info ul li div {
   border: 4px solid #003d77;
   width: 250px;
@@ -1064,20 +1220,20 @@ body {
   min-height: 350px;
   margin: 0px auto;
 }
-/* line 151, sass/layout/_canvasfree.scss */
+/* line 247, sass/layout/_canvasfree.scss */
 #servicios .extra {
   border: 1px solid maroon;
   width: 100%;
   min-height: 400px;
 }
 
-/* line 161, sass/layout/_canvasfree.scss */
+/* line 256, sass/layout/_canvasfree.scss */
 #preguntas-frecuentes {
   width: 100%;
   min-height: 500px;
   padding-bottom: 0px;
 }
-/* line 166, sass/layout/_canvasfree.scss */
+/* line 261, sass/layout/_canvasfree.scss */
 #preguntas-frecuentes h2 {
   text-align: center;
   padding: 20px 0px;
@@ -1087,13 +1243,13 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
-/* line 178, sass/layout/_canvasfree.scss */
+/* line 273, sass/layout/_canvasfree.scss */
 #contact-main {
   width: 100%;
   min-height: 500px;
   padding-bottom: 0px;
 }
-/* line 183, sass/layout/_canvasfree.scss */
+/* line 278, sass/layout/_canvasfree.scss */
 #contact-main h2 {
   text-align: center;
   padding: 20px 0px;
@@ -1104,7 +1260,7 @@ body {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/* line 195, sass/layout/_canvasfree.scss */
+/* line 290, sass/layout/_canvasfree.scss */
 #contact-main #contact-info {
   display: block;
   max-width: 1200px;
@@ -1119,28 +1275,28 @@ body {
   display: block;
   clear: both;
 }
-/* line 200, sass/layout/_canvasfree.scss */
+/* line 295, sass/layout/_canvasfree.scss */
 #contact-main #contact-info .contact-address {
   display: block;
   width: auto;
   margin: 0px auto;
   text-align: center;
 }
-/* line 211, sass/layout/_canvasfree.scss */
+/* line 306, sass/layout/_canvasfree.scss */
 #contact-main #contact-map {
   width: 100%;
   height: 450px;
   margin: 0px;
   padding: 0px;
 }
-/* line 216, sass/layout/_canvasfree.scss */
+/* line 311, sass/layout/_canvasfree.scss */
 #contact-main #contact-map #map-canvas {
   height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
-/* line 221, sass/layout/_canvasfree.scss */
+/* line 316, sass/layout/_canvasfree.scss */
 #contact-main #contact-map #map-canvas h2 {
   margin: 0px;
   padding: 0px;
@@ -1149,13 +1305,13 @@ body {
   margin-bottom: 5px;
   color: #003d77;
 }
-/* line 229, sass/layout/_canvasfree.scss */
+/* line 324, sass/layout/_canvasfree.scss */
 #contact-main #contact-map #map-canvas p {
   margin: 0px;
   padding: 0px;
   line-height: 1.4;
 }
-/* line 238, sass/layout/_canvasfree.scss */
+/* line 333, sass/layout/_canvasfree.scss */
 #contact-main .contact-form {
   width: 100%;
   padding: 30px 0px;
@@ -1167,7 +1323,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 246, sass/layout/_canvasfree.scss */
+/* line 341, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 {
   max-width: 1200px;
   margin-left: auto;
@@ -1188,12 +1344,12 @@ body {
 #contact-main .contact-form .wpcf7:after {
   clear: both;
 }
-/* line 249, sass/layout/_canvasfree.scss */
+/* line 344, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form {
   width: 80%;
   margin: 0px auto;
 }
-/* line 252, sass/layout/_canvasfree.scss */
+/* line 347, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.input {
   float: left;
   display: inline;
@@ -1205,7 +1361,7 @@ body {
   overflow: hidden;
 }
 @media (min-width: 700px) {
-  /* line 252, sass/layout/_canvasfree.scss */
+  /* line 347, sass/layout/_canvasfree.scss */
   #contact-main .contact-form .wpcf7 form p.input {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1218,7 +1374,7 @@ body {
   }
 }
 @media (max-width: 699px) {
-  /* line 252, sass/layout/_canvasfree.scss */
+  /* line 347, sass/layout/_canvasfree.scss */
   #contact-main .contact-form .wpcf7 form p.input {
     display: block;
     width: 94%;
@@ -1227,7 +1383,7 @@ body {
     margin: 20px auto 20px;
   }
 }
-/* line 272, sass/layout/_canvasfree.scss */
+/* line 367, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.input input[type=text],
 #contact-main .contact-form .wpcf7 form p.input input[type=email],
 #contact-main .contact-form .wpcf7 form p.input input[type=tel] {
@@ -1252,18 +1408,18 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 289, sass/layout/_canvasfree.scss */
+/* line 384, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.input input[type=text]:focus,
 #contact-main .contact-form .wpcf7 form p.input input[type=email]:focus,
 #contact-main .contact-form .wpcf7 form p.input input[type=tel]:focus {
   outline: none;
   background-color: #f8f2e4;
 }
-/* line 295, sass/layout/_canvasfree.scss */
+/* line 390, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.last {
   margin-right: 0px;
 }
-/* line 298, sass/layout/_canvasfree.scss */
+/* line 393, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.txt {
   width: 94%;
   clear: both;
@@ -1274,7 +1430,7 @@ body {
   margin: 20px auto 0px;
   color: white;
 }
-/* line 307, sass/layout/_canvasfree.scss */
+/* line 402, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.txt textarea {
   border: none;
   border: 3px solid white;
@@ -1297,12 +1453,12 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 322, sass/layout/_canvasfree.scss */
+/* line 417, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.txt textarea:focus {
   outline: none;
   background-color: #f8f2e4;
 }
-/* line 328, sass/layout/_canvasfree.scss */
+/* line 423, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send {
   width: 100%;
   clear: both;
@@ -1310,7 +1466,7 @@ body {
   padding: 0px;
   margin-top: 20px;
 }
-/* line 334, sass/layout/_canvasfree.scss */
+/* line 429, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send input[type=submit] {
   border: none;
   border: 3px solid white;
@@ -1336,11 +1492,11 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 350, sass/layout/_canvasfree.scss */
+/* line 445, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send input[type=submit]:focus {
   outline: none;
 }
-/* line 353, sass/layout/_canvasfree.scss */
+/* line 448, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send input[type=submit]:hover {
   background-color: rgba(0, 61, 119, 0.5);
   color: white;
