@@ -77,19 +77,35 @@ get_header(); ?>
 
 			<section class="serv-desc">
 				<div class="serv-desc-info">
-					<div class="gallery">
-						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_room.jpg" alt="Intro Gallery Room">
-						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_pool.jpg" alt="Intro Gallery Room">
-						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_dining.jpg" alt="Intro Gallery Room">
-						<!-- <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_attractions.jpg" alt="Intro Gallery Room">
-						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_wedding.jpg" alt="Intro Gallery Room" class="hidesm"> -->
+					<div class="boxes">
+						<ul>
+
+							<li>
+								<div class="box">
+									<article>
+										DESARROLLO WEB PARA MARKETING&nbsp;EN&nbsp;LÍNEA
+									</article>
+								</div>
+							</li>
+
+							<li>
+								<div class="box">
+									<article>
+										IMAGEN CORPORATIVA Y DISEÑO&nbsp;GRÁFICO
+									</article>
+								</div>
+							</li>
+
+							<li>
+								<div class="box">
+									<article>
+										AUDIO PROMOCIONAL PARA RADIO&nbsp;Y&nbsp;VIDEO
+									</article>
+								</div>
+							</li>
+						</ul>
 				</div>
 
-					<!-- <ul class="gallery">
-						<li>Photo 1</li>
-						<li>Photo 2</li>
-						<li>Photo 3</li>
-					</ul> -->
 					
 				</div><!-- class="serv-desc-info" -->
 			</section><!-- class="serv-desc" -->

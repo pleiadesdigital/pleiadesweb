@@ -132,23 +132,46 @@
 	} //.intro
 
 
-	
 	// SERVICE DESCRIPTION
 	.serv-desc {
 		width: 100%;
 		padding: 30px 0px 30px;
-		@include background-image(linear-gradient(top, $grey, $snow));
+		@include background-image(linear-gradient(bottom, $white, darken($snow, 2)));
 		.serv-desc-info {
-			border: 1px solid lime;
 			@include clearfix;
 			@include container(70%);
-			.gallery {
+			ul {
 				@include clearfix();
-				img {
+				li {
+					border: 1px solid purple;
 					@include span(1 of 3);
-					display: inline;
-				} //img
-			} //.gallery
+					padding: 20px 10px;
+					vertical-align: text-top;
+					display: inline-block;
+					@include display-flex(inline-flex);
+					@include align-items(center);
+					@include justify-content(center);
+					.box {
+						background-color: rgba(130, 130, 130, 0.2);
+						padding: 30px 10px;
+						cursor: pointer;
+						color: $greymed;
+						@include single-transition();
+							article {
+								font-size: 1.2em;
+								text-align: center;
+								font-weight: 300;
+							}
+						&:hover { 
+							background-color: lime;
+							&article {
+								color: $white;
+								font-weight: 500;
+							}
+						} //&:hover
+					} //.box
+				} //li
+			} //ul
 		} //.serv-desc-info
 	} //.serv.desc
 	
