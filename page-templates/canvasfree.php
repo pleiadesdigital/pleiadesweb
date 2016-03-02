@@ -66,20 +66,33 @@ get_header(); ?>
 		<div id="servicios">
 
 			<!-- Page title -->
-			<?php the_title("<h2>", "</h2>", true); ?>
+			<?php //the_title("<h2>", "</h2>", true); ?>
 
-			<article class="intro">
-				<div class="intro-info">
-					<div class="content-center">
-						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/servicios-intro.jpg" alt="Servicios de Marketing de vanguardia">
-						<article class="txt-content">
-							<?php $query = new WP_Query(); ?>
-							<?php $query->the_post(); ?>
-							<?php the_content(); ?>
-						</article>
-					</div> <!-- .content-center -->
+			<section class="intro">
+				<div class="intro-info">	
+					<h2>Digital Marketing Services</h2>
+					<p>Fancy taking your digital marketing to the next level? You’re lucky you found us…</p>
 				</div>
-			</article>
+			</section>
+
+			<section class="serv-desc">
+				<div class="serv-desc-info">
+					<div class="gallery">
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_room.jpg" alt="Intro Gallery Room">
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_pool.jpg" alt="Intro Gallery Room">
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_dining.jpg" alt="Intro Gallery Room">
+						<!-- <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_attractions.jpg" alt="Intro Gallery Room">
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/hotel/intro_wedding.jpg" alt="Intro Gallery Room" class="hidesm"> -->
+				</div>
+
+					<!-- <ul class="gallery">
+						<li>Photo 1</li>
+						<li>Photo 2</li>
+						<li>Photo 3</li>
+					</ul> -->
+					
+				</div><!-- class="serv-desc-info" -->
+			</section><!-- class="serv-desc" -->
 
 			<article class="cta">
 				<div class="cta-info">
@@ -90,17 +103,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</article>
-
-			<article class="serv-desc">
-				<div class="serv-desc-info">
-					<ul>
-						<li><div>Service 1</div></li>
-						<li><div>Service 2</div></li>
-						<li><div>Service 3</div></li>
-					</ul>
-				</div>
-			</article>
-			
+	
 			<article class="extra">
 				<div class="extra-info"></div>
 			</article>
