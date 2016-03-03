@@ -16,7 +16,7 @@
 				<div id="showroom">
 					<section id="webdev">
 						<div class="view view-tenth">
-							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/audio-y-video-para-marketing.jpg" />
+							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-web.jpg" />
 							<div class="mask">
 				        <h2>Desarrollo Web para Marketing&nbsp;en&nbsp;Línea</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
@@ -28,7 +28,7 @@
 
 		      <section id="graphdes">
 			      <div class="view view-tenth">
-			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/audio-y-video-para-marketing.jpg" />
+			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-design.jpg" />
 			      	<div class="mask">
 				        <h2>Imagen Corporativa y Diseño&nbsp;Gráfico</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
@@ -39,7 +39,7 @@
 
 		      <section id="audioprom">
 		      	<div class="view view-tenth">
-			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/audio-y-video-para-marketing.jpg" />
+			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-audio.jpg" />
 			      	<div class="mask">
 				        <h2>Audio Promocional para Radio&nbsp;y&nbsp;Video</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>

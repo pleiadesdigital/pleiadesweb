@@ -163,7 +163,6 @@
 					@include align-items(center);
 					@include justify-content(center);
 					.box {
-						background: rgba($greymed, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-web.png") center center;
 						background-size: 80%;
 						background-repeat: no-repeat;
 						padding: 80px 10px;
@@ -174,7 +173,7 @@
 							padding: 80px 50px;
 						}
 						cursor: pointer;
-						color: $greymed;
+						color: $white;
 						@include single-transition();
 						@include transition-duration(0.5s);
 							article {
@@ -192,17 +191,63 @@
 								font-weight: 500;
 								line-height: 1.2;
 								padding: 0px 0px 5px;
-								border-bottom: 3px solid rgba(lime, 0.4);
+								border-bottom: 3px solid rgba($orange, 0.4);
 							} //article
 						&:hover { 
-							background-color: lime;
+							background-color: $orange;
 							color: $white;
 							article {
-								border-bottom: 3px solid rgba($snow, 0.5);;
+								border-bottom: 3px solid rgba($orangedark, 0.5);
 							}
 						} //&:hover
 					} //.box
 				} //li
+
+				li:first-child {
+					.box {
+						background: rgba($greydark, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-web.png") center center;
+							background-size: 80%;
+							background-repeat: no-repeat;
+						&:hover { 
+							background-color: $orange;
+							color: $white;
+							article {
+								border-bottom: 3px solid rgba($orangedark, 0.5);
+							} //article
+						} //&:hover
+					} //.box
+				} //li:first-child	
+
+				li:nth-child(2) {
+					.box {
+						background: rgba($greydark, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-design.png") center center;
+							background-size: 70%;
+							background-repeat: no-repeat;
+						&:hover { 
+							background-color: $orange;
+							color: $white;
+							article {
+								border-bottom: 3px solid rgba($orangedark, 0.5);
+							} //article
+						} //&:hover
+					} //.box
+				} //li:nth-child(2)
+
+				li:nth-child(3) {
+					.box {
+						background: rgba($greydark, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-audio.png") center center;
+							background-size: 70%;
+							background-repeat: no-repeat;
+						&:hover { 
+							background-color: $orange;
+							color: $white;
+							article {
+								border-bottom: 3px solid rgba($orangedark, 0.5);
+							} //article
+						} //&:hover
+					} //.box
+				} //li:nth-child(3)
+
 			} //ul
 		} //.serv-desc-info
 	} //.serv.desc

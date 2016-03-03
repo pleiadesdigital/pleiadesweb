@@ -71,7 +71,7 @@
         } //breakpoint(600px 989px)
       } //a 1st level
       &:hover > a {
-        border-top: 5px solid $yellowmed;
+        border-top: 5px solid $orange;
       } //&:hover > a
       &:hover > ul {
         display: block;
@@ -119,7 +119,7 @@
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
-    border-top: 5px solid $yellowmed;
+    border-top: 5px solid $orange;
   }
   
 
@@ -197,7 +197,7 @@
           &:hover {
             color: $snow;
             border: none;
-            background: rgba($yellowdark, 0.6);
+            background: rgba($orangedark, 0.6);
           } //&:hover 
         } // a 1st level
         &:hover > a {
