@@ -143,7 +143,6 @@
 			ul {
 				@include clearfix();
 				li {
-					border: 1px solid purple;
 					@include span(1 of 3);
 					padding: 20px 10px;
 					vertical-align: text-top;
@@ -152,21 +151,28 @@
 					@include align-items(center);
 					@include justify-content(center);
 					.box {
-						background-color: rgba(130, 130, 130, 0.2);
-						padding: 30px 10px;
+						background: rgba($greymed, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-web.png") center center;
+						background-size: 80%;
+						background-repeat: no-repeat;
+						padding: 80px 40px;
 						cursor: pointer;
 						color: $greymed;
 						@include single-transition();
+						@include transition-duration(0.5s);
 							article {
+								width: auto;
 								font-size: 1.2em;
 								text-align: center;
-								font-weight: 300;
-							}
+								font-weight: 500;
+								line-height: 1.2;
+								padding: 0px 0px 5px;
+								border-bottom: 1px solid lime;
+							} //article
 						&:hover { 
 							background-color: lime;
-							&article {
-								color: $white;
-								font-weight: 500;
+							color: $white;
+							article {
+								border-bottom: 1px solid $snow;
 							}
 						} //&:hover
 					} //.box
