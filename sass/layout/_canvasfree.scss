@@ -1,7 +1,9 @@
 /* STYLES FOR CANVAS FREE PAGE TEMPLATE*/
 
-
+/*******************************************
 // LA EMPRESA
+********************************************/
+
 #la-empresa {
 	width: 100%;
 	min-height: 500px;
@@ -99,10 +101,12 @@
 		} //.about-info
 	} //.about
 
-
 } //#la-empresa 
 
+/*******************************************
 // SERVICIOS
+********************************************/
+
 #servicios {
 	width: 100%;
 	min-height: 500px;
@@ -144,6 +148,14 @@
 				@include clearfix();
 				li {
 					@include span(1 of 3);
+					@include breakpoint(700px 919px) {
+						@include span(1 of 2);
+						display: block;
+					}
+					@include breakpoint($iphone) {
+						@include span(1 of 1);
+						display: block;
+					}
 					padding: 20px 10px;
 					vertical-align: text-top;
 					display: inline-block;
@@ -154,25 +166,39 @@
 						background: rgba($greymed, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-web.png") center center;
 						background-size: 80%;
 						background-repeat: no-repeat;
-						padding: 80px 40px;
+						padding: 80px 10px;
+						@include breakpoint(700px 919px) {
+							padding: 80px 20px;
+						}
+						@include breakpoint($iphone) {
+							padding: 80px 50px;
+						}
 						cursor: pointer;
 						color: $greymed;
 						@include single-transition();
 						@include transition-duration(0.5s);
 							article {
 								width: auto;
-								font-size: 1.2em;
+								@include breakpoint(1350px) {
+									font-size: 1.3em;
+								}
+								@include breakpoint(990px 1349px) {
+									font-size: 1.1em;
+								}
+								@include breakpoint(920px 989px) {
+									font-size: 1em;
+								}
 								text-align: center;
 								font-weight: 500;
 								line-height: 1.2;
 								padding: 0px 0px 5px;
-								border-bottom: 1px solid lime;
+								border-bottom: 3px solid rgba(lime, 0.4);
 							} //article
 						&:hover { 
 							background-color: lime;
 							color: $white;
 							article {
-								border-bottom: 1px solid $snow;
+								border-bottom: 3px solid rgba($snow, 0.5);;
 							}
 						} //&:hover
 					} //.box
@@ -229,8 +255,10 @@
 	} //.extra
 } //#servicios
 
-
+/*******************************************
 // PREGUNTAS FRECUENTES
+********************************************/
+
 #preguntas-frecuentes {
 	width: 100%;
 	min-height: 500px;
@@ -246,8 +274,10 @@
 	} //h2
 } //#preguntas-frecuentes
 
-
+/*******************************************
 // CONTACT
+********************************************/
+
 #contact-main {
 	width: 100%;
 	min-height: 500px;

@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -389,7 +389,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #welcome article:after {
   content: " ";
   display: block;
@@ -402,7 +402,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
   #welcome article:after {
     content: " ";
     display: block;
@@ -445,7 +445,7 @@ body {
 #services #showroom:after {
   clear: both;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #services #showroom:after {
   content: " ";
   display: block;
@@ -656,7 +656,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #cta-frontpage .cta-front:after {
   content: " ";
   display: block;
@@ -727,7 +727,7 @@ body {
   margin-right: auto;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #porque-nos .porque-nos-content:after {
   content: " ";
   display: block;
@@ -851,12 +851,15 @@ body {
 }
 
 /* STYLES FOR CANVAS FREE PAGE TEMPLATE*/
-/* line 5, sass/layout/_canvasfree.scss */
+/*******************************************
+// LA EMPRESA
+********************************************/
+/* line 7, sass/layout/_canvasfree.scss */
 #la-empresa {
   width: 100%;
   min-height: 500px;
 }
-/* line 9, sass/layout/_canvasfree.scss */
+/* line 11, sass/layout/_canvasfree.scss */
 #la-empresa h2 {
   text-align: center;
   padding: 20px 0px;
@@ -867,29 +870,29 @@ body {
   color: #003d77;
   font-family: "Titillium Web", sans-serif;
 }
-/* line 21, sass/layout/_canvasfree.scss */
+/* line 23, sass/layout/_canvasfree.scss */
 #la-empresa .intro {
   width: 100%;
   height: auto;
   padding-bottom: 30px;
 }
-/* line 25, sass/layout/_canvasfree.scss */
+/* line 27, sass/layout/_canvasfree.scss */
 #la-empresa .intro .intro-info {
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #la-empresa .intro .intro-info:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 27, sass/layout/_canvasfree.scss */
+/* line 29, sass/layout/_canvasfree.scss */
 #la-empresa .intro .intro-info .content-center {
   margin: 20px 0px;
 }
-/* line 29, sass/layout/_canvasfree.scss */
+/* line 31, sass/layout/_canvasfree.scss */
 #la-empresa .intro .intro-info .content-center p {
   font-size: 2em;
   text-align: center;
@@ -898,7 +901,7 @@ body {
   font-weight: 300;
   color: #58555a;
 }
-/* line 42, sass/layout/_canvasfree.scss */
+/* line 44, sass/layout/_canvasfree.scss */
 #la-empresa .cta {
   width: 100%;
   min-height: 400px;
@@ -909,20 +912,20 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 47, sass/layout/_canvasfree.scss */
+/* line 49, sass/layout/_canvasfree.scss */
 #la-empresa .cta .cta-info {
   border: 1px solid white;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #la-empresa .cta .cta-info:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 50, sass/layout/_canvasfree.scss */
+/* line 52, sass/layout/_canvasfree.scss */
 #la-empresa .cta .cta-info h3 {
   color: white;
   font-weight: 600;
@@ -931,15 +934,15 @@ body {
   text-transform: uppercase;
   font-size: 1.8em;
 }
-/* line 58, sass/layout/_canvasfree.scss */
+/* line 60, sass/layout/_canvasfree.scss */
 #la-empresa .cta .cta-info .cta-button {
   text-align: center;
 }
-/* line 65, sass/layout/_canvasfree.scss */
+/* line 67, sass/layout/_canvasfree.scss */
 #la-empresa .about {
   width: 100%;
 }
-/* line 68, sass/layout/_canvasfree.scss */
+/* line 70, sass/layout/_canvasfree.scss */
 #la-empresa .about .about-info {
   border: 2px solid DarkGoldenRod;
   max-width: 1200px;
@@ -947,7 +950,7 @@ body {
   margin-right: auto;
   padding: 50px 100px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #la-empresa .about .about-info:after {
   content: " ";
   display: block;
@@ -962,23 +965,23 @@ body {
 #la-empresa .about .about-info:after {
   clear: both;
 }
-/* line 73, sass/layout/_canvasfree.scss */
+/* line 75, sass/layout/_canvasfree.scss */
 #la-empresa .about .about-info img {
   width: 350px;
   height: auto;
   float: left;
 }
-/* line 78, sass/layout/_canvasfree.scss */
+/* line 80, sass/layout/_canvasfree.scss */
 #la-empresa .about .about-info .txt-content {
   border: 1px solid green;
   float: right;
 }
-/* line 86, sass/layout/_canvasfree.scss */
+/* line 88, sass/layout/_canvasfree.scss */
 #la-empresa .clientes {
   width: 100%;
   background-color: #d9d9d9;
 }
-/* line 90, sass/layout/_canvasfree.scss */
+/* line 92, sass/layout/_canvasfree.scss */
 #la-empresa .clientes .clientes-info {
   border: 2px solid DarkGoldenRod;
   max-width: 1200px;
@@ -986,7 +989,7 @@ body {
   margin-right: auto;
   padding: 50px 100px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #la-empresa .clientes .clientes-info:after {
   content: " ";
   display: block;
@@ -1001,36 +1004,39 @@ body {
 #la-empresa .clientes .clientes-info:after {
   clear: both;
 }
-/* line 95, sass/layout/_canvasfree.scss */
+/* line 97, sass/layout/_canvasfree.scss */
 #la-empresa .clientes .clientes-info .txt-content {
   border: 1px solid green;
   float: right;
 }
 
-/* line 106, sass/layout/_canvasfree.scss */
+/*******************************************
+// SERVICIOS
+********************************************/
+/* line 110, sass/layout/_canvasfree.scss */
 #servicios {
   width: 100%;
   min-height: 500px;
 }
-/* line 111, sass/layout/_canvasfree.scss */
+/* line 115, sass/layout/_canvasfree.scss */
 #servicios .intro {
   width: 100%;
   height: auto;
 }
-/* line 114, sass/layout/_canvasfree.scss */
+/* line 118, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 50px 0px 50px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #servicios .intro .intro-info:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 117, sass/layout/_canvasfree.scss */
+/* line 121, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info h2 {
   font-size: 2em;
   text-align: center;
@@ -1038,7 +1044,7 @@ body {
   color: #58555a;
   font-family: "Titillium Web", sans-serif;
 }
-/* line 124, sass/layout/_canvasfree.scss */
+/* line 128, sass/layout/_canvasfree.scss */
 #servicios .intro .intro-info p {
   text-align: center;
   line-height: 1.6;
@@ -1046,7 +1052,7 @@ body {
   font-weight: 300;
   color: #7f7f7f;
 }
-/* line 136, sass/layout/_canvasfree.scss */
+/* line 140, sass/layout/_canvasfree.scss */
 #servicios .serv-desc {
   width: 100%;
   padding: 30px 0px 30px;
@@ -1057,7 +1063,7 @@ body {
   background-image: -webkit-linear-gradient(bottom, #ffffff, #ededed);
   background-image: linear-gradient(to top, #ffffff, #ededed);
 }
-/* line 140, sass/layout/_canvasfree.scss */
+/* line 144, sass/layout/_canvasfree.scss */
 #servicios .serv-desc .serv-desc-info {
   max-width: 70%;
   margin-left: auto;
@@ -1072,7 +1078,7 @@ body {
 #servicios .serv-desc .serv-desc-info:after {
   clear: both;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #servicios .serv-desc .serv-desc-info:after {
   content: " ";
   display: block;
@@ -1087,7 +1093,7 @@ body {
 #servicios .serv-desc .serv-desc-info ul:after {
   clear: both;
 }
-/* line 145, sass/layout/_canvasfree.scss */
+/* line 149, sass/layout/_canvasfree.scss */
 #servicios .serv-desc .serv-desc-info ul li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1106,12 +1112,38 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 153, sass/layout/_canvasfree.scss */
+@media (min-width: 700px) and (max-width: 919px) {
+  /* line 149, sass/layout/_canvasfree.scss */
+  #servicios .serv-desc .serv-desc-info ul li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 2.77778%;
+    padding-right: 2.77778%;
+    display: block;
+  }
+}
+@media (max-width: 699px) {
+  /* line 149, sass/layout/_canvasfree.scss */
+  #servicios .serv-desc .serv-desc-info ul li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 5.55556%;
+    padding-right: 5.55556%;
+    display: block;
+  }
+}
+/* line 165, sass/layout/_canvasfree.scss */
 #servicios .serv-desc .serv-desc-info ul li .box {
   background: rgba(88, 85, 90, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-web.png") center center;
   background-size: 80%;
   background-repeat: no-repeat;
-  padding: 80px 40px;
+  padding: 80px 10px;
   cursor: pointer;
   color: #58555a;
   -moz-transition: all 1s;
@@ -1123,26 +1155,55 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 162, sass/layout/_canvasfree.scss */
+@media (min-width: 700px) and (max-width: 919px) {
+  /* line 165, sass/layout/_canvasfree.scss */
+  #servicios .serv-desc .serv-desc-info ul li .box {
+    padding: 80px 20px;
+  }
+}
+@media (max-width: 699px) {
+  /* line 165, sass/layout/_canvasfree.scss */
+  #servicios .serv-desc .serv-desc-info ul li .box {
+    padding: 80px 50px;
+  }
+}
+/* line 180, sass/layout/_canvasfree.scss */
 #servicios .serv-desc .serv-desc-info ul li .box article {
   width: auto;
-  font-size: 1.2em;
   text-align: center;
   font-weight: 500;
   line-height: 1.2;
   padding: 0px 0px 5px;
-  border-bottom: 1px solid lime;
+  border-bottom: 3px solid rgba(0, 255, 0, 0.4);
 }
-/* line 171, sass/layout/_canvasfree.scss */
+@media (min-width: 1350px) {
+  /* line 180, sass/layout/_canvasfree.scss */
+  #servicios .serv-desc .serv-desc-info ul li .box article {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 990px) and (max-width: 1349px) {
+  /* line 180, sass/layout/_canvasfree.scss */
+  #servicios .serv-desc .serv-desc-info ul li .box article {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 920px) and (max-width: 989px) {
+  /* line 180, sass/layout/_canvasfree.scss */
+  #servicios .serv-desc .serv-desc-info ul li .box article {
+    font-size: 1em;
+  }
+}
+/* line 197, sass/layout/_canvasfree.scss */
 #servicios .serv-desc .serv-desc-info ul li .box:hover {
   background-color: lime;
   color: white;
 }
-/* line 174, sass/layout/_canvasfree.scss */
+/* line 200, sass/layout/_canvasfree.scss */
 #servicios .serv-desc .serv-desc-info ul li .box:hover article {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 3px solid rgba(242, 242, 242, 0.5);
 }
-/* line 185, sass/layout/_canvasfree.scss */
+/* line 211, sass/layout/_canvasfree.scss */
 #servicios .cta {
   width: 100%;
   min-height: 400px;
@@ -1153,13 +1214,13 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 190, sass/layout/_canvasfree.scss */
+/* line 216, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #servicios .cta .cta-info:after {
   content: " ";
   display: block;
@@ -1174,7 +1235,7 @@ body {
 #servicios .cta .cta-info:after {
   clear: both;
 }
-/* line 193, sass/layout/_canvasfree.scss */
+/* line 219, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info h3 {
   color: white;
   font-weight: 600;
@@ -1183,13 +1244,13 @@ body {
   text-transform: uppercase;
   font-size: 1.8em;
 }
-/* line 201, sass/layout/_canvasfree.scss */
+/* line 227, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info .cta-services {
   text-align: center;
   margin-top: 40px;
   display: block;
 }
-/* line 205, sass/layout/_canvasfree.scss */
+/* line 231, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info .cta-services a {
   border: 3px solid #f2f2f2;
   -moz-border-radius: 15px;
@@ -1207,26 +1268,29 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 213, sass/layout/_canvasfree.scss */
+/* line 239, sass/layout/_canvasfree.scss */
 #servicios .cta .cta-info .cta-services a:hover {
   border: 3px solid lime;
   background-color: rgba(0, 255, 0, 0.5);
   color: #f2f2f2;
 }
-/* line 225, sass/layout/_canvasfree.scss */
+/* line 251, sass/layout/_canvasfree.scss */
 #servicios .extra {
   border: 1px solid maroon;
   width: 100%;
   min-height: 400px;
 }
 
-/* line 234, sass/layout/_canvasfree.scss */
+/*******************************************
+// PREGUNTAS FRECUENTES
+********************************************/
+/* line 262, sass/layout/_canvasfree.scss */
 #preguntas-frecuentes {
   width: 100%;
   min-height: 500px;
   padding-bottom: 0px;
 }
-/* line 239, sass/layout/_canvasfree.scss */
+/* line 267, sass/layout/_canvasfree.scss */
 #preguntas-frecuentes h2 {
   text-align: center;
   padding: 20px 0px;
@@ -1236,13 +1300,16 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
-/* line 251, sass/layout/_canvasfree.scss */
+/*******************************************
+// CONTACT
+********************************************/
+/* line 281, sass/layout/_canvasfree.scss */
 #contact-main {
   width: 100%;
   min-height: 500px;
   padding-bottom: 0px;
 }
-/* line 256, sass/layout/_canvasfree.scss */
+/* line 286, sass/layout/_canvasfree.scss */
 #contact-main h2 {
   text-align: center;
   padding: 20px 0px;
@@ -1253,7 +1320,7 @@ body {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/* line 268, sass/layout/_canvasfree.scss */
+/* line 298, sass/layout/_canvasfree.scss */
 #contact-main #contact-info {
   display: block;
   max-width: 1200px;
@@ -1262,34 +1329,34 @@ body {
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #contact-main #contact-info:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 273, sass/layout/_canvasfree.scss */
+/* line 303, sass/layout/_canvasfree.scss */
 #contact-main #contact-info .contact-address {
   display: block;
   width: auto;
   margin: 0px auto;
   text-align: center;
 }
-/* line 284, sass/layout/_canvasfree.scss */
+/* line 314, sass/layout/_canvasfree.scss */
 #contact-main #contact-map {
   width: 100%;
   height: 450px;
   margin: 0px;
   padding: 0px;
 }
-/* line 289, sass/layout/_canvasfree.scss */
+/* line 319, sass/layout/_canvasfree.scss */
 #contact-main #contact-map #map-canvas {
   height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
-/* line 294, sass/layout/_canvasfree.scss */
+/* line 324, sass/layout/_canvasfree.scss */
 #contact-main #contact-map #map-canvas h2 {
   margin: 0px;
   padding: 0px;
@@ -1298,13 +1365,13 @@ body {
   margin-bottom: 5px;
   color: #003d77;
 }
-/* line 302, sass/layout/_canvasfree.scss */
+/* line 332, sass/layout/_canvasfree.scss */
 #contact-main #contact-map #map-canvas p {
   margin: 0px;
   padding: 0px;
   line-height: 1.4;
 }
-/* line 311, sass/layout/_canvasfree.scss */
+/* line 341, sass/layout/_canvasfree.scss */
 #contact-main .contact-form {
   width: 100%;
   padding: 30px 0px;
@@ -1316,13 +1383,13 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 319, sass/layout/_canvasfree.scss */
+/* line 349, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #contact-main .contact-form .wpcf7:after {
   content: " ";
   display: block;
@@ -1337,12 +1404,12 @@ body {
 #contact-main .contact-form .wpcf7:after {
   clear: both;
 }
-/* line 322, sass/layout/_canvasfree.scss */
+/* line 352, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form {
   width: 80%;
   margin: 0px auto;
 }
-/* line 325, sass/layout/_canvasfree.scss */
+/* line 355, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.input {
   float: left;
   display: inline;
@@ -1354,7 +1421,7 @@ body {
   overflow: hidden;
 }
 @media (min-width: 700px) {
-  /* line 325, sass/layout/_canvasfree.scss */
+  /* line 355, sass/layout/_canvasfree.scss */
   #contact-main .contact-form .wpcf7 form p.input {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1367,7 +1434,7 @@ body {
   }
 }
 @media (max-width: 699px) {
-  /* line 325, sass/layout/_canvasfree.scss */
+  /* line 355, sass/layout/_canvasfree.scss */
   #contact-main .contact-form .wpcf7 form p.input {
     display: block;
     width: 94%;
@@ -1376,7 +1443,7 @@ body {
     margin: 20px auto 20px;
   }
 }
-/* line 345, sass/layout/_canvasfree.scss */
+/* line 375, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.input input[type=text],
 #contact-main .contact-form .wpcf7 form p.input input[type=email],
 #contact-main .contact-form .wpcf7 form p.input input[type=tel] {
@@ -1401,18 +1468,18 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 362, sass/layout/_canvasfree.scss */
+/* line 392, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.input input[type=text]:focus,
 #contact-main .contact-form .wpcf7 form p.input input[type=email]:focus,
 #contact-main .contact-form .wpcf7 form p.input input[type=tel]:focus {
   outline: none;
   background-color: #f8f2e4;
 }
-/* line 368, sass/layout/_canvasfree.scss */
+/* line 398, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.last {
   margin-right: 0px;
 }
-/* line 371, sass/layout/_canvasfree.scss */
+/* line 401, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.txt {
   width: 94%;
   clear: both;
@@ -1423,7 +1490,7 @@ body {
   margin: 20px auto 0px;
   color: white;
 }
-/* line 380, sass/layout/_canvasfree.scss */
+/* line 410, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.txt textarea {
   border: none;
   border: 3px solid white;
@@ -1446,12 +1513,12 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 395, sass/layout/_canvasfree.scss */
+/* line 425, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.txt textarea:focus {
   outline: none;
   background-color: #f8f2e4;
 }
-/* line 401, sass/layout/_canvasfree.scss */
+/* line 431, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send {
   width: 100%;
   clear: both;
@@ -1459,7 +1526,7 @@ body {
   padding: 0px;
   margin-top: 20px;
 }
-/* line 407, sass/layout/_canvasfree.scss */
+/* line 437, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send input[type=submit] {
   border: none;
   border: 3px solid white;
@@ -1485,11 +1552,11 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 423, sass/layout/_canvasfree.scss */
+/* line 453, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send input[type=submit]:focus {
   outline: none;
 }
-/* line 426, sass/layout/_canvasfree.scss */
+/* line 456, sass/layout/_canvasfree.scss */
 #contact-main .contact-form .wpcf7 form p.send input[type=submit]:hover {
   background-color: rgba(0, 61, 119, 0.5);
   color: white;
@@ -1933,7 +2000,7 @@ header .normalheader .top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 header .normalheader .top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
@@ -2080,7 +2147,7 @@ header .fullheight div.top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
@@ -2219,7 +2286,7 @@ header .fullheight .hgroup p img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 .site-footer .footer-content:after {
   content: " ";
   display: block;

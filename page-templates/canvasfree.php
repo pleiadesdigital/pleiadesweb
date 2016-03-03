@@ -83,7 +83,7 @@ get_header(); ?>
 							<li>
 								<div class="box">
 									<article>
-										DESARROLLO WEB PARA MARKETING&nbsp;EN&nbsp;LÍNEA
+										DESARROLLO WEB PARA MARKETING&nbsp;EN&nbsp;LÍNEA</h3>
 									</article>
 								</div>
 							</li>
