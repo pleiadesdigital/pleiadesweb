@@ -19,17 +19,23 @@ body {
 
 // SERVICES
 #services {
-	padding-top: 30px;
+	padding-top: 60px;
+	padding-bottom: 50px;
+	@include breakpoint($iphone) {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
 	h2 {
 		text-transform: uppercase;
 		font-weight: 300;
 		font-size: 3em;
 		color: $blue;
 		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		@include text-shadow();
 		@include breakpoint($iphone) {
 			font-size: 2em;
+			margin-bottom: 20px;
 		}
 	}
 	#showroom {
@@ -46,8 +52,7 @@ body {
 			}
 			@include breakpoint($tablet) {
 				@include span(1 of 2);
-			}
-			
+			}	
 			.view {
 				height: 250px;
 				width: auto;
@@ -63,7 +68,9 @@ body {
 				position: relative;
 				text-align: center;
 				background: rgba($greydark, 0.8);
-				.mask,
+				.mask1,
+				.mask2,
+				.mask3,
 				.content {
 					width: auto;
 					height: 250px;
@@ -75,8 +82,11 @@ body {
 				img {
 					display: block;
 					position: relative;
+					width: 100%;
+					height: 100%;
 				} //img
 				h2 {
+					font-family: $font_copy;
 					text-transform: uppercase;
 					color: #FFFFFF;
 					text-align: center;
@@ -84,7 +94,7 @@ body {
 					font-size: 17px;
 					padding: 10px;
 					background: rgba(0, 0, 0, 0.8);
-					margin: 20px 0px 0px -10px;
+					margin: 20px 0px 20px -10px;
 				} //h2
 				p {
 					font-size: 12px;
@@ -117,11 +127,21 @@ body {
 					transform: scaleY(1);
 					transition: all 0.7s ease-in-out;
 				} //img
-				.mask {
-					@include background-image(linear-gradient(top left, $orange, $orangemed));
+				.mask1 {
+					@include background-image(linear-gradient(top left, $yellowdark, $black));
 					@include single-transition();
 					opacity: 0;
-				} //.mask
+				} //.mask1
+				.mask2 {
+					@include background-image(linear-gradient(top left, $blue, $black));
+					@include single-transition();
+					opacity: 0;
+				} //.mask2
+				.mask3 {
+					@include background-image(linear-gradient(top left, $orange, $black));
+					@include single-transition();
+					opacity: 0;
+				} //.mask3
 				h2 {
 					//transform: scale(0);
 					//@include single-transition();
@@ -147,7 +167,9 @@ body {
 						opacity: 1;
 					} //&.mask
 				} //&:hover img
-				&:hover .mask {
+				&:hover .mask1,
+				&:hover .mask2,
+				&:hover .mask3 {
 					opacity: 1;
 				} //&:hover .mask
 				&:hover h2, 
@@ -199,9 +221,9 @@ body {
 				@include single-transition();
 				@include transition-duration(0.5s);
 				&:hover {
-					border: 3px solid $blue;
+					border: 3px solid $orange;
 					//@include background-image(linear-gradient(top left, rgba($bluemed, 0.7), darken(rgba($blue, 0.7), 20)));
-					background-color: rgba($blue, 0.5);
+					background-color: rgba($orange, 0.5);
 					color: $snow;
 				} //&:hover 
 			} //a

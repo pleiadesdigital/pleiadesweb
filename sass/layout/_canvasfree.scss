@@ -282,8 +282,8 @@
 					@include single-transition();
 					@include transition-duration(0.5s);
 					&:hover {
-						border: 3px solid lime;
-						background-color: rgba(lime, 0.5);
+						border: 3px solid $orange;
+						background-color: rgba($orange, 0.5);
 						color: $snow;
 					} //&:hover 
 				} //a 

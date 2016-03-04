@@ -99,7 +99,7 @@
             padding: 15px 20px;
           }
           &:hover {
-            color: $yellowmed;
+            color: $orange;
             border-top-color: transparent; 
           }
         } //a 2nd level
@@ -163,7 +163,8 @@
     font-weight: 100;
     @include transition-duration(0.7s);
     &:hover {
-      color: $yellowmed;
+      color: $orange;
+      cursor: pointer;
     } //&:hover
   } //.menu-toggle 
   main-navigation.toggled .nav-menu {
@@ -176,7 +177,7 @@
     ul {
       display: none;
       padding-left: 0px;
-      margin-top: 20px;
+      margin-top: 0px;
       li {
         float: none;
         margin: 0px;
@@ -197,7 +198,7 @@
           &:hover {
             color: $snow;
             border: none;
-            background: rgba($orangedark, 0.6);
+            background: rgba($orangemed, 0.8);
           } //&:hover 
         } // a 1st level
         &:hover > a {

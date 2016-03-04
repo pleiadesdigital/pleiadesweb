@@ -17,8 +17,8 @@
 					<section id="webdev">
 						<div class="view view-tenth">
 							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-web.jpg" />
-							<div class="mask">
-				        <h2>Desarrollo Web para Marketing&nbsp;en&nbsp;Línea</h2>
+							<div class="mask1">
+				        <h2>Desarrollo Web | Marketing&nbsp;en&nbsp;Línea</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
 								<a href="#" class="info">Leer más</a>
 							</div>
@@ -29,8 +29,8 @@
 		      <section id="graphdes">
 			      <div class="view view-tenth">
 			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-design.jpg" />
-			      	<div class="mask">
-				        <h2>Imagen Corporativa y Diseño&nbsp;Gráfico</h2>
+			      	<div class="mask2">
+				        <h2>Diseño&nbsp;Gráfico | Imagen Corporativa</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
 								<a href="#" class="info">Leer más</a>
 							</div>
@@ -40,7 +40,7 @@
 		      <section id="audioprom">
 		      	<div class="view view-tenth">
 			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-audio.jpg" />
-			      	<div class="mask">
+			      	<div class="mask3">
 				        <h2>Audio Promocional para Radio&nbsp;y&nbsp;Video</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
 								<a href="#" class="info">Leer más</a>
