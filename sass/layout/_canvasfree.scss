@@ -296,7 +296,11 @@
 	.extra {
 		border: 1px solid maroon;
 		width: 100%;
-		min-height: 400px;
+		min-height: 800px;
+		.extra-info {
+			border: 1px solid lime;
+			@include container();
+		}
 	} //.extra
 } //#servicios
 

@@ -20,7 +20,7 @@
 							<div class="mask1">
 				        <h2>Desarrollo Web | Marketing&nbsp;en&nbsp;Línea</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-								<a href="#" class="info">Leer más</a>
+								<a href="#" class="info1">Leer más</a>
 							</div>
 						</div>
 
@@ -32,7 +32,7 @@
 			      	<div class="mask2">
 				        <h2>Diseño&nbsp;Gráfico | Imagen Corporativa</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-								<a href="#" class="info">Leer más</a>
+								<a href="#" class="info2">Leer más</a>
 							</div>
 						</div>
 		      </section><!-- id="graphdes" -->
@@ -43,7 +43,7 @@
 			      	<div class="mask3">
 				        <h2>Audio Promocional para Radio&nbsp;y&nbsp;Video</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-								<a href="#" class="info">Leer más</a>
+								<a href="#" class="info3">Leer más</a>
 							</div>
 						</div>
 		      </section><!-- id="audioprom" -->

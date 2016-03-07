@@ -107,6 +107,9 @@ function pleiadesweb_scripts() {
 	// GOOGLE Maps scripts
 	wp_enqueue_script("google-maps-scripts", get_stylesheet_directory_uri() . '/js/map.js', array('jquery'), true);
 
+	// FLEXSLIDER scripts
+		wp_enqueue_script("slider-scripts", get_stylesheet_directory_uri() . "/slider/js/slider.js", array("jquery"), true);
+		wp_enqueue_style("flexslider-css", get_template_directory_uri() . "/slider/css/flexslider.css", "all");
 
 
 	// CUSTOM script
@@ -143,3 +146,30 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// FLEXSLIDER MAIN SCRIPTS
+// Including slider_functions_include.php
+include(TEMPLATEPATH . "/slider/php/slider-functions-include.php");
+
+//Enqueueing flexslider scripts
+	function pleiadesweb_flexslider() {
+		if(!is_admin()) {
+			// Enqueue flexslider JavaScript
+			wp_register_script("flexslider-js", get_template_directory_uri() . "/slider/js/jquery.flexslider-min.js", array("jquery"));
+			wp_enqueue_script("flexslider-js");
+		}
+	}
+	add_action("init", "pleiadesweb_flexslider");
+
+
+// Adding excerpts to pages
+function my_add_excerpts_to_pages() {
+	add_post_type_support('page', 'excerpt');
+}
+add_action('init', 'my_add_excerpts_to_pages');
+
+
+
+
+
+
