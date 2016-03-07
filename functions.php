@@ -76,15 +76,11 @@ add_action( 'widgets_init', 'pleiadesweb_widgets_init' );
 function pleiadesweb_scripts() {
 	wp_enqueue_style( 'pleiadesweb-style', get_stylesheet_uri() );
 
-
-
 	// FONTS
 	// Titillium Web & Roboto Slab
 	wp_enqueue_style('pleiadesweb-google-fonts', 'https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,400italic,600,700,600italic|Roboto+Slab:400,300,100,700');
 	// Fontawesome
 	wp_enqueue_style('pleiadesweb-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-
-
 
 	// JAVASCRIPT
 
@@ -107,10 +103,12 @@ function pleiadesweb_scripts() {
 	// GOOGLE Maps scripts
 	wp_enqueue_script("google-maps-scripts", get_stylesheet_directory_uri() . '/js/map.js', array('jquery'), true);
 
-	// FLEXSLIDER scripts
-		wp_enqueue_script("slider-scripts", get_stylesheet_directory_uri() . "/slider/js/slider.js", array("jquery"), true);
-		wp_enqueue_style("flexslider-css", get_template_directory_uri() . "/slider/css/flexslider.css", "all");
 
+	// SLIDER JS file
+
+		//wp_enqueue_script("slider-scripts", get_stylesheet_directory_uri() . "/slider/js/slider.js", array("jquery"), true);
+
+		wp_enqueue_style("flexslider-css", get_template_directory_uri() . "/slider/css/flexslider.css", "all");
 
 	// CUSTOM script
 	wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/script.js', array(), '20150115', true );
@@ -118,6 +116,8 @@ function pleiadesweb_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+
 } //pleiadesweb_scripts()
 add_action( 'wp_enqueue_scripts', 'pleiadesweb_scripts' );
 
@@ -147,19 +147,15 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-// FLEXSLIDER MAIN SCRIPTS
-// Including slider_functions_include.php
-include(TEMPLATEPATH . "/slider/php/slider-functions-include.php");
-
 //Enqueueing flexslider scripts
 	function pleiadesweb_flexslider() {
 		if(!is_admin()) {
-			// Enqueue flexslider JavaScript
 			wp_register_script("flexslider-js", get_template_directory_uri() . "/slider/js/jquery.flexslider-min.js", array("jquery"));
 			wp_enqueue_script("flexslider-js");
 		}
 	}
 	add_action("init", "pleiadesweb_flexslider");
+
 
 
 // Adding excerpts to pages

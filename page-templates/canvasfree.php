@@ -121,41 +121,34 @@ get_header(); ?>
 			</article>
 	
 			<article class="extra">
-				<div class="extra-info">
-					<!-- Place somewhere in the <body> of your page -->
-					<div id="slider" class="flexslider">
-					  <ul class="slides">
-					    <li>
-					      <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" />
-					    </li>
-					    <li>
-					      <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" />
-					    </li>
-					    <li>
-					      <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" />
-					    </li>
-					    <li>
-					      <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" />
-					    </li>
-					  </ul>
-					</div>
 
-					<div id="carousel" class="flexslider">
-					  <ul class="slides">
-					    <li>
-					      <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" />
-					    </li>
-					    <li>
-					      <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" />
-					    </li>
-					    <li>
-					      <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" />
-					    </li>
-					    <li>
-					      <img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" />
-					    </li>
-					  </ul>
-					</div>
+				<div class="extra-info">
+					<h2>Algunos de los trabajos que realizamos</h2>
+							<div id="slider" class="flexslider">
+								<ul class="slides">
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" /></li>
+								</ul><!-- class="slides" -->
+							</div><!-- id="slider" -->
+
+							<div id="carousel" class="flexslider">
+								<ul class="slides">
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" /></li>
+									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" /></li>
+								</ul><!-- class="slides" -->
+							</div><!-- id="carousel" -->
 
 
 				</div>

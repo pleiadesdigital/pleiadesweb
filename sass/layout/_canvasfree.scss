@@ -294,13 +294,38 @@
 
 	// EXTRA
 	.extra {
-		border: 1px solid maroon;
+
+		@include background-image(linear-gradient(bottom, $white, $snow));
 		width: 100%;
-		min-height: 800px;
+		padding-top: 30px;
+		h2 {
+			text-transform: uppercase;
+			font-weight: 600;
+			font-family: $font_copy;
+			font-size: 2em;
+			color: $black;
+			text-align: center;
+			margin-bottom: 40px;
+			@include breakpoint($tablet) {
+				font-size: 1.8em;
+			} //breakpoint($tablet)
+			@include breakpoint($iphone) {
+				font-size: 1.4em;
+			} //breakpoint($iphone)
+		} //h2
 		.extra-info {
-			border: 1px solid lime;
-			@include container();
-		}
+			@include container(80%);
+			@include breakpoint(1200px) {
+				@include container(70%);
+			}
+			@include breakpoint($tablet) {
+				@include container(90%);
+			}
+			@include breakpoint($iphone) {
+				@include container();
+			}
+			padding: 30px 10%;
+		} //.extra-info
 	} //.extra
 } //#servicios
 

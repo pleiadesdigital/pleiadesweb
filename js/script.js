@@ -1,1 +1,1 @@
-jQuery(function(){var e=jQuery(window).height();jQuery(".fullheight").css("height",e)});
+jQuery(function(){var i=jQuery(window).height();jQuery(".fullheight").css("height",i)}),jQuery(window).load(function(){jQuery("#carousel").flexslider({animation:"slide",controlNav:!1,animationLoop:!1,slideshow:!1,itemWidth:150,itemMargin:10,asNavFor:"#slider"}),jQuery("#slider").flexslider({animation:"slide",controlNav:!1,animationLoop:!1,slideshow:!1,sync:"#carousel"})});
