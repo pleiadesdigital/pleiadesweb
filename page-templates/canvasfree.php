@@ -123,7 +123,7 @@ get_header(); ?>
 			<article class="extra">
 
 				<div class="extra-info">
-					<h2>Algunos de los trabajos que realizamos</h2>
+					<h2>Algunos de nuestros clientes</h2>
 							<div id="slider" class="flexslider">
 								<ul class="slides">
 									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" /></li>

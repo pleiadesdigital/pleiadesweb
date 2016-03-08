@@ -47,7 +47,6 @@
 		padding-top: 100px;
 		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax4.jpg');
 		.cta-info {
-			border: 1px solid $white;
 			@include container(90%);
 			h3 {
 				color: $white;
@@ -59,7 +58,22 @@
 			}
 			.cta-button {
 				text-align: center;
-			}
+				margin-top: 40px;
+				a {
+					border: 3px solid $snow;
+					@include border-radius(15px); 
+					padding: 10px 25px; 
+					color: $snow;
+					font-weight: 600;
+					@include single-transition();
+					@include transition-duration(0.5s);
+					&:hover {
+						border: 3px solid $orange;
+						background-color: rgba($orange, 0.5);
+						color: $snow;
+					} //&:hover 
+				} //a
+			} //.cta-button
 		}
 	} //.cta
 
@@ -100,7 +114,6 @@
 			}
 		} //.about-info
 	} //.about
-
 } //#la-empresa 
 
 /*******************************************
@@ -268,6 +281,17 @@
 				line-height: 2;
 				text-transform: uppercase;
 				font-size: 1.8em;
+				@include breakpoint($tablet) {
+					font-size: 1.6em;
+					font-weight: 500;
+					line-height: 1.8;
+					padding-top: 10px;
+				}
+				@include breakpoint($iphone) {
+					font-size: 1.5em;
+					font-weight: 400;
+					line-height: 1.6;
+				}
 			} //h3
 			.cta-services {
 				text-align: center;
