@@ -1743,6 +1743,50 @@ body {
   border: 3px solid #003d77;
 }
 
+/* line 3, sass/layout/_flexbox.scss */
+#flexbox {
+  min-height: 600px;
+  padding: 50px 0px 0px;
+}
+/* line 6, sass/layout/_flexbox.scss */
+#flexbox h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 11, sass/layout/_flexbox.scss */
+.menu-section {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #bfbfbf;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+.menu-section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 16, sass/layout/_flexbox.scss */
+.menu-section .menu ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  background: #262626;
+}
+/* line 22, sass/layout/_flexbox.scss */
+.menu-section .menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.6em 1em;
+}
+/* line 27, sass/layout/_flexbox.scss */
+.menu-section .menu ul li a:hover {
+  background: #7f7f7f;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
