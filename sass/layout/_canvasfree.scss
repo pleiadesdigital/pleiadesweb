@@ -55,10 +55,19 @@
 				line-height: 2;
 				text-transform: uppercase;
 				font-size: 1.8em;
+				@include breakpoint($iphone) {
+					line-height: 1.6;
+					font-weight: 400;
+					font-size: 1.4em;
+					margin-bottom: 20px;
+				}
 			}
 			.cta-button {
 				text-align: center;
 				margin-top: 40px;
+				@include breakpoint($iphone) {
+					margin-top: 40px;
+				}
 				a {
 					border: 3px solid $snow;
 					@include border-radius(15px); 
@@ -204,13 +213,13 @@
 								font-weight: 500;
 								line-height: 1.2;
 								padding: 0px 0px 5px;
-								border-bottom: 3px solid rgba($orange, 0.4);
+								border-bottom: 3px solid rgba($oryellowlight, 0.4);
 							} //article
 						&:hover { 
-							background-color: $orange;
+							background-color: $oryellow;
 							color: $white;
 							article {
-								border-bottom: 3px solid rgba($orangedark, 0.5);
+								border-bottom: 3px solid rgba($oryellowdark, 0.5);
 							}
 						} //&:hover
 					} //.box
@@ -222,10 +231,10 @@
 							background-size: 80%;
 							background-repeat: no-repeat;
 						&:hover { 
-							background-color: $orange;
+							background-color: $oryellow;
 							color: $white;
 							article {
-								border-bottom: 3px solid rgba($orangedark, 0.5);
+								border-bottom: 3px solid rgba($oryellowdark, 0.5);
 							} //article
 						} //&:hover
 					} //.box
@@ -237,10 +246,10 @@
 							background-size: 70%;
 							background-repeat: no-repeat;
 						&:hover { 
-							background-color: $orange;
+							background-color: $oryellow;
 							color: $white;
 							article {
-								border-bottom: 3px solid rgba($orangedark, 0.5);
+								border-bottom: 3px solid rgba($oryellowdark, 0.5);
 							} //article
 						} //&:hover
 					} //.box
@@ -252,7 +261,7 @@
 							background-size: 70%;
 							background-repeat: no-repeat;
 						&:hover { 
-							background-color: $orange;
+							background-color: $oryellow;
 							color: $white;
 							article {
 								border-bottom: 3px solid rgba($orangedark, 0.5);
@@ -319,7 +328,7 @@
 	// EXTRA
 	.extra {
 
-		@include background-image(linear-gradient(bottom, $white, $snow));
+		@include background-image(linear-gradient(bottom, darken($snow, 20), $white));
 		width: 100%;
 		padding-top: 30px;
 		h2 {

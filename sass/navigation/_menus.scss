@@ -71,7 +71,7 @@
         } //breakpoint(600px 989px)
       } //a 1st level
       &:hover > a {
-        border-top: 5px solid $orange;
+        border-top: 5px solid $oryellow;
       } //&:hover > a
       &:hover > ul {
         display: block;
@@ -119,7 +119,7 @@
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
-    border-top: 5px solid $orange;
+    border-top: 5px solid $oryellow;
   }
   
 

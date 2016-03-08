@@ -148,7 +148,7 @@ body {
 					opacity: 0;
 				} //.mask2
 				.mask3 {
-					@include background-image(linear-gradient(top left, $orange, $black));
+					@include background-image(linear-gradient(top left, $oryellow, $black));
 					@include single-transition();
 					opacity: 0;
 				} //.mask3

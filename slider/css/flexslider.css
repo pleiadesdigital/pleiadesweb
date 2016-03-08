@@ -111,8 +111,13 @@ html[xmlns] .flexslider .slides {
 /*#CAROUSEL FIXES*/
 #carousel img {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.3;
   display: block;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 #carousel img:hover {
   opacity: 1;
