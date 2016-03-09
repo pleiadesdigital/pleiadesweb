@@ -40,8 +40,9 @@ get_header(); ?>
 			<section class="about">
 				<section class="about-info">
 					<div class="about-content">
+						<h2>¿Por qué trabajar con nosotros?</h2>
 						<div class="about-image">
-							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/sobre-empresa.jpg" alt="Servicios de Marketing de vanguardia">
+							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/empresa/la-empresa-pleiades-digital.jpg" alt="Servicios de Marketing de vanguardia">
 						</div>
 						<div class="txt-content">
 							<?php $query = new WP_Query(); ?>

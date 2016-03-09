@@ -102,25 +102,26 @@
 					width: 1100px;
 					margin-top: 30px;
 					padding: 0px 30px;
+					h2 {
+						font-size: 2em;
+						text-align: center;
+						margin-bottom: 0px;
+					} //h2
 					.about-image {
-						@include span(5 of 12);
+						@include span(6 of 12);
 						img {
-							width: 100%;
+							width: 90%;
 							height: auto;
 							margin: 30px auto 0px;
 						} //img
 					} //.about-image
 					.txt-content {
 						@include span(6 of 12);
+						margin: 30px auto 0px;
 						float: right;
-						h2 {
-							font-size: 2em;
-							text-align: center;
-							margin-bottom: 0px;
-						} //h2
 						p {
 							text-align: justify;
-							font-size: 1em;
+							font-size: 1.1em;
 						} //p
 					} //.txt-content 
 				} //breakpoint($desktop)
@@ -129,25 +130,26 @@
 					width: 960px;
 					margin-top: 30px;
 					padding: 0px 30px;
+					h2 {
+						font-size: 1.8em;
+						text-align: center;
+						margin-bottom: 0px;
+					} //h2
 					.about-image {
-						@include span(5 of 12);
+						@include span(6 of 12);
 						img {
-							width: 100%;
+							width: 90%;
 							height: auto;
 							margin: 30px auto 0px;
 						} //img
 					} //.about-image
 					.txt-content {
 						@include span(6 of 12);
+						margin: 30px auto 0px;
 						float: right;
-						h2 {
-							font-size: 1.8em;
-							text-align: center;
-							margin-bottom: 0px;
-						} //h2
 						p {
 							text-align: justify;
-							font-size: 0.9em;
+							font-size: 1em;
 						} //p
 					} //.txt-content 
 				} //breakpoint($laptop 1199px)
@@ -155,54 +157,53 @@
 				@include breakpoint($tablet) { //700px 989px;
 					width: 670px;
 					margin-top: 30px;
+					h2 {
+						font-size: 2em;
+						text-align: center;
+						margin-bottom: 0px;
+					} //h2
 					.about-image {
-						@include span(7 of 12);
 						img {
-							width: 100%;
+							width: 80%;
 							height: auto;
-							margin: 30px auto 0px;
+							display: block;
+							margin: 20px auto 30px;
 						} //img
 					} //.about-image
 					.txt-content {
-						@include span(5 of 12);
-						padding: 0px 20px;
-						float: right;
-						h2 {
-							font-size: 1.8em;
-							text-align: center;
-							margin-bottom: 0px;
-						} //h2
+						width: 80%;
+						display: block;
+						margin: 20px auto;
 						p {
 							text-align: justify;
-							font-size: 0.9em;
+							font-size: 1em;
 						} //p
 					} //.txt-content 
 				} //breakpoint($tablet)
 
 				@include breakpoint($iphone) { //max-width 699px;
 					width: 90%;
-					padding-top: 30px;
+					padding-top: 20px;
+					h2 {
+						font-size: 1.6em;
+						text-align: center;
+						margin-bottom: 0px;
+					} //h2
 					.about-image {
-						display: block;
 						img {
 							width: 90%;
 							height: auto;
 							display: block;
-							margin: 0px auto;
+							margin: 20px auto 30px;
 						} //img
 					} //.about-image
 					.txt-content {
-						float: none;
+						width: 90%;
 						display: block;
-						width: 80%;
-						margin: 0px auto;
-						h2 {
-							font-size: 1.8em;
-							text-align: center;
-							margin-bottom: 0px;
-						} //h2
+						margin: 20px auto;
 						p {
 							text-align: justify;
+							font-size: 1em;
 						} //p
 					} //.txt-content 
 				} //breakpoint($iphone)
@@ -417,7 +418,7 @@
 					@include transition-duration(0.5s);
 					&:hover {
 						border: 3px solid $orange;
-						background-color: rgba($orange, 0.5);
+						background-color: rgba($oryellow, 0.5);
 						color: $snow;
 					} //&:hover 
 				} //a 

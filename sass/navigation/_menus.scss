@@ -96,8 +96,7 @@
             padding: 15px 20px;
           }
           &:hover {
-            color: $orange;
-            border-top-color: transparent; 
+            color: $oryellow;
           }
         } //a 2nd level
       } //li 2nd level
@@ -118,6 +117,16 @@
   .current_page_ancestor > a {
     border-top: 5px solid $oryellow;
   }
+  .sub-menu {
+    .current-menu-item {
+      background: rgba($greydark, 0.7);
+    }
+    .current-menu-item > a {
+      border-top: 5px solid transparent;
+      color: $oryellow;
+    }
+  }
+
 } //.main-navigation
 
 /* SMALL MENU */
