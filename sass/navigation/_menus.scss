@@ -24,9 +24,6 @@
     clear: both;
     width: 100%;
     text-align: center;
-    /* height: 70px;
-    margin: 20px auto 0px;
-    padding: 0px;*/
   } //breakpoint($iphone)
 
   // UL 1st level
@@ -121,11 +118,7 @@
   .current_page_ancestor > a {
     border-top: 5px solid $oryellow;
   }
-  
-
 } //.main-navigation
-
-
 
 /* SMALL MENU */
 .menu-toggle {
@@ -163,13 +156,12 @@
     font-weight: 100;
     @include transition-duration(0.7s);
     &:hover {
-      color: $orange;
+      color: $oryellow;
       cursor: pointer;
     } //&:hover
   } //.menu-toggle 
   main-navigation.toggled .nav-menu {
     display: block;
-    //border-top: 1px solid $white;
   }
 
   .main-navigation {
@@ -198,7 +190,7 @@
           &:hover {
             color: $snow;
             border: none;
-            background: rgba($orangemed, 0.8);
+            background: rgba($oryellow, 0.8);
           } //&:hover 
         } // a 1st level
         &:hover > a {
@@ -217,7 +209,6 @@
     .current_page_ancestor > a {
       border-top: none;
     }
-
-
+    
   } //main-navigation
 } //breakpoint($iphone) 

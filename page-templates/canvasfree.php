@@ -38,19 +38,23 @@ get_header(); ?>
 
 			<!-- ABOUT -->
 			<section class="about">
-				<div class="about-info">
-					<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/sobre-empresa.jpg" alt="Servicios de Marketing de vanguardia">
-					<article class="txt-content">
-						<?php $query = new WP_Query(); ?>
-						<?php $query->the_post(); ?>
-						<?php the_content(); ?>
-					</article>
-				</div>
+				<section class="about-info">
+					<div class="about-content">
+						<div class="about-image">
+							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/sobre-empresa.jpg" alt="Servicios de Marketing de vanguardia">
+						</div>
+						<div class="txt-content">
+							<?php $query = new WP_Query(); ?>
+							<?php $query->the_post(); ?>
+							<?php the_content(); ?>
+						</div><!-- class="txt-content" -->
+					</div><!-- class="about-content" -->
+				</section><!-- class="about-info" -->
 			</section>
 
-			<!-- CLIENTES -->
-			<section class="clientes">
-				<div class="clientes-info">
+			<!-- EXTRA -->
+			<section class="extra">
+				<div class="extra-info">
 					<?php $query = new WP_Query(); ?>
 					<?php $query->the_post(); ?>
 					<?php the_content(); ?>
@@ -68,6 +72,7 @@ get_header(); ?>
 			<!-- Page title -->
 			<?php //the_title("<h2>", "</h2>", true); ?>
 
+			<!-- INTRO -->
 			<section class="intro">
 				<div class="intro-info">	
 					<h2>Digital Marketing Services</h2>
@@ -75,6 +80,7 @@ get_header(); ?>
 				</div>
 			</section>
 
+			<!-- SERV DESCRIPTION -->
 			<section class="serv-desc">
 				<div class="serv-desc-info">
 					<div class="boxes">
@@ -83,7 +89,7 @@ get_header(); ?>
 							<li>
 								<div class="box">
 									<article>
-										DESARROLLO WEB PARA MARKETING&nbsp;EN&nbsp;LÍNEA</h3>
+										DESARROLLO WEB MARKETING&nbsp;EN&nbsp;LÍNEA</h3>
 									</article>
 								</div>
 							</li>
@@ -91,7 +97,7 @@ get_header(); ?>
 							<li>
 								<div class="box">
 									<article>
-										IMAGEN CORPORATIVA Y DISEÑO&nbsp;GRÁFICO
+										DISEÑO&nbsp;GRÁFICO IMAGEN&nbsp;CORPORATIVA
 									</article>
 								</div>
 							</li>
@@ -110,6 +116,7 @@ get_header(); ?>
 				</div><!-- class="serv-desc-info" -->
 			</section><!-- class="serv-desc" -->
 
+			<!-- CTA -->
 			<article class="cta">
 				<div class="cta-info">
 					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>
@@ -120,9 +127,9 @@ get_header(); ?>
 				</div>
 			</article>
 	
-			<article class="extra">
-
-				<div class="extra-info">
+			<!-- CLIENTES -->
+			<article class="clientes">
+				<div class="clientes-info">
 					<h2>Algunos de nuestros clientes</h2>
 							<div id="slider" class="flexslider">
 								<ul class="slides">
@@ -149,7 +156,6 @@ get_header(); ?>
 									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" /></li>
 								</ul><!-- class="slides" -->
 							</div><!-- id="carousel" -->
-
 
 				</div>
 			</article>
@@ -208,3 +214,15 @@ get_header(); ?>
 </div><!-- #primary -->
 
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+

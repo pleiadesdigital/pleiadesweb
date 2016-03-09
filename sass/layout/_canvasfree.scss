@@ -77,8 +77,8 @@
 					@include single-transition();
 					@include transition-duration(0.5s);
 					&:hover {
-						border: 3px solid $orange;
-						background-color: rgba($orange, 0.5);
+						border: 3px solid $oryellow;
+						background-color: rgba($oryellow, 0.5);
 						color: $snow;
 					} //&:hover 
 				} //a
@@ -91,28 +91,43 @@
 		width: 100%;
 		//min-height: 400px;
 		.about-info {
-			border: 2px solid DarkGoldenRod;
+			border: 1px solid blue;
 			@include container();
-			@include clearfix();
-			padding: 50px 100px;
-			img {
-				width: 350px;
-				height: auto;
-				float: left;
-			} //img
-			.txt-content {
-				border: 1px solid green;
-				float: right;
-			}
+			.about-content {
+				border: 2px solid lime;
+				width: 1000px;
+				display: block;
+				margin: 0px auto;
+				.about-image {
+					border: 1px solid darkmagenta;
+					@include span(5 of 12);
+				}
+				.txt-content {
+					border: 1px solid teal;
+					@include span(6 of 12);
+					float: right;
+				}
+				@include breakpoint(960px 1200px) {
+					width: 900px;
+				}
+				@include breakpoint($tablet) {
+					width: 80%;
+				}
+				@include breakpoint($iphone) {
+					width: 95%;
+				}
+				@include clearfix();
+				
+			} //.about-content
 		} //.about-info
 	} //.about
 
-	// CLIENTES
-	.clientes {
+	// EXTRA
+	.extra {
 		width: 100%;
 		//min-height: 400px;
 		background-color: darken($snow, 10);
-		.clientes-info {
+		.extra-info {
 			border: 2px solid DarkGoldenRod;
 			@include container();
 			@include clearfix();
@@ -120,7 +135,7 @@
 			.txt-content {
 				border: 1px solid green;
 				float: right;
-			}
+			} //.txt-content
 		} //.about-info
 	} //.about
 } //#la-empresa 
@@ -156,7 +171,6 @@
 			} //p
 		} //.intro-info
 	} //.intro
-
 
 	// SERVICE DESCRIPTION
 	.serv-desc {
@@ -324,10 +338,8 @@
 		} //.cta-info
 	} //.cta
 
-
-	// EXTRA
-	.extra {
-
+	// CLIENTES
+	.clientes {
 		@include background-image(linear-gradient(bottom, darken($snow, 20), $white));
 		width: 100%;
 		padding-top: 30px;
@@ -346,7 +358,7 @@
 				font-size: 1.4em;
 			} //breakpoint($iphone)
 		} //h2
-		.extra-info {
+		.clientes-info {
 			@include container(80%);
 			@include breakpoint(1200px) {
 				@include container(70%);
