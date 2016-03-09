@@ -91,33 +91,122 @@
 		width: 100%;
 		//min-height: 400px;
 		.about-info {
-			border: 1px solid blue;
 			@include container();
 			.about-content {
-				border: 2px solid lime;
 				width: 1000px;
 				display: block;
-				margin: 0px auto;
-				.about-image {
-					border: 1px solid darkmagenta;
-					@include span(5 of 12);
-				}
-				.txt-content {
-					border: 1px solid teal;
-					@include span(6 of 12);
-					float: right;
-				}
-				@include breakpoint(960px 1200px) {
-					width: 900px;
-				}
-				@include breakpoint($tablet) {
-					width: 80%;
-				}
-				@include breakpoint($iphone) {
-					width: 95%;
-				}
-				@include clearfix();
-				
+				margin: 0px auto 30px;
+				@include clearfix();	
+
+				@include breakpoint($desktop) { //1200px;
+					width: 1100px;
+					margin-top: 30px;
+					padding: 0px 30px;
+					.about-image {
+						@include span(5 of 12);
+						img {
+							width: 100%;
+							height: auto;
+							margin: 30px auto 0px;
+						} //img
+					} //.about-image
+					.txt-content {
+						@include span(6 of 12);
+						float: right;
+						h2 {
+							font-size: 2em;
+							text-align: center;
+							margin-bottom: 0px;
+						} //h2
+						p {
+							text-align: justify;
+							font-size: 1em;
+						} //p
+					} //.txt-content 
+				} //breakpoint($desktop)
+
+				@include breakpoint($laptop 1199px) { //990px;
+					width: 960px;
+					margin-top: 30px;
+					padding: 0px 30px;
+					.about-image {
+						@include span(5 of 12);
+						img {
+							width: 100%;
+							height: auto;
+							margin: 30px auto 0px;
+						} //img
+					} //.about-image
+					.txt-content {
+						@include span(6 of 12);
+						float: right;
+						h2 {
+							font-size: 1.8em;
+							text-align: center;
+							margin-bottom: 0px;
+						} //h2
+						p {
+							text-align: justify;
+							font-size: 0.9em;
+						} //p
+					} //.txt-content 
+				} //breakpoint($laptop 1199px)
+
+				@include breakpoint($tablet) { //700px 989px;
+					width: 670px;
+					margin-top: 30px;
+					.about-image {
+						@include span(7 of 12);
+						img {
+							width: 100%;
+							height: auto;
+							margin: 30px auto 0px;
+						} //img
+					} //.about-image
+					.txt-content {
+						@include span(5 of 12);
+						padding: 0px 20px;
+						float: right;
+						h2 {
+							font-size: 1.8em;
+							text-align: center;
+							margin-bottom: 0px;
+						} //h2
+						p {
+							text-align: justify;
+							font-size: 0.9em;
+						} //p
+					} //.txt-content 
+				} //breakpoint($tablet)
+
+				@include breakpoint($iphone) { //max-width 699px;
+					width: 90%;
+					padding-top: 30px;
+					.about-image {
+						display: block;
+						img {
+							width: 90%;
+							height: auto;
+							display: block;
+							margin: 0px auto;
+						} //img
+					} //.about-image
+					.txt-content {
+						float: none;
+						display: block;
+						width: 80%;
+						margin: 0px auto;
+						h2 {
+							font-size: 1.8em;
+							text-align: center;
+							margin-bottom: 0px;
+						} //h2
+						p {
+							text-align: justify;
+						} //p
+					} //.txt-content 
+				} //breakpoint($iphone)
+
 			} //.about-content
 		} //.about-info
 	} //.about
@@ -125,10 +214,8 @@
 	// EXTRA
 	.extra {
 		width: 100%;
-		//min-height: 400px;
 		background-color: darken($snow, 10);
 		.extra-info {
-			border: 2px solid DarkGoldenRod;
 			@include container();
 			@include clearfix();
 			padding: 50px 100px;

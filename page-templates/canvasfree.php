@@ -55,9 +55,9 @@ get_header(); ?>
 			<!-- EXTRA -->
 			<section class="extra">
 				<div class="extra-info">
-					<?php $query = new WP_Query(); ?>
-					<?php $query->the_post(); ?>
-					<?php the_content(); ?>
+					<?php //$query = new WP_Query(); ?>
+					<?php //$query->the_post(); ?>
+					<?php //the_content(); ?>
 					</article>
 				</div>
 			</section>
