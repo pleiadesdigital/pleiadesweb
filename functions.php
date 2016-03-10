@@ -147,6 +147,10 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+// FLEXSLIDER MAIN SCRIPTS
+// Including slider_functions_include.php
+include(TEMPLATEPATH . "/slider/php/slider-functions-include.php");
+
 //Enqueueing flexslider scripts
 	function pleiadesweb_flexslider() {
 		if(!is_admin()) {

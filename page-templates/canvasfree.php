@@ -134,34 +134,49 @@ get_header(); ?>
 					<h2>Algunos de nuestros clientes</h2>
 							<div id="slider" class="flexslider">
 								<ul class="slides">
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" /></li>
+
+							<?php 
+								$slider_loop = new WP_Query(
+									array(
+										'post_type'							=> 'slider_panel',
+										'category_name'					=> 'clientes',
+										'post_per_page'					=> 10,
+										'post_status'						=> 'publish',
+										'order'									=> 'asc'
+									)
+								);
+								// Loop
+								while ($slider_loop->have_posts()) {
+									$slider_loop->the_post(); ?>
+									<li>
+										<?php echo get_the_post_thumbnail($post->ID, 'image_slider'); ?>
+									</li>
+
+							<?php } //closing while loop ?>
+
 								</ul><!-- class="slides" -->
 							</div><!-- id="slider" -->
 
 							<div id="carousel" class="flexslider">
 								<ul class="slides">
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide1.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide2.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide3.jpg" /></li>
-									<li><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/clientes/slide4.jpg" /></li>
-								</ul><!-- class="slides" -->
-							</div><!-- id="carousel" -->
+								<?php
+								// Loop
+								while ($slider_loop->have_posts()) {
+									$slider_loop->the_post(); ?>
+									<li>
+										<?php echo get_the_post_thumbnail($post->ID, 'image_slider'); ?>
+									</li>
 
+							<?php } //closing while loop ?>
+								</ul><!-- class="slides" -->
+							<?php  ?>
+							</div><!-- id="carousel" -->
+						<?php wp_reset_postdata(); ?> 
 				</div>
 			</article>
 			
 		</div><!-- id="servicios" -->
+
 
 <!-- 	PREGUNTAS FRECUENTES -->
 <?php } elseif (is_page('preguntas-frecuentes')) { ?>
