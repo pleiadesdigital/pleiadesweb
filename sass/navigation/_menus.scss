@@ -79,11 +79,14 @@
       height: auto;
       position: absolute;
       left: 0;
+      @include breakpoint($tablet) {
+        top: 59px;
+      }
       z-index: 99999;
       display: none;
       float: right;
       padding: 0px;
-      background: rgba($oryellowdark, 0.8);
+      background: rgba($greydark, 0.8);
       border: 1px solid rgba($snow, 0.1);
       li {
         height: auto;
@@ -124,6 +127,7 @@
     .current-menu-item > a {
       border-top: 5px solid transparent;
       color: $oryellow;
+      cursor: default;
     }
   }
 

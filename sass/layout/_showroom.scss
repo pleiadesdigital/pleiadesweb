@@ -1,0 +1,21 @@
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+
+// WELCOME 
+#intro-showroom {
+	min-height: 400px;
+	@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desarrollo-web.jpg");
+	margin-top: 50px;
+}
+
+
+
+
+// DESCRIPCION SERVICIO
+#descripcion-servicio {
+	border: 1px solid green;
+	min-height: 500px;
+}
