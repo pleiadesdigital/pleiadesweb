@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -389,7 +389,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #welcome article:after {
   content: " ";
   display: block;
@@ -402,7 +402,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
   #welcome article:after {
     content: " ";
     display: block;
@@ -454,7 +454,7 @@ body {
 #services #showroom:after {
   clear: both;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #services #showroom:after {
   content: " ";
   display: block;
@@ -697,7 +697,7 @@ body {
   width: 100%;
   min-height: 300px;
   padding-top: 50px;
-  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax1.jpg") no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.7) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -710,7 +710,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #cta-frontpage .cta-front:after {
   content: " ";
   display: block;
@@ -781,7 +781,7 @@ body {
   margin-right: auto;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #porque-nos .porque-nos-content:after {
   content: " ";
   display: block;
@@ -936,7 +936,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #la-empresa .intro .intro-info:after {
   content: " ";
   display: block;
@@ -960,7 +960,7 @@ body {
   width: 100%;
   min-height: 400px;
   padding-top: 100px;
-  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax4.jpg") no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.7) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax4.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -972,7 +972,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #la-empresa .cta .cta-info:after {
   content: " ";
   display: block;
@@ -1041,7 +1041,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #la-empresa .about .about-info:after {
   content: " ";
   display: block;
@@ -1230,7 +1230,7 @@ body {
   margin-right: auto;
   padding: 50px 100px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #la-empresa .extra .extra-info:after {
   content: " ";
   display: block;
@@ -1271,7 +1271,7 @@ body {
   margin-right: auto;
   padding: 50px 0px 50px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #servicios .intro .intro-info:after {
   content: " ";
   display: block;
@@ -1319,7 +1319,7 @@ body {
 #servicios .serv-desc .serv-desc-info:after {
   clear: both;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #servicios .serv-desc .serv-desc-info:after {
   content: " ";
   display: block;
@@ -1493,7 +1493,7 @@ body {
   width: 100%;
   min-height: 400px;
   padding-top: 100px;
-  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax3.jpg") no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.7) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax3.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1505,7 +1505,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #servicios .cta .cta-info:after {
   content: " ";
   display: block;
@@ -1616,7 +1616,7 @@ body {
   margin-right: auto;
   padding: 30px 10%;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #servicios .clientes .clientes-info:after {
   content: " ";
   display: block;
@@ -1629,7 +1629,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
   #servicios .clientes .clientes-info:after {
     content: " ";
     display: block;
@@ -1643,7 +1643,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
   #servicios .clientes .clientes-info:after {
     content: " ";
     display: block;
@@ -1657,7 +1657,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
   #servicios .clientes .clientes-info:after {
     content: " ";
     display: block;
@@ -1713,7 +1713,7 @@ body {
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #contact-main #contact-info:after {
   content: " ";
   display: block;
@@ -1761,7 +1761,7 @@ body {
   padding: 30px 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax2.jpg") no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.7) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1773,7 +1773,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 #contact-main .contact-form .wpcf7:after {
   content: " ";
   display: block;
@@ -1955,17 +1955,169 @@ body {
 }
 
 /* line 8, sass/layout/_showroom.scss */
-#intro-showroom {
+#intro {
+  width: 100%;
+  height: auto;
+}
+/* line 11, sass/layout/_showroom.scss */
+#intro .intro-info {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 0px 50px;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+#intro .intro-info:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 14, sass/layout/_showroom.scss */
+#intro .intro-info h2 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 500;
+  color: #58555a;
+  font-family: "Titillium Web", sans-serif;
+}
+/* line 21, sass/layout/_showroom.scss */
+#intro .intro-info p {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #7f7f7f;
+}
+
+/* line 33, sass/layout/_showroom.scss */
+#image-showroom {
   min-height: 400px;
-  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desarrollo-web.jpg") no-repeat center center fixed;
+}
+/* line 37, sass/layout/_showroom.scss */
+#image-showroom .img-web-dev {
+  height: 425px;
+  width: auto;
+  background: rgba(0, 0, 0, 0.7) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-desarrollo-web.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-top: 50px;
+}
+/* line 41, sass/layout/_showroom.scss */
+#image-showroom .img-web-dev .text-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10% 20% 0px;
+  height: 100%;
+}
+/* line 45, sass/layout/_showroom.scss */
+#image-showroom .img-web-dev .text-container h1 {
+  text-align: center;
+  color: #f2f2f2;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+/* line 53, sass/layout/_showroom.scss */
+#image-showroom .img-web-dev .text-container span {
+  border-top: 1px solid #f99c1c;
+  display: block;
+  margin: 0px auto;
+  width: 70%;
+}
+/* line 59, sass/layout/_showroom.scss */
+#image-showroom .img-web-dev .text-container p {
+  text-align: center;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+/* line 71, sass/layout/_showroom.scss */
+#image-showroom .img-dis-gra {
+  height: 425px;
+  width: auto;
+  background: rgba(0, 0, 0, 0.7) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-diseno-grafico-imagen.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 75, sass/layout/_showroom.scss */
+#image-showroom .img-dis-gra .text-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10% 20% 0px;
+  height: 100%;
+}
+/* line 79, sass/layout/_showroom.scss */
+#image-showroom .img-dis-gra .text-container h1 {
+  text-align: center;
+  color: #f2f2f2;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+/* line 87, sass/layout/_showroom.scss */
+#image-showroom .img-dis-gra .text-container span {
+  border-top: 1px solid #f99c1c;
+  display: block;
+  margin: 0px auto;
+  width: 70%;
+}
+/* line 93, sass/layout/_showroom.scss */
+#image-showroom .img-dis-gra .text-container p {
+  text-align: center;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-top: 20px;
+}
+/* line 104, sass/layout/_showroom.scss */
+#image-showroom .img-seo-gle {
+  height: 425px;
+  width: auto;
+  background: rgba(0, 0, 0, 0.7) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-seo-google-analytics.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 108, sass/layout/_showroom.scss */
+#image-showroom .img-seo-gle .text-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10% 20% 0px;
+  height: 100%;
+}
+/* line 112, sass/layout/_showroom.scss */
+#image-showroom .img-seo-gle .text-container h1 {
+  text-align: center;
+  color: #f2f2f2;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+/* line 120, sass/layout/_showroom.scss */
+#image-showroom .img-seo-gle .text-container span {
+  border-top: 1px solid #f99c1c;
+  display: block;
+  margin: 0px auto;
+  width: 70%;
+}
+/* line 126, sass/layout/_showroom.scss */
+#image-showroom .img-seo-gle .text-container p {
+  text-align: center;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
-/* line 18, sass/layout/_showroom.scss */
+/* line 143, sass/layout/_showroom.scss */
 #descripcion-servicio {
   border: 1px solid green;
   min-height: 500px;
@@ -2371,7 +2523,7 @@ header {
 }
 /* line 3, sass/site/primary/_header.scss */
 header .normalheader {
-  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg") no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.7) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2421,7 +2573,7 @@ header .normalheader .top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 header .normalheader .top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
@@ -2508,7 +2660,7 @@ header .normalheader .hgroup {
 }
 /* line 105, sass/site/primary/_header.scss */
 header .fullheight {
-  background: url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg") no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.7) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2568,7 +2720,7 @@ header .fullheight div.top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
@@ -2707,7 +2859,7 @@ header .fullheight .hgroup p img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
 .site-footer .footer-content:after {
   content: " ";
   display: block;

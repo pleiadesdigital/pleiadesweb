@@ -36,8 +36,8 @@ body {
 		@include breakpoint($iphone) {
 			font-size: 2em;
 			margin-bottom: 20px;
-		}
-	}
+		} //breakpoint($iphone)
+	} //text-shadow()
 	#showroom {
 		@include clearfix;
 		@include container;

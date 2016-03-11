@@ -4,12 +4,137 @@ body {
 	height: 100%;	
 }
 
-// WELCOME 
-#intro-showroom {
+// INTRO
+#intro {
+	width: 100%;
+	height: auto;
+	.intro-info {
+		@include container();
+		padding: 50px 0px 50px;
+		h2 {
+			font-size: 2em;
+			text-align: center;
+			font-weight: 500;
+			color: $greymed;
+			font-family: $font_copy;
+		}
+		p {
+			text-align: center;
+			line-height: 1.6;
+			font-size: 1.1em;
+			font-weight: 300;
+			color: $grey;
+		} //p
+	} //.intro-info
+} //.intro
+
+
+// IMAGE 
+#image-showroom {
 	min-height: 400px;
-	@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desarrollo-web.jpg");
-	margin-top: 50px;
-}
+
+	//BACKGROUND IMAGES
+	.img-web-dev {
+		height: 425px;
+		width: auto;
+		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-desarrollo-web.jpg");
+		.text-container {
+			background-color: rgba($black, 0.6);
+			padding: 10% 20% 0px;
+			height: 100%;
+			h1 {
+			text-align: center;
+			color: $snow;
+			font-family: $font_copy;
+			font-size: 3em;
+			font-weight: 600;
+			margin-bottom: 20px;		
+			} //h1
+			span {
+				border-top: 1px solid $oryellow;
+				display: block;
+				margin: 0px auto;
+				width: 70%;
+			}
+			p {
+				text-align: center;
+				color: $white;
+				font-family: $font_copy;
+				font-size: 1.4em;
+				font-weight: 400;
+				margin-top: 20px;
+			} //p
+		} //.text-container
+
+	} //.img-web-dev
+
+	.img-dis-gra {
+		height: 425px;
+		width: auto;
+		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-diseno-grafico-imagen.jpg");
+		.text-container {
+			background-color: rgba($black, 0.6);
+			padding: 10% 20% 0px;
+			height: 100%;
+			h1 {
+			text-align: center;
+			color: $snow;
+			font-family: $font_copy;
+			font-size: 3em;
+			font-weight: 600;
+			margin-bottom: 20px;		
+			} //h1
+			span {
+				border-top: 1px solid $oryellow;
+				display: block;
+				margin: 0px auto;
+				width: 70%;
+			}
+			p {
+				text-align: center;
+				color: $white;
+				font-family: $font_copy;
+				font-size: 1.4em;
+				font-weight: 400;
+				margin-top: 20px;
+			} //p
+		} //.text-container
+	} //.img-dis-gra
+
+	.img-seo-gle {
+		height: 425px;
+		width: auto;
+		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-seo-google-analytics.jpg");
+		.text-container {
+			background-color: rgba($black, 0.6);
+			padding: 10% 20% 0px;
+			height: 100%;
+			h1 {
+			text-align: center;
+			color: $snow;
+			font-family: $font_copy;
+			font-size: 3em;
+			font-weight: 600;
+			margin-bottom: 20px;		
+			} //h1
+			span {
+				border-top: 1px solid $oryellow;
+				display: block;
+				margin: 0px auto;
+				width: 70%;
+			}
+			p {
+				text-align: center;
+				color: $white;
+				font-family: $font_copy;
+				font-size: 1.4em;
+				font-weight: 400;
+				margin-top: 20px;
+			} //p
+		} //.text-container
+	} //.img-seo-gle
+	
+} //#intro-showroom
 
 
 
