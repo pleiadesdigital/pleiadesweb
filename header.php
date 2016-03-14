@@ -13,8 +13,6 @@ SITE HEADER
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjEcnBmAHgm_LfegO9o84NLPAfBLwVjSY"></script>
 
-<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
-
 <?php wp_head(); ?>
 </head>
 
