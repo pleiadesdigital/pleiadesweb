@@ -176,8 +176,7 @@ get_header(); ?>
 			</article>
 			
 		</div><!-- id="servicios" -->
-
-
+		
 <!-- 	PREGUNTAS FRECUENTES -->
 <?php } elseif (is_page('preguntas-frecuentes')) { ?>
 		<?php the_post(); ?>

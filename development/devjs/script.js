@@ -23,3 +23,21 @@ jQuery(window).load(function() {
   });
 });
 
+/*// MASONRY
+jQuery('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});*/
+
+jQuery("document").ready(function(){
+  jQuery('.grid').css("border", "4px solid aqua");
+
+  jQuery('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 40
+});
+});
+
+

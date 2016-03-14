@@ -297,7 +297,9 @@
 							padding: 80px 50px;
 						}
 						cursor: pointer;
-						color: $white;
+						color: darken($snow, 20);
+						font-weight: 600;
+						font-family: $font_copy;
 						@include single-transition();
 						@include transition-duration(0.5s);
 							article {
@@ -317,26 +319,20 @@
 								padding: 0px 0px 5px;
 								border-bottom: 3px solid rgba($oryellowlight, 0.4);
 							} //article
-						&:hover { 
-							background-color: $oryellow;
-							color: $white;
-							article {
-								border-bottom: 3px solid rgba($oryellowdark, 0.5);
-							}
-						} //&:hover
 					} //.box
 				} //li
 
 				li:first-child {
 					.box {
-						background: rgba($greydark, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-web.png") center center;
+						background: rgb(78, 78, 78) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-web.png") center center;
 							background-size: 80%;
 							background-repeat: no-repeat;
 						&:hover { 
 							background-color: $oryellow;
 							color: $white;
 							article {
-								border-bottom: 3px solid rgba($oryellowdark, 0.5);
+								border-bottom: 3px solid $snow;
+								color: $white;
 							} //article
 						} //&:hover
 					} //.box
@@ -344,14 +340,15 @@
 
 				li:nth-child(2) {
 					.box {
-						background: rgba($greydark, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-design.png") center center;
+						background: rgb(78, 78, 78) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-design.png") center center;
 							background-size: 70%;
 							background-repeat: no-repeat;
 						&:hover { 
 							background-color: $oryellow;
 							color: $white;
 							article {
-								border-bottom: 3px solid rgba($oryellowdark, 0.5);
+								border-bottom: 3px solid $snow;
+								color: $white;
 							} //article
 						} //&:hover
 					} //.box
@@ -359,14 +356,15 @@
 
 				li:nth-child(3) {
 					.box {
-						background: rgba($greydark, 0.8) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-audio.png") center center;
+						background: rgb(78, 78, 78) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-audio.png") center center;
 							background-size: 70%;
 							background-repeat: no-repeat;
 						&:hover { 
 							background-color: $oryellow;
 							color: $white;
 							article {
-								border-bottom: 3px solid rgba($orangedark, 0.5);
+								border-bottom: 3px solid $snow;
+								color: $white;
 							} //article
 						} //&:hover
 					} //.box

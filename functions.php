@@ -103,6 +103,10 @@ function pleiadesweb_scripts() {
 	// GOOGLE Maps scripts
 	wp_enqueue_script("google-maps-scripts", get_stylesheet_directory_uri() . '/js/map.js', array('jquery'), true);
 
+	//MASONRY
+	// wp_enqueue_script("google-maps-scripts", 'https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js', array('jquery'), true);
+
+
 
 	// SLIDER JS file
 

@@ -1,0 +1,44 @@
+body {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+
+// INTRO
+#masonry {
+	width: 100%;
+	min-height: 600px;
+	
+	// Intro`
+	.intro {
+		@include container();
+		padding: 50px 0px 50px;
+		h2 {
+			font-size: 2em;
+			text-align: center;
+			font-weight: 500;
+			color: $greymed;
+			font-family: $font_copy;
+		}
+		p {
+			text-align: center;
+			line-height: 1.6;
+			font-size: 1.1em;
+			font-weight: 300;
+			color: $grey;
+		} //p
+	} //.intro
+
+	// Masonry
+	.grid-item {
+		border: 1px solid magenta;
+		width: 200px;
+	} //.grid-item
+	.grid-item--width2 {
+		border: 1px solid green;
+		width: 400px;
+	} //.grid-item--width2
+
+} //#masonry
+
+
