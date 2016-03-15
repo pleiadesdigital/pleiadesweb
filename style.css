@@ -2161,49 +2161,30 @@ body {
   color: #7f7f7f;
 }
 /* line 33, sass/layout/_testing.scss */
-#masonry .grid {
-  border: 2px solid magenta;
-  background: #EEEEEE;
+#masonry #grid {
+  border: 3px solid magenta;
   margin: 0px auto;
-  /* .grid-item--width32 { width: 250px; }
-  .grid-item--width3 { width: 250px; }
-  .grid-item--width4 { width: 250px; } */
 }
 /* line 12, sass/mixins/_mixins-master.scss */
-#masonry .grid:before, #masonry .grid:after {
+#masonry #grid:before, #masonry #grid:after {
   content: '';
   display: table;
 }
 /* line 17, sass/mixins/_mixins-master.scss */
-#masonry .grid:after {
+#masonry #grid:after {
   clear: both;
 }
-/* line 38, sass/layout/_testing.scss */
-#masonry .grid .grid-item {
-  width: 250px;
-  margin: 10px;
-  height: 120px;
-  border: 3px solid purple;
-  background: #DD2266;
-  border-radius: 5px;
+/* line 37, sass/layout/_testing.scss */
+#masonry #grid .grid-item {
+  width: 200px;
 }
-@media (max-width: 699px) {
-  /* line 38, sass/layout/_testing.scss */
-  #masonry .grid .grid-item {
-    width: 400px;
-  }
-}
-/* line 53, sass/layout/_testing.scss */
-#masonry .grid .grid-item--height2 {
-  height: 200px;
-}
-/* line 54, sass/layout/_testing.scss */
-#masonry .grid .grid-item--height3 {
-  height: 260px;
-}
-/* line 55, sass/layout/_testing.scss */
-#masonry .grid .grid-item--height4 {
-  height: 360px;
+/* line 40, sass/layout/_testing.scss */
+#masonry #grid .grid-item {
+  float: left;
+  width: 320px;
+  margin: 0px 2em 4em 2.5em;
+  height: 350px;
+  border: 2px solid purple;
 }
 
 /*--------------------------------------------------------------

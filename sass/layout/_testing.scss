@@ -30,33 +30,45 @@ body {
 	} //.intro
 
 	// Masonry
-	.grid {
-		border: 2px solid magenta;
-		background: #EEEEEE;
-		@include clearfix;
+	#grid {
+		border: 3px solid magenta;
 		margin: 0px auto;
+		@include clearfix();	
 		.grid-item {
-			width: 250px;
-			margin: 10px;
-			@include breakpoint($iphone) {
-				width: 400px
-			}
-			height: 120px;
-			//float: left;
-			border: 3px solid purple;
-			background: #DD2266;
-			border-radius: 5px;
+			width: 200px;
+		} //.grid-sizer, .grid-item
+		.grid-item {
+			float: left;
+			width: 320px;
+    	margin: 0px 2em 4em 2.5em;
+			height: 350px;
+			border: 2px solid purple;
 		} //.grid-item
-		/* .grid-item--width32 { width: 250px; }
-		.grid-item--width3 { width: 250px; }
-		.grid-item--width4 { width: 250px; } */
-		.grid-item--height2 { height: 200px; }
-		.grid-item--height3 { height: 260px; }
-		.grid-item--height4 { height: 360px; }
-	}
-	
-
-
+	} //#grid
 } //#masonry
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
