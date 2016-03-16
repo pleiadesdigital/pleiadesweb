@@ -12,6 +12,7 @@ get_header(); ?>
 
 		<!-- INTRO -->
 			<section id="masonry">
+			
 				<div class="intro">	
 					<h2>Testing Masonry</h2>
 					<p>Fancy taking your digital marketing to the next level? You’re lucky you found us…</p>
@@ -28,7 +29,6 @@ get_header(); ?>
 				  <div class="grid-item"></div>
 				  <div class="grid-item"></div>				  
 				</div>
-
 
 			</section>
 

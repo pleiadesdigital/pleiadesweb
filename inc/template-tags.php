@@ -12,29 +12,42 @@ if ( ! function_exists( 'pleiadesweb_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function pleiadesweb_posted_on() {
+
+
+
+
+	// POSTED ON
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 	}
-
 	$time_string = sprintf( $time_string,
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_attr( get_the_modified_date( 'c' ) ),
-		esc_html( get_the_modified_date() )
+		esc_attr(get_the_date('c')),
+		esc_html(get_the_date() ),
+		esc_attr(get_the_modified_date('c')),
+		esc_html(get_the_modified_date())
 	);
-
-	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'pleiadesweb' ),
+	$posted_on = sprintf('<i class="fa fa-calendar"></i>' . esc_html_x( ' %s', 'post date', 'pleiadesweb' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
+
+
+
+	// AUTHOR
 	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'pleiadesweb' ),
+		esc_html_x( '| %s', 'post author', 'pleiadesweb' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
+	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+	// CATEGORIES
+	/* translators: used between list items, there is a space after the comma */
+	$categories_list = get_the_category_list( esc_html__( ', ', 'pleiadesweb' ) );
+	if ( $categories_list && pleiadesweb_categorized_blog() ) {
+		echo '<div class="category-list">' . $categories_list . '</div>';
+	}	
+
 
 }
 endif;
@@ -45,35 +58,29 @@ if ( ! function_exists( 'pleiadesweb_entry_footer' ) ) :
  */
 function pleiadesweb_entry_footer() {
 	// Hide category and tag text for pages.
-	if ( 'post' === get_post_type() ) {
+	if ('post' === get_post_type()) {
+		
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'pleiadesweb' ) );
-		if ( $categories_list && pleiadesweb_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'pleiadesweb' ) . '</span>', $categories_list ); // WPCS: XSS OK.
-		}
+	
+			echo get_the_tag_list('<ul><li><i class="fa fa-tag"></i>', '</li><li><i class="fa fa-tag"></i>',  '</li></ul>');  
 
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'pleiadesweb' ) );
-		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'pleiadesweb' ) . '</span>', $tags_list ); // WPCS: XSS OK.
-		}
-	}
+	} // if ('post' === get_post_type())
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'pleiadesweb' ), esc_html__( '1 Comment', 'pleiadesweb' ), esc_html__( '% Comments', 'pleiadesweb' ) );
+		comments_popup_link( esc_html__( 'Deja un comentario', 'pleiadesweb' ), esc_html__( '1 comentario', 'pleiadesweb' ), esc_html__( '% comentarios', 'pleiadesweb' ) );
 		echo '</span>';
 	}
 
-	edit_post_link(
+	/*edit_post_link(
 		sprintf(
-			/* translators: %s: Name of current post */
 			esc_html__( 'Edit %s', 'pleiadesweb' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		'<span class="edit-link">',
 		'</span>'
-	);
+	);*/
+
 }
 endif;
 

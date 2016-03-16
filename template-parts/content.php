@@ -19,6 +19,7 @@
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
+		
 		<div class="entry-meta">
 			<?php pleiadesweb_posted_on(); ?>
 		</div><!-- .entry-meta -->
