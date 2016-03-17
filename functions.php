@@ -84,9 +84,7 @@ function pleiadesweb_scripts() {
 		wp_enqueue_style('pleiadesweb-content-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
 	}*/
 
-	if (!is_front_page()) {
-		//wp_enqueue_style('pleiadesweb-content-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
-	} elseif (!is_page_template('page-templates/canvasfree.php')) {
+	if (is_home()) {
 		wp_enqueue_style('pleiadesweb-content-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
 	}
 
