@@ -31,12 +31,9 @@ function pleiadesweb_posted_on() {
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
-
-
-
 	// AUTHOR
 	$byline = sprintf(
-		esc_html_x( '| %s', 'post author', 'pleiadesweb' ),
+		esc_html_x( '| escrito por %s', 'post author', 'pleiadesweb' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
@@ -48,6 +45,13 @@ function pleiadesweb_posted_on() {
 		echo '<div class="category-list">' . $categories_list . '</div>';
 	}	
 
+	// COMMENTS
+
+    if (! post_password_required() && (comments_open() || '0' != get_comments_number())) { 
+        echo '<span class="comments-link">';
+        comments_popup_link( __('Deja un comentario', 'my-simone'), __('1 comentario', 'my-simone'), __('% comentarios', 'my-simone'));
+        echo '</span>';
+    }
 
 }
 endif;
@@ -65,12 +69,6 @@ function pleiadesweb_entry_footer() {
 			echo get_the_tag_list('<ul><li><i class="fa fa-tag"></i>', '</li><li><i class="fa fa-tag"></i>',  '</li></ul>');  
 
 	} // if ('post' === get_post_type())
-
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Deja un comentario', 'pleiadesweb' ), esc_html__( '1 comentario', 'pleiadesweb' ), esc_html__( '% comentarios', 'pleiadesweb' ) );
-		echo '</span>';
-	}
 
 	/*edit_post_link(
 		sprintf(
