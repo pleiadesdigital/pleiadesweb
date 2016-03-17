@@ -74,7 +74,40 @@ add_action( 'widgets_init', 'pleiadesweb_widgets_init' );
 
 // ENQUEING SCRIPTS AND OTHERS
 function pleiadesweb_scripts() {
-	wp_enqueue_style( 'pleiadesweb-style', get_stylesheet_uri() );
+
+	// STYLESHEETS
+	// Main style.css
+	wp_enqueue_style('pleiadesweb-style', get_stylesheet_uri());
+	
+	// Sidebar / Content
+	/*if (!is_front_page() || !is_page_template('page-templates/canvasfree.php') || !is_page_template('page-templates/showroom.php')) {
+		wp_enqueue_style('pleiadesweb-content-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
+	}*/
+
+	if (!is_front_page()) {
+		//wp_enqueue_style('pleiadesweb-content-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
+	} elseif (!is_page_template('page-templates/canvasfree.php')) {
+		wp_enqueue_style('pleiadesweb-content-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
+	}
+
+
+/*		wp_enqueue_style('fronpage-styles', get_stylesheet_directory_uri() . '/layouts/front-page.css');
+	} elseif (is_page_template('page-templates/canvas-free.php') || is_page_template('page-templates/canvas-free-showroom.php')) {
+		wp_enqueue_style('canvas-free', get_stylesheet_directory_uri() . '/layouts/canvas-free.css');
+	} elseif (is_page_template('page-templates/canvas-portal.php')) {
+		wp_enqueue_style('content-sidebar', get_stylesheet_directory_uri() . '/layouts/canvas-portal.css');
+	} elseif (is_page_template('page-templates/content-sidebar.php')) {
+		wp_enqueue_style('content-sidebar', get_stylesheet_directory_uri() . '/layouts/content-sidebar.css');
+	} elseif (is_archive()) {
+		wp_enqueue_style('archive-styles', get_stylesheet_directory_uri() . '/layouts/content-sidebar.css');
+	} else {
+		wp_enqueue_style( 'default-blog-template', get_template_directory_uri() . '/layouts/content-sidebar.css' );
+	}*/
+
+
+
+
+
 
 	// FONTS
 	// Titillium Web & Roboto Slab
