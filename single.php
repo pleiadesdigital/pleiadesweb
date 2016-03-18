@@ -28,8 +28,9 @@ get_header(); ?>
 		?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+		<?php get_sidebar(); ?>
 
-<?php
-get_sidebar();
-get_footer();
+
+	</div><!-- id="primary" class="content-area" -->
+
+<?php get_footer(); ?>

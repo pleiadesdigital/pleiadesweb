@@ -1,20 +1,111 @@
 
 
-.content-area {
-	border: 2px solid green;
-	float: right;
-	margin: 0 0 0 -25%;
+// SITE CONTENT
+.site-content {
+	clear: both;
 	width: 100%;
-}
-.site-main {
-	margin: 0 0 0 25%;
-}
-.site-content .widget-area {
-	float: left;
-	overflow: hidden;
-	width: 25%;
-}
+	@include clearfix();
+	// CONTENT & SIDEBAR
+	.content-area {
+		width: 100%;
+		@include container();
+		@include breakpoint($laptop 1199px) {
+			@include container(960px);
+		} 
+		// CONTENT
+		.site-main {
+			width: 100%;
+			background: #CCCCCC;
+			padding: 3em 2em 2em;
+			@include breakpoint($desktop) {
+				width: 75%;
+				float: right;
+			}
+			@include breakpoint($laptop 1199px) {
+				width: 72%;
+				float: right;
+				.entry-header, 
+				.entry-meta,
+				.entry-content,
+				.entry-footer,
+				.tag-links,
+				.post-navigation,
+				.comments-area,
+				.paging-navigation {
+					margin-left: 0px;
+				} //.entry-*
+			} //breakpoint($laptop 1199px) 
+			.entry-header, 
+			.entry-meta,
+			.entry-content,
+			.entry-footer,
+			.tag-links,
+			.post-navigation,
+			.comments-area,
+			.paging-navigation {
+				max-width: 780px;
+				padding: 0px 2em;
+				margin: 0px auto;
+			} //.entry-*
+			.entry-content {
+				text-align: justify;
+			}
+		} //.site-main
+
+		// SIDEBAR
+		.widget-area {
+			padding: 3em 2em 2em;
+			background: $white;
+			width: auto;
+			max-width: 780px;
+			float: none;
+			margin: 0px auto;
+			@include breakpoint($desktop) {
+				width: 25%;
+				float: left;
+			} //breakpoint($desktop)
+			@include breakpoint($laptop 1199px) {
+				width: 28%;
+				float: left;
+			} //breakpoint($laptop 1199px)
+		} //.widget-area
+
+	} //.content-area
+	
+} //.site-content (content + sidebar)
+
+// SITE FOOTER
 .site-footer {
 	clear: both;
 	width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
