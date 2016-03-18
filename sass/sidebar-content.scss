@@ -1,0 +1,27 @@
+/*!
+ * Theme Name: Pleiades Web
+ *
+ * Layout: Sidebar-Content
+ *
+ * Learn more: https://developer.wordpress.org/themes/basics/template-files/
+*/
+
+// Compass imports
+@import "compass";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/filter";
+@import "compass/css3/flexbox";
+@import "compass/css3/transition";
+
+// External libraries
+@import "susy";
+@import "breakpoint";
+
+// Other imports
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+// LAYOUTS
+@import "layout/sidebar-content";
+

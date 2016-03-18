@@ -1,20 +1,20 @@
+
+
 .content-area {
+	border: 2px solid green;
 	float: right;
-	margin: 0 0 0 (-$size__site-sidebar);
-	width: $size__site-main;
+	margin: 0 0 0 -25%;
+	width: 100%;
 }
-
 .site-main {
-	margin: 0 0 0 $size__site-sidebar;
+	margin: 0 0 0 25%;
 }
-
 .site-content .widget-area {
 	float: left;
 	overflow: hidden;
-	width: $size__site-sidebar;
+	width: 25%;
 }
-
 .site-footer {
 	clear: both;
-	width: $size__site-main;
+	width: 100%;
 }

@@ -12,6 +12,7 @@ var gulp = require('gulp'),
 var env,
 		jsSources,
 		sassSources,
+		sassSourcesLay,
 		outputDir,
 		sassStyle;
 
@@ -33,6 +34,7 @@ jsSources = [
 ];
 
 sassSources = ['sass/style.scss'];
+sassSourcesLay = ['sass/sidebar-content.scss'];
 
 
 // JS Task
@@ -79,24 +81,42 @@ gulp.task('sassprod', function(){
 		.pipe(connect.reload())
 }); //gulp.task('sassprod')
 
+// SASS LAYOUT SIDEBAR Task
+gulp.task('sasslayout', function(){
+	gulp.src(sassSourcesLay)
+		.pipe(compass({
+			sass: 'sass',
+			css: 'layouts/',
+			image: 'images',
+			style: 'expanded',
+			comments: true,
+			require: ['susy', 'breakpoint']
+		}) //pipe(compass)
+		.on('error', gutil.log))
+		.pipe(gulp.dest('layouts/'))
+		.pipe(connect.reload())
+}); //gulp.task('sassprod')
+
 
 // WATCH Task
 gulp.task('watch', function(){
 	gulp.watch(jsSources, ['js']);
 	gulp.watch(['sass/**/*.scss', 'sass/*.scss'], ['sassdev']);
 	gulp.watch(['sass/**/*.scss', 'sass/*.scss'], ['sassprod']);
+	gulp.watch(['sass/layout/_sidebar-content.scss'], ['sasslayout']);
+
 }); //WATCH
 
 // LIVE RELOAD
-gulp.task('connect', function(){
+/*gulp.task('connect', function(){
 	connect.server({
 		root: '',
 		livereload: true
 	});
-}); //RELOAD
+});*/ //RELOAD
 
 // DEFAULT
-gulp.task('default', ['js', 'sassprod', 'sassdev', 'watch']);
+gulp.task('default', ['js', 'sassprod', 'sassdev', 'sasslayout', 'watch']);
 
 
 

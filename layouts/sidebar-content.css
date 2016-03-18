@@ -1,25 +1,39 @@
-/*
+/*!
  * Theme Name: Pleiades Web
  *
  * Layout: Sidebar-Content
  *
  * Learn more: https://developer.wordpress.org/themes/basics/template-files/
 */
+/* line 21, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+/* line 3, ../sass/layout/_sidebar-content.scss */
 .content-area {
-	float: right;
-	margin: 0 0 0 -25%;
-	width: 100%;
+  border: 2px solid green;
+  float: right;
+  margin: 0 0 0 -25%;
+  width: 100%;
 }
+
+/* line 9, ../sass/layout/_sidebar-content.scss */
 .site-main {
-	margin: 0 0 0 25%;
+  margin: 0 0 0 25%;
 }
+
+/* line 12, ../sass/layout/_sidebar-content.scss */
 .site-content .widget-area {
-	float: left;
-	overflow: hidden;
-	width: 25%;
+  float: left;
+  overflow: hidden;
+  width: 25%;
 }
+
+/* line 17, ../sass/layout/_sidebar-content.scss */
 .site-footer {
-	clear: both;
-	width: 100%;
+  clear: both;
+  width: 100%;
 }

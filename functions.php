@@ -84,23 +84,10 @@ function pleiadesweb_scripts() {
 		wp_enqueue_style('pleiadesweb-content-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
 	}*/
 
-	if (is_home()) {
+	if (is_single()) {
 		wp_enqueue_style('pleiadesweb-content-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
 	}
 
-
-/*		wp_enqueue_style('fronpage-styles', get_stylesheet_directory_uri() . '/layouts/front-page.css');
-	} elseif (is_page_template('page-templates/canvas-free.php') || is_page_template('page-templates/canvas-free-showroom.php')) {
-		wp_enqueue_style('canvas-free', get_stylesheet_directory_uri() . '/layouts/canvas-free.css');
-	} elseif (is_page_template('page-templates/canvas-portal.php')) {
-		wp_enqueue_style('content-sidebar', get_stylesheet_directory_uri() . '/layouts/canvas-portal.css');
-	} elseif (is_page_template('page-templates/content-sidebar.php')) {
-		wp_enqueue_style('content-sidebar', get_stylesheet_directory_uri() . '/layouts/content-sidebar.css');
-	} elseif (is_archive()) {
-		wp_enqueue_style('archive-styles', get_stylesheet_directory_uri() . '/layouts/content-sidebar.css');
-	} else {
-		wp_enqueue_style( 'default-blog-template', get_template_directory_uri() . '/layouts/content-sidebar.css' );
-	}*/
 
 
 
