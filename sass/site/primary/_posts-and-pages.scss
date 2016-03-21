@@ -26,3 +26,83 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+
+/**********************************************/
+
+.site-main {
+  margin-top: 1em;
+  article {
+    border-right: 1px solid darken($snow, 20);
+    padding-right: 1em;
+
+    //HEADER
+	.entry-header {
+	  border: 1px solid $orange;
+      .entry-title {
+        margin: 0px;
+        font-weight: 600;
+        font-size: 2em;
+        line-height: 1.3em;
+        color: $black;
+      } //.entry-title
+	} //.entry-header
+
+    //BODY
+    .entry-content {
+      border: 1px solid $yellowmed;
+      h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0.4em;
+      } // all headings
+      h1 {
+        font-size: 1.8em;
+        font-weight: 400;
+      } //h1
+      h2 {
+        font-size: 1.6em;
+        font-weight: 400;
+      } //h2
+      h3 {
+        font-size: 1.4em;
+        font-weight: 300;
+      } //h3
+      h4 {
+        font-size: 1.3em;
+        font-weight: 300;
+      } //h4
+      h5 {
+        font-size: 1.2em;
+        font-weight: 300;
+      } //h5
+      h6 {
+        font-size: 1.1em;
+        font-weight: 300;
+      } //h6
+
+      p {
+        font-size: 1em;
+        line-height: 1.5;
+        a {
+          @include single-transition();
+          &:hover {
+            color: $oryellowmed;
+            border-bottom: 1px dotted $oryellowmed;
+          } //&:hover
+        } //a
+      } //p
+      blockquote p {
+        font-size: 1.6em;
+        color: $bluelight;
+      }
+    } //.entry-content
+
+    //FOOTER
+    .entry-footer {
+      border: 1px solid $blue;
+    } //.entry-footer
+
+
+
+  } //article
+} //.site-main
+

@@ -15,8 +15,7 @@
 		// CONTENT
 		.site-main {
 			width: 100%;
-			background: #CCCCCC;
-			padding: 3em 2em 2em;
+			padding: 2em 0px 0px 4em;
 			@include breakpoint($desktop) {
 				width: 75%;
 				float: left;
@@ -44,7 +43,7 @@
 			.comments-area,
 			.paging-navigation {
 				max-width: 780px;
-				padding: 0px 2em;
+				padding: 0px;
 				margin: 0px auto;
 			} //.entry-*
 			.entry-content {

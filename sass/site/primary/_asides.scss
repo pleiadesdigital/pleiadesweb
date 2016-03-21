@@ -5,6 +5,8 @@
 
 .content-area {
   .widget-area {
+
+    //WIDGET GENERAL
     .widget {
       margin: 0px 0px 15px 0px;
       font-size: 1em;
@@ -15,11 +17,20 @@
         line-height: 1.4;
         font-size: 1.1em;
         margin-bottom: 5px;
-        //margin-top: 10px;
+        color: $bluelight;
       } //.widget-title
+      li {
+        padding: 10px 0px 5px;
+        border-bottom: 1px solid darken($snow, 20);
+        a {
+          color: $greydark;
+          @include single-transition();
+          @include transition-duration(0.3s);
+        } //a
+      } //li
     } //.widget
 
-    //INDIVIDUAL WIDGETS
+    // WIDGET SEARCH
     .widget_search {
       span {
         display: none;
@@ -40,5 +51,118 @@
         display: none;
       } //.search-submit
     } // .widget_search
+
+
+    //ALL INDIVIDUAL WIDGETS
+    .widget_recent_entries,
+    .widget_categories,
+    .widget_recent_comments {
+      li {
+        &:before {
+          display: block;
+          float: left;
+          padding-top: 2px;
+          margin-left: -1.7em;
+          font-family: 'fontawesome';
+          font-size: 14px;
+        } //
+      } // li
+    } //all individual widgets
+
+    // WIDGET RECENT ENTRIES
+    .widget_recent_entries {
+      li {
+        margin: 0px 0px 0.5em 1.7em;
+        &:before {
+          content: "\f036";
+          @include single-transition();
+          @include transition-duration(0.3s);
+        } //&:before
+        &:hover {
+          cursor: pointer;
+        }
+        &:hover a {
+          color: $bluelight;
+        }
+        &:hover::before {
+          color: $bluelight;
+        }
+      } //li
+    } //.widget_recent_entries
+
+
+    // WIDGET CATEGORIES
+    .widget_categories {
+      li {
+        margin: 0px 0px 0.5em 1.7em;
+        &:before {
+          content: "\f187";
+          @include single-transition();
+          @include transition-duration(0.3s);
+        } //&:before
+        &:hover {
+          cursor: pointer;
+        } //&:hover
+        &:hover a {
+          color: $bluelight;
+        } //&:hover a
+        &:hover::before {
+          color: $bluelight;
+        } // &:hover::before
+      } //li
+    } //.widget_categories
+
+
+    // WIDGET RECENT COMMENTS
+    .widget_recent_comments {
+      li {
+        margin: 0px 0px 0.5em 1.7em;
+        &:before {
+          content: "\f075";
+          @include single-transition();
+          @include transition-duration(0.3s);
+        } //&:before
+        &:hover {
+          cursor: pointer;
+        } //&:hover
+        &:hover a {
+          color: $bluelight;
+        } //&:hover a
+        &:hover::before {
+          color: $bluelight;
+        } // &:hover::before
+      } //li
+    } //.widget_recent_comments
+
   } //.widget-area
 } //.content-area
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
