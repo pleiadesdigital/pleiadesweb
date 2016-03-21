@@ -19,7 +19,7 @@
 			padding: 3em 2em 2em;
 			@include breakpoint($desktop) {
 				width: 75%;
-				float: right;
+				float: left;
 			}
 			@include breakpoint($laptop 1199px) {
 				width: 72%;
@@ -62,11 +62,11 @@
 			margin: 0px auto;
 			@include breakpoint($desktop) {
 				width: 25%;
-				float: left;
+				float: right;
 			} //breakpoint($desktop)
 			@include breakpoint($laptop 1199px) {
 				width: 28%;
-				float: left;
+				float: right;
 			} //breakpoint($laptop 1199px)
 		} //.widget-area
 

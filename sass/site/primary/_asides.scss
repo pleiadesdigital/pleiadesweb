@@ -1,4 +1,44 @@
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-	display: none;
+	display: block;
 }
+
+.content-area {
+  .widget-area {
+    .widget {
+      margin: 0px 0px 15px 0px;
+      font-size: 1em;
+      .widget-title {
+        font-family: $font_copy;
+        text-transform: uppercase;
+        border-bottom: 1px solid $greymed;
+        line-height: 1.4;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+        //margin-top: 10px;
+      } //.widget-title
+    } //.widget
+
+    //INDIVIDUAL WIDGETS
+    .widget_search {
+      span {
+        display: none;
+      } //span
+      input {
+        width: 98%;
+        height: 40px;
+        border-radius: 5px;
+        padding: 0px 5px;
+        border: 1px solid lighten($greylight, 15);
+        @include single-transition();
+        &:focus {
+          outline: none;
+          border: 1px solid lighten($bluelight, 20);
+        }
+      }
+      .search-submit {
+        display: none;
+      } //.search-submit
+    } // .widget_search
+  } //.widget-area
+} //.content-area

@@ -23,6 +23,8 @@
 					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/youtube.png" alt="icon for youtube"></a></li>
 				</ul>
 			</div><!-- .socialmedia -->
+			<hr>
+			<?php get_sidebar('footer'); ?>
 			
 		</div><!-- .footer-content -->
 	</footer><!-- .site-footer -->

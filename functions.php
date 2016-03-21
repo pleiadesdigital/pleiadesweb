@@ -60,17 +60,29 @@ function pleiadesweb_content_width() {
 add_action( 'after_setup_theme', 'pleiadesweb_content_width', 0 );
 
 function pleiadesweb_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'pleiadesweb' ),
+	register_sidebar(array(
+		'name'          => esc_html__('Sidebar', 'pleiadesweb'),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
-	) );
+	));
+
+	register_sidebar(array(
+		'name'          => esc_html__('Footer Widgets', 'pleiadesweb'),
+		'description'	=> __('Footer widgets'),
+		'id'            => 'sidebar-2',
+		'description'   => '',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
+
 }
-add_action( 'widgets_init', 'pleiadesweb_widgets_init' );
+add_action('widgets_init', 'pleiadesweb_widgets_init');
 
 // ENQUEING SCRIPTS AND OTHERS
 function pleiadesweb_scripts() {
@@ -87,12 +99,6 @@ function pleiadesweb_scripts() {
 	if (is_single()) {
 		wp_enqueue_style('pleiadesweb-content-sidebar', get_template_directory_uri() . '/layouts/sidebar-content.css');
 	}
-
-
-
-
-
-
 
 	// FONTS
 	// Titillium Web & Roboto Slab

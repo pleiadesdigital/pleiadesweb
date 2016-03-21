@@ -5,8 +5,9 @@
 	margin-top: 0px;
 	padding: 30px 0px;
 	.footer-content {
-		@include container(100%);
+		@include container();
 		.socialmedia {
+			border: 1px solid lime;
 			text-align: center;
 			ul {
 				list-style: none;
@@ -20,5 +21,35 @@
 				} //li
 			} //ul
 		} //.socialmedia
+
+		.widget {
+			margin: 0px 0px 0px 2em;
+			font-size: 1rem;
+			color: #55acee;
+			.widget-title {
+				margin-top: 10px;
+				margin-bottom: 5px;
+			} //.widget-area
+			select {
+				max-width: 100%;
+			}
+		} //.widget
+		.footer-widgets {
+			.widget {
+				float: left;
+				width: 320px;
+				margin: 0px 10px 20px 10px;
+			}
+			.widget-title {
+				line-height: 1.6;
+				font-size: 1.1em;
+				border-bottom: 1px solid $greydark;
+				color: $snow;
+				text-transform: uppercase;
+			}
+			margin: 0px auto;
+		} //.footer-widget
+
+
 	} //.footer-content
 } //.site-footer
