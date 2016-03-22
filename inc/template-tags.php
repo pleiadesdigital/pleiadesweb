@@ -39,16 +39,17 @@ function pleiadesweb_posted_on() {
 	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
 
 	// CATEGORIES
+
 	/* translators: used between list items, there is a space after the comma */
 	$categories_list = get_the_category_list( esc_html__( ', ', 'pleiadesweb' ) );
 	if ( $categories_list && pleiadesweb_categorized_blog() ) {
-		echo '<div class="category-list">' . $categories_list . '</div>';
+		echo ' | </i><span class="category-list">' . $categories_list . '</span>';
 	}	
 
 	// COMMENTS
 
     if (! post_password_required() && (comments_open() || '0' != get_comments_number())) { 
-        echo '<span class="comments-link">';
+        echo ' | <span class="comments-link">';
         comments_popup_link( __('Deja un comentario', 'my-simone'), __('1 comentario', 'my-simone'), __('% comentarios', 'my-simone'));
         echo '</span>';
     }

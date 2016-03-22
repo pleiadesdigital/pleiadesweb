@@ -32,13 +32,16 @@
 
 .site-main {
   margin-top: 1em;
+
+  //ARTICLE (MAIN CONTENT)
   article {
     border-right: 1px solid darken($snow, 20);
     padding-right: 1em;
 
     //HEADER
 	.entry-header {
-	  border: 1px solid $orange;
+
+      //TITLE
       .entry-title {
         margin: 0px;
         font-weight: 600;
@@ -46,11 +49,70 @@
         line-height: 1.3em;
         color: $black;
       } //.entry-title
+
+      //META
+      .entry-meta {
+        color: $grey;
+
+        //POSTED ON
+        .posted-on {
+          color: $greylight;
+          a {
+            color: $grey;
+            @include single-transition();
+            @include transition-duration(0.3s);
+            &:hover {
+              color: $oryellowmed;
+            } //&:hover
+          } //a
+        } //.posted-on
+
+        //CATEGORY LIST
+        .category-list {
+          color: $greylight;
+          a {
+            color: $grey;
+            @include single-transition();
+            @include transition-duration(0.3s);
+            &:hover {
+              color: $oryellowmed;
+            } //&:hover
+          } //a
+        } //.category-list
+
+        //BYLINE
+        .byline {
+          color: $greylight;
+          a {
+            color: $grey;
+            @include single-transition();
+            @include transition-duration(0.3s);
+            &:hover {
+              color: $oryellowmed;
+            } //&:hover
+          } //a
+        } //.byline
+
+        //COMMENTS LINK
+        .comments-link {
+          color: $greylight;
+          a {
+            color: $grey;
+            @include single-transition();
+            @include transition-duration(0.3s);
+            &:hover {
+              color: $oryellowmed;
+            } //&:hover
+          } //a
+        } //.comments-link
+
+      } //.entry-meta
+
 	} //.entry-header
 
     //BODY
     .entry-content {
-      border: 1px solid $yellowmed;
+      margin-top: 20px !important;
       h1, h2, h3, h4, h5, h6 {
         margin-bottom: 0.4em;
       } // all headings
@@ -91,18 +153,118 @@
         } //a
       } //p
       blockquote p {
-        font-size: 1.6em;
-        color: $bluelight;
+        font-size: 1.2em;
       }
     } //.entry-content
 
     //FOOTER
     .entry-footer {
-      border: 1px solid $blue;
+      margin-top: 2em !important;
+      margin-bottom: 3em;
+      line-height: 2;
+      ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        li {
+          display: inline-block;
+          margin-right: 2em;
+
+          a {
+            color: $greymed;
+            margin-left: 0.5em;
+            @include single-transition();
+          } //a
+          i {
+            color: $greymed;
+            @include single-transition();
+          } //i
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover i,
+          &:hover a {
+            cursor: pointer;
+            color: $oryellowmed;
+          }
+        } //li
+      } //ul
     } //.entry-footer
 
-
-
   } //article
+
+  //NAVIGATION
+  .post-navigation {
+    font-size: 18px;
+    @include clearfix();
+
+    .post-nav-box {
+      padding: 1em 0px;
+      margin-bottom: 4em;
+      border-top: 1px solid $greylight;
+      border-bottom: 1px solid $greylight;
+      clear: both;
+      @include clearfix();
+      .screen-reader-text {
+        display: none;
+      } //.screen-reader-text
+      .nav-links {
+        .nav-previous {
+          width: 50%;
+          float: left;
+          padding-right: 15%;
+          a {
+            color: $bluemed;
+          } //a
+        } //.nav-previous
+
+        .nav-next {
+          width: 50%;
+          float: right;
+          padding-left: 15%;
+          text-align: right;
+          a {
+            color: $bluemed;
+          } //a
+        } //.nav-next
+      } //.nav-links
+    } //.post-nav-box
+
+  } //.post-navigation
+
+  //COMMENTS
+  .comments-area {
+    border: 1px solid darkgreen;
+    margin-top: 2em;
+    clear: both;
+    display: block;
+  } //comment
+
+
 } //.site-main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
