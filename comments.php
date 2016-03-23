@@ -28,24 +28,12 @@ if ( post_password_required() ) {
 		<h2 class="comments-title">
 			<?php
 				printf( // WPCS: XSS OK.
-					esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'pleiadesweb' ) ),
-					number_format_i18n( get_comments_number() ),
-					'<span>' . get_the_title() . '</span>'
+					esc_html( _nx( 'Un comentario:', '%1$s comentarios:', get_comments_number(), 'pleiadesweb' ) ),
+					number_format_i18n( get_comments_number() )
 				);
 			?>
 		</h2>
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'pleiadesweb' ); ?></h2>
-			<div class="nav-links">
-
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'pleiadesweb' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'pleiadesweb' ) ); ?></div>
-
-			</div><!-- .nav-links -->
-		</nav><!-- #comment-nav-above -->
-		<?php endif; // Check for comment navigation. ?>
 
 		<ol class="comment-list">
 			<?php
@@ -57,15 +45,15 @@ if ( post_password_required() ) {
 		</ol><!-- .comment-list -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'pleiadesweb' ); ?></h2>
-			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'pleiadesweb' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'pleiadesweb' ) ); ?></div>
 
-			</div><!-- .nav-links -->
-		</nav><!-- #comment-nav-below -->
+			<nav id="comment-nav-below" class="comment-navigation clear" role="navigation">
+				<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'pleiadesweb' ); ?></h1>
+				<div class="nav-previous"><?php previous_comments_link( __( '<i class="fa fa-arrow-circle-o-left"></i> Comentarios anteriores', 'my-simone' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( __( 'Comentarios nuevos <i class="fa fa-arrow-circle-o-right"></i>', 'my-simone' ) ); ?></div>
+			</nav><!-- #comment-nav-below -->
+
+
 		<?php
 		endif; // Check for comment navigation.
 

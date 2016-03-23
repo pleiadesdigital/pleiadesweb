@@ -4,3 +4,51 @@
 .bypostauthor {
 	display: block;
 }
+
+.site-main {
+  //COMMENTS
+  .comments-area {
+    margin-top: 0px;
+    clear: both;
+    display: block;
+    article {
+      border-right: none;
+    } //article
+    .comment-navigation {
+      padding: 1em 0px;
+      margin: 2em 0px;
+      border-top: 1px solid $greylight;
+      border-bottom: 1px solid $greylight;
+      .nav-previous {
+        a {
+          color: $grey;
+          @include single-transition();
+          @include transition-duration(0.3s);
+          &:hover {
+            color: $oryellowmed;
+          } //&:hover
+          i {
+            color: $grey;
+            margin: 0px 5px 0px 0px;
+          } //i
+        } //a
+      } //.nav-previous
+
+      .nav-next {
+        a {
+          color: $grey;
+          @include single-transition();
+          @include transition-duration(0.3s);
+          &:hover {
+            color: $oryellowmed;
+          } //&:hover
+          i {
+            color: $grey;
+            margin: 0px 0px 0px 5px;
+          } //i
+        } //a
+
+      } //.nav-next
+    } //.comment-navigation
+  } //.comments-area
+}

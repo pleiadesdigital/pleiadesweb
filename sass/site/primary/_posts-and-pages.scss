@@ -197,10 +197,9 @@
   .post-navigation {
     font-size: 18px;
     @include clearfix();
-
     .post-nav-box {
       padding: 1em 0px;
-      margin-bottom: 4em;
+      margin-bottom: 2em;
       border-top: 1px solid $greylight;
       border-bottom: 1px solid $greylight;
       clear: both;
@@ -232,13 +231,6 @@
 
   } //.post-navigation
 
-  //COMMENTS
-  .comments-area {
-    border: 1px solid darkgreen;
-    margin-top: 2em;
-    clear: both;
-    display: block;
-  } //comment
 
 
 } //.site-main
