@@ -11,20 +11,116 @@
     margin-top: 0px;
     clear: both;
     display: block;
-    article {
-      border-right: none;
-    } //article
+    .comments-title {
+      font-weight: 600;
+      font-size: 2em;
+      color: $blue;
+      font-family: $font_copy;
+      text-transform: uppercase;
+    } //.comments-title
+    & > ol {
+      padding: 0px;
+      margin: 3em 0px 1em;
+      list-style-type: none;
+    }
+    ol {
+      margin-left: 50px;
+      @include breakpoint($iphone) {
+        margin-left: 0px;
+      }
+      li {
+        .comment-body {
+          border-right: none;
+          margin-bottom: 2em;
+          padding-bottom: 2em;
+          border-bottom: 1px solid $greylight;
+          &:last-child {
+            border-bottom: none;
+          }
+          .comment-meta {
+            margin-bottom: 1em;
+            .comment-author {
+              .avatar {
+                width: 100px;
+                display: block;
+                float: left;
+                border-radius: 50%;
+                margin-right: 20px;
+              } //.avatar
+              .fn {
+                font-weight: 600;
+                font-size: 2em;
+              } //.fn
+              .says {
+                color: $grey;
+              } //.says
+            } //.comment-author
+            .comment-metadata {
+              font-size: 0.9em;
+            } //.comment-metadata
+          } //.comment-meta
+          .comment-content {
+            margin-left: 120px;
+            @include breakpoint($iphone) {
+              margin-left: 0px;
+            } //breakpoint($iphone)
+            p {
+              text-align: justify;
+              font-size: 1.3em;
+              @include breakpoint($iphone) {
+                font-size: 1.1em;
+              } //breakpoint($iphone)
+              color: $grey;
+              font-weight: 300;
+              a {
+                word-wrap: break-word;
+              } //a
+            } //p
+            ol {
+              margin-left: 1.5em;
+              @include breakpoint($iphone) {
+                margin-left: 1.5em;
+              } //breakpoint($iphone)
+            } //ol
+          } //.comment-content
+          .reply {
+            margin-left: 120px;
+            font-weight: 600;
+            font-size: 14px;
+            @include breakpoint($iphone) {
+              margin-left: 0px;
+            } //breakpoint($iphone)
+          } //.reply
+        } //.comment-body
+      } //li
+    } //ol
+
+
+
+
+
+
+
     .comment-navigation {
       padding: 1em 0px;
       margin: 2em 0px;
       border-top: 1px solid $greylight;
       border-bottom: 1px solid $greylight;
+      @include clearfix();
+      .screen-reader-text {
+        display: none;
+      }
       .nav-previous {
+        width: 50%;
+        float: left;
         a {
           color: $grey;
           @include single-transition();
           @include transition-duration(0.3s);
-          &:hover {
+          &:hover,
+          &:hover i {
+            @include single-transition();
+            @include transition-duration(0.3s);
             color: $oryellowmed;
           } //&:hover
           i {
@@ -35,11 +131,17 @@
       } //.nav-previous
 
       .nav-next {
+        width: 50%;
+        float: right;
+        text-align: right;
         a {
           color: $grey;
           @include single-transition();
           @include transition-duration(0.3s);
-          &:hover {
+          &:hover,
+          &:hover i {
+            @include single-transition();
+            @include transition-duration(0.3s);
             color: $oryellowmed;
           } //&:hover
           i {

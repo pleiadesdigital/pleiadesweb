@@ -37,7 +37,14 @@
   article {
     border-right: 1px solid darken($snow, 20);
     padding-right: 1em;
-
+    @include breakpoint($laptop 1199px) {
+      border-right: none;
+      border-left: 1px solid darken($snow, 20);
+      padding-left: 40px;
+    } //breakpoint($laptop 1199px)
+    @include breakpoint($iphone) {
+      border-right: none;
+    } //breakpoint($iphone)
     //HEADER
 	.entry-header {
 
@@ -192,6 +199,14 @@
     } //.entry-footer
 
   } //article
+  @include breakpoint($laptop 1199px) {
+    .comments-area {
+      article {
+        border-left: none;
+      } //article
+    } //.comments-area
+  }
+
 
   //NAVIGATION
   .post-navigation {
@@ -214,6 +229,11 @@
           padding-right: 15%;
           a {
             color: $bluemed;
+            @include single-transition();
+            @include transition-duration(0.3s);
+            &:hover {
+              color: $oryellowmed;
+            } //&:hover
           } //a
         } //.nav-previous
 
@@ -223,7 +243,12 @@
           padding-left: 15%;
           text-align: right;
           a {
+            @include single-transition();
+            @include transition-duration(0.3s);
             color: $bluemed;
+            &:hover {
+              color: $oryellowmed;
+            } //&:hover
           } //a
         } //.nav-next
       } //.nav-links

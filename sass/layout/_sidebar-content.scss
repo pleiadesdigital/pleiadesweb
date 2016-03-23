@@ -16,11 +16,15 @@
 		.site-main {
 			width: 100%;
 			padding: 2em 0px 0px 4em;
+			@include breakpoint($iphone) {
+              padding: 1em 1em 0px 2em;
+			}
 			@include breakpoint($desktop) {
 				width: 75%;
 				float: left;
 			}
 			@include breakpoint($laptop 1199px) {
+                padding-left: 0px;
 				width: 72%;
 				float: right;
 				.entry-header, 

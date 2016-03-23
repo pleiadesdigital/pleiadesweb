@@ -58,6 +58,12 @@
   width: 100%;
   padding: 2em 0px 0px 4em;
 }
+@media (max-width: 699px) {
+  /* line 16, ../sass/layout/_sidebar-content.scss */
+  .site-content .content-area .site-main {
+    padding: 1em 1em 0px 2em;
+  }
+}
 @media (min-width: 1200px) {
   /* line 16, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .site-main {
@@ -68,10 +74,11 @@
 @media (min-width: 990px) and (max-width: 1199px) {
   /* line 16, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .site-main {
+    padding-left: 0px;
     width: 72%;
     float: right;
   }
-  /* line 26, ../sass/layout/_sidebar-content.scss */
+  /* line 30, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .site-main .entry-header,
   .site-content .content-area .site-main .entry-meta,
   .site-content .content-area .site-main .entry-content,
@@ -83,7 +90,7 @@
     margin-left: 0px;
   }
 }
-/* line 37, ../sass/layout/_sidebar-content.scss */
+/* line 41, ../sass/layout/_sidebar-content.scss */
 .site-content .content-area .site-main .entry-header,
 .site-content .content-area .site-main .entry-meta,
 .site-content .content-area .site-main .entry-content,
@@ -96,11 +103,11 @@
   padding: 0px;
   margin: 0px auto;
 }
-/* line 49, ../sass/layout/_sidebar-content.scss */
+/* line 53, ../sass/layout/_sidebar-content.scss */
 .site-content .content-area .site-main .entry-content {
   text-align: justify;
 }
-/* line 55, ../sass/layout/_sidebar-content.scss */
+/* line 59, ../sass/layout/_sidebar-content.scss */
 .site-content .content-area .widget-area {
   padding: 3em 2em 2em;
   background: white;
@@ -110,21 +117,21 @@
   margin: 0px auto;
 }
 @media (min-width: 1200px) {
-  /* line 55, ../sass/layout/_sidebar-content.scss */
+  /* line 59, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .widget-area {
     width: 25%;
     float: right;
   }
 }
 @media (min-width: 990px) and (max-width: 1199px) {
-  /* line 55, ../sass/layout/_sidebar-content.scss */
+  /* line 59, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .widget-area {
     width: 28%;
     float: right;
   }
 }
 
-/* line 77, ../sass/layout/_sidebar-content.scss */
+/* line 81, ../sass/layout/_sidebar-content.scss */
 .site-footer {
   clear: both;
   width: 100%;

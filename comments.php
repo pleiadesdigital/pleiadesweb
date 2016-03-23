@@ -38,8 +38,9 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'style'      => 'ol',
-					'short_ping' => true,
+					'style'      	=> 'ol',
+					'short_ping' 	=> true,
+					'avatar_size'	=> 100
 				) );
 			?>
 		</ol><!-- .comment-list -->
@@ -49,8 +50,8 @@ if ( post_password_required() ) {
 
 			<nav id="comment-nav-below" class="comment-navigation clear" role="navigation">
 				<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'pleiadesweb' ); ?></h1>
-				<div class="nav-previous"><?php previous_comments_link( __( '<i class="fa fa-arrow-circle-o-left"></i> Comentarios anteriores', 'my-simone' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( __( 'Comentarios nuevos <i class="fa fa-arrow-circle-o-right"></i>', 'my-simone' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( __( '<i class="fa fa-hand-o-left"></i> Comentarios anteriores', 'my-simone' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( __( 'Comentarios nuevos <i class="fa fa-hand-o-right"></i>', 'my-simone' ) ); ?></div>
 			</nav><!-- #comment-nav-below -->
 
 
