@@ -94,13 +94,6 @@
         } //.comment-body
       } //li
     } //ol
-
-
-
-
-
-
-
     .comment-navigation {
       padding: 1em 0px;
       margin: 2em 0px;
@@ -152,5 +145,18 @@
 
       } //.nav-next
     } //.comment-navigation
+
+    //FORM
+    .comment-respond {
+      border: 1px solid maroon;
+      .comment-reply-title {
+        color: $blue;
+        font-family: $font_copy;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 0.5em;
+      } //.comment-reply-title
+    } //.comment-respond
+
   } //.comments-area
-}
+} //.site-main

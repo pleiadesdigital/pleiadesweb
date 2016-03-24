@@ -3616,7 +3616,7 @@ header .fullheight .hgroup p img {
     margin-left: 0px;
   }
 }
-/* line 104, sass/site/primary/_comments.scss */
+/* line 97, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation {
   padding: 1em 0px;
   margin: 2em 0px;
@@ -3632,16 +3632,16 @@ header .fullheight .hgroup p img {
 .site-main .comments-area .comment-navigation:after {
   clear: both;
 }
-/* line 110, sass/site/primary/_comments.scss */
+/* line 103, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .screen-reader-text {
   display: none;
 }
-/* line 113, sass/site/primary/_comments.scss */
+/* line 106, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-previous {
   width: 50%;
   float: left;
 }
-/* line 116, sass/site/primary/_comments.scss */
+/* line 109, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-previous a {
   color: #7f7f7f;
   -moz-transition: all 1s;
@@ -3653,7 +3653,7 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 120, sass/site/primary/_comments.scss */
+/* line 113, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-previous a:hover, .site-main .comments-area .comment-navigation .nav-previous a:hover i {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -3665,18 +3665,18 @@ header .fullheight .hgroup p img {
   transition-duration: 0.3s;
   color: #b97415;
 }
-/* line 126, sass/site/primary/_comments.scss */
+/* line 119, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-previous a i {
   color: #7f7f7f;
   margin: 0px 5px 0px 0px;
 }
-/* line 133, sass/site/primary/_comments.scss */
+/* line 126, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-next {
   width: 50%;
   float: right;
   text-align: right;
 }
-/* line 137, sass/site/primary/_comments.scss */
+/* line 130, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-next a {
   color: #7f7f7f;
   -moz-transition: all 1s;
@@ -3688,7 +3688,7 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 141, sass/site/primary/_comments.scss */
+/* line 134, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-next a:hover, .site-main .comments-area .comment-navigation .nav-next a:hover i {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -3700,10 +3700,22 @@ header .fullheight .hgroup p img {
   transition-duration: 0.3s;
   color: #b97415;
 }
-/* line 147, sass/site/primary/_comments.scss */
+/* line 140, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-next a i {
   color: #7f7f7f;
   margin: 0px 0px 0px 5px;
+}
+/* line 150, sass/site/primary/_comments.scss */
+.site-main .comments-area .comment-respond {
+  border: 1px solid maroon;
+}
+/* line 152, sass/site/primary/_comments.scss */
+.site-main .comments-area .comment-respond .comment-reply-title {
+  color: #003d77;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0.5em;
 }
 
 /*--------------------------------------------------------------
