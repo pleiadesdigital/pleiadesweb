@@ -148,14 +148,62 @@
 
     //FORM
     .comment-respond {
-      border: 1px solid maroon;
       .comment-reply-title {
         color: $blue;
         font-family: $font_copy;
         text-transform: uppercase;
         font-weight: 500;
         margin-bottom: 0.5em;
+        @include container(80%);
       } //.comment-reply-title
+      .comment-form {
+        padding-bottom: 3em;
+        font-family: $font_copy;
+        font-size: 1em;
+        @include container(80%);
+        p {
+          label {
+            display: block;
+            margin-bottom: 5px;
+          } //label
+          textarea,
+          input {
+            border: 1px solid lighten($greylight, 15);
+            display: block;
+            font-size: 1.3em;
+            color: $greydark;
+            font-family: $font_copy;
+            width: 100%;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color: darken($snow, 2);
+            @include single-transition();
+            &:focus {
+              outline: none;
+              border: 1px solid lighten($bluelight, 20);
+              background-color: $white;
+            }
+          } //textarea
+          &.form-submit {
+            margin-top: 40px;
+            input {
+              display: block;
+              float: right;
+              width: 40%;
+              border: none;
+              background: lighten($bluelight, 20);
+              color: $snow;
+              @include box-shadow($grey 2px 2px 8px);;
+              &:hover {
+                background-color: $bluelight;
+              }
+            } //input
+          } //.form-submit
+        } //p
+
+
+      } //.comment-form
     } //.comment-respond
 
   } //.comments-area

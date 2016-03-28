@@ -120,7 +120,7 @@
         &:before {
           content: "\f075";
           @include single-transition();
-          @include transition-duration(0.3s);
+          @include transition-duration(0.4s);
         } //&:before
         &:hover {
           cursor: pointer;
