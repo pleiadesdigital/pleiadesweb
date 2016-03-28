@@ -25,14 +25,19 @@
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
+
+<!--		The feature image-->
+		<?php if(has_post_thumbnail()) { ?>
+		<div class="single-post-thumbnail clear">
+			<?php echo the_post_thumbnail('index-thumb'); ?>
+		</div>
+		<?php } ?>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'pleiadesweb' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
+			the_content(sprintf(wp_kses( __('Continue reading %s <span class="meta-nav">&rarr;</span>', 'pleiadesweb'), array('span' => array('class' => array()))), the_title( '<span class="screen-reader-text">"', '"</span>', false)
 			) );
 
 			wp_link_pages( array(

@@ -9,7 +9,7 @@
 	.content-area {
 		width: 100%;
 		@include container();
-		@include breakpoint($laptop 1199px) {
+		@include breakpoint($laptop) {
 			@include container(960px);
 		} 
 		// CONTENT
@@ -17,13 +17,19 @@
 			width: 100%;
 			padding: 2em 0px 0px 4em;
 			@include breakpoint($iphone) {
+              border: 2px solid blueviolet;
               padding: 1em 1em 0px 2em;
 			}
+			@include breakpoint($tablet) {
+				border: 2px solid darkmagenta;
+				padding: 1em 1em 0px 2em;
+			}
 			@include breakpoint($desktop) {
+
 				width: 75%;
 				float: left;
 			}
-			@include breakpoint($laptop 1199px) {
+			@include breakpoint($laptop) {
                 padding-left: 0px;
 				width: 72%;
 				float: right;
@@ -67,9 +73,9 @@
 				width: 25%;
 				float: right;
 			} //breakpoint($desktop)
-			@include breakpoint($laptop 1199px) {
+			@include breakpoint($laptop) {
 				width: 28%;
-				float: right;
+				float: left;
 			} //breakpoint($laptop 1199px)
 		} //.widget-area
 

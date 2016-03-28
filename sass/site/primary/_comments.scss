@@ -174,7 +174,7 @@
             color: $greydark;
             font-family: $font_copy;
             width: 100%;
-            padding: 0.5em 1em;
+            padding: 1em 1em;
             border-radius: 10px;
             margin-bottom: 10px;
             background-color: darken($snow, 2);
@@ -194,6 +194,11 @@
               border: none;
               background: lighten($bluelight, 20);
               color: $snow;
+              @include breakpoint($iphone) {
+                width: 50%;
+                font-size: 1.2em;
+                word-break: normal;
+              }
               @include box-shadow($grey 2px 2px 8px);;
               &:hover {
                 background-color: $bluelight;

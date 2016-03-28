@@ -61,6 +61,14 @@
 @media (max-width: 699px) {
   /* line 16, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .site-main {
+    border: 2px solid blueviolet;
+    padding: 1em 1em 0px 2em;
+  }
+}
+@media (min-width: 700px) and (max-width: 989px) {
+  /* line 16, ../sass/layout/_sidebar-content.scss */
+  .site-content .content-area .site-main {
+    border: 2px solid darkmagenta;
     padding: 1em 1em 0px 2em;
   }
 }
@@ -78,7 +86,7 @@
     width: 72%;
     float: right;
   }
-  /* line 30, ../sass/layout/_sidebar-content.scss */
+  /* line 36, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .site-main .entry-header,
   .site-content .content-area .site-main .entry-meta,
   .site-content .content-area .site-main .entry-content,
@@ -90,7 +98,7 @@
     margin-left: 0px;
   }
 }
-/* line 41, ../sass/layout/_sidebar-content.scss */
+/* line 47, ../sass/layout/_sidebar-content.scss */
 .site-content .content-area .site-main .entry-header,
 .site-content .content-area .site-main .entry-meta,
 .site-content .content-area .site-main .entry-content,
@@ -103,11 +111,11 @@
   padding: 0px;
   margin: 0px auto;
 }
-/* line 53, ../sass/layout/_sidebar-content.scss */
+/* line 59, ../sass/layout/_sidebar-content.scss */
 .site-content .content-area .site-main .entry-content {
   text-align: justify;
 }
-/* line 59, ../sass/layout/_sidebar-content.scss */
+/* line 65, ../sass/layout/_sidebar-content.scss */
 .site-content .content-area .widget-area {
   padding: 3em 2em 2em;
   background: white;
@@ -117,21 +125,21 @@
   margin: 0px auto;
 }
 @media (min-width: 1200px) {
-  /* line 59, ../sass/layout/_sidebar-content.scss */
+  /* line 65, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .widget-area {
     width: 25%;
     float: right;
   }
 }
 @media (min-width: 990px) and (max-width: 1199px) {
-  /* line 59, ../sass/layout/_sidebar-content.scss */
+  /* line 65, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .widget-area {
     width: 28%;
-    float: right;
+    float: left;
   }
 }
 
-/* line 81, ../sass/layout/_sidebar-content.scss */
+/* line 87, ../sass/layout/_sidebar-content.scss */
 .site-footer {
   clear: both;
   width: 100%;
