@@ -28,6 +28,10 @@
 			@include container(60%);
 			.content-center {
 				margin: 20px 0px;
+                border-right: none;
+                @include breakpoint($laptop) {
+                  border-left: none;
+                }
 				p {
 					font-size: 2em;
 					text-align: center;
@@ -304,6 +308,7 @@
 						@include transition-duration(0.5s);
 							article {
 								width: auto;
+								border-right: none;
 								@include breakpoint(1350px) {
 									font-size: 1.3em;
 								}
@@ -313,6 +318,9 @@
 								@include breakpoint(920px 989px) {
 									font-size: 1em;
 								}
+                                @include breakpoint($laptop) {
+                                  border-left: none;
+                                }
 								text-align: center;
 								font-weight: 500;
 								line-height: 1.2;
