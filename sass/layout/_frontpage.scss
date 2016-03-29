@@ -9,8 +9,12 @@ body {
 	@include background-image(linear-gradient(bottom, $snow, $white));	
 	article {
 		text-align: center;
+		border-right: none;
 		@include container(70%);
 		padding: 30px 0px;
+      @include breakpoint($laptop) {
+        border-left: none;
+      } //breakpoint($iphone)
 		@include breakpoint($iphone) {
 			@include container (90%);
 		} //breakpoint($iphone)
@@ -47,6 +51,9 @@ body {
 				text-transform: normal;
 				color: $black;
 			} //h2
+            @include breakpoint($desktop) {
+              @include span(1 of 3);
+            }
 			@include breakpoint($laptop) {
 				@include span(1 of 3);
 			}
@@ -203,6 +210,10 @@ body {
 	.cta-front {
 		@include container(70%);
 		padding: 30px 0px;
+        border-right: none;
+        @include breakpoint($laptop) {
+          border-left: none;
+        }
 		@include breakpoint($iphone) {
 			padding: 15px 0px 20px 0px;
 		}
@@ -248,6 +259,10 @@ body {
 	.porque-nos-content {
 		@include container();
 		margin: 0px auto;
+        border-right: none;
+        @include breakpoint($laptop) {
+          border-left: none;
+        }
 		h2 {
 			margin-top: 20px;
 			margin-bottom: 40px;
