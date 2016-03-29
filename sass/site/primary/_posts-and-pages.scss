@@ -175,6 +175,13 @@
             border-bottom: 1px dotted $oryellowmed;
           } //&:hover
         } //a
+        img {
+          border: 1px solid darkslategray;
+          width: auto;
+          height: auto;
+         /* display: block;
+          margin: 0px auto;*/
+        }
       } //p
       blockquote p {
         font-size: 1.2em;
