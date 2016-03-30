@@ -21,7 +21,7 @@ get_header(); ?>
 			<article class="intro">
 				<div class="intro-info">
 					<article class="content-center">
-						<?php echo get_post_meta($post->ID, 'intro_text', true); ?>
+						<p><?php echo get_post_meta($post->ID, 'intro_text', true); ?></p>
 					</article> <!-- .content-center -->
 				</div><!-- class="intro-info" -->
 			</article><!-- class="intro" -->
