@@ -1,5 +1,50 @@
 .blog {
   .site-content {
-    border: 3px solid turquoise;
+
+    //CONTENT
+    .site-main {
+      @include container();
+      .main-header {
+        border: 2px solid darkslateblue;
+      } //header
+      article {
+        padding-right: 0px;
+        border-right: none;
+        .index-box {
+          border: 2px solid rebeccapurple;
+          max-width: 600px;
+          padding: 1em 0px 2em;
+          background: $yellowlight;
+          display: block;
+          margin: 0px auto;
+          .entry-header {
+            border: 1px solid tomato;
+          } //.entry-header
+          .entry-summary {
+            p {
+              color: $greydark;
+            } //p
+            .single-post-thumbnail {
+              img {
+                width: 90%;
+                display: block;
+                margin: 0px auto;
+              } //img
+            } //.single-post-thumbnail
+
+          } //.entry-summary
+          .entry-footer {
+
+          } //.entry-footer
+        } //.index-box
+      } //article
+    } //.site-main
+
+    //SIDEBAR
+    .widget-area {
+      border: 3px solid gold;
+      @include container();
+    }
+
   } // .site-content
 } //.blog
