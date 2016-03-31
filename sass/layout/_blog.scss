@@ -9,20 +9,20 @@
       } //header
       article {
         padding-right: 0px;
+
         border-right: none;
         .index-box {
-          border: 2px solid rebeccapurple;
           max-width: 600px;
-          padding: 1em 0px 2em;
+          padding: 1em 0px 10px;
           background: $yellowlight;
           display: block;
           margin: 0px auto;
           .entry-header {
-            border: 1px solid tomato;
           } //.entry-header
           .entry-summary {
             p {
-              color: $greydark;
+              color: #0A246A;
+              text-align: justify;
             } //p
             .single-post-thumbnail {
               img {
@@ -34,7 +34,13 @@
 
           } //.entry-summary
           .entry-footer {
-
+            margin-bottom: 0px;
+            .continue-reading {
+              display: block;
+              width: auto;
+              margin: 0px auto;
+              text-align: center;
+            } //.continue-reading
           } //.entry-footer
         } //.index-box
       } //article
@@ -44,7 +50,7 @@
     .widget-area {
       border: 3px solid gold;
       @include container();
-    }
+    } //.widget-area
 
   } // .site-content
 } //.blog

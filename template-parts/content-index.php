@@ -9,7 +9,6 @@
 
 ?>
 
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="index-box">
         <header class="entry-header">
@@ -24,16 +23,18 @@
 
         <div class="entry-summary">
             <!--		The feature image-->
-            <?php if(has_post_thumbnail()) { ?>
-                <div class="single-post-thumbnail clear">
-                    <?php echo the_post_thumbnail('index-thumb'); ?>
-                </div>
-            <?php } ?>
+            <?php //if(has_post_thumbnail()) { ?>
+                <!--<div class="single-post-thumbnail clear">
+                    <?php /*//echo the_post_thumbnail('index-thumb'); */?>
+                </div>-->
+            <?php //} ?>
             <?php the_excerpt(); ?>
         </div><!-- .entry-summary -->
 
-        <footer class="entry-footer">
-            <?php //pleiadesweb_entry_footer(); ?>
+        <footer class="entry-footer continue-reading">
+            <div class="continue-reading">
+                <a href="<?php echo get_permalink(); ?>" title="<?php echo __('Continue Reading ', 'pleiadesweb') . get_the_title() ?>" rel="bookmark">Continue reading&nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i></a>
+            </div>
         </footer><!-- .entry-footer -->
     </div>
 </article><!-- #post-## -->

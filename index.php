@@ -16,6 +16,21 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+			<hr>
+			<!-- MASONRY START -->
+			<div id="grid">
+				<div class="grid-item">grid 1</div>
+				<div class="grid-item">grid 2</div>
+				<div class="grid-item">grid 3</div>
+				<div class="grid-item">grid 4</div>
+				<div class="grid-item">grid 5</div>
+				<div class="grid-item">grid 6</div>
+				<div class="grid-item">grid 7</div>
+				<div class="grid-item">grid 8</div>
+			</div>
+
+
 		<?php
 		if ( have_posts() ) :
 
