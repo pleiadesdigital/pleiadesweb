@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	$('#grid').masonry({
-		columnWidth: 400,
+	  columnWidth: 50,
 	  itemSelector: '.grid-item',
 	  isFitWidth: true,
 	  isAnimated: true

@@ -23,10 +23,10 @@ get_header(); ?>
 		if ( is_home() && ! is_front_page() ) : ?>
 			<header class="main-header">
 <!--			INTRO-->
-				<h2 class="page-title screen-reader-text"><?php single_post_title(); ?></h2>
+				<h2 class="page-title screen-reader-text">Nuestra biblioteca virtual</h2>
 				<p>Fancy taking your digital marketing to the next level? You’re lucky you found us…</p>
 			</header>
-			<hr>
+
 			<?php
 			endif;
 			?>

@@ -22,59 +22,105 @@
         } //p
       } //.main-header
 
-
       //MASONRY
-
       #grid {
-        border: 3px solid darkmagenta;
         margin: 0px auto;
         @include clearfix();
         .grid-item {
           float: left;
-          width: 320px;
-          margin: 0px 2em 4em 2em;
+          width: 270px;
+          @include breakpoint($tablet) {
+            width: 320px;
+          }
+          @include breakpoint($iphone) {
+            width: 90%;
+            margin: 0px 5% 10px;
+          }
+          margin: 0px 10px 10px;
           height: auto;
-          border: 2px solid purple;
-        }
+
+          article {
+            padding-right: 0px;
+            border-right: none;
+            @include breakpoint($laptop) {
+              border-right: none;
+              border-left: none;
+              padding-left: 0px;
+            } //breakpoint($laptop 1199px)
+            .index-box {
+              max-width: 600px;
+              padding: 0px;
+              display: block;
+              margin: 0px auto;
+              margin-bottom: 30px;
+              @include breakpoint($iphone) {
+                margin-bottom: 10px;
+              }
+              border-bottom: 1px solid $greylight;
+              .entry-header {
+                .single-post-thumbnail {
+                  margin-top: 0px;
+                  img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    margin: 0px auto;
+                    border-radius: 0px;
+                    padding-top: 0px;
+                  } //img
+                } //.single-post-thumbnail
+                .entry-title {
+                  font-family: $font_copy;
+                  font-size: 1.6em;
+                  line-height: 1.2;
+                  font-weight: 300;
+                  margin: 10px 0px;
+                  a {
+                    color: $grey;
+                    @include single-transition();
+                    @include transition-duration(0.3s);
+                    &:hover {
+                      color: $oryellowmed !important;
+                    } //&:hover
+                    &:visited {
+                      color: $grey;
+                    } //&:visited
+                  } //a
+                } //.entry-title
+              } //.entry-header
+              .entry-summary {
+                p {
+                  color: $greylight;
+                  text-align: justify;
+                } //p
+              } //.entry-summary
+
+              .entry-footer {
+                margin-top: 0px !important;
+                margin-bottom: 0px;
+                .continue-reading {
+                  display: block;
+                  width: auto;
+                  margin: 0px auto 10px;
+                  text-align: left;
+                  a {
+                    color: $grey;
+                    @include single-transition();
+                    @include transition-duration(0.3s);
+                    &:hover {
+                      color: $oryellowmed !important;
+                    } //&:hover
+                    &:visited {
+                      color: $grey;
+                    } //&:visited
+                  } //a
+                } //.continue-reading
+              } //.entry-footer
+            } //.index-box
+          } //article
+        } //.grid-item
       } //#grid
 
-      article {
-        padding-right: 0px;
-
-        border-right: none;
-        .index-box {
-          max-width: 600px;
-          padding: 1em 0px 10px;
-          background: $yellowlight;
-          display: block;
-          margin: 0px auto;
-          .entry-header {
-          } //.entry-header
-          .entry-summary {
-            p {
-              color: #0A246A;
-              text-align: justify;
-            } //p
-            .single-post-thumbnail {
-              img {
-                width: 90%;
-                display: block;
-                margin: 0px auto;
-              } //img
-            } //.single-post-thumbnail
-
-          } //.entry-summary
-          .entry-footer {
-            margin-bottom: 0px;
-            .continue-reading {
-              display: block;
-              width: auto;
-              margin: 0px auto;
-              text-align: center;
-            } //.continue-reading
-          } //.entry-footer
-        } //.index-box
-      } //article
     } //.site-main
 
     //SIDEBAR
