@@ -5,8 +5,39 @@
     .site-main {
       @include container();
       .main-header {
-        border: 2px solid darkslateblue;
-      } //header
+        padding: 50px 0px 50px;
+        h2 {
+          font-size: 2em;
+          text-align: center;
+          font-weight: 500;
+          color: $greymed;
+          font-family: $font_copy;
+        } //h2
+        p {
+          text-align: center;
+          line-height: 1.6;
+          font-size: 1.1em;
+          font-weight: 300;
+          color: $grey;
+        } //p
+      } //.main-header
+
+
+      //MASONRY
+
+      #grid {
+        border: 3px solid darkmagenta;
+        margin: 0px auto;
+        @include clearfix();
+        .grid-item {
+          float: left;
+          width: 320px;
+          margin: 0px 2em 4em 2em;
+          height: auto;
+          border: 2px solid purple;
+        }
+      } //#grid
+
       article {
         padding-right: 0px;
 
