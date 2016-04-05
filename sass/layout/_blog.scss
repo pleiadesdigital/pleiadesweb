@@ -36,7 +36,7 @@
           }
           @include breakpoint($iphone) {
             width: 90%;
-            margin: 0px 5% 10px;
+            margin: 0px 5% 0px;
           }
           margin: 0px 10px 10px;
           height: auto;
@@ -76,7 +76,7 @@
                   font-size: 1.6em;
                   line-height: 1.2;
                   font-weight: 300;
-                  margin: 10px 0px;
+                  margin: 0px;
                   a {
                     color: $grey;
                     @include single-transition();

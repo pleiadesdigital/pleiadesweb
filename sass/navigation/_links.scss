@@ -23,25 +23,25 @@ a {
   @include container();
   padding: 20px 10px;
   .paging-navigation {
-    width: auto;
     margin: 0px auto;
+    text-align: center;
     ul {
       li {
-        float: left;
+        display: inline-block;
         a.page-numbers {
           padding: 0.3em 0.7em;
           color: $greymed;
           @include single-transition();
         } //a.page-numbers
         a:hover.page-numbers {
-          color: orangered;
+          color: $orangedark;
         }
         span.page-numbers {
           padding: 0.3em 0.7em;
         } //span.page-numbers
         .current {
           font-weight: 600;
-          color: orangered !important;
+          color: $orangedark !important;
         } //.current
       } //li
     } //ul
