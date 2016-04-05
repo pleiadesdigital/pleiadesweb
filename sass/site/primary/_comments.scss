@@ -36,6 +36,12 @@
           border-bottom: 1px solid $greylight;
           &:last-child {
             border-bottom: none;
+            &:focus {
+              outline: none;
+            }
+          }
+          &:focus {
+            outline: none;
           }
           .comment-meta {
             margin-bottom: 1em;

@@ -17,11 +17,9 @@
 			width: 100%;
 			padding: 2em 0px 0px 4em;
 			@include breakpoint($iphone) {
-              border: 2px solid blueviolet;
               padding: 1em 1em 0px 2em;
 			}
 			@include breakpoint($tablet) {
-				border: 2px solid darkmagenta;
 				padding: 1em 1em 0px 2em;
 			}
 			@include breakpoint($desktop) {

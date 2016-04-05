@@ -16,4 +16,34 @@ a {
 	&:active {
 		outline: 0;
 	}
-}
+} //a
+
+.blog-navigation {
+  display: block;
+  @include container();
+  padding: 20px 10px;
+  .paging-navigation {
+    width: auto;
+    margin: 0px auto;
+    ul {
+      li {
+        float: left;
+        a.page-numbers {
+          padding: 0.3em 0.7em;
+          color: $greymed;
+          @include single-transition();
+        } //a.page-numbers
+        a:hover.page-numbers {
+          color: orangered;
+        }
+        span.page-numbers {
+          padding: 0.3em 0.7em;
+        } //span.page-numbers
+        .current {
+          font-weight: 600;
+          color: orangered !important;
+        } //.current
+      } //li
+    } //ul
+  } //.paging-navigation
+} //.blog-navigation

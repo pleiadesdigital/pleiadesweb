@@ -37,6 +37,9 @@
   article {
     border-right: 1px solid darken($snow, 20);
     padding-right: 1em;
+    &:focus {
+      outline: none;
+    }
     @include breakpoint($laptop) {
       border-right: none;
       border-left: 1px solid darken($snow, 20);
@@ -176,7 +179,7 @@
           } //&:hover
         } //a
         img {
-          width: auto;
+          max-width: 100%;
           height: auto;
          /* display: block;
           margin: 0px auto;*/

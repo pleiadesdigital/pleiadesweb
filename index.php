@@ -38,14 +38,11 @@ get_header(); ?>
 				</div>
 				<?php endwhile; ?>
 			</div>
+			<div class="blog-navigation">
+				<?php the_posts_navigation(); ?>
+			</div>
 
-
-			<?php
-
-			the_posts_navigation();
-
-			else :
-
+	<?php else :
 			get_template_part( 'template-parts/content', 'none' );
 
 			endif; ?>

@@ -5,7 +5,7 @@
  *
  * Learn more: https://developer.wordpress.org/themes/basics/template-files/
 */
-/* line 21, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -33,7 +33,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 .site-content .content-area:after {
   content: " ";
   display: block;
@@ -46,7 +46,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   .site-content .content-area:after {
     content: " ";
     display: block;
@@ -61,14 +61,12 @@
 @media (max-width: 699px) {
   /* line 16, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .site-main {
-    border: 2px solid blueviolet;
     padding: 1em 1em 0px 2em;
   }
 }
 @media (min-width: 700px) and (max-width: 989px) {
   /* line 16, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .site-main {
-    border: 2px solid darkmagenta;
     padding: 1em 1em 0px 2em;
   }
 }
@@ -86,7 +84,7 @@
     width: 72%;
     float: right;
   }
-  /* line 36, ../sass/layout/_sidebar-content.scss */
+  /* line 34, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .site-main .entry-header,
   .site-content .content-area .site-main .entry-meta,
   .site-content .content-area .site-main .entry-content,
@@ -98,7 +96,7 @@
     margin-left: 0px;
   }
 }
-/* line 47, ../sass/layout/_sidebar-content.scss */
+/* line 45, ../sass/layout/_sidebar-content.scss */
 .site-content .content-area .site-main .entry-header,
 .site-content .content-area .site-main .entry-meta,
 .site-content .content-area .site-main .entry-content,
@@ -111,11 +109,11 @@
   padding: 0px;
   margin: 0px auto;
 }
-/* line 59, ../sass/layout/_sidebar-content.scss */
+/* line 57, ../sass/layout/_sidebar-content.scss */
 .site-content .content-area .site-main .entry-content {
   text-align: justify;
 }
-/* line 65, ../sass/layout/_sidebar-content.scss */
+/* line 63, ../sass/layout/_sidebar-content.scss */
 .site-content .content-area .widget-area {
   padding: 3em 2em 2em;
   background: white;
@@ -125,21 +123,21 @@
   margin: 0px auto;
 }
 @media (min-width: 1200px) {
-  /* line 65, ../sass/layout/_sidebar-content.scss */
+  /* line 63, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .widget-area {
     width: 25%;
     float: right;
   }
 }
 @media (min-width: 990px) and (max-width: 1199px) {
-  /* line 65, ../sass/layout/_sidebar-content.scss */
+  /* line 63, ../sass/layout/_sidebar-content.scss */
   .site-content .content-area .widget-area {
     width: 28%;
     float: left;
   }
 }
 
-/* line 87, ../sass/layout/_sidebar-content.scss */
+/* line 85, ../sass/layout/_sidebar-content.scss */
 .site-footer {
   clear: both;
   width: 100%;

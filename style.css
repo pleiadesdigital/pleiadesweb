@@ -98,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -170,38 +170,44 @@ a:visited {
 
 /* line 51, sass/_normalize.scss */
 a:active,
-a:hover {
+a:hover
+a:focus {
   outline: 0;
 }
 
 /* line 56, sass/_normalize.scss */
+*:focus {
+  outline: 0;
+}
+
+/* line 60, sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 60, sass/_normalize.scss */
+/* line 64, sass/_normalize.scss */
 b,
 strong {
   font-weight: 500;
 }
 
-/* line 65, sass/_normalize.scss */
+/* line 69, sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 69, sass/_normalize.scss */
+/* line 73, sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 74, sass/_normalize.scss */
+/* line 78, sass/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 78, sass/_normalize.scss */
+/* line 82, sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -210,43 +216,43 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 86, sass/_normalize.scss */
+/* line 90, sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 90, sass/_normalize.scss */
+/* line 94, sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 94, sass/_normalize.scss */
+/* line 98, sass/_normalize.scss */
 img {
   border: 0;
 }
 
-/* line 98, sass/_normalize.scss */
+/* line 102, sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 102, sass/_normalize.scss */
+/* line 106, sass/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
 
-/* line 106, sass/_normalize.scss */
+/* line 110, sass/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 111, sass/_normalize.scss */
+/* line 115, sass/_normalize.scss */
 pre {
   overflow: auto;
 }
 
-/* line 115, sass/_normalize.scss */
+/* line 119, sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -255,7 +261,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 123, sass/_normalize.scss */
+/* line 127, sass/_normalize.scss */
 button,
 input,
 optgroup,
@@ -266,18 +272,18 @@ textarea {
   margin: 0;
 }
 
-/* line 133, sass/_normalize.scss */
+/* line 137, sass/_normalize.scss */
 button {
   overflow: visible;
 }
 
-/* line 137, sass/_normalize.scss */
+/* line 141, sass/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 142, sass/_normalize.scss */
+/* line 146, sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -286,77 +292,77 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 150, sass/_normalize.scss */
+/* line 154, sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 155, sass/_normalize.scss */
+/* line 159, sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 161, sass/_normalize.scss */
+/* line 165, sass/_normalize.scss */
 input {
   line-height: normal;
 }
 
-/* line 165, sass/_normalize.scss */
+/* line 169, sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 171, sass/_normalize.scss */
+/* line 175, sass/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 176, sass/_normalize.scss */
+/* line 180, sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
 
-/* line 181, sass/_normalize.scss */
+/* line 185, sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 186, sass/_normalize.scss */
+/* line 190, sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
 }
 
-/* line 192, sass/_normalize.scss */
+/* line 196, sass/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 197, sass/_normalize.scss */
+/* line 201, sass/_normalize.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 201, sass/_normalize.scss */
+/* line 205, sass/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
 
-/* line 205, sass/_normalize.scss */
+/* line 209, sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 210, sass/_normalize.scss */
+/* line 214, sass/_normalize.scss */
 td,
 th {
   padding: 0;
@@ -390,7 +396,7 @@ body {
   margin-right: auto;
   padding: 30px 0px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #welcome article:after {
   content: " ";
   display: block;
@@ -409,7 +415,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   #welcome article:after {
     content: " ";
     display: block;
@@ -461,7 +467,7 @@ body {
 #services #showroom:after {
   clear: both;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #services #showroom:after {
   content: " ";
   display: block;
@@ -730,7 +736,7 @@ body {
   padding: 30px 0px;
   border-right: none;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #cta-frontpage .cta-front:after {
   content: " ";
   display: block;
@@ -808,7 +814,7 @@ body {
   margin: 0px auto;
   border-right: none;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #porque-nos .porque-nos-content:after {
   content: " ";
   display: block;
@@ -972,7 +978,7 @@ body {
   margin-right: auto;
   padding: 0px 0px 20px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #la-empresa .intro .intro-info:after {
   content: " ";
   display: block;
@@ -1059,7 +1065,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #la-empresa .cta .cta-info:after {
   content: " ";
   display: block;
@@ -1128,7 +1134,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #la-empresa .about .about-info:after {
   content: " ";
   display: block;
@@ -1317,7 +1323,7 @@ body {
   margin-right: auto;
   padding: 50px 100px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #la-empresa .extra .extra-info:after {
   content: " ";
   display: block;
@@ -1358,7 +1364,7 @@ body {
   margin-right: auto;
   padding: 50px 0px 50px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #servicios .intro .intro-info:after {
   content: " ";
   display: block;
@@ -1406,7 +1412,7 @@ body {
 #servicios .serv-desc .serv-desc-info:after {
   clear: both;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #servicios .serv-desc .serv-desc-info:after {
   content: " ";
   display: block;
@@ -1595,7 +1601,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #servicios .cta .cta-info:after {
   content: " ";
   display: block;
@@ -1706,7 +1712,7 @@ body {
   margin-right: auto;
   padding: 30px 10%;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #servicios .clientes .clientes-info:after {
   content: " ";
   display: block;
@@ -1719,7 +1725,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   #servicios .clientes .clientes-info:after {
     content: " ";
     display: block;
@@ -1733,7 +1739,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   #servicios .clientes .clientes-info:after {
     content: " ";
     display: block;
@@ -1747,7 +1753,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   #servicios .clientes .clientes-info:after {
     content: " ";
     display: block;
@@ -1803,7 +1809,7 @@ body {
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #contact-main #contact-info:after {
   content: " ";
   display: block;
@@ -1863,7 +1869,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #contact-main .contact-form .wpcf7:after {
   content: " ";
   display: block;
@@ -2056,7 +2062,7 @@ body {
   margin-right: auto;
   padding: 50px 0px 50px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #intro .intro-info:after {
   content: " ";
   display: block;
@@ -2232,7 +2238,7 @@ body {
   margin-right: auto;
   padding: 50px 0px 50px;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 #masonry .intro:after {
   content: " ";
   display: block;
@@ -2281,86 +2287,116 @@ body {
   border: 2px solid purple;
 }
 
-/* line 5, sass/layout/_blog.scss */
-.blog .site-content .site-main {
+/* line 7, sass/layout/_blog.scss */
+.blog .site-content .site-main,
+.archive .site-content .site-main,
+.search .site-content .site-main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
-.blog .site-content .site-main:after {
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.blog .site-content .site-main:after,
+.archive .site-content .site-main:after,
+.search .site-content .site-main:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 7, sass/layout/_blog.scss */
-.blog .site-content .site-main .main-header {
+/* line 9, sass/layout/_blog.scss */
+.blog .site-content .site-main .main-header,
+.archive .site-content .site-main .main-header,
+.search .site-content .site-main .main-header {
   padding: 50px 0px 50px;
 }
-/* line 9, sass/layout/_blog.scss */
-.blog .site-content .site-main .main-header h2 {
+/* line 11, sass/layout/_blog.scss */
+.blog .site-content .site-main .main-header h2,
+.archive .site-content .site-main .main-header h2,
+.search .site-content .site-main .main-header h2 {
   font-size: 2em;
   text-align: center;
   font-weight: 500;
   color: #58555a;
   font-family: "Titillium Web", sans-serif;
 }
-/* line 16, sass/layout/_blog.scss */
-.blog .site-content .site-main .main-header p {
+/* line 18, sass/layout/_blog.scss */
+.blog .site-content .site-main .main-header p,
+.archive .site-content .site-main .main-header p,
+.search .site-content .site-main .main-header p {
   text-align: center;
   line-height: 1.6;
   font-size: 1.1em;
   font-weight: 300;
   color: #7f7f7f;
 }
-/* line 26, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid {
+/* line 28, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid,
+.archive .site-content .site-main #grid,
+.search .site-content .site-main #grid {
   margin: 0px auto;
 }
 /* line 12, sass/mixins/_mixins-master.scss */
-.blog .site-content .site-main #grid:before, .blog .site-content .site-main #grid:after {
+.blog .site-content .site-main #grid:before, .blog .site-content .site-main #grid:after,
+.archive .site-content .site-main #grid:before,
+.archive .site-content .site-main #grid:after,
+.search .site-content .site-main #grid:before,
+.search .site-content .site-main #grid:after {
   content: '';
   display: table;
 }
 /* line 17, sass/mixins/_mixins-master.scss */
-.blog .site-content .site-main #grid:after {
+.blog .site-content .site-main #grid:after,
+.archive .site-content .site-main #grid:after,
+.search .site-content .site-main #grid:after {
   clear: both;
 }
-/* line 29, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item {
+/* line 31, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item,
+.archive .site-content .site-main #grid .grid-item,
+.search .site-content .site-main #grid .grid-item {
   float: left;
   width: 270px;
   margin: 0px 10px 10px;
   height: auto;
 }
 @media (min-width: 700px) and (max-width: 989px) {
-  /* line 29, sass/layout/_blog.scss */
-  .blog .site-content .site-main #grid .grid-item {
+  /* line 31, sass/layout/_blog.scss */
+  .blog .site-content .site-main #grid .grid-item,
+  .archive .site-content .site-main #grid .grid-item,
+  .search .site-content .site-main #grid .grid-item {
     width: 320px;
   }
 }
 @media (max-width: 699px) {
-  /* line 29, sass/layout/_blog.scss */
-  .blog .site-content .site-main #grid .grid-item {
+  /* line 31, sass/layout/_blog.scss */
+  .blog .site-content .site-main #grid .grid-item,
+  .archive .site-content .site-main #grid .grid-item,
+  .search .site-content .site-main #grid .grid-item {
     width: 90%;
     margin: 0px 5% 10px;
   }
 }
-/* line 42, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article {
+/* line 44, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article,
+.archive .site-content .site-main #grid .grid-item article,
+.search .site-content .site-main #grid .grid-item article {
   padding-right: 0px;
   border-right: none;
 }
 @media (min-width: 990px) and (max-width: 1199px) {
-  /* line 42, sass/layout/_blog.scss */
-  .blog .site-content .site-main #grid .grid-item article {
+  /* line 44, sass/layout/_blog.scss */
+  .blog .site-content .site-main #grid .grid-item article,
+  .archive .site-content .site-main #grid .grid-item article,
+  .search .site-content .site-main #grid .grid-item article {
     border-right: none;
     border-left: none;
     padding-left: 0px;
   }
 }
-/* line 50, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box {
+/* line 52, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box,
+.archive .site-content .site-main #grid .grid-item article .index-box,
+.search .site-content .site-main #grid .grid-item article .index-box {
   max-width: 600px;
   padding: 0px;
   display: block;
@@ -2369,17 +2405,23 @@ body {
   border-bottom: 1px solid #bfbfbf;
 }
 @media (max-width: 699px) {
-  /* line 50, sass/layout/_blog.scss */
-  .blog .site-content .site-main #grid .grid-item article .index-box {
+  /* line 52, sass/layout/_blog.scss */
+  .blog .site-content .site-main #grid .grid-item article .index-box,
+  .archive .site-content .site-main #grid .grid-item article .index-box,
+  .search .site-content .site-main #grid .grid-item article .index-box {
     margin-bottom: 10px;
   }
 }
-/* line 61, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail {
+/* line 63, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail {
   margin-top: 0px;
 }
-/* line 63, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail img {
+/* line 65, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail img,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail img,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail img {
   width: 100%;
   height: auto;
   display: block;
@@ -2387,16 +2429,20 @@ body {
   border-radius: 0px;
   padding-top: 0px;
 }
-/* line 72, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title {
+/* line 74, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.6em;
   line-height: 1.2;
   font-weight: 300;
   margin: 10px 0px;
 }
-/* line 78, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a {
+/* line 80, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a {
   color: #7f7f7f;
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -2407,33 +2453,45 @@ body {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 82, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:hover {
+/* line 84, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:hover,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:hover,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:hover {
   color: #b97415 !important;
 }
-/* line 85, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:visited {
+/* line 87, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:visited,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:visited,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:visited {
   color: #7f7f7f;
 }
-/* line 92, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-summary p {
-  color: #58555a;
+/* line 94, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-summary p,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-summary p,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-summary p {
+  color: #bfbfbf;
   text-align: justify;
 }
-/* line 98, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer {
+/* line 100, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-footer,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-footer {
   margin-top: 0px !important;
   margin-bottom: 0px;
 }
-/* line 101, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading {
+/* line 103, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading {
   display: block;
   width: auto;
   margin: 0px auto 10px;
   text-align: left;
 }
-/* line 106, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a {
+/* line 108, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a {
   color: #7f7f7f;
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -2444,23 +2502,31 @@ body {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 110, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:hover {
+/* line 112, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:hover,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:hover,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:hover {
   color: #b97415 !important;
 }
-/* line 113, sass/layout/_blog.scss */
-.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:visited {
+/* line 115, sass/layout/_blog.scss */
+.blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:visited,
+.archive .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:visited,
+.search .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:visited {
   color: #7f7f7f;
 }
-/* line 127, sass/layout/_blog.scss */
-.blog .site-content .widget-area {
+/* line 129, sass/layout/_blog.scss */
+.blog .site-content .widget-area,
+.archive .site-content .widget-area,
+.search .site-content .widget-area {
   border: 3px solid gold;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
-.blog .site-content .widget-area:after {
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.blog .site-content .widget-area:after,
+.archive .site-content .widget-area:after,
+.search .site-content .widget-area:after {
   content: " ";
   display: block;
   clear: both;
@@ -2575,6 +2641,52 @@ a:focus {
 /* line 15, sass/navigation/_links.scss */
 a:hover, a:active {
   outline: 0;
+}
+
+/* line 21, sass/navigation/_links.scss */
+.blog-navigation {
+  display: block;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 10px;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.blog-navigation:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 25, sass/navigation/_links.scss */
+.blog-navigation .paging-navigation {
+  width: auto;
+  margin: 0px auto;
+}
+/* line 29, sass/navigation/_links.scss */
+.blog-navigation .paging-navigation ul li {
+  float: left;
+}
+/* line 31, sass/navigation/_links.scss */
+.blog-navigation .paging-navigation ul li a.page-numbers {
+  padding: 0.3em 0.7em;
+  color: #58555a;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/* line 36, sass/navigation/_links.scss */
+.blog-navigation .paging-navigation ul li a:hover.page-numbers {
+  color: orangered;
+}
+/* line 39, sass/navigation/_links.scss */
+.blog-navigation .paging-navigation ul li span.page-numbers {
+  padding: 0.3em 0.7em;
+}
+/* line 42, sass/navigation/_links.scss */
+.blog-navigation .paging-navigation ul li .current {
+  font-weight: 600;
+  color: orangered !important;
 }
 
 /*--------------------------------------------------------------
@@ -2924,7 +3036,7 @@ header .normalheader .top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 header .normalheader .top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
@@ -3121,7 +3233,7 @@ header .fullheight div.top-header-wrapper section.top-header {
   height: 100%;
   margin: 0px auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 header .fullheight div.top-header-wrapper section.top-header:after {
   content: " ";
   display: block;
@@ -3302,7 +3414,7 @@ header .fullheight .hgroup p img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 .site-footer .footer-content:after {
   content: " ";
   display: block;
@@ -3411,6 +3523,10 @@ header .fullheight .hgroup p img {
   border-right: 1px solid #bfbfbf;
   padding-right: 1em;
 }
+/* line 40, sass/site/primary/_posts-and-pages.scss */
+.site-main article:focus {
+  outline: none;
+}
 @media (min-width: 990px) and (max-width: 1199px) {
   /* line 37, sass/site/primary/_posts-and-pages.scss */
   .site-main article {
@@ -3431,11 +3547,11 @@ header .fullheight .hgroup p img {
     border-right: none;
   }
 }
-/* line 52, sass/site/primary/_posts-and-pages.scss */
+/* line 55, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header {
   overflow: hidden;
 }
-/* line 55, sass/site/primary/_posts-and-pages.scss */
+/* line 58, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-title {
   margin: 0px;
   font-weight: 600;
@@ -3443,15 +3559,15 @@ header .fullheight .hgroup p img {
   line-height: 1.3em;
   color: black;
 }
-/* line 64, sass/site/primary/_posts-and-pages.scss */
+/* line 67, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta {
   color: #7f7f7f;
 }
-/* line 68, sass/site/primary/_posts-and-pages.scss */
+/* line 71, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .posted-on {
   color: #bfbfbf;
 }
-/* line 70, sass/site/primary/_posts-and-pages.scss */
+/* line 73, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .posted-on a {
   color: #7f7f7f;
   -moz-transition: all 1s;
@@ -3463,15 +3579,15 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 74, sass/site/primary/_posts-and-pages.scss */
+/* line 77, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .posted-on a:hover {
   color: #b97415;
 }
-/* line 81, sass/site/primary/_posts-and-pages.scss */
+/* line 84, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .category-list {
   color: #bfbfbf;
 }
-/* line 83, sass/site/primary/_posts-and-pages.scss */
+/* line 86, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .category-list a {
   color: #7f7f7f;
   -moz-transition: all 1s;
@@ -3483,15 +3599,15 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 87, sass/site/primary/_posts-and-pages.scss */
+/* line 90, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .category-list a:hover {
   color: #b97415;
 }
-/* line 94, sass/site/primary/_posts-and-pages.scss */
+/* line 97, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .byline {
   color: #bfbfbf;
 }
-/* line 96, sass/site/primary/_posts-and-pages.scss */
+/* line 99, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .byline a {
   color: #7f7f7f;
   -moz-transition: all 1s;
@@ -3503,15 +3619,15 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 100, sass/site/primary/_posts-and-pages.scss */
+/* line 103, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .byline a:hover {
   color: #b97415;
 }
-/* line 107, sass/site/primary/_posts-and-pages.scss */
+/* line 110, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .comments-link {
   color: #bfbfbf;
 }
-/* line 109, sass/site/primary/_posts-and-pages.scss */
+/* line 112, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .comments-link a {
   color: #7f7f7f;
   -moz-transition: all 1s;
@@ -3523,15 +3639,15 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 113, sass/site/primary/_posts-and-pages.scss */
+/* line 116, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .entry-meta .comments-link a:hover {
   color: #b97415;
 }
-/* line 122, sass/site/primary/_posts-and-pages.scss */
+/* line 125, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .single-post-thumbnail {
   margin-top: 20px;
 }
-/* line 124, sass/site/primary/_posts-and-pages.scss */
+/* line 127, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-header .single-post-thumbnail img {
   width: 100%;
   height: auto;
@@ -3539,50 +3655,50 @@ header .fullheight .hgroup p img {
   margin: 0px auto;
   border-radius: 10px;
 }
-/* line 136, sass/site/primary/_posts-and-pages.scss */
+/* line 139, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content {
   margin-top: 20px !important;
 }
-/* line 138, sass/site/primary/_posts-and-pages.scss */
+/* line 141, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content h1, .site-main article .entry-content h2, .site-main article .entry-content h3, .site-main article .entry-content h4, .site-main article .entry-content h5, .site-main article .entry-content h6 {
   margin-bottom: 0.4em;
 }
-/* line 141, sass/site/primary/_posts-and-pages.scss */
+/* line 144, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content h1 {
   font-size: 1.8em;
   font-weight: 400;
 }
-/* line 145, sass/site/primary/_posts-and-pages.scss */
+/* line 148, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content h2 {
   font-size: 1.6em;
   font-weight: 400;
 }
-/* line 149, sass/site/primary/_posts-and-pages.scss */
+/* line 152, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content h3 {
   font-size: 1.4em;
   font-weight: 300;
 }
-/* line 153, sass/site/primary/_posts-and-pages.scss */
+/* line 156, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content h4 {
   font-size: 1.3em;
   font-weight: 300;
 }
-/* line 157, sass/site/primary/_posts-and-pages.scss */
+/* line 160, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content h5 {
   font-size: 1.2em;
   font-weight: 300;
 }
-/* line 161, sass/site/primary/_posts-and-pages.scss */
+/* line 164, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content h6 {
   font-size: 1.1em;
   font-weight: 300;
 }
-/* line 166, sass/site/primary/_posts-and-pages.scss */
+/* line 169, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content p {
   font-size: 1em;
   line-height: 1.5;
 }
-/* line 169, sass/site/primary/_posts-and-pages.scss */
+/* line 172, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content p a {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -3591,40 +3707,40 @@ header .fullheight .hgroup p img {
   border-bottom: 1px dotted #7f7f7f;
   line-height: 1;
 }
-/* line 173, sass/site/primary/_posts-and-pages.scss */
+/* line 176, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content p a:hover {
   color: #b97415;
   border-bottom: 1px dotted #b97415;
 }
-/* line 178, sass/site/primary/_posts-and-pages.scss */
+/* line 181, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content p img {
-  width: auto;
+  max-width: 100%;
   height: auto;
   /* display: block;
    margin: 0px auto;*/
 }
-/* line 185, sass/site/primary/_posts-and-pages.scss */
+/* line 188, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content blockquote p {
   font-size: 1.2em;
 }
-/* line 191, sass/site/primary/_posts-and-pages.scss */
+/* line 194, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer {
   margin-top: 2em !important;
   margin-bottom: 3em;
   line-height: 2;
 }
-/* line 195, sass/site/primary/_posts-and-pages.scss */
+/* line 198, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul {
   padding: 0px;
   margin: 0px;
   list-style: none;
 }
-/* line 199, sass/site/primary/_posts-and-pages.scss */
+/* line 202, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li {
   display: inline-block;
   margin-right: 2em;
 }
-/* line 203, sass/site/primary/_posts-and-pages.scss */
+/* line 206, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li a {
   color: #58555a;
   margin-left: 0.5em;
@@ -3633,7 +3749,7 @@ header .fullheight .hgroup p img {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 208, sass/site/primary/_posts-and-pages.scss */
+/* line 211, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li i {
   color: #58555a;
   -moz-transition: all 1s;
@@ -3641,22 +3757,22 @@ header .fullheight .hgroup p img {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 212, sass/site/primary/_posts-and-pages.scss */
+/* line 215, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li:hover {
   cursor: pointer;
 }
-/* line 215, sass/site/primary/_posts-and-pages.scss */
+/* line 218, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li:hover i, .site-main article .entry-footer ul li:hover a {
   cursor: pointer;
   color: #b97415;
 }
 @media (min-width: 990px) and (max-width: 1199px) and (min-width: 1199px) {
-  /* line 227, sass/site/primary/_posts-and-pages.scss */
+  /* line 230, sass/site/primary/_posts-and-pages.scss */
   .site-main .comments-area article {
     border-left: none;
   }
 }
-/* line 234, sass/site/primary/_posts-and-pages.scss */
+/* line 237, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation {
   font-size: 18px;
 }
@@ -3669,7 +3785,7 @@ header .fullheight .hgroup p img {
 .site-main .post-navigation:after {
   clear: both;
 }
-/* line 237, sass/site/primary/_posts-and-pages.scss */
+/* line 240, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box {
   padding: 1em 0px;
   margin-bottom: 2em;
@@ -3686,17 +3802,17 @@ header .fullheight .hgroup p img {
 .site-main .post-navigation .post-nav-box:after {
   clear: both;
 }
-/* line 244, sass/site/primary/_posts-and-pages.scss */
+/* line 247, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .screen-reader-text {
   display: none;
 }
-/* line 248, sass/site/primary/_posts-and-pages.scss */
+/* line 251, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-previous {
   width: 50%;
   float: left;
   padding-right: 15%;
 }
-/* line 252, sass/site/primary/_posts-and-pages.scss */
+/* line 255, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-previous a {
   color: #0064c4;
   -moz-transition: all 1s;
@@ -3708,18 +3824,18 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 256, sass/site/primary/_posts-and-pages.scss */
+/* line 259, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-previous a:hover {
   color: #b97415;
 }
-/* line 262, sass/site/primary/_posts-and-pages.scss */
+/* line 265, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-next {
   width: 50%;
   float: right;
   padding-left: 15%;
   text-align: right;
 }
-/* line 267, sass/site/primary/_posts-and-pages.scss */
+/* line 270, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-next a {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -3731,7 +3847,7 @@ header .fullheight .hgroup p img {
   transition-duration: 0.3s;
   color: #0064c4;
 }
-/* line 271, sass/site/primary/_posts-and-pages.scss */
+/* line 274, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-next a:hover {
   color: #b97415;
 }
@@ -3952,11 +4068,19 @@ header .fullheight .hgroup p img {
 .site-main .comments-area ol li .comment-body:last-child {
   border-bottom: none;
 }
-/* line 40, sass/site/primary/_comments.scss */
+/* line 39, sass/site/primary/_comments.scss */
+.site-main .comments-area ol li .comment-body:last-child:focus {
+  outline: none;
+}
+/* line 43, sass/site/primary/_comments.scss */
+.site-main .comments-area ol li .comment-body:focus {
+  outline: none;
+}
+/* line 46, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .comment-meta {
   margin-bottom: 1em;
 }
-/* line 43, sass/site/primary/_comments.scss */
+/* line 49, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .comment-meta .comment-author .avatar {
   width: 100px;
   display: block;
@@ -3964,30 +4088,30 @@ header .fullheight .hgroup p img {
   border-radius: 50%;
   margin-right: 20px;
 }
-/* line 50, sass/site/primary/_comments.scss */
+/* line 56, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .comment-meta .comment-author .fn {
   font-weight: 600;
   font-size: 2em;
 }
-/* line 54, sass/site/primary/_comments.scss */
+/* line 60, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .comment-meta .comment-author .says {
   color: #7f7f7f;
 }
-/* line 58, sass/site/primary/_comments.scss */
+/* line 64, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .comment-meta .comment-metadata {
   font-size: 0.9em;
 }
-/* line 62, sass/site/primary/_comments.scss */
+/* line 68, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .comment-content {
   margin-left: 120px;
 }
 @media (max-width: 699px) {
-  /* line 62, sass/site/primary/_comments.scss */
+  /* line 68, sass/site/primary/_comments.scss */
   .site-main .comments-area ol li .comment-body .comment-content {
     margin-left: 0px;
   }
 }
-/* line 67, sass/site/primary/_comments.scss */
+/* line 73, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .comment-content p {
   text-align: justify;
   font-size: 1.3em;
@@ -3995,38 +4119,38 @@ header .fullheight .hgroup p img {
   font-weight: 300;
 }
 @media (max-width: 699px) {
-  /* line 67, sass/site/primary/_comments.scss */
+  /* line 73, sass/site/primary/_comments.scss */
   .site-main .comments-area ol li .comment-body .comment-content p {
     font-size: 1.1em;
   }
 }
-/* line 75, sass/site/primary/_comments.scss */
+/* line 81, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .comment-content p a {
   word-wrap: break-word;
 }
-/* line 79, sass/site/primary/_comments.scss */
+/* line 85, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .comment-content ol {
   margin-left: 1.5em;
 }
 @media (max-width: 699px) {
-  /* line 79, sass/site/primary/_comments.scss */
+  /* line 85, sass/site/primary/_comments.scss */
   .site-main .comments-area ol li .comment-body .comment-content ol {
     margin-left: 1.5em;
   }
 }
-/* line 86, sass/site/primary/_comments.scss */
+/* line 92, sass/site/primary/_comments.scss */
 .site-main .comments-area ol li .comment-body .reply {
   margin-left: 120px;
   font-weight: 600;
   font-size: 14px;
 }
 @media (max-width: 699px) {
-  /* line 86, sass/site/primary/_comments.scss */
+  /* line 92, sass/site/primary/_comments.scss */
   .site-main .comments-area ol li .comment-body .reply {
     margin-left: 0px;
   }
 }
-/* line 97, sass/site/primary/_comments.scss */
+/* line 103, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation {
   padding: 1em 0px;
   margin: 2em 0px;
@@ -4042,16 +4166,16 @@ header .fullheight .hgroup p img {
 .site-main .comments-area .comment-navigation:after {
   clear: both;
 }
-/* line 103, sass/site/primary/_comments.scss */
+/* line 109, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .screen-reader-text {
   display: none;
 }
-/* line 106, sass/site/primary/_comments.scss */
+/* line 112, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-previous {
   width: 50%;
   float: left;
 }
-/* line 109, sass/site/primary/_comments.scss */
+/* line 115, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-previous a {
   color: #7f7f7f;
   -moz-transition: all 1s;
@@ -4063,7 +4187,7 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 113, sass/site/primary/_comments.scss */
+/* line 119, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-previous a:hover, .site-main .comments-area .comment-navigation .nav-previous a:hover i {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -4075,18 +4199,18 @@ header .fullheight .hgroup p img {
   transition-duration: 0.3s;
   color: #b97415;
 }
-/* line 119, sass/site/primary/_comments.scss */
+/* line 125, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-previous a i {
   color: #7f7f7f;
   margin: 0px 5px 0px 0px;
 }
-/* line 126, sass/site/primary/_comments.scss */
+/* line 132, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-next {
   width: 50%;
   float: right;
   text-align: right;
 }
-/* line 130, sass/site/primary/_comments.scss */
+/* line 136, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-next a {
   color: #7f7f7f;
   -moz-transition: all 1s;
@@ -4098,7 +4222,7 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 134, sass/site/primary/_comments.scss */
+/* line 140, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-next a:hover, .site-main .comments-area .comment-navigation .nav-next a:hover i {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -4110,12 +4234,12 @@ header .fullheight .hgroup p img {
   transition-duration: 0.3s;
   color: #b97415;
 }
-/* line 140, sass/site/primary/_comments.scss */
+/* line 146, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-navigation .nav-next a i {
   color: #7f7f7f;
   margin: 0px 0px 0px 5px;
 }
-/* line 151, sass/site/primary/_comments.scss */
+/* line 157, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-respond .comment-reply-title {
   color: #003d77;
   font-family: "Titillium Web", sans-serif;
@@ -4126,13 +4250,13 @@ header .fullheight .hgroup p img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 .site-main .comments-area .comment-respond .comment-reply-title:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 159, sass/site/primary/_comments.scss */
+/* line 165, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-respond .comment-form {
   padding-bottom: 3em;
   font-family: "Titillium Web", sans-serif;
@@ -4141,18 +4265,18 @@ header .fullheight .hgroup p img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 .site-main .comments-area .comment-respond .comment-form:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 165, sass/site/primary/_comments.scss */
+/* line 171, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-respond .comment-form p label {
   display: block;
   margin-bottom: 5px;
 }
-/* line 169, sass/site/primary/_comments.scss */
+/* line 175, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-respond .comment-form p textarea,
 .site-main .comments-area .comment-respond .comment-form p input {
   border: 1px solid #e5e5e5;
@@ -4170,18 +4294,18 @@ header .fullheight .hgroup p img {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 182, sass/site/primary/_comments.scss */
+/* line 188, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-respond .comment-form p textarea:focus,
 .site-main .comments-area .comment-respond .comment-form p input:focus {
   outline: none;
   border: 1px solid #51a0ed;
   background-color: white;
 }
-/* line 188, sass/site/primary/_comments.scss */
+/* line 194, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-respond .comment-form p.form-submit {
   margin-top: 40px;
 }
-/* line 190, sass/site/primary/_comments.scss */
+/* line 196, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-respond .comment-form p.form-submit input {
   display: block;
   float: right;
@@ -4194,14 +4318,14 @@ header .fullheight .hgroup p img {
   box-shadow: #7f7f7f 2px 2px 8px;
 }
 @media (max-width: 699px) {
-  /* line 190, sass/site/primary/_comments.scss */
+  /* line 196, sass/site/primary/_comments.scss */
   .site-main .comments-area .comment-respond .comment-form p.form-submit input {
     width: 50%;
     font-size: 1.2em;
     word-break: normal;
   }
 }
-/* line 203, sass/site/primary/_comments.scss */
+/* line 209, sass/site/primary/_comments.scss */
 .site-main .comments-area .comment-respond .comment-form p.form-submit input:hover {
   background-color: #146dc4;
 }

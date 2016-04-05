@@ -9,43 +9,46 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-		<?php
-		if ( have_posts() ) : ?>
-
-		<header class="page-header">
 			<?php
-			the_archive_title( '<h1 class="page-title">', '</h1>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>' );
-			?>
-		</header><!-- .page-header -->
+			if ( have_posts() ) :
+				?>
+					<header class="main-header">
+						<!--			INTRO-->
+						<h2 class="page-title screen-reader-text">Nuestra biblioteca virtual</h2>
+						<p>Fancy taking your digital marketing to the next level? You’re lucky you found us…</p>
+						<?php
+						the_archive_title( '<h2 class="page-title">', '</h2>' );
+						the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						?>
 
-		<?php
-		/* Start the Loop */
-		while ( have_posts() ) : the_post();
+					</header>
 
-		/*
-		* Include the Post-Format-specific template for the content.
-		* If you want to override this in a child theme, then include a file
-		* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-		*/
-		get_template_part( 'template-parts/content', get_post_format() );
+				<!-- MASONRY START -->
+				<div id="grid">
+					<?php while ( have_posts() ) : the_post(); ?>
+						<div class="grid-item"><?php
+							get_template_part( 'template-parts/content-index', get_post_format() );?>
+						</div>
+					<?php endwhile; ?>
+				</div>
 
-		endwhile;
 
-		the_posts_navigation();
+				<?php
 
-		else :
+				the_posts_navigation();
 
-		get_template_part( 'template-parts/content', 'none' );
+			else :
 
-		endif; ?>
+				get_template_part( 'template-parts/content', 'none' );
 
-	</main><!-- #main -->
-</div><!-- #primary -->
+			endif; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
