@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="footer-content">
+		<div class="footer-main">
 
 			<div class="socialmedia">
 				<ul class="group">
@@ -23,10 +23,11 @@
 					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/youtube.png" alt="icon for youtube"></a></li>
 				</ul>
 			</div><!-- .socialmedia -->
-			<hr>
+		<div class="footer-content">
 			<?php get_sidebar('footer'); ?>
-			
-		</div><!-- .footer-content -->
+			<div class="contact-footer">Hello there!!</div>
+		</div>
+		</div><!-- .footer-main -->
 	</footer><!-- .site-footer -->
 </div><!-- #page -->
 

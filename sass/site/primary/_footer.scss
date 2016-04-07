@@ -1,55 +1,58 @@
 .site-footer {
-	background: darken($greydark, 3);
-	min-height: 140px;
-	width: 100%;
-	margin-top: 0px;
-	padding: 30px 0px;
-	.footer-content {
-		@include container();
-		.socialmedia {
-			border: 1px solid lime;
-			text-align: center;
-			ul {
-				list-style: none;
-				li {
-					display: inline-block;
-					padding: 0px 10px;
-					img {
-						width: 40px;
-						@include border-radius(10px);
-					} //img
-				} //li
-			} //ul
-		} //.socialmedia
+  background: darken($greydark, 3);
+  min-height: 140px;
+  width: 100%;
+  margin-top: 0px;
+  padding: 30px 0px;
+  .footer-main {
+    @include container();
 
-		.widget {
-			margin: 0px 0px 0px 2em;
-			font-size: 1rem;
-			color: #55acee;
-			.widget-title {
-				margin-top: 10px;
-				margin-bottom: 5px;
-			} //.widget-area
-			select {
-				max-width: 100%;
-			}
-		} //.widget
-		.footer-widgets {
-			.widget {
-				float: left;
-				width: 320px;
-				margin: 0px 10px 20px 10px;
-			}
-			.widget-title {
-				line-height: 1.6;
-				font-size: 1.1em;
-				border-bottom: 1px solid $greydark;
-				color: $snow;
-				text-transform: uppercase;
-			}
-			margin: 0px auto;
-		} //.footer-widget
+    .socialmedia {
+      text-align: center;
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          padding: 0px 10px;
+          img {
+            width: 40px;
+            @include border-radius(10px);
+          } //img
+        } //li
+      } //ul
+    } //.socialmedia
 
+    .footer-content {
+      border: 2px solid yellow;
+      margin-top: 2em;
+      @include clearfix;
+      .footer-widgets {
+        border: 1px solid magenta;
+        margin: 0px auto;
+        @include span(2 of 3);
+        @include clearfix;
+        .widget {
+          border: 1px solid darkmagenta;
+          float: left;
+          width: 30%;
+          margin: 0px 10px 20px 10px;
+          .widget-title {
+            line-height: 1.6;
+            font-size: 1.1em;
+            border-bottom: 1px solid $greydark;
+            color: $snow;
+            text-transform: uppercase;
+          } //.widget-title
+        } //.widget
+      } //.footer-widgets
 
-	} //.footer-content
+      .contact-footer {
+        border: 1px solid mediumspringgreen;
+        @include span(1 of 3);
+        float: right;
+        height: 30px;
+      } //.contact-footer
+    } //.footer-content
+
+  } //.footer-main
 } //.site-footer
