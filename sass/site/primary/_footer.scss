@@ -23,7 +23,6 @@
     } //.socialmedia
 
     .footer-content {
-      border: 2px solid yellow;
       margin-top: 2em;
       @include clearfix;
       .footer-widgets {
@@ -37,22 +36,56 @@
           width: 30%;
           margin: 0px 10px 20px 10px;
           .widget-title {
-            line-height: 1.6;
-            font-size: 1.1em;
-            border-bottom: 1px solid $greydark;
-            color: $snow;
+            font-family: $font_copy;
             text-transform: uppercase;
+            font-weight: 200;
+            color: $snow;
+            line-height: 1.2;
           } //.widget-title
         } //.widget
       } //.footer-widgets
 
       .contact-footer {
-        border: 1px solid mediumspringgreen;
         @include span(1 of 3);
         float: right;
-        height: 30px;
+        height: auto;
+        @include clearfix();
+        h2 {
+          font-family: $font_copy;
+          text-transform: uppercase;
+          font-weight: 200;
+          color: $snow;
+          line-height: 1.2;
+          margin: 0px 0px 10px;
+        } //h2
+        hr {
+          width: 85%;
+          float: left;
+        } //hr
+        p {
+          color: darken($snow, 10);
+          margin: 0px;
+          padding: 0px;
+          line-height: 1.5;
+          font-size: 1em;
+          font-weight: 100;
+          clear: both;
+        } //p
       } //.contact-footer
     } //.footer-content
 
   } //.footer-main
 } //.site-footer
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,7 +11,7 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-main">
@@ -23,10 +23,20 @@
 					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/youtube.png" alt="icon for youtube"></a></li>
 				</ul>
 			</div><!-- .socialmedia -->
-		<div class="footer-content">
-			<?php get_sidebar('footer'); ?>
-			<div class="contact-footer">Hello there!!</div>
-		</div>
+
+			<div class="footer-content">
+				<?php get_sidebar('footer'); ?>
+				<div class="contact-footer">
+					<h2>Ponte en contacto</h2>
+					<p>Edif. Torre Ketal, oficina #302</p>
+					<p>Calle 15, Calacoto</p>
+					<p>La Paz - Bolivia</p>
+					<hr>
+					<p>Telf: +591-77799006</p>
+					<p>Correo Electrónico: <a href="mailto:info@pleiadesdigital.com" target="_top">info@pleiadesdigital.com</a></p>
+				</div><!--class="contact-footer"-->
+			</div><!--class="footer-content"-->
+
 		</div><!-- .footer-main -->
 	</footer><!-- .site-footer -->
 </div><!-- #page -->
