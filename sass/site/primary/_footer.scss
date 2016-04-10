@@ -3,7 +3,7 @@
   min-height: 140px;
   width: 100%;
   margin-top: 0px;
-  padding: 30px 0px;
+  padding: 30px 0px 50px;
   .footer-main {
     @include container();
 
@@ -26,41 +26,113 @@
       margin-top: 2em;
       @include clearfix;
       .footer-widgets {
-        border: 1px solid magenta;
         margin: 0px auto;
-        @include span(2 of 3);
+        @include breakpoint($iphone) {
+          padding: 0px 3em;
+          width: 70%;
+        }
+        @include breakpoint($tablet) {
+          margin-bottom: 1em;
+        }
+        @include breakpoint($laptop) {
+          @include span(2 of 3);
+          border-right: 1px solid $greydark;
+        }
+        @include breakpoint($desktop) {
+          @include span(2 of 3);
+          border-right: 1px solid $greydark;
+        }
         @include clearfix;
         .widget {
-          border: 1px solid darkmagenta;
-          float: left;
-          width: 30%;
-          margin: 0px 10px 20px 10px;
+          @include breakpoint($tablet) {
+            @include span(1 of 3);
+          }
+          @include breakpoint($laptop) {
+            @include span(1 of 3);
+          }
+          @include breakpoint($desktop) {
+            @include span(1 of 3);
+          }
+          margin-bottom: 2em;
+          width: 100%;
           .widget-title {
             font-family: $font_copy;
             text-transform: uppercase;
+            text-align: center;
             font-weight: 200;
             color: $snow;
-            line-height: 1.2;
+            line-height: 1.7;
+            border-bottom: 1px solid $greymed;
           } //.widget-title
+          ul {
+            li {
+              margin-bottom: 7px;
+              text-align: center;
+              a {
+                font-weight: 100;
+                line-height: 1;
+                text-align: center;
+                @include single-transition();
+                @include transition-duration(0.3s);
+              } //a
+            } //li
+          } //ul
         } //.widget
       } //.footer-widgets
 
       .contact-footer {
-        @include span(1 of 3);
-        float: right;
+        @include breakpoint($iphone) {
+          padding: 1em 3em;
+          text-align: center;
+          //width: 70%;
+          hr {
+            margin: 20px auto;
+            text-align: center;
+            width: 50%;
+          } //hr
+        } //breakpoint($iphone)
+        @include breakpoint($tablet) {
+          text-align: center;
+          hr {
+            margin: 20px auto;
+            text-align: center;
+            width: 40%;
+          } //hr
+        } //breakpoint($tablet)
+        @include breakpoint($laptop) {
+          text-align: center;
+          @include span (1 of 3);
+          float: right;
+          hr {
+            margin: 20px auto;
+            text-align: center;
+            width: 40%;
+          } //hr
+        } //breakpoint($laptop)
+        @include breakpoint($desktop) {
+          text-align: center;
+          @include span (1 of 3);
+          float: right;
+          hr {
+            margin: 20px auto;
+            text-align: center;
+            width: 40%;
+          } //hr
+        } //breakpoint($desktop)
+
         height: auto;
         @include clearfix();
         h2 {
           font-family: $font_copy;
           text-transform: uppercase;
-          font-weight: 200;
-          color: $snow;
+          font-weight: 400;
+          color: $yellowmedlg;
           line-height: 1.2;
           margin: 0px 0px 10px;
         } //h2
         hr {
-          width: 85%;
-          float: left;
+          //width: 85%;
+          //float: left;
         } //hr
         p {
           color: darken($snow, 10);
@@ -70,6 +142,12 @@
           font-size: 1em;
           font-weight: 100;
           clear: both;
+          a {
+            @include single-transition();
+            &:hover {
+              color: $yellowmedlg;
+            } //&:hover
+          } //a
         } //p
       } //.contact-footer
     } //.footer-content
