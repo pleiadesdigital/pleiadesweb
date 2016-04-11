@@ -29,13 +29,13 @@
         margin: 0px auto;
         @include breakpoint($iphone) {
           padding: 0px 3em;
-          width: 70%;
+          width: 95%;
         }
         @include breakpoint($tablet) {
           margin-bottom: 1em;
         }
         @include breakpoint($laptop) {
-          @include span(2 of 3);
+          @include span(9 of 12);
           border-right: 1px solid $greydark;
         }
         @include breakpoint($desktop) {
@@ -63,6 +63,24 @@
             color: $snow;
             line-height: 1.7;
             border-bottom: 1px solid $greymed;
+            @include breakpoint($iphone) {
+              width: 80%;
+              margin: 0px auto 10px;
+              line-height: 1.5;
+              font-size: 1.3em;
+            }
+            @include breakpoint($tablet) {
+              width: 100%;
+              margin: 0px auto 10px;
+              line-height: 1.5;
+              font-size: 1.3em;
+            }
+            @include breakpoint($laptop) {
+              width: 100%;
+              margin: 0px auto 10px;
+              line-height: 1.5;
+              font-size: 1.3em;
+            }
           } //.widget-title
           ul {
             li {
@@ -101,7 +119,7 @@
         } //breakpoint($tablet)
         @include breakpoint($laptop) {
           text-align: center;
-          @include span (1 of 3);
+          @include span (3 of 12);
           float: right;
           hr {
             margin: 20px auto;
