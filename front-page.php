@@ -14,28 +14,28 @@
 			<section class="scene" id="services">
 				<h2>Lo que ofrecemos</h2>
 				<div id="showroom">
+
 					<section id="webdev">
 						<div class="view view-tenth">
-							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-web.jpg" />
-							<div class="mask1">
-				        <h2>Desarrollo Web | Marketing&nbsp;en&nbsp;Línea</h2>
-				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-								<a href="#" class="info1">Leer más</a>
-							</div>
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-web.jpg" />
+						<div class="mask1">
+						<h2>Desarrollo Web | Marketing&nbsp;en&nbsp;Línea</h2>
+						<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+						<a href="#" class="info1">Leer más</a>
 						</div>
-
-	      	</section><!-- id="webdev" -->
-
-		      <section id="graphdes">
-			      <div class="view view-tenth">
-			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-design.jpg" />
-			      	<div class="mask2">
-				        <h2>Diseño&nbsp;Gráfico | Imagen Corporativa</h2>
-				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-								<a href="#" class="info2">Leer más</a>
-							</div>
 						</div>
-		      </section><!-- id="graphdes" -->
+					</section><!-- id="webdev" -->
+
+				  <section id="graphdes">
+					  <div class="view view-tenth">
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-design.jpg" />
+						<div class="mask2">
+							<h2>Diseño&nbsp;Gráfico | Imagen Corporativa</h2>
+							<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+									<a href="#" class="info2">Leer más</a>
+								</div>
+							</div>
+				  </section><!-- id="graphdes" -->
 
 		      <section id="audioprom">
 		      	<div class="view view-tenth">
@@ -47,8 +47,10 @@
 							</div>
 						</div>
 		      </section><!-- id="audioprom" -->
+
+					
 			
-				</div>
+				</div><!--id="showroom"-->
 			</section><!-- SERVICES -->
 			
 

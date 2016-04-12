@@ -26,16 +26,6 @@ get_header(); ?>
 				</div><!-- class="intro-info" -->
 			</article><!-- class="intro" -->
 
-			<!-- CTA -->
-			<section class="cta">
-				<div class="cta-info">
-					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>				
-					<div class="cta-button">
-						<a href="#">Contáctanos</a>
-					</div> <!-- .cta-button -->
-				</div>
-			</section>
-
 			<!-- ABOUT -->
 			<section class="about">
 				<section class="about-info">
@@ -48,20 +38,31 @@ get_header(); ?>
 							<?php $query = new WP_Query(); ?>
 							<?php $query->the_post(); ?>
 							<?php the_content(); ?>
-						</div><!-- class="txt-content" -->
+						</div><!-- class="txt-content"-->
 					</div><!-- class="about-content" -->
 				</section><!-- class="about-info" -->
 			</section>
 
-			<!-- EXTRA -->
-			<section class="extra">
-				<div class="extra-info">
-					<?php //$query = new WP_Query(); ?>
-					<?php //$query->the_post(); ?>
-					<?php //the_content(); ?>
-					</article>
+			<!-- CTA -->
+			<section class="cta">
+				<div class="cta-info">
+					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>
+					<p>Solicita más información o una cotización</p>
+					<div class="cta-button">
+						<a href="http://localhost/~ronyortiz/pleiadesweb/index.php/contacto/">Contáctanos</a>
+					</div> <!-- .cta-button -->
 				</div>
 			</section>
+
+			<!-- EXTRA -->
+			<!--<section class="extra">
+				<div class="extra-info">
+					<?php /*//$query = new WP_Query(); */?>
+					<?php /*//$query->the_post(); */?>
+					<?php /*//the_content(); */?>
+					</article>
+				</div>
+			</section>-->
 
 		</div><!-- id="la-empresa" -->
 
