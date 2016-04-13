@@ -26,7 +26,7 @@ body {
 	padding-top: 60px;
 	padding-bottom: 50px;
 	@include breakpoint($iphone) {
-		padding-top: 40px;
+		padding-top: 20px;
 		padding-bottom: 20px;
 	}
 	h2 {
@@ -44,7 +44,16 @@ body {
 	} //text-shadow()
 	#showroom {
 		@include clearfix;
-		@include container;
+		@include container(1040px);
+		@include breakpoint($laptop) {
+			@include container(900px);
+		}
+		@include breakpoint($tablet) {
+			@include container(600px);
+		}
+		@include breakpoint($iphone) {
+			@include container(440px);
+		}
 		section {
 			h2 {
 				font-size: 1.6em;
@@ -52,35 +61,39 @@ body {
 				color: $black;
 			} //h2
             @include breakpoint($desktop) {
-              @include span(1 of 3);
+              @include span(1 of 2);
+				padding: 40px;
             }
 			@include breakpoint($laptop) {
-				@include span(1 of 3);
+				@include span(1 of 2);
+				padding: 40px;
 			}
 			@include breakpoint($tablet) {
-				@include span(1 of 2);
-			}	
+				//@include span(1 of 1);
+				padding: 10px 30px;
+			}
+			@include breakpoint($iphone) {
+				padding: 10px;
+			}
 			.view {
-				height: 250px;
-				width: auto;
+				height: auto;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+				background: rgba($greydark, 0.8);
 				@include breakpoint($tablet) {
 					width: auto;
 					margin: 20px auto;
 				}
 				@include breakpoint($iphone) {
-					width: 350px;
 					margin: 20px auto;
 				}
-				overflow: hidden;
-				position: relative;
-				text-align: center;
-				background: rgba($greydark, 0.8);
 				.mask1,
 				.mask2,
 				.mask3,
 				.content {
 					width: auto;
-					height: 250px;
+					height: 100%;
 					position: absolute;
 					overflow: visible;
 					top: 0;
@@ -90,7 +103,7 @@ body {
 					display: block;
 					position: relative;
 					width: 100%;
-					height: 100%;
+					height: auto;
 				} //img
 				h2 {
 					font-family: $font_copy;
@@ -104,12 +117,23 @@ body {
 					margin: 20px 0px 20px -10px;
 				} //h2
 				p {
-					font-size: 12px;
+					font-size: 1em;
 					position: relative;
 					color: $snow;
-					padding: 10px 20px 20px;
-					margin-left: -15px;
+					padding: 10px 30px 20px;
 					text-align: center;
+					width: 90%;
+					display: block;
+					margin: 0px auto;
+					font-weight: 300;
+					@include breakpoint($tablet) {
+						margin: 10% auto 0px;
+						font-size: 1.1em;
+					}
+					@include breakpoint($iphone) {
+						font-size: 0.9em;
+					}
+
 				} //p
 				a.info1,
 				a.info2,
@@ -117,7 +141,14 @@ body {
 					display: inline-block;
 					text-decoration: none;
 					padding: 7px 14px;
-					margin-left: -15px;
+					//margin-left: -15px;
+					margin: 3% auto 0px;
+					@include breakpoint($desktop) {
+						margin: 5% auto 0px;
+					}
+					@include breakpoint($tablet) {
+						margin: 8% auto 0px;
+					}
 					background: rgba(0, 0, 0, 0.7);
 					color: $white;
 					text-transform: lowercase;
@@ -166,7 +197,7 @@ body {
 				p {
 					opacity: 0;
 					@include transform(scale(0));
-					@include single-transition();	
+					@include single-transition();
 				} //p
 				a.info {
 					opacity: 0;
@@ -189,13 +220,16 @@ body {
 				&:hover .mask3 {
 					opacity: 1;
 				} //&:hover .mask
-				&:hover h2, 
+				&:hover h2,
 				&:hover p,
 				&:hover a.info {
 					transform: scale(1);
 					opacity: 1;
 				} //&:hover h2, &:hover p, &:hover a.info
-			} //div.view-tenth				 
+			} //div.view-tenth
+
+
+
 		} //section
 	} //#showroom 
 } //#services 

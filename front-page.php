@@ -48,7 +48,16 @@
 						</div>
 		      </section><!-- id="audioprom" -->
 
-					
+					<section id="audioprom">
+						<div class="view view-tenth">
+							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-audio.jpg" />
+							<div class="mask3">
+								<h2>Audio Promocional para Radio&nbsp;y&nbsp;Video</h2>
+								<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+								<a href="#" class="info3">Leer más</a>
+							</div>
+						</div>
+					</section><!-- id="audioprom" -->
 			
 				</div><!--id="showroom"-->
 			</section><!-- SERVICES -->
