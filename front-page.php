@@ -12,14 +12,15 @@
 
 			<!-- SERVICES -->
 			<section class="scene" id="services">
-				<h2>Lo que ofrecemos</h2>
+				<h2>Nuestros Servicios</h2>
+				<h3>Construimos tu marca con un enfoque de 360˚</h3>
 				<div id="showroom">
 
 					<section id="webdev">
 						<div class="view view-tenth">
-						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-web.jpg" />
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/estrategia-consultoria.jpg" />
 						<div class="mask1">
-						<h2>Desarrollo Web | Marketing&nbsp;en&nbsp;Línea</h2>
+						<h2>Estrategia y Consultoría</h2>
 						<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
 						<a href="#" class="info1">Leer más</a>
 						</div>
@@ -28,9 +29,9 @@
 
 				  <section id="graphdes">
 					  <div class="view view-tenth">
-						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-design.jpg" />
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/diseño-creativo.jpg" />
 						<div class="mask2">
-							<h2>Diseño&nbsp;Gráfico | Imagen Corporativa</h2>
+							<h2>Diseño Creativo</h2>
 							<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
 									<a href="#" class="info2">Leer más</a>
 								</div>
@@ -39,9 +40,9 @@
 
 		      <section id="audioprom">
 		      	<div class="view view-tenth">
-			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-audio.jpg" />
+			      	<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desarrollo-web.jpg" />
 			      	<div class="mask3">
-				        <h2>Audio Promocional para Radio&nbsp;y&nbsp;Video</h2>
+				        <h2>Desarrollo WEB</h2>
 				        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
 								<a href="#" class="info3">Leer más</a>
 							</div>
@@ -50,9 +51,9 @@
 
 					<section id="audioprom">
 						<div class="view view-tenth">
-							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-frontpage-audio.jpg" />
+							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-digital.jpg" />
 							<div class="mask3">
-								<h2>Audio Promocional para Radio&nbsp;y&nbsp;Video</h2>
+								<h2>Marketing Digital</h2>
 								<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
 								<a href="#" class="info3">Leer más</a>
 							</div>
