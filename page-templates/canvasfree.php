@@ -91,7 +91,7 @@ get_header(); ?>
 							<li>
 								<div class="box">
 									<article>
-										DESARROLLO WEB MARKETING&nbsp;EN&nbsp;LÍNEA</h3>
+										<h2>Estrategia y Consultoría</h2>
 									</article>
 								</div>
 							</li>
@@ -99,7 +99,7 @@ get_header(); ?>
 							<li>
 								<div class="box">
 									<article>
-										DISEÑO&nbsp;GRÁFICO IMAGEN&nbsp;CORPORATIVA
+                    <h2>Diseño Creativo</h2>
 									</article>
 								</div>
 							</li>
@@ -107,12 +107,21 @@ get_header(); ?>
 							<li>
 								<div class="box">
 									<article>
-										AUDIO PROMOCIONAL PARA RADIO&nbsp;Y&nbsp;VIDEO
+										<h2>Desarrollo WEB</h2>
 									</article>
 								</div>
 							</li>
+
+              <li>
+                <div class="box">
+                  <article>
+                    <h2>Marketing Digital</h2>
+                  </article>
+                </div>
+              </li>
+
 						</ul>
-				</div>
+				</div><!--class="boxes"-->
 
 					
 				</div><!-- class="serv-desc-info" -->
