@@ -366,7 +366,7 @@
 
           &:first-child {
             .box {
-              background: rgb(78, 78, 78) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-design.png") center center;
+              background: rgb(78, 78, 78) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-web.png") center center;
               background-repeat: no-repeat;
               background-size: 70%;
               &:hover {
@@ -380,6 +380,57 @@
               } //&:hover
             } //.box
           } //&:first-child
+
+					&:nth-child(2) {
+						.box {
+							background: rgb(78, 78, 78) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-design.png") center center;
+							background-repeat: no-repeat;
+							background-size: 70%;
+							&:hover {
+								background-color: $oryellowmed;
+								article {
+									border-bottom: 2px solid $snow;
+									h2 {
+										color: $white;
+									} //h2
+								} //article
+							} //&:hover
+						} //.box
+					} //&:nth-child(2)
+
+					&:nth-child(3) {
+						.box {
+							background: rgb(78, 78, 78) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-audio.png") center center;
+							background-repeat: no-repeat;
+							background-size: 70%;
+							&:hover {
+								background-color: $oryellowmed;
+								article {
+									border-bottom: 2px solid $snow;
+									h2 {
+										color: $white;
+									} //h2
+								} //article
+							} //&:hover
+						} //.box
+					} //&:nth-child(3)
+
+					&:nth-child(4) {
+						.box {
+							background: rgb(78, 78, 78) url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/marketing-design.png") center center;
+							background-repeat: no-repeat;
+							background-size: 70%;
+							&:hover {
+								background-color: $oryellowmed;
+								article {
+									border-bottom: 2px solid $snow;
+									h2 {
+										color: $white;
+									} //h2
+								} //article
+							} //&:hover
+						} //.box
+					} //&:nth-child(4)
 
         } //li
 
