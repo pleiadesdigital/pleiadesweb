@@ -28,13 +28,94 @@ body {
 	} //.intro-info
 } //.intro
 
+// SERVICE MENU
+#serv-menu {
+  width: 100%;
+  height: auto;
+  background-color: rgba($grey, 0.8);
+  margin: 0px;
+  padding: 0px;
+  margin-top: -16px;
+  .service-nav {
+    @include clearfix();
+    @include container();
+  } //.service-nav
+} //#serv-menu
+
 
 // IMAGE 
 #image-showroom {
 	min-height: 400px;
 
 	//BACKGROUND IMAGES
-	.img-web-dev {
+	.img-str-con {
+		height: 425px;
+		width: auto;
+		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-estrategia-consultoria.jpg");
+		.text-container {
+			background-color: rgba($black, 0.6);
+			padding: 10% 20% 0px;
+			height: 100%;
+			h1 {
+			text-align: center;
+			color: $snow;
+			font-family: $font_copy;
+			font-size: 3em;
+			font-weight: 600;
+			margin-bottom: 20px;		
+			} //h1
+			span {
+				border-top: 1px solid $oryellow;
+				display: block;
+				margin: 0px auto;
+				width: 70%;
+			}
+			p {
+				text-align: center;
+				color: $white;
+				font-family: $font_copy;
+				font-size: 1.4em;
+				font-weight: 400;
+				margin-top: 20px;
+			} //p
+		} //.text-container
+
+	} //.img-str-con
+
+	.img-dis-cre {
+		height: 425px;
+		width: auto;
+		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-diseno-creativo.jpg");
+		.text-container {
+			background-color: rgba($black, 0.6);
+			padding: 10% 20% 0px;
+			height: 100%;
+			h1 {
+			text-align: center;
+			color: $snow;
+			font-family: $font_copy;
+			font-size: 3em;
+			font-weight: 600;
+			margin-bottom: 20px;		
+			} //h1
+			span {
+				border-top: 1px solid $oryellow;
+				display: block;
+				margin: 0px auto;
+				width: 70%;
+			}
+			p {
+				text-align: center;
+				color: $white;
+				font-family: $font_copy;
+				font-size: 1.4em;
+				font-weight: 400;
+				margin-top: 20px;
+			} //p
+		} //.text-container
+	} //.img-dis-gra
+
+	.img-des-web {
 		height: 425px;
 		width: auto;
 		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-desarrollo-web.jpg");
@@ -65,24 +146,23 @@ body {
 				margin-top: 20px;
 			} //p
 		} //.text-container
+	} //.img-des-web
 
-	} //.img-web-dev
-
-	.img-dis-gra {
+	.img-mkt-dig {
 		height: 425px;
 		width: auto;
-		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-diseno-grafico-imagen.jpg");
+		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-marketing-digital.jpg");
 		.text-container {
 			background-color: rgba($black, 0.6);
 			padding: 10% 20% 0px;
 			height: 100%;
 			h1 {
-			text-align: center;
-			color: $snow;
-			font-family: $font_copy;
-			font-size: 3em;
-			font-weight: 600;
-			margin-bottom: 20px;		
+				text-align: center;
+				color: $snow;
+				font-family: $font_copy;
+				font-size: 3em;
+				font-weight: 600;
+				margin-bottom: 20px;
 			} //h1
 			span {
 				border-top: 1px solid $oryellow;
@@ -99,44 +179,9 @@ body {
 				margin-top: 20px;
 			} //p
 		} //.text-container
-	} //.img-dis-gra
-
-	.img-seo-gle {
-		height: 425px;
-		width: auto;
-		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-seo-google-analytics.jpg");
-		.text-container {
-			background-color: rgba($black, 0.6);
-			padding: 10% 20% 0px;
-			height: 100%;
-			h1 {
-			text-align: center;
-			color: $snow;
-			font-family: $font_copy;
-			font-size: 3em;
-			font-weight: 600;
-			margin-bottom: 20px;		
-			} //h1
-			span {
-				border-top: 1px solid $oryellow;
-				display: block;
-				margin: 0px auto;
-				width: 70%;
-			}
-			p {
-				text-align: center;
-				color: $white;
-				font-family: $font_copy;
-				font-size: 1.4em;
-				font-weight: 400;
-				margin-top: 20px;
-			} //p
-		} //.text-container
-	} //.img-seo-gle
+	} //.img-mkt-dig
 	
 } //#intro-showroom
-
-
 
 
 // DESCRIPCION SERVICIO
@@ -144,3 +189,42 @@ body {
 	border: 1px solid green;
 	min-height: 500px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

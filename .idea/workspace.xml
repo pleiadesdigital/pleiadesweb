@@ -4,8 +4,9 @@
     <list default="true" id="d5b57809-1e9e-4707-a8ee-17d5bd5db1f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/development/devcss/style.css" afterPath="$PROJECT_DIR$/development/devcss/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page-templates/canvasfree.php" afterPath="$PROJECT_DIR$/page-templates/canvasfree.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page-templates/showroom.php" afterPath="$PROJECT_DIR$/page-templates/showroom.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/layout/_canvasfree.scss" afterPath="$PROJECT_DIR$/sass/layout/_canvasfree.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/layout/_showroom.scss" afterPath="$PROJECT_DIR$/sass/layout/_showroom.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="pleiadesweb.iws" />
@@ -22,24 +23,27 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="pleiadesweb" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4324759">
+    <splitter split-orientation="horizontal" split-proportion="0.5932476">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="canvasfree.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/page-templates/canvasfree.php">
+          <file leaf-file-name="showroom.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/page-templates/showroom.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.24268293">
-                  <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
-                  <folding>
-                    <element signature="n#div#0;n#main#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#2;n#main#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#3;n#main#0;n#div#0;n#!!top" expanded="false" />
-                  </folding>
+                <state vertical-scroll-proportion="0.683313">
+                  <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -48,20 +52,29 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_canvasfree.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/sass/layout/_canvasfree.scss">
+          <file leaf-file-name="_showroom.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sass/layout/_showroom.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.28536585">
-                  <caret line="322" column="13" selection-start-line="322" selection-start-column="13" selection-end-line="322" selection-end-column="13" />
+                <state vertical-scroll-proportion="0.8282582">
+                  <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
                   <folding>
-                    <element signature="e#161#6428#0" expanded="false" />
-                    <element signature="e#438#1914#0" expanded="false" />
-                    <element signature="e#1939#3227#0" expanded="false" />
-                    <element signature="e#6617#6991#0" expanded="false" />
-                    <element signature="e#10314#11067#0" expanded="false" />
-                    <element signature="e#11231#11450#0" expanded="false" />
-                    <element signature="e#11593#15837#0" expanded="false" />
+                    <element signature="e#721#3756#0" expanded="false" />
+                    <element signature="e#779#1500#0" expanded="false" />
+                    <element signature="e#1531#2244#0" expanded="false" />
+                    <element signature="e#2275#2987#0" expanded="false" />
+                    <element signature="e#3018#3737#0" expanded="false" />
+                    <element signature="e#3823#3872#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sass/site/primary/_header.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-52.307693">
+                  <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -90,6 +103,8 @@
         <option value="$PROJECT_DIR$/sass/layout/_frontpage.scss" />
         <option value="$PROJECT_DIR$/page-templates/canvasfree.php" />
         <option value="$PROJECT_DIR$/sass/layout/_canvasfree.scss" />
+        <option value="$PROJECT_DIR$/page-templates/showroom.php" />
+        <option value="$PROJECT_DIR$/sass/layout/_showroom.scss" />
       </list>
     </option>
   </component>
@@ -108,8 +123,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="60" />
-    <option name="y" value="26" />
+    <option name="x" value="27" />
+    <option name="y" value="32" />
     <option name="width" value="1286" />
     <option name="height" value="993" />
   </component>
@@ -199,8 +214,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -349,7 +364,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager">
@@ -396,27 +411,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="26" width="1286" height="993" extended-state="0" />
+    <frame x="27" y="32" width="1286" height="993" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26768488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -435,11 +450,35 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/page-templates/canvasfree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/layout/_canvasfree.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#161#6428#0" expanded="false" />
+            <element signature="e#438#1914#0" expanded="false" />
+            <element signature="e#1939#3227#0" expanded="false" />
+            <element signature="e#6561#12618#0" expanded="false" />
+            <element signature="e#6617#6991#0" expanded="false" />
+            <element signature="e#11854#12607#0" expanded="false" />
+            <element signature="e#12771#12990#0" expanded="false" />
+            <element signature="e#13133#17377#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/front-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -619,34 +658,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26674786">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page-templates/canvasfree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24268293">
-          <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
-          <folding>
-            <element signature="n#div#0;n#main#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#main#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#main#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/layout/_canvasfree.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28536585">
-          <caret line="322" column="13" selection-start-line="322" selection-start-column="13" selection-end-line="322" selection-end-column="13" />
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="285" column="11" selection-start-line="285" selection-start-column="11" selection-end-line="285" selection-end-column="11" />
           <folding>
             <element signature="e#161#6428#0" expanded="false" />
             <element signature="e#438#1914#0" expanded="false" />
             <element signature="e#1939#3227#0" expanded="false" />
+            <element signature="e#6561#12618#0" expanded="false" />
             <element signature="e#6617#6991#0" expanded="false" />
-            <element signature="e#10314#11067#0" expanded="false" />
-            <element signature="e#11231#11450#0" expanded="false" />
-            <element signature="e#11593#15837#0" expanded="false" />
+            <element signature="e#11854#12607#0" expanded="false" />
+            <element signature="e#12771#12990#0" expanded="false" />
+            <element signature="e#13133#17377#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page-templates/canvasfree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31181487">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page-templates/showroom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.683313">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/site/primary/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-52.307693">
+          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/layout/_showroom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8282582">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding>
+            <element signature="e#721#3756#0" expanded="false" />
+            <element signature="e#779#1500#0" expanded="false" />
+            <element signature="e#1531#2244#0" expanded="false" />
+            <element signature="e#2275#2987#0" expanded="false" />
+            <element signature="e#3018#3737#0" expanded="false" />
+            <element signature="e#3823#3872#0" expanded="false" />
           </folding>
         </state>
       </provider>
