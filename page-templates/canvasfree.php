@@ -63,62 +63,68 @@ get_header(); ?>
 					</article>
 				</div>
 			</section>-->
-
+      <?php wp_reset_query(); ?>
 		</div><!-- id="la-empresa" -->
 
 <!-- 	SERVICIOS -->
 <?php } elseif (is_page('servicios')) { ?>
-		<?php the_post(); ?>
 		<div id="servicios">
-
-			<!-- Page title -->
-			<?php //the_title("<h2>", "</h2>", true); ?>
 
 			<!-- INTRO -->
 			<section class="intro">
+        <?php //$query = new WP_Query(); ?>
+        <?php the_post(); ?>
 				<div class="intro-info">	
-					<h2>Digital Marketing Services</h2>
-					<p>Fancy taking your digital marketing to the next level? You’re lucky you found us…</p>
+					<h2><?php echo get_post_meta($post->ID, 'intro_text', true); ?></h2>
+          <?php the_content(); ?>
 				</div>
+        <?php wp_reset_postdata(); ?>
 			</section>
 
 			<!-- SERV DESCRIPTION -->
 			<section class="serv-desc">
+        <?php
+          $query = new WP_Query('pagename=servicios');
+          $servicios_id = $query->queried_object->ID;
+        ?>
+
+        <?php
+          $args = array(
+            'post_type'         => 'page',
+            'post_parent'       => $servicios_id,
+            'post_per_parent'   => 4,
+            'post_status'       => 'publish',
+            'orderby'           => 'menu_order',
+            'order'             => ASC
+          );
+        ?>
+
 				<div class="serv-desc-info">
 					<div class="boxes">
 						<ul>
+            <?php
+              $servicios_query = new WP_Query($args);
+              if ($servicios_query->have_posts()) {
+                while ($servicios_query->have_posts()) {
+                  $servicios_query->the_post();
+                ?>
 
-							<li>
-								<div class="box">
-									<article>
-										<h2>Estrategia y Consultoría</h2>
-									</article>
-								</div>
-							</li>
+                  <li>
+                    <a href="<?php the_permalink(); ?>">
 
-							<li>
-								<div class="box">
-									<article>
-                    <h2>Diseño Creativo</h2>
-									</article>
-								</div>
-							</li>
+                      <div class="box">
+                        <article>
+                          <h2><?php the_title(); ?></h2>
+                        </article>
+                      </div>
+                    </a>
+                  </li>
 
-							<li>
-								<div class="box">
-									<article>
-										<h2>Desarrollo WEB</h2>
-									</article>
-								</div>
-							</li>
-
-              <li>
-                <div class="box">
-                  <article>
-                    <h2>Marketing Digital</h2>
-                  </article>
-                </div>
-              </li>
+                <?php
+                } //endwhile
+              } //endif
+              wp_reset_postdata();
+            ?>
 
 						</ul>
 				</div><!--class="boxes"-->
@@ -186,7 +192,7 @@ get_header(); ?>
 			</article>
 			
 		</div><!-- id="servicios" -->
-		
+
 <!-- 	PREGUNTAS FRECUENTES -->
 <?php } elseif (is_page('preguntas-frecuentes')) { ?>
 		<?php the_post(); ?>

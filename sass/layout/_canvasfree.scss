@@ -7,6 +7,7 @@
 #la-empresa {
 	width: 100%;
 	min-height: 500px;
+
 	// PAGE Title
 	h2 {
 		text-align: center;
@@ -76,73 +77,19 @@
 		} //.intro-info
 	} //.intro
 
-	// CTA
-	.cta {
-		width: 100%;
-		min-height: 400px;
-		padding-top: 100px;
-		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax4.jpg');
-		.cta-info {
-			@include container(90%);
-			h3 {
-				color: $white;
-				font-weight: 500;
-				text-align: center;
-				line-height: 1.4;
-				text-transform: uppercase;
-				font-size: 1.8em;
-                margin-bottom: 10px;
-				@include breakpoint($iphone) {
-					line-height: 1.6;
-					font-weight: 400;
-					font-size: 1.4em;
-					margin-bottom: 20px;
-				} //breakpoint($iphone)
-			} //h3
-            p {
-              color: $oryellow;
-              text-align: center;
-              line-height: 1.2;
-              font-size: 1.4em;
-              font-weight: 700;
-            } //p
-			.cta-button {
-				text-align: center;
-				margin-top: 40px;
-				@include breakpoint($iphone) {
-					margin-top: 40px;
-				}
-				a {
-					border: 3px solid $snow;
-					@include border-radius(15px); 
-					padding: 10px 25px; 
-					color: $snow;
-					font-weight: 600;
-					@include single-transition();
-					@include transition-duration(0.5s);
-					&:hover {
-						border: 3px solid $oryellow;
-						background-color: rgba($oryellow, 0.6);
-						color: $black;
-					} //&:hover 
-				} //a
-			} //.cta-button
-		}
-	} //.cta
-
 	// ABOUT
 	.about {
 		width: 100%;
 		//min-height: 400px;
-        background-color: darken($snow, 10);
-        padding-bottom: 30px;
+		background-color: darken($snow, 10);
+		padding-bottom: 30px;
 		.about-info {
 			@include container();
 			.about-content {
 				width: 1000px;
 				display: block;
 				margin: 0px auto 30px;
-				@include clearfix();	
+				@include clearfix();
 
 				@include breakpoint($desktop) { //1200px;
 					width: 1100px;
@@ -168,10 +115,10 @@
 						p {
 							text-align: justify;
 							font-size: 1em;
-                            font-weight: 300;
+							font-weight: 300;
 							color: $black;
 						} //p
-					} //.txt-content 
+					} //.txt-content
 				} //breakpoint($desktop)
 
 				@include breakpoint($laptop) { //990px;
@@ -184,8 +131,8 @@
 						margin-bottom: 20px;
 					} //h2
 					.about-image {
-                        @include span(6 of 12);
-                        float: left;
+						@include span(6 of 12);
+						float: left;
 						img {
 							width: 95%;
 							height: auto;
@@ -193,16 +140,16 @@
 						} //img
 					} //.about-image
 					.txt-content {
-                        @include span(6 of 12);
+						@include span(6 of 12);
 						margin: 0px auto;
-                        float: right;
+						float: right;
 						p {
 							text-align: justify;
 							font-size: 1em;
-                            font-weight: 300;
-                            color: $black;
+							font-weight: 300;
+							color: $black;
 						} //p
-					} //.txt-content 
+					} //.txt-content
 				} //breakpoint($laptop 1199px)
 
 				@include breakpoint($tablet) { //700px 989px;
@@ -229,7 +176,7 @@
 							text-align: justify;
 							font-size: 1em;
 						} //p
-					} //.txt-content 
+					} //.txt-content
 				} //breakpoint($tablet)
 
 				@include breakpoint($iphone) { //max-width 699px;
@@ -256,12 +203,66 @@
 							text-align: justify;
 							font-size: 1em;
 						} //p
-					} //.txt-content 
+					} //.txt-content
 				} //breakpoint($iphone)
 
 			} //.about-content
 		} //.about-info
 	} //.about
+
+	// CTA
+	.cta {
+		width: 100%;
+		min-height: 400px;
+		padding-top: 100px;
+		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax4.jpg');
+		.cta-info {
+			@include container(90%);
+			h3 {
+				color: $white;
+				font-weight: 500;
+				text-align: center;
+				line-height: 1.4;
+				text-transform: uppercase;
+				font-size: 1.8em;
+                margin-bottom: 10px;
+				@include breakpoint($iphone) {
+					line-height: 1.6;
+					font-weight: 400;
+					font-size: 1.4em;
+					margin-bottom: 20px;
+				} //breakpoint($iphone)
+			} //h3
+            p {
+              color: $magentamed;
+              text-align: center;
+              line-height: 1.2;
+              font-size: 1.4em;
+              font-weight: 700;
+            } //p
+			.cta-button {
+				text-align: center;
+				margin-top: 40px;
+				@include breakpoint($iphone) {
+					margin-top: 40px;
+				}
+				a {
+					border: 3px solid $snow;
+					@include border-radius(15px); 
+					padding: 10px 25px; 
+					color: $snow;
+					font-weight: 600;
+					@include single-transition();
+					@include transition-duration(0.5s);
+					&:hover {
+						border: 3px solid $magentamed;
+						background-color: rgba($magentadark, 0.3);
+						color: $snow;
+					} //&:hover 
+				} //a
+			} //.cta-button
+		}
+	} //.cta
 
 	// EXTRA
 	.extra {
@@ -348,7 +349,7 @@
 							margin: 0px;
 							padding: 0px;
 							border-right: none;
-              border-bottom: 2px solid rgba($oryellowlight, 0.4);
+              border-bottom: 2px solid rgba($magentalight, 0.4);
               @include single-transition();
               @include transition-duration(0.5s);
 							h2 {
@@ -356,7 +357,7 @@
                 padding: 0px;
                 margin: 0px;
                 font-family: $font_copy;
-                color: darken($snow, 20);
+                color: $black;
                 font-weight: 400;
                 @include single-transition();
                 @include transition-duration(0.5s);
@@ -370,7 +371,7 @@
               background-repeat: no-repeat;
               background-size: 70%;
               &:hover {
-                background-color: $oryellowmed;
+                background-color: $magentamed;
                 article {
                   border-bottom: 2px solid $snow;
                   h2 {
@@ -387,7 +388,7 @@
 							background-repeat: no-repeat;
 							background-size: 70%;
 							&:hover {
-								background-color: $oryellowmed;
+								background-color: $magentamed;
 								article {
 									border-bottom: 2px solid $snow;
 									h2 {
@@ -404,7 +405,7 @@
 							background-repeat: no-repeat;
 							background-size: 70%;
 							&:hover {
-								background-color: $oryellowmed;
+								background-color: $magentamed;
 								article {
 									border-bottom: 2px solid $snow;
 									h2 {
@@ -421,7 +422,7 @@
 							background-repeat: no-repeat;
 							background-size: 70%;
 							&:hover {
-								background-color: $oryellowmed;
+								background-color: $magentamed;
 								article {
 									border-bottom: 2px solid $snow;
 									h2 {
@@ -483,9 +484,9 @@
 					@include single-transition();
 					@include transition-duration(0.5s);
 					&:hover {
-						border: 3px solid $orange;
-						background-color: rgba($oryellow, 0.5);
-						color: $snow;
+            border: 3px solid $magentamed;
+            background-color: rgba($magentadark, 0.3);
+            color: $snow;
 					} //&:hover 
 				} //a 
 			} //.cta-services

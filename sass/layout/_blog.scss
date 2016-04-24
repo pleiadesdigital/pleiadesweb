@@ -82,7 +82,7 @@
                     @include single-transition();
                     @include transition-duration(0.3s);
                     &:hover {
-                      color: $oryellowmed !important;
+                      color: darken($magentamed, 5) !important;
                     } //&:hover
                     &:visited {
                       color: $grey;
@@ -110,7 +110,7 @@
                     @include single-transition();
                     @include transition-duration(0.3s);
                     &:hover {
-                      color: $oryellowmed !important;
+                      color: darken($magentamed, 5) !important;
                     } //&:hover
                     &:visited {
                       color: $grey;
@@ -127,7 +127,6 @@
 
     //SIDEBAR
     .widget-area {
-      border: 3px solid gold;
       @include container();
     } //.widget-area
 

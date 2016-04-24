@@ -144,7 +144,7 @@
           font-family: $font_copy;
           text-transform: uppercase;
           font-weight: 400;
-          color: $yellowmedlg;
+          color: $magentadark;
           line-height: 1.2;
           margin: 0px 0px 10px;
         } //h2
@@ -163,7 +163,7 @@
           a {
             @include single-transition();
             &:hover {
-              color: $yellowmedlg;
+              color: $magentamed;
             } //&:hover
           } //a
         } //p

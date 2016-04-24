@@ -4,44 +4,55 @@ body {
 	height: 100%;	
 }
 
-// INTRO
-#intro {
-	width: 100%;
-	height: auto;
-	.intro-info {
-		@include container();
-		padding: 50px 0px 50px;
-		h2 {
-			font-size: 2em;
-			text-align: center;
-			font-weight: 500;
-			color: $greymed;
-			font-family: $font_copy;
-		}
-		p {
-			text-align: center;
-			line-height: 1.6;
-			font-size: 1.1em;
-			font-weight: 300;
-			color: $grey;
-		} //p
-	} //.intro-info
-} //.intro
 
 // SERVICE MENU
 #serv-menu {
   width: 100%;
   height: auto;
-  background-color: rgba($grey, 0.8);
+  background-color: $snow;
   margin: 0px;
   padding: 0px;
-  margin-top: -16px;
+  //margin-top: -16px;
   .service-nav {
-    @include clearfix();
-    @include container();
+    height: auto;
+    @include container(70%);
+		ul {
+      @include clearfix();
+			@include flexbox((
+        display: flex,
+        //align-items: center,
+        justify-content: center
+			));
+			li {
+        /*@include flexbox((
+          flex: 1 0 auto,
+        ));*/
+        text-align: center;
+        line-height: 2;
+        a {
+          display: block;
+          font-weight: 400;
+          padding: 0.7em 2em;
+          width: 100%;
+          height: 100%;
+          color: $greymed;
+          @include single-transition();
+          @include transition-duration(0.3s);
+          &:hover {
+            background-color: rgba($greylight, 0.4);
+            color: $greydark;
+          }
+        }
+        &.current-menu-item a {
+          background-color: rgba($greylight, 0.2);
+          cursor: default;
+          color: $greydark;
+        }
+
+			} //li
+		} //ul
   } //.service-nav
 } //#serv-menu
-
 
 // IMAGE 
 #image-showroom {
@@ -53,7 +64,7 @@ body {
 		width: auto;
 		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-estrategia-consultoria.jpg");
 		.text-container {
-			background-color: rgba($black, 0.6);
+			background-color: rgba($black, 0.5);
 			padding: 10% 20% 0px;
 			height: 100%;
 			h1 {
@@ -65,7 +76,7 @@ body {
 			margin-bottom: 20px;		
 			} //h1
 			span {
-				border-top: 1px solid $oryellow;
+				border-top: 1px solid $magenta;
 				display: block;
 				margin: 0px auto;
 				width: 70%;
@@ -87,7 +98,7 @@ body {
 		width: auto;
 		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-diseno-creativo.jpg");
 		.text-container {
-			background-color: rgba($black, 0.6);
+			background-color: rgba($black, 0.5);
 			padding: 10% 20% 0px;
 			height: 100%;
 			h1 {
@@ -99,7 +110,7 @@ body {
 			margin-bottom: 20px;		
 			} //h1
 			span {
-				border-top: 1px solid $oryellow;
+        border-top: 1px solid $magenta;
 				display: block;
 				margin: 0px auto;
 				width: 70%;
@@ -120,7 +131,7 @@ body {
 		width: auto;
 		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-desarrollo-web.jpg");
 		.text-container {
-			background-color: rgba($black, 0.6);
+			background-color: rgba($black, 0.5);
 			padding: 10% 20% 0px;
 			height: 100%;
 			h1 {
@@ -132,7 +143,7 @@ body {
 			margin-bottom: 20px;		
 			} //h1
 			span {
-				border-top: 1px solid $oryellow;
+        border-top: 1px solid $magenta;
 				display: block;
 				margin: 0px auto;
 				width: 70%;
@@ -148,12 +159,12 @@ body {
 		} //.text-container
 	} //.img-des-web
 
-	.img-mkt-dig {
+	.img-int-mkt {
 		height: 425px;
 		width: auto;
-		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-marketing-digital.jpg");
+		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-internet-marketing.jpg");
 		.text-container {
-			background-color: rgba($black, 0.6);
+			background-color: rgba($black, 0.5);
 			padding: 10% 20% 0px;
 			height: 100%;
 			h1 {
@@ -165,7 +176,7 @@ body {
 				margin-bottom: 20px;
 			} //h1
 			span {
-				border-top: 1px solid $oryellow;
+        border-top: 1px solid $magenta;
 				display: block;
 				margin: 0px auto;
 				width: 70%;
@@ -183,12 +194,72 @@ body {
 	
 } //#intro-showroom
 
+// WHY TRUST US
+#why-trust-wrap {
+  width: 100%;
+  .why-trust-content {
+    @include container(900px);
+    padding: 3em 3em;
+    text-align: center;
+    h2 {
+      font-family: $font_copy;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: $magentadark;
+      font-size: 1.6em;
+      margin-bottom: 1em;
+    } //h2
+    p {
+      font-weight: 300;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.3;
+    } //p
+  } //.why-trust-content
+} //#why-trust-wrap
 
 // DESCRIPCION SERVICIO
 #descripcion-servicio {
-	border: 1px solid green;
 	min-height: 500px;
-}
+  background-color: lighten($greylight, 15);
+  .desc-serv-wrap {
+    @include container(750px);
+    padding: 2em;
+    h2 {
+      font-family: $font_copy;
+      color: $greymed;
+      font-size: 1.7em;
+      font-weight: 300;
+      display: inline;
+      border-bottom: 1px solid $magentamed;
+      line-height: 1.8;
+    } //h2
+    p {
+      margin: 1em 0px;
+      line-height: 1.5;
+      color: $greymed;
+      text-align: justify;
+      font-size: 1.1em;
+      font-weight: 300;
+    } //p
+    ul {
+      margin-top: 1.5em;
+      li {
+        margin-bottom: 1em;
+        margin-left: 2em;
+        font-size: 1em;
+        list-style-type: square;
+        line-height: 1.5;
+        color: $greymed;
+        font-weight: 300;
+      } //li
+    } //ul
+
+
+
+
+  } //.desc-serv-wrap
+} //#descripcion-servicio
 
 
 

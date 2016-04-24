@@ -68,7 +68,7 @@
         } //breakpoint(600px 989px)
       } //a 1st level
       &:hover > a {
-        border-top: 5px solid $oryellow;
+        border-top: 5px solid $magenta;
       } //&:hover > a
       &:hover > ul {
         display: block;
@@ -99,7 +99,7 @@
             padding: 15px 20px;
           }
           &:hover {
-            color: $oryellow;
+            color: $magenta;
           }
         } //a 2nd level
       } //li 2nd level
@@ -118,7 +118,7 @@
   .current_page_item > a,
   .current-menu-item > a,
   .current_page_ancestor > a {
-    border-top: 5px solid $oryellow;
+    border-top: 5px solid $magenta;
   }
   .sub-menu {
     .current-menu-item {
@@ -126,7 +126,7 @@
     }
     .current-menu-item > a {
       border-top: 5px solid transparent;
-      color: $oryellow;
+      color: $magenta;
       cursor: default;
     }
   }
@@ -169,7 +169,7 @@
     font-weight: 100;
     @include transition-duration(0.7s);
     &:hover {
-      color: $oryellow;
+      color: $magentamed;
       cursor: pointer;
     } //&:hover
   } //.menu-toggle 
@@ -203,7 +203,7 @@
           &:hover {
             color: $snow;
             border: none;
-            background: rgba($oryellow, 0.8);
+            background: rgba($magentadark, 0.6);
           } //&:hover 
         } // a 1st level
         &:hover > a {

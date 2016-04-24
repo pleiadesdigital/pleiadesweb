@@ -180,24 +180,24 @@ header {
 				// Laptop & Desktop
 				.site-branding {
 
-                    // Desktop
-                    @include breakpoint($desktop) {
-                      @include span(3);
-                      display: block;
-                      padding: 0px 10px 0px;
-                      margin: 0px;
-                      width: 230px;
-                      height: auto;
-                      float: left;
-                      overflow: hidden;
-                      a {
-                        img {
-                          width: 100%;
-                          height: auto;
-                          padding-top: 5px;
-                        } //img
-                      } //a
-                    } //breakpoint($desktop)
+				// Desktop
+				@include breakpoint($desktop) {
+					@include span(3);
+					display: block;
+					padding: 0px 10px 0px;
+					margin: 0px;
+					width: 230px;
+					height: auto;
+					float: left;
+					overflow: hidden;
+					a {
+						img {
+							width: 100%;
+							height: auto;
+							padding-top: 5px;
+						} //img
+					} //a
+				} //breakpoint($desktop)
 
 
                     // Laptop
@@ -249,14 +249,14 @@ header {
 				} //.site-branding
 				.main-menu-wrap {
 
-                    @include breakpoint($desktop) {
-                      @include span(9 at 4 of 12);
-                      display: block;
-                      padding: 0px;
-                      margin: 0px;
-                      height: 100%;
-                      float: right;
-                    } //breakpoint($desktop)
+					@include breakpoint($desktop) {
+						@include span(9 at 4 of 12);
+						display: block;
+						padding: 0px;
+						margin: 0px;
+						height: 100%;
+						float: right;
+					} //breakpoint($desktop)
 
 					@include breakpoint($laptop) {
 						@include span(9 at 4 of 12);

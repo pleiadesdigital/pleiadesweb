@@ -21,8 +21,9 @@ if (!function_exists('pleiadesweb_setup')) :
 	
 		register_nav_menus( array(
 			'primary' => esc_html__('Primary', 'pleiadesweb'),
-			'social' => esc_html__( 'Social Menu', 'wplucy8' ),
-			'sitemap' => esc_html__( 'Site Map', 'wplucy8' )
+			'social' => esc_html__( 'Social Menu', 'pleiadesweb' ),
+			'sitemap' => esc_html__( 'Site Map', 'pleiadesweb' ),
+			'services' => esc_html__( 'Services', 'pleiadesweb' )
 		));
 
 		add_theme_support('html5', array(

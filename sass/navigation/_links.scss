@@ -34,14 +34,15 @@ a {
           @include single-transition();
         } //a.page-numbers
         a:hover.page-numbers {
-          color: $orangedark;
+          color: $magentamed;
+          cursor: pointer;
         }
         span.page-numbers {
           padding: 0.3em 0.7em;
         } //span.page-numbers
         .current {
           font-weight: 600;
-          color: $orangedark !important;
+          color: $magentadark !important;
         } //.current
       } //li
     } //ul

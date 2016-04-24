@@ -31,7 +31,7 @@
 /**********************************************/
 
 .site-main {
-  margin-top: 1em;
+  //margin-top: 1em;
 
   //ARTICLE (MAIN CONTENT)
   article {
@@ -75,7 +75,7 @@
             @include single-transition();
             @include transition-duration(0.3s);
             &:hover {
-              color: $oryellowmed;
+              color: darken($magentamed, 5);
             } //&:hover
           } //a
         } //.posted-on
@@ -88,7 +88,7 @@
             @include single-transition();
             @include transition-duration(0.3s);
             &:hover {
-              color: $oryellowmed;
+              color: darken($magentamed, 5);
             } //&:hover
           } //a
         } //.category-list
@@ -101,7 +101,7 @@
             @include single-transition();
             @include transition-duration(0.3s);
             &:hover {
-              color: $oryellowmed;
+              color: darken($magentamed, 5);
             } //&:hover
           } //a
         } //.byline
@@ -114,7 +114,7 @@
             @include single-transition();
             @include transition-duration(0.3s);
             &:hover {
-              color: $oryellowmed;
+              color: darken($magentamed, 5);
             } //&:hover
           } //a
         } //.comments-link
@@ -174,8 +174,8 @@
           border-bottom: 1px dotted #7f7f7f;
           line-height: 1;
           &:hover {
-            color: $oryellowmed;
-            border-bottom: 1px dotted $oryellowmed;
+            color: darken($magentamed, 5);
+            border-bottom: 1px dotted darken($magentamed, 5);
           } //&:hover
         } //a
         img {
@@ -222,7 +222,7 @@
           &:hover i,
           &:hover a {
             cursor: pointer;
-            color: $oryellowmed;
+            color: darken($magentamed, 5);
           }
         } //li
       } //ul
@@ -257,11 +257,11 @@
           float: left;
           padding-right: 15%;
           a {
-            color: $bluemed;
+            color: $grey;
             @include single-transition();
             @include transition-duration(0.3s);
             &:hover {
-              color: $oryellowmed;
+              color: darken($magentamed, 5);
             } //&:hover
           } //a
         } //.nav-previous
@@ -274,9 +274,9 @@
           a {
             @include single-transition();
             @include transition-duration(0.3s);
-            color: $bluemed;
+            color: $grey;
             &:hover {
-              color: $oryellowmed;
+              color: darken($magentamed, 5);
             } //&:hover
           } //a
         } //.nav-next
