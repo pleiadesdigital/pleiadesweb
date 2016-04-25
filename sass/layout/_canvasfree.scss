@@ -349,6 +349,7 @@
 							margin: 0px;
 							padding: 0px;
 							border-right: none;
+							border-left: none;
               border-bottom: 2px solid rgba($magentalight, 0.4);
               @include single-transition();
               @include transition-duration(0.5s);
