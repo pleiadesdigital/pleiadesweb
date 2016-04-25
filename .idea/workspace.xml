@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d5b57809-1e9e-4707-a8ee-17d5bd5db1f2" name="Default" comment="" />
+=======
+    <list default="true" id="d5b57809-1e9e-4707-a8ee-17d5bd5db1f2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/development/devcss/style.css" afterPath="$PROJECT_DIR$/development/devcss/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/layout/_canvasfree.scss" afterPath="$PROJECT_DIR$/sass/layout/_canvasfree.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+    </list>
+>>>>>>> origin/master
     <ignored path="pleiadesweb.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -32,8 +42,33 @@
       <file leaf-file-name="_links.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/navigation/_links.scss">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.845122">
               <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+=======
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_menus.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/navigation/_menus.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="186" column="20" selection-start-line="186" selection-start-column="20" selection-end-line="186" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_canvasfree.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/layout/_canvasfree.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.074074075">
+              <caret line="333" column="32" selection-start-line="333" selection-start-column="32" selection-end-line="333" selection-end-column="32" />
+>>>>>>> origin/master
               <folding />
             </state>
           </provider>
@@ -60,7 +95,6 @@
         <option value="$PROJECT_DIR$/sass/layout/_frontpage.scss" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/sass/site/primary/_footer.scss" />
-        <option value="$PROJECT_DIR$/sass/layout/_canvasfree.scss" />
         <option value="$PROJECT_DIR$/page-templates/canvasfree.php" />
         <option value="$PROJECT_DIR$/sass/layout/_showroom.scss" />
         <option value="$PROJECT_DIR$/sass/navigation/_links.scss" />
@@ -68,6 +102,7 @@
         <option value="$PROJECT_DIR$/sass/site/primary/_posts-and-pages.scss" />
         <option value="$PROJECT_DIR$/page-templates/showroom.php" />
         <option value="$PROJECT_DIR$/sass/navigation/_menus.scss" />
+        <option value="$PROJECT_DIR$/sass/layout/_canvasfree.scss" />
       </list>
     </option>
   </component>
@@ -86,10 +121,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="308" />
-    <option name="y" value="50" />
+    <option name="x" value="126" />
+    <option name="y" value="23" />
     <option name="width" value="1240" />
-    <option name="height" value="993" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -177,7 +212,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+>>>>>>> origin/master
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,14 +372,23 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+>>>>>>> origin/master
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../twentysixteen" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Sass/SCSS" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.SCSS" />
+>>>>>>> origin/master
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager">
@@ -388,7 +435,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="308" y="50" width="1240" height="993" extended-state="0" />
+=======
+    <frame x="126" y="23" width="1240" height="877" extended-state="0" />
+>>>>>>> origin/master
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -430,6 +481,22 @@
     <entry file="file://$PROJECT_DIR$/page-templates/showroom.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/navigation/_menus.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page-templates/showroom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
           <folding />
         </state>
@@ -455,11 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="200" column="24" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="24" />
-          <folding>
-            <element signature="e#89#1114#0" expanded="false" />
-            <element signature="e#1155#4199#0" expanded="false" />
-            <element signature="e#4761#5557#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -467,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="112" column="51" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,6 +767,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/sass/layout/_canvasfree.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.851852">
@@ -715,6 +777,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/navigation/_menus.scss">
+=======
+    <entry file="file://$PROJECT_DIR$/template-parts/content.php">
+>>>>>>> origin/master
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5555553">
           <caret line="183" column="24" selection-start-line="183" selection-start-column="24" selection-end-line="183" selection-end-column="24" />
@@ -740,9 +805,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/site/primary/_asides.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.17195122">
+          <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
+>>>>>>> origin/master
         </state>
       </provider>
     </entry>
@@ -756,9 +826,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/layout/_frontpage.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.7487805">
           <caret line="328" column="10" selection-start-line="328" selection-start-column="10" selection-end-line="331" selection-end-column="23" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.38536584">
+          <caret line="112" column="51" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+>>>>>>> origin/master
         </state>
       </provider>
     </entry>
@@ -766,11 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023170732">
           <caret line="200" column="24" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="24" />
-          <folding>
-            <element signature="e#89#1114#0" expanded="false" />
-            <element signature="e#1155#4199#0" expanded="false" />
-            <element signature="e#4761#5557#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -778,22 +848,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/layout/_testing.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+>>>>>>> origin/master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/navigation/_links.scss">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.845122">
           <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+=======
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="186" column="20" selection-start-line="186" selection-start-column="20" selection-end-line="186" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/layout/_canvasfree.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.074074075">
+          <caret line="333" column="32" selection-start-line="333" selection-start-column="32" selection-end-line="333" selection-end-column="32" />
+>>>>>>> origin/master
           <folding />
         </state>
       </provider>
