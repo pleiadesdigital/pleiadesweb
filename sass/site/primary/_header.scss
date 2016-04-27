@@ -152,11 +152,11 @@ header {
 			padding: 0px;
 			background-color: rgba($greydark, 0.3);
 			@include clearfix;
-            @include breakpoint($laptop) {
-              height: auto;
-              padding: 0px 0px 0px 0px;
-              margin: 0px;
-            } //breakpoint($laptop)
+			@include breakpoint($laptop) {
+				height: auto;
+				padding: 0px 0px 0px 0px;
+				margin: 0px;
+			} //breakpoint($laptop)
 			@include breakpoint($tablet) {
 				height: 190px;
 				padding: 0px;
@@ -179,28 +179,25 @@ header {
 
 				// Laptop & Desktop
 				.site-branding {
-
-				// Desktop
-				@include breakpoint($desktop) {
-					@include span(3);
-					display: block;
-					padding: 0px 10px 0px;
-					margin: 0px;
-					width: 230px;
-					height: auto;
-					float: left;
-					overflow: hidden;
-					a {
-						img {
-							width: 100%;
-							height: auto;
-							padding-top: 5px;
-						} //img
-					} //a
-				} //breakpoint($desktop)
-
-
-                    // Laptop
+					// Desktop
+					@include breakpoint($desktop) {
+						@include span(3);
+						display: block;
+						padding: 0px 10px 0px;
+						margin: 0px;
+						width: 230px;
+						height: auto;
+						float: left;
+						overflow: hidden;
+						a {
+							img {
+								width: 100%;
+								height: auto;
+								padding-top: 5px;
+							} //img
+						} //a
+					} //breakpoint($desktop)
+					// Laptop
 					@include breakpoint($laptop) {
 						@include span(3);
 						display: block;
@@ -217,7 +214,6 @@ header {
 							padding-top: 5px;
 						} //img
 					}	//breakpoint(989px)
-
 					// Tablet
 					@include breakpoint($tablet) {
 						float: none;
@@ -273,24 +269,26 @@ header {
 			padding: 15% 0px;
 			margin-top: 10%;
 			h1 {
-				font-family: $font-copy;
-				font-size: 4em;
-				font-weight: 500;
+				font-family: $font_copy;
+				font-size: 3.8em;
+				font-weight: 300;
 				color: $snow;
 				line-height: 1;
 				text-align: center;
 				margin-bottom: 20px;
 				padding-bottom: 0px;
+        text-transform: uppercase;
 				@include text-shadow($greydark 0px 0px 20px);
 			} //h1
 			h2 {
 				color: darken($white, 5);
+        font-family: $font_copy;
 				text-align: center;
 				font-weight: 300;
 				font-size: 1.4em;
-				width: 400px;
+				width: auto;
 				margin: 0px auto;
-				padding: 15px 5px;
+				padding: 15px 20px;
 				border: 1px dotted $white;
 				background: rgba($greydark, 0.5);
 			} //h2

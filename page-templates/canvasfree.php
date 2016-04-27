@@ -147,47 +147,55 @@ get_header(); ?>
 			<!-- CLIENTES -->
 			<article class="clientes">
 				<div class="clientes-info">
-					<h2>Algunos de nuestros clientes</h2>
-							<div id="slider" class="flexslider">
-								<ul class="slides">
+					<h2>Portafolio</h2>
 
-							<?php 
-								$slider_loop = new WP_Query(
-									array(
-										'post_type'							=> 'slider_panel',
-										'category_name'					=> 'clientes',
-										'post_per_page'					=> 10,
-										'post_status'						=> 'publish',
-										'order'									=> 'asc'
-									)
-								);
-								// Loop
-								while ($slider_loop->have_posts()) {
-									$slider_loop->the_post(); ?>
-									<li>
-										<?php echo get_the_post_thumbnail($post->ID, 'image_slider'); ?>
-									</li>
+          <?php
+          $slider_loop = new WP_Query(
+            array(
+              'post_type'							=> 'slider_panel',
+              'category_name'					=> 'clientes',
+              'post_per_page'					=> 10,
+              'post_status'						=> 'publish',
+              'orderby'								=> 'date'
+            )
+          );
+          ?>
 
-							<?php } //closing while loop ?>
+					<!--							CARROUSELL-->
+          <div id="carousel" class="flexslider">
+            <ul class="slides">
+            <?php
+            // Loop
+            while ($slider_loop->have_posts()) {
+              $slider_loop->the_post(); ?>
+              <li>
+                <?php echo get_the_post_thumbnail($post->ID, 'image_slider'); ?>
+              </li>
 
-								</ul><!-- class="slides" -->
-							</div><!-- id="slider" -->
+          <?php } //closing while loop ?>
+            </ul><!-- class="slides" -->
+          <?php  ?>
+          </div><!-- id="carousel" -->
 
-							<div id="carousel" class="flexslider">
-								<ul class="slides">
-								<?php
-								// Loop
-								while ($slider_loop->have_posts()) {
-									$slider_loop->the_post(); ?>
-									<li>
-										<?php echo get_the_post_thumbnail($post->ID, 'image_slider'); ?>
-									</li>
+          <!--							SLIDER-->
+          <div id="slider" class="flexslider">
+            <ul class="slides">
 
-							<?php } //closing while loop ?>
-								</ul><!-- class="slides" -->
-							<?php  ?>
-							</div><!-- id="carousel" -->
-						<?php wp_reset_postdata(); ?> 
+              <?php
+              // Loop
+              while ($slider_loop->have_posts()) {
+                $slider_loop->the_post(); ?>
+                <li>
+                  <?php echo get_the_post_thumbnail($post->ID, 'image_slider'); ?>
+                </li>
+
+              <?php } //closing while loop ?>
+
+            </ul><!-- class="slides" -->
+          </div><!-- id="slider" -->
+
+
+          <?php wp_reset_postdata(); ?>
 				</div>
 			</article>
 			
@@ -217,8 +225,8 @@ get_header(); ?>
 			<div id="contact-info">
 				<div class="contact-address">
 					<h3>Dirección</h3>
-					<p>Edif. Torre Ketal, oficina #302</p>
-					<p>Calle 15, Calacoto</p>
+					<p>Edif. Montebello, Bloque C #305</p>
+					<p>Calle 30, Cota Cota</p>
 					<p>La Paz - Bolivia</p>
 					<br />
 					<h3>Teléfono / Email</h3>

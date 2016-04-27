@@ -12,9 +12,29 @@ body {
 		border-right: none;
 		@include container(70%);
 		padding: 30px 0px;
-      @include breakpoint($laptop) {
-        border-left: none;
-      } //breakpoint($iphone)
+		h2 {
+      font-family: $font_copy;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 2.6em;
+      color: $magentadark;
+      text-align: center;
+      margin-bottom: 20px;
+    } //h1
+    p {
+      font-family: $font_copy;
+      color: $grey;
+      font-weight: 200;
+      font-size: 1.6em;
+      display: block;
+      text-align: center;
+      margin: 0px auto;
+      padding: 0px 4em;
+      line-height: 1.4;
+    } //p
+		@include breakpoint($laptop) {
+			border-left: none;
+		} //breakpoint($iphone)
 		@include breakpoint($iphone) {
 			@include container (90%);
 		} //breakpoint($iphone)
@@ -31,10 +51,11 @@ body {
 		padding-bottom: 20px;
 	}
 	h2 {
+    font-family: $font_copy;
 		text-transform: uppercase;
 		font-weight: 300;
 		font-size: 2.6em;
-		color: $blue;
+		color: $magentadark;
 		text-align: center;
 		margin-bottom: 40px;
 		@include text-shadow();
@@ -45,7 +66,7 @@ body {
 	} //text-shadow()
 	h3 {
 		text-align: center;
-		color: $blue;
+		color: $greymed;
 		font-weight: 100;
 		text-transform: uppercase;
 		font-size: 2em;
@@ -59,12 +80,10 @@ body {
 		@include breakpoint($tablet) {
 			@include container(600px);
 		}
-    @include breakpoint(551px 699px) {
-      @include container(500px);
+    @include breakpoint($iphone) {
+      @include container(80%);
     }
-		@include breakpoint(max-width 550px) {
-			@include container(90%);
-		}
+
 		section {
 			h2 {
 				font-size: 1.6em;
@@ -85,7 +104,7 @@ body {
 				padding: 10px 30px;
 			}
 			@include breakpoint($iphone) {
-				padding: 10px;
+				padding: 10px 30px;
 			}
 			.view {
 				height: auto;
@@ -98,11 +117,13 @@ body {
 					margin: 20px auto;
 				}
 				@include breakpoint($iphone) {
-					margin: 3% auto;
+          width: auto;
+          margin: 20px auto;
 				}
 				.mask1,
 				.mask2,
 				.mask3,
+        .mask4,
 				.content {
 					width: auto;
 					height: 100%;
@@ -132,61 +153,73 @@ body {
             font-size: 1.3em;
             padding: 10px;
           }
-          @include breakpoint(max-width 550px) {
+          @include breakpoint($iphone) {
             font-size: 1.3em;
-            padding: 3%;
+            padding: 10px;
           }
 
 				} //h2
 				p {
-					font-size: 1em;
 					position: relative;
 					color: $greydark;
-					padding: 10px 30px 20px;
 					text-align: center;
 					width: 90%;
 					display: block;
-					margin: 0px auto;
 					font-weight: 300;
+          @include breakpoint($desktop) {
+            margin: 10% auto 0px;
+            font-size: 1.3em;
+            padding: 10px 15px 15px;
+          }
           @include breakpoint($laptop) {
             margin: 5% auto 0px;
-            font-size: 0.9em;
+            font-size: 1.2em;
             padding: 10px 15px 15px;
           }
 					@include breakpoint($tablet) {
 						margin: 10% auto 0px;
-						font-size: 1.1em;
+						font-size: 1.5em;
 					}
-					@include breakpoint(max-width 550px) {
-						font-size: 0.9em;
-            padding: 2%;
-            margin-bottom: 1%;
+					@include breakpoint($iphone) {
+            margin: 10% auto 0px;
+            font-size: 1.5em;
 					}
 
 				} //p
 				a.info1,
 				a.info2,
-				a.info3 {
+				a.info3,
+        a.info4 {
 					display: inline-block;
 					text-decoration: none;
-					padding: 7px 14px;
+					//padding: 7px 14px;
 					//margin-left: -15px;
-					margin: 3% auto 0px;
+					//margin: 3% auto 0px;
 					color: $greydark;
 					background: $greylight;
           text-transform: lowercase;
           font-weight: 400;
           @include single-transition();
-          @include transition-duration(0.5s);
 					@include breakpoint($desktop) {
-						margin: 5% auto 0px;
-					} //breakpoint($desktop)
-					@include breakpoint($tablet) {
-						margin: 6% auto 0px;
+            position: absolute;
             padding: 10px 20px;
-            font-size: 1.1em;
+            bottom: 10%;
+            left: 37%;
+					} //breakpoint($desktop)
+          @include breakpoint($laptop) {
+            position: absolute;
+            padding: 7px 15px;
+            bottom: 5%;
+            left: 37%;
+          } //breakpoint($laptop)
+					@include breakpoint($tablet) {
+            position: absolute;
+            padding: 10px 20px;
+            bottom: 15%;
+            left: 40%;
+            font-size: 1.2em;
 					} //breakpoint($tablet)
-          @include breakpoint(551px 699px) {
+          @include breakpoint($iphone) {
             position: absolute;
             bottom: 15%;
             left: 40%;
@@ -194,30 +227,25 @@ body {
             display: block;
             vertical-align: middle;
             text-align: center;
-          } //breakpoint(551px 699px)
-          @include breakpoint(max-width 550px) {
-            font-size: 0.9em;
-            position: absolute;
-            bottom: 10%;
-            left: 40%;
-            margin: 0px auto;
-            display: block;
-            vertical-align: middle;
-            text-align: center;
-          } //breakpoint(max-width 550px)
+          } //breakpoint($iphone)
+
 				} //a.info 
 				a.info1:hover {
-					background: rgba(0, 0, 0, 0.8);
-					color: $magentalight;
+					//background: rgba(0, 0, 0, 0.8);
+					color: $magentadark;
 				} //a.info1:hover
 				a.info2:hover {
-					background: rgba(0, 0, 0, 0.8);
-					color: $magentalight;
+					//background: rgba(0, 0, 0, 0.8);
+					color: $magentadark;
 				} //a.info2:hover
 				a.info3:hover {
-					background: rgba(0, 0, 0, 0.8);
-					color: $magentalight;
+					//background: rgba(0, 0, 0, 0.8);
+					color: $magentadark;
 				} //a.info3:hover
+        a.info4:hover {
+          //background: rgba(0, 0, 0, 0.8);
+          color: $magentadark;
+        } //a.info3:hover
 			} //div.view
 			/* CSS3 effect model */
 			div.view-tenth {
@@ -226,6 +254,7 @@ body {
 					transition: all 0.7s ease-in-out;
 				} //img
 				.mask1 {
+          border: 2px solid lightseagreen;
 					background: $white url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/bgimg.jpg") repeat center center;
 					@include single-transition();
 					opacity: 0;
@@ -240,6 +269,11 @@ body {
 					@include single-transition();
 					opacity: 0;
 				} //.mask3
+        .mask4 {
+          background: $white url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/bgimg.jpg") repeat center center;
+          @include single-transition();
+          opacity: 0;
+        } //.mask4
 				h2 {
 					//transform: scale(0);
 					//@include single-transition();
@@ -253,7 +287,6 @@ body {
 					opacity: 0;
 					transform: scale(0);
 					@include single-transition();
-					@include transition-duration(0.5s);
 					&:hover {
 						@include transition-duration(0.5s);
 					}
@@ -267,7 +300,8 @@ body {
 				} //&:hover img
 				&:hover .mask1,
 				&:hover .mask2,
-				&:hover .mask3 {
+				&:hover .mask3,
+        &:hover .mask4{
 					opacity: 1;
 				} //&:hover .mask
 				&:hover h2,
@@ -277,8 +311,6 @@ body {
 					opacity: 1;
 				} //&:hover h2, &:hover p, &:hover a.info
 			} //div.view-tenth
-
-
 
 		} //section
 	} //#showroom 
@@ -349,13 +381,14 @@ body {
         }
 		h2 {
 			margin-top: 20px;
+      font-family: $font_copy;
 			margin-bottom: 40px;
 			font-weight: 300;
-			color: $blue;
+      font-size: 2.6em;
+			color: $magentadark;
 			text-transform: uppercase;
 			text-align: center;
 			@include text-shadow();
-			font-size: 3rem;
 			@include breakpoint($iphone) {
 				font-size: 2em;
 			} //breakpoint($iphone)
@@ -395,14 +428,14 @@ body {
 				padding: 0px;
 				border-bottom: 1px solid darken($snow, 20);
 				i {
-					width: 10%;
+					//width: 10%;
 					height: 100%;
 					float: left;
 					font-size: 30pt;
 					padding-top: 5px;
-					color: rgba($magentadark, 0.8);
+					color: $greylight;
 					vertical-align: middle;
-					font-weight: 300;
+					font-weight: 100;
 					@include breakpoint($tablet) {
 						font-size: 170%;
 					}
@@ -416,8 +449,10 @@ body {
 					display: inline;
 					width: 85%;
 					float: right;
+          font-weight: 300;
 					font-size: 1.1em;
 					text-align: justify;
+          color: $greymed;
 					@include breakpoint($tablet) {
 						font-size: 0.9em;
 					} //breakpoint($iphone)

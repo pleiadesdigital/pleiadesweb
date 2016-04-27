@@ -40,8 +40,8 @@ SITE HEADER
 			</div><!-- .top-header-wrapper -->	
 
 			<div class="hgroup">
-				<h1 class="site-title">Pleiades digital</h1>
-				<h2>agencia de marketing a tu medida</h2>
+				<h1 class="site-title">Pleiades</h1>
+				<h2>marketing digital hecho correctamente</h2>
 				<p><a href="#welcome"><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/arrow.png" alt="down arrow"></a></p>
 			</div>
 
