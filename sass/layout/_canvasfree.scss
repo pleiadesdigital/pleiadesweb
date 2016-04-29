@@ -60,15 +60,16 @@
 				p {
 					font-size: 1.1em;
 					text-align: justify;
-					text-transform: uppercase;
-                    @include breakpoint($desktop) {
-                      line-height: 2;
-                      font-size: 1.3em;
-                    }
-                    @include breakpoint($iphone) {
-                      line-height: 1.6;
-                      font-size: 1em;
-                    }
+					//text-transform: uppercase;
+            @include breakpoint($desktop) {
+              line-height: 2;
+              font-size: 1.3em;
+            }
+            @include breakpoint($iphone) {
+              line-height: 1.6;
+              font-size: 1em;
+              text-align: center;
+            }
 					line-height: 1.8;
 					font-weight: 300;
 					color: $greymed;
@@ -147,7 +148,7 @@
 							text-align: justify;
 							font-size: 1em;
 							font-weight: 300;
-							color: $black;
+							color: $greymed;
 						} //p
 					} //.txt-content
 				} //breakpoint($laptop 1199px)
@@ -172,6 +173,7 @@
 						width: 80%;
 						display: block;
 						margin: 20px auto;
+            color: $greymed;
 						p {
 							text-align: justify;
 							font-size: 1em;
@@ -199,6 +201,7 @@
 						width: 90%;
 						display: block;
 						margin: 20px auto;
+            color: $greymed;
 						p {
 							text-align: justify;
 							font-size: 1em;
@@ -294,7 +297,13 @@
 		height: auto;
 		.intro-info {
 			@include container();
-			padding: 50px 0px 50px;
+			padding: 50px 0px;
+      @include breakpoint($tablet) {
+        padding: 40px 0px;
+      }
+      @include breakpoint($iphone) {
+        padding: 30px 0px;
+      }
 			h2 {
 				font-family: $font_copy;
 				font-size: 2.6em;
@@ -304,18 +313,33 @@
 				text-align: center;
 				margin-bottom: 40px;
 				@include breakpoint($tablet) {
-					font-size: 1.8em;
+					font-size: 2.2em;
+          margin-bottom: 20px
 				} //breakpoint($tablet)
 				@include breakpoint($iphone) {
-					font-size: 1.4em;
+					font-size: 1.8em;
+          margin-bottom: 20px
 				} //breakpoint($iphone)
 			}
 			p {
 				text-align: center;
 				line-height: 1.6;
-				font-size: 1.1em;
-				font-weight: 300;
+				font-size: 1.2em;
+				font-weight: 200;
 				color: $grey;
+        @include breakpoint($tablet) {
+          width: 90%;
+          display: block;
+          margin: 0px auto;
+          line-height: 1.4;
+        }
+        @include breakpoint($iphone) {
+          width: 90%;
+          display: block;
+          margin: 0px auto;
+          font-size: 1.1em;
+          line-height: 1.2;
+        }
 			} //p
 		} //.intro-info
 	} //.intro
@@ -594,10 +618,15 @@
 			padding: 20px 0px;
 			font-size: 3em;
 			font-weight: 400;
-			color: $blue;
+			color: $greydark;
 			font-family: $font_copy;
 			margin-top: 10px;
 			margin-bottom: 20px;
+      @include breakpoint($iphone) {
+        font-size: 2.4em;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      } //breakpoint($iphone)
 		} //h2
 
 	// CONTACT INFO
@@ -612,7 +641,33 @@
 			width: auto;
 			margin: 0px auto;
 			text-align: center;
+      h3 {
+        font-family: $font_copy;
+        font-weight: 300;
+        color: $greymed;
+        text-transform: uppercase;
+        font-size: 2em;
+        @include breakpoint($iphone) {
+          font-size: 1.4em;
+        }
+      } //h3
+			p {
+        color: $grey;
+        font-size: 1.6em;
+        font-weight: 200;
+        @include breakpoint($iphone) {
+          font-size: 1.2em;
+        }
+				a {
+					@include single-transition();
+          font-weight: 300;
+					&:hover {
+						color: $magentadark;
+					} //&:hover
+				} //a
+			} //p
 		} //.contact-address
+
 	} //#contact-info
 	
 

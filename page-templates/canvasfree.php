@@ -139,7 +139,7 @@ get_header(); ?>
 					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>
 					<!-- CTA-button -->
 					<div class="cta-services">
-						<a href="#">Contáctanos</a>
+						<a href="http://localhost/~ronyortiz/pleiadesweb/index.php/contacto/">Contáctanos</a>
 					</div>
 				</div>
 			</article>

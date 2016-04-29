@@ -28,8 +28,8 @@
 				<?php get_sidebar('footer'); ?>
 				<div class="contact-footer">
 					<h2>Ponte en contacto</h2>
-					<p>Edif. Torre Ketal, oficina #302</p>
-					<p>Calle 15, Calacoto</p>
+					<p>Edif. Montebello, Bloque C #305</p>
+					<p>Calle 30, Cota Cota</p>
 					<p>La Paz - Bolivia</p>
 					<hr>
 					<p>Telf: +591-77799006</p>

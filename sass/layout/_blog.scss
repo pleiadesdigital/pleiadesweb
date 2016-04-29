@@ -21,6 +21,22 @@
           font-size: 1.1em;
           font-weight: 300;
           color: $grey;
+          @include breakpoint($laptop) {
+            @include container(850px);
+            display: block;
+            margin: 0px auto;
+          }
+          @include breakpoint(650px) {
+            width: 80%;
+            display: block;
+            margin: 0px auto;
+          }
+          @include breakpoint($iphone) {
+            width: 80%;
+            display: block;
+            margin: 0px auto;
+            font-size: 1.1em;
+          }
         } //p
       } //.main-header
 

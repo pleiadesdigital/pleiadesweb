@@ -54,7 +54,7 @@
 							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/marketing-digital.jpg" />
 							<div class="mask4">
 								<h2>Marketing Digital</h2>
-								<p>Consolida tu presencia en Internet, aumenta el tráfico y tus conversiones</p>
+								<p>Consolida tu presencia en Internet, aumenta el tráfico de tu sitio y tus conversiones</p>
 								<a href="http://localhost/~ronyortiz/pleiadesweb/index.php/servicios/internet-marketing/" class="info4">Leer más</a>
 							</div>
 						</div>
@@ -71,7 +71,7 @@
 					
 					<!-- CTA-button -->
 					<div class="cta-button">
-						<a href="#" class="cta-info">Contáctanos</a>
+						<a href="http://localhost/~ronyortiz/pleiadesweb/index.php/contacto/" class="cta-info">Contáctanos</a>
 					</div>
 					
 				</article>				

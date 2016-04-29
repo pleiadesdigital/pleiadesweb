@@ -24,7 +24,7 @@ get_header(); ?>
 			<header class="main-header">
 <!--			INTRO-->
 				<h2 class="page-title screen-reader-text">Nuestra biblioteca virtual</h2>
-				<p>Fancy taking your digital marketing to the next level? You’re lucky you found us…</p>
+				<p>Información sobre marketing digital, estrategia, imagen, y otros temas interesantes vitales para empresas o emprendimientos de cualquier tamaño. </p>
 			</header>
 
 			<?php

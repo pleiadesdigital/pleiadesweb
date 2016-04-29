@@ -12,23 +12,56 @@ body {
   background-color: $snow;
   margin: 0px;
   padding: 0px;
-  //margin-top: -16px;
+  @include breakpoint($iphone) {
+    display: none;
+  }
   .service-nav {
     height: auto;
     @include container(70%);
+		@include breakpoint($laptop) {
+			@include container(80%);
+		}
+		@include breakpoint($tablet) {
+			@include container(100%);
+		}
+    @include breakpoint($iphone) {
+      @include container(100%);
+    }
 		ul {
       @include clearfix();
-			@include flexbox((
-        display: flex,
-        //align-items: center,
-        justify-content: center
-			));
+      @include breakpoint($desktop) {
+        @include flexbox((
+          display: flex,
+          justify-content: center
+        ));
+      }
+      @include breakpoint($laptop) {
+        @include flexbox((
+          display: flex,
+          justify-content: center
+        ));
+      }
+      @include breakpoint($tablet) {
+        @include flexbox((
+          display: flex,
+          justify-content: center
+        ));
+      }
+
 			li {
-        /*@include flexbox((
-          flex: 1 0 auto,
-        ));*/
         text-align: center;
-        line-height: 2;
+				line-height: 2;
+				@include breakpoint($laptop) {
+					font-size: 1em;
+				}
+				@include breakpoint($tablet) {
+					font-size: 0.9em;
+				}
+        @include breakpoint($iphone) {
+          font-size: 0.9em;
+          line-height: 1.5;
+          display: block;
+        }
         a {
           display: block;
           font-weight: 400;
@@ -39,14 +72,14 @@ body {
           @include single-transition();
           @include transition-duration(0.3s);
           &:hover {
-            background-color: rgba($greylight, 0.4);
-            color: $greydark;
+            background-color: rgba($magentathin, 1);
+            color: $snow;
           }
         }
         &.current-menu-item a {
-          background-color: rgba($greylight, 0.2);
+          background-color: rgba($magentadark, 0.8);
           cursor: default;
-          color: $greydark;
+          color: $snow;
         }
 
 			} //li
@@ -67,6 +100,9 @@ body {
 			background-color: rgba($black, 0.5);
 			padding: 10% 20% 0px;
 			height: 100%;
+      @include breakpoint($iphone) {
+        padding: 10% 5% 0px;
+      }
 			h1 {
 			text-align: center;
 			color: $snow;
