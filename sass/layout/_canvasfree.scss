@@ -10,15 +10,24 @@
 
 	// PAGE Title
 	h2 {
-		text-align: center;
-		padding: 10px 0px;
-		font-size: 3em;
-		font-weight: 400;
-    margin-left: 0px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		color: $magentadark;
-		font-family: $font_copy;
+    font-family: $font_copy;
+    font-size: 2.6em;
+    font-weight: 300;
+    color: $magentadark;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    @include breakpoint($tablet) {
+      font-size: 2.2em;
+      margin-bottom: 20px
+    } //breakpoint($tablet)
+    @include breakpoint($iphone) {
+      margin-bottom: 20px;
+      padding: 0px 1em;
+      font-size: 2em;
+    } //breakpoint($iphone)
 	} //h2
 
 	// INTRO
@@ -32,7 +41,7 @@
 			padding: 0px 0px 20px;
 			.content-center {
 				margin: 20px 0px;
-                border-right: none;
+        border-right: none;
 				@include breakpoint($desktop) {
 					border-left: none;
 					width: 800px;
@@ -60,7 +69,6 @@
 				p {
 					font-size: 1.1em;
 					text-align: justify;
-					//text-transform: uppercase;
             @include breakpoint($desktop) {
               line-height: 2;
               font-size: 1.3em;
@@ -82,7 +90,7 @@
 	.about {
 		width: 100%;
 		background-color: darken($snow, 10);
-		padding-bottom: 30px;
+    padding: 1em 0px 2em;
 		.about-info {
 			@include container();
 			.about-content {
@@ -93,7 +101,6 @@
 
 				@include breakpoint($desktop) { //1200px;
 					width: 1100px;
-					margin-top: 30px;
 					padding: 0px 30px;
 					h2 {
 						font-family: $font_copy;
@@ -124,7 +131,6 @@
 
 				@include breakpoint($laptop) { //990px;
 					width: 960px;
-					margin-top: 30px;
 					padding: 0px 20px;
 					h2 {
 						font-size: 1.8em;
@@ -155,7 +161,6 @@
 
 				@include breakpoint($tablet) { //700px 989px;
 					width: 670px;
-					margin-top: 30px;
 					h2 {
 						font-size: 2em;
 						text-align: center;
@@ -317,8 +322,9 @@
           margin-bottom: 20px
 				} //breakpoint($tablet)
 				@include breakpoint($iphone) {
-					font-size: 1.8em;
-          margin-bottom: 20px
+          margin-bottom: 20px;
+          padding: 0px 1em;
+          font-size: 2em;
 				} //breakpoint($iphone)
 			}
 			p {
@@ -386,7 +392,7 @@
           @include breakpoint($iphone) {
             //@include span(1 of 1);
             height: 280px;
-            width: 280px;
+            width: auto;
             margin: 1em auto;
             display: block;
           }
@@ -420,6 +426,12 @@
                 font-weight: 400;
                 @include single-transition();
                 @include transition-duration(0.5s);
+                @include breakpoint(600px 699px) {
+                  font-size: 2em;
+                }
+                @include breakpoint(max-width 599px) {
+                  font-size: 1.6em;
+                }
 							} //h2
 						} //article
 					} //.box
@@ -655,6 +667,9 @@
         color: $grey;
         font-size: 1.6em;
         font-weight: 200;
+				@include breakpoint($tablet) {
+				font-size: 1.4em;
+			}
         @include breakpoint($iphone) {
           font-size: 1.2em;
         }
@@ -688,12 +703,13 @@
 				font-size: 18px;
 				font-weight: 500;
 				margin-bottom: 5px;
-				color: $blue;
+				color: $magentadark;
 			} //h2
 			p {
 				margin: 0px;
 				padding: 0px;
 				line-height: 1.4;
+        text-align: center;
 			} //p
 		}
 	} //#contact-map
@@ -722,6 +738,9 @@
 						@include span(1 of 2);
 						margin-bottom: 20px;
 					}
+          @include breakpoint($iphone) {
+            font-size: 1.1em;
+          }
 					@include breakpoint($iphone) {
 						display: block;
 						width: 94%;
@@ -731,8 +750,9 @@
 					}
 					text-align: center;
 					text-transform: uppercase;
-					font-size: 1.2em;
+					font-size: 1.3em;
 					overflow: hidden;
+          font-weight: 300;
 					input[type=text],
           input[type=email],
           input[type=tel] {
@@ -741,7 +761,6 @@
             font-weight: 300;
             background: rgba(lighten($greylight, 15), 0.5);
             padding: 10px;
-            margin-top: 5px;
             font-size: 1em;
             font-family: $font_copy;
             color: darken($blue, 10);
@@ -768,6 +787,10 @@
 					font-size: 1.2em;
 					margin: 20px auto 0px;
 					color: $white;
+          font-weight: 300;
+          @include breakpoint($iphone) {
+            font-size: 1.1em;
+          }
 					textarea {
 						border: none;
 						border: 3px solid $white;

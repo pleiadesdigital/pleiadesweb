@@ -95,21 +95,34 @@ body {
 	.img-str-con {
 		height: 425px;
 		width: auto;
+    @include flexbox((
+      display: flex,
+      align-items: center,
+      justify-content: center
+    ));
 		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-estrategia-consultoria.jpg");
+
 		.text-container {
-			background-color: rgba($black, 0.5);
-			padding: 10% 20% 0px;
-			height: 100%;
+			height: auto;
       @include breakpoint($iphone) {
-        padding: 10% 5% 0px;
       }
 			h1 {
-			text-align: center;
-			color: $snow;
-			font-family: $font_copy;
-			font-size: 3em;
-			font-weight: 600;
-			margin-bottom: 20px;		
+        text-align: center;
+        color: $snow;
+        font-family: $font_copy;
+        font-size: 3em;
+        font-weight: 600;
+        margin-bottom: 20px;
+        @include breakpoint($tablet) {
+          font-size: 2.8em;
+          font-weight: 400;
+          padding: 0px 2em;
+        }
+        @include breakpoint($iphone) {
+          font-size: 2.4em;
+          font-weight: 400;
+          padding: 0px 1em;
+        }
 			} //h1
 			span {
 				border-top: 1px solid $magenta;
@@ -124,6 +137,11 @@ body {
 				font-size: 1.4em;
 				font-weight: 400;
 				margin-top: 20px;
+        @include breakpoint($iphone) {
+          font-size: 1.3em;
+          font-weight: 300;
+          padding: 0px 1em;
+        }
 			} //p
 		} //.text-container
 
@@ -132,18 +150,32 @@ body {
 	.img-dis-cre {
 		height: 425px;
 		width: auto;
+    width: auto;
+    @include flexbox((
+      display: flex,
+      align-items: center,
+      justify-content: center
+    ));
 		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-diseno-creativo.jpg");
 		.text-container {
-			background-color: rgba($black, 0.5);
-			padding: 10% 20% 0px;
-			height: 100%;
+			height: auto;
 			h1 {
-			text-align: center;
-			color: $snow;
-			font-family: $font_copy;
-			font-size: 3em;
-			font-weight: 600;
-			margin-bottom: 20px;		
+        text-align: center;
+        color: $snow;
+        font-family: $font_copy;
+        font-size: 3em;
+        font-weight: 600;
+        margin-bottom: 20px;
+        @include breakpoint($tablet) {
+          font-size: 2.8em;
+          font-weight: 400;
+          padding: 0px 2em;
+        }
+        @include breakpoint($iphone) {
+          font-size: 2.4em;
+          font-weight: 400;
+          padding: 0px 1em;
+        }
 			} //h1
 			span {
         border-top: 1px solid $magenta;
@@ -165,18 +197,32 @@ body {
 	.img-des-web {
 		height: 425px;
 		width: auto;
+    width: auto;
+    @include flexbox((
+      display: flex,
+      align-items: center,
+      justify-content: center
+    ));
 		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-desarrollo-web.jpg");
 		.text-container {
-			background-color: rgba($black, 0.5);
-			padding: 10% 20% 0px;
-			height: 100%;
+			height: auto;
 			h1 {
-			text-align: center;
-			color: $snow;
-			font-family: $font_copy;
-			font-size: 3em;
-			font-weight: 600;
-			margin-bottom: 20px;		
+        text-align: center;
+        color: $snow;
+        font-family: $font_copy;
+        font-size: 3em;
+        font-weight: 600;
+        margin-bottom: 20px;
+        @include breakpoint($tablet) {
+          font-size: 2.8em;
+          font-weight: 400;
+          padding: 0px 2em;
+        }
+        @include breakpoint($iphone) {
+          font-size: 2.4em;
+          font-weight: 400;
+          padding: 0px 1em;
+        }
 			} //h1
 			span {
         border-top: 1px solid $magenta;
@@ -198,11 +244,14 @@ body {
 	.img-int-mkt {
 		height: 425px;
 		width: auto;
+    @include flexbox((
+      display: flex,
+      align-items: center,
+      justify-content: center
+    ));
 		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-internet-marketing.jpg");
 		.text-container {
-			background-color: rgba($black, 0.5);
-			padding: 10% 20% 0px;
-			height: 100%;
+			height: auto;
 			h1 {
 				text-align: center;
 				color: $snow;
@@ -210,6 +259,16 @@ body {
 				font-size: 3em;
 				font-weight: 600;
 				margin-bottom: 20px;
+        @include breakpoint($tablet) {
+          font-size: 2.8em;
+          font-weight: 400;
+          padding: 0px 2em;
+        }
+        @include breakpoint($iphone) {
+          font-size: 2.4em;
+          font-weight: 400;
+          padding: 0px 1em;
+        }
 			} //h1
 			span {
         border-top: 1px solid $magenta;

@@ -14,7 +14,7 @@
     float: none;
     clear: both;
     height: 70px;
-    margin: 20px auto 0px;
+    margin: 17px auto 0px;
     padding: 0px;
     text-align: center;
   } //breakpoint($tablet)
@@ -63,9 +63,12 @@
         overflow: hidden;
         padding: 35px 20px;
         @include transition-duration(0.7s);
-        @include breakpoint(600px 989px) {
+        @include breakpoint($tablet) {
           padding: 20px 20px;
         } //breakpoint(600px 989px)
+        @include breakpoint($iphone) {
+          font-size: 1.2em;
+        }
       } //a 1st level
       &:hover > a {
         border-top: 5px solid $magenta;

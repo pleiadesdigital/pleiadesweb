@@ -5,7 +5,7 @@
 // DOCUMENT READY
 
 	function initialize(){
-		var cpLatLng = new google.maps.LatLng(-16.539780, -68.083831);
+		var cpLatLng = new google.maps.LatLng(-16.539997, -68.062502);
 		var mapOptions = {
 			zoom: 17,
 			scrollwheel: false,
@@ -17,10 +17,10 @@
 		var marker = new google.maps.Marker({
 			position: cpLatLng,
 			map: map,
-			title: "Pleiades Digital"
+			title: "Pleiades"
 		});
 		
-		var content_string = '<h2>Pleiades Digital</h2><p>Edif. Torre Ketal, oficina #302</p><p>Calacoto | La Paz - Bolivia</p><p>Teléfono: +591-2-2916262</p>';
+		var content_string = '<h2>Pleiades - Marketing Digital</h2><p>Edif. Montebello, Bloque C #305</p><p>Calle 30, Cota Cota | La Paz - Bolivia</p><p>Teléfono: +591-2-2916262</p>';
 		var info_window = new google.maps.InfoWindow({
 			content: content_string,
 		})
