@@ -5,7 +5,7 @@
  *
  * Learn more: https://developer.wordpress.org/themes/basics/template-files/
 */
-/* line 21, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -33,7 +33,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
 .site-content .content-area:after {
   content: " ";
   display: block;
@@ -46,7 +46,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.11/sass/susy/output/support/_clearfix.scss */
+  /* line 12, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
   .site-content .content-area:after {
     content: " ";
     display: block;
