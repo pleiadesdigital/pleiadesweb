@@ -43,7 +43,7 @@ gulp.task('js', function(){
 		.pipe(concat('script.js'))
 		//.pipe(browserify())
 		.on('error', gutil.log)
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(gulp.dest('js'))
 		.pipe(connect.reload())
 });
@@ -72,7 +72,7 @@ gulp.task('sassprod', function(){
 			sass: 'sass',
 			css: '',
 			image: 'images',
-			style: 'compressed',
+			style: 'expanded',
 			comments: true,
 			require: ['susy', 'breakpoint']
 		}) //pipe(compass)

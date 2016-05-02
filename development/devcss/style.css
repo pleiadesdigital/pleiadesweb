@@ -3121,7 +3121,7 @@ body {
 /* line 33, ../../sass/layout/_testing.scss */
 #masonry #grid {
   border: 3px solid magenta;
-  margin: 0px auto;
+  margin: 0px;
 }
 /* line 12, ../../sass/mixins/_mixins-master.scss */
 #masonry #grid:before, #masonry #grid:after {
