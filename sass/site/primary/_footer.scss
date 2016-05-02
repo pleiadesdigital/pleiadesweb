@@ -17,6 +17,11 @@
           img {
             width: 40px;
             @include border-radius(10px);
+            @include single-transition();
+            @include transition-duration(0.5s);
+            &:hover {
+              background-color: $magentathin;
+            } //&:hover
           } //img
         } //li
       } //ul

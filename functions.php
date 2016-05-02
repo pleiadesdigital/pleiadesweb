@@ -131,7 +131,7 @@ function pleiadesweb_scripts() {
 	wp_enqueue_script("google-maps-scripts", get_stylesheet_directory_uri() . '/js/map.js', array('jquery'), true);
 
 	//MASONRY
-	wp_enqueue_script("pleiades-masonry", get_template_directory_uri() . '/js/masonry-settings', array('masonry'), '20160314', true);
+	wp_enqueue_script("pleiades-masonry", get_template_directory_uri() . '/js/masonry-settings.js', array('masonry'), '20160314', true);
 
 
 

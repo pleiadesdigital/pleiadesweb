@@ -29,7 +29,7 @@
 
 				  <section id="design">
 					  <div class="view view-tenth">
-						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/diseño-creativo.jpg" />
+						<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/diseno-creativo.jpg" />
 						<div class="mask2">
 							<h2>Diseño Creativo</h2>
 							<p>Haga que su diseño destaque para aquellos que más importan</p>

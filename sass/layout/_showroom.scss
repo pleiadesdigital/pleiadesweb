@@ -1,112 +1,112 @@
 body {
-	position: absolute;
-	width: 100%;
-	height: 100%;	
+position: absolute;
+width: 100%;
+height: 100%;
 }
-
 
 // SERVICE MENU
 #serv-menu {
-  width: 100%;
-  height: auto;
-  background-color: $snow;
-  margin: 0px;
-  padding: 0px;
-  @include breakpoint($iphone) {
-    display: none;
-  }
-  .service-nav {
-    height: auto;
-    @include container(70%);
-		@include breakpoint($laptop) {
-			@include container(80%);
-		}
-		@include breakpoint($tablet) {
-			@include container(100%);
-		}
-    @include breakpoint($iphone) {
-      @include container(100%);
-    }
-		ul {
-      @include clearfix();
-      @include breakpoint($desktop) {
-        @include flexbox((
-          display: flex,
-          justify-content: center
-        ));
-      }
-      @include breakpoint($laptop) {
-        @include flexbox((
-          display: flex,
-          justify-content: center
-        ));
-      }
-      @include breakpoint($tablet) {
-        @include flexbox((
-          display: flex,
-          justify-content: center
-        ));
-      }
+width: 100%;
+height: auto;
+background-color: $snow;
+margin: 0px;
+padding: 0px;
+@include breakpoint($iphone) {
+display: none;
+}
+.service-nav {
+height: auto;
+@include container(70%);
+@include breakpoint($laptop) {
+@include container(80%);
+}
+@include breakpoint($tablet) {
+@include container(100%);
+}
+@include breakpoint($iphone) {
+@include container(100%);
+}
+ul {
+@include clearfix();
+@include breakpoint($desktop) {
+@include flexbox((
+display: flex,
+justify-content: center
+));
+}
+@include breakpoint($laptop) {
+@include flexbox((
+display: flex,
+justify-content: center
+));
+}
+@include breakpoint($tablet) {
+@include flexbox((
+display: flex,
+justify-content: center
+));
+}
 
-			li {
-        text-align: center;
-				line-height: 2;
-				@include breakpoint($laptop) {
-					font-size: 1em;
-				}
-				@include breakpoint($tablet) {
-					font-size: 0.9em;
-				}
-        @include breakpoint($iphone) {
-          font-size: 0.9em;
-          line-height: 1.5;
-          display: block;
-        }
-        a {
-          display: block;
-          font-weight: 400;
-          padding: 0.7em 2em;
-          width: 100%;
-          height: 100%;
-          color: $greymed;
-          @include single-transition();
-          @include transition-duration(0.3s);
-          &:hover {
-            background-color: rgba($magentathin, 1);
-            color: $snow;
-          }
-        }
-        &.current-menu-item a {
-          background-color: rgba($magentadark, 0.8);
-          cursor: default;
-          color: $snow;
-        }
+li {
+text-align: center;
+line-height: 2;
+@include breakpoint($laptop) {
+font-size: 1em;
+}
+@include breakpoint($tablet) {
+font-size: 0.9em;
+}
+@include breakpoint($iphone) {
+font-size: 0.9em;
+line-height: 1.5;
+display: block;
+}
+a {
+display: block;
+font-weight: 400;
+padding: 0.7em 2em;
+width: 100%;
+height: 100%;
+color: $greymed;
+@include single-transition();
+@include transition-duration(0.3s);
+&:hover {
+background-color: rgba($magentathin, 1);
+color: $snow;
+}
+}
+&.current-menu-item a {
+background-color: rgba($magentadark, 0.8);
+cursor: default;
+color: $snow;
+}
 
-			} //li
-		} //ul
-  } //.service-nav
+} //li
+} //ul
+} //.service-nav
 } //#serv-menu
 
 // IMAGE 
 #image-showroom {
-	min-height: 400px;
+  min-height: 400px;
 
-	//BACKGROUND IMAGES
-	.img-str-con {
-		height: 425px;
-		width: auto;
+  //BACKGROUND IMAGES
+  .img-str-con {
+    height: 425px;
+    width: auto;
     @include flexbox((
       display: flex,
       align-items: center,
       justify-content: center
     ));
-		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-estrategia-consultoria.jpg");
+    @include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-estrategia-consultoria.jpg");
 
-		.text-container {
-			height: auto;
+    .text-container {
+      height: auto;
       @include breakpoint($iphone) {
+        width: 90%;
       }
-			h1 {
+      h1 {
         text-align: center;
         color: $snow;
         font-family: $font_copy;
@@ -117,49 +117,51 @@ body {
           font-size: 2.8em;
           font-weight: 400;
           padding: 0px 2em;
-        }
+        } //breakpoint($tablet)
         @include breakpoint($iphone) {
           font-size: 2.4em;
           font-weight: 400;
           padding: 0px 1em;
-        }
-			} //h1
-			span {
-				border-top: 1px solid $magenta;
-				display: block;
-				margin: 0px auto;
-				width: 70%;
-			}
-			p {
-				text-align: center;
-				color: $white;
-				font-family: $font_copy;
-				font-size: 1.4em;
-				font-weight: 400;
-				margin-top: 20px;
+        } //breakpoint($iphone)
+      } //h1
+      span {
+        border-top: 1px solid $magenta;
+        display: block;
+        margin: 0px auto;
+        width: 70%;
+      } //span
+      p {
+        text-align: center;
+        color: $white;
+        font-family: $font_copy;
+        font-size: 1.4em;
+        font-weight: 400;
+        margin-top: 20px;
         @include breakpoint($iphone) {
           font-size: 1.3em;
           font-weight: 300;
           padding: 0px 1em;
-        }
-			} //p
-		} //.text-container
+        } //breakpoint($iphone)
+      } //p
+    } //.text-container
 
-	} //.img-str-con
+  } //.img-str-con
 
-	.img-dis-cre {
-		height: 425px;
-		width: auto;
+  .img-dis-cre {
+    height: 425px;
     width: auto;
     @include flexbox((
       display: flex,
       align-items: center,
       justify-content: center
     ));
-		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-diseno-creativo.jpg");
-		.text-container {
-			height: auto;
-			h1 {
+    @include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-diseno-creativo.jpg");
+    .text-container {
+      height: auto;
+      @include breakpoint($iphone) {
+        width: 90%;
+      }
+      h1 {
         text-align: center;
         color: $snow;
         font-family: $font_copy;
@@ -170,43 +172,46 @@ body {
           font-size: 2.8em;
           font-weight: 400;
           padding: 0px 2em;
-        }
+        } //breakpoint($tablet)
         @include breakpoint($iphone) {
           font-size: 2.4em;
           font-weight: 400;
           padding: 0px 1em;
-        }
-			} //h1
-			span {
+        } //breakpoint($iphone)
+      } //h1
+      span {
         border-top: 1px solid $magenta;
-				display: block;
-				margin: 0px auto;
-				width: 70%;
-			}
-			p {
-				text-align: center;
-				color: $white;
-				font-family: $font_copy;
-				font-size: 1.4em;
-				font-weight: 400;
-				margin-top: 20px;
-			} //p
-		} //.text-container
-	} //.img-dis-gra
+        display: block;
+        margin: 0px auto;
+        width: 70%;
+      } //span
+      p {
+        text-align: center;
+        color: $white;
+        font-family: $font_copy;
+        font-size: 1.4em;
+        font-weight: 400;
+        margin-top: 20px;
+      } //p
+    } //.text-container
+  } //.img-dis-gra
 
-	.img-des-web {
-		height: 425px;
-		width: auto;
+  .img-des-web {
+    height: 425px;
+    width: auto;
     width: auto;
     @include flexbox((
       display: flex,
       align-items: center,
       justify-content: center
     ));
-		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-desarrollo-web.jpg");
-		.text-container {
-			height: auto;
-			h1 {
+    @include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-desarrollo-web.jpg");
+    .text-container {
+      height: auto;
+      @include breakpoint($iphone) {
+        width: 90%;
+      }
+      h1 {
         text-align: center;
         color: $snow;
         font-family: $font_copy;
@@ -217,152 +222,155 @@ body {
           font-size: 2.8em;
           font-weight: 400;
           padding: 0px 2em;
-        }
+        } //breakpoint($tablet)
         @include breakpoint($iphone) {
           font-size: 2.4em;
           font-weight: 400;
           padding: 0px 1em;
-        }
-			} //h1
-			span {
+        } //breakpoint($iphone)
+      } //h1
+      span {
         border-top: 1px solid $magenta;
-				display: block;
-				margin: 0px auto;
-				width: 70%;
-			}
-			p {
-				text-align: center;
-				color: $white;
-				font-family: $font_copy;
-				font-size: 1.4em;
-				font-weight: 400;
-				margin-top: 20px;
-			} //p
-		} //.text-container
-	} //.img-des-web
+        display: block;
+        margin: 0px auto;
+        width: 70%;
+      } //span
+      p {
+        text-align: center;
+        color: $white;
+        font-family: $font_copy;
+        font-size: 1.4em;
+        font-weight: 400;
+        margin-top: 20px;
+      } //p
+    } //.text-container
+  } //.img-des-web
 
-	.img-int-mkt {
-		height: 425px;
-		width: auto;
+  .img-int-mkt {
+    height: 425px;
+    width: auto;
     @include flexbox((
       display: flex,
       align-items: center,
       justify-content: center
     ));
-		@include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-internet-marketing.jpg");
-		.text-container {
-			height: auto;
-			h1 {
-				text-align: center;
-				color: $snow;
-				font-family: $font_copy;
-				font-size: 3em;
-				font-weight: 600;
-				margin-bottom: 20px;
+    @include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-internet-marketing.jpg");
+    .text-container {
+      height: auto;
+      @include breakpoint($iphone) {
+        width: 90%;
+      }
+      h1 {
+        text-align: center;
+        color: $snow;
+        font-family: $font_copy;
+        font-size: 3em;
+        font-weight: 600;
+        margin-bottom: 20px;
         @include breakpoint($tablet) {
           font-size: 2.8em;
           font-weight: 400;
           padding: 0px 2em;
-        }
+        } //breakpoint($tablet)
         @include breakpoint($iphone) {
           font-size: 2.4em;
           font-weight: 400;
           padding: 0px 1em;
-        }
-			} //h1
-			span {
+        } //breakpoint($iphone)
+      } //h1
+      span {
         border-top: 1px solid $magenta;
-				display: block;
-				margin: 0px auto;
-				width: 70%;
-			}
-			p {
-				text-align: center;
-				color: $white;
-				font-family: $font_copy;
-				font-size: 1.4em;
-				font-weight: 400;
-				margin-top: 20px;
-			} //p
-		} //.text-container
-	} //.img-mkt-dig
-	
+        display: block;
+        margin: 0px auto;
+        width: 70%;
+      } //span
+      p {
+        text-align: center;
+        color: $white;
+        font-family: $font_copy;
+        font-size: 1.4em;
+        font-weight: 400;
+        margin-top: 20px;
+      } //p
+    } //.text-container
+  } //.img-mkt-dig
+
 } //#intro-showroom
 
 // WHY TRUST US
 #why-trust-wrap {
-  width: 100%;
-  .why-trust-content {
-    @include container(900px);
-    padding: 3em 3em;
-    text-align: center;
-    h2 {
-      font-family: $font_copy;
-      font-weight: 300;
-      text-transform: uppercase;
-      color: $magentadark;
-      font-size: 1.6em;
-      margin-bottom: 1em;
-    } //h2
-    p {
-      font-weight: 300;
-      text-align: center;
-      font-size: 1.2em;
-      line-height: 1.3;
-    } //p
-  } //.why-trust-content
+width: 100%;
+.why-trust-content {
+@include container(900px);
+padding: 3em 3em;
+text-align: center;
+h2 {
+font-family: $font_copy;
+font-weight: 300;
+text-transform: uppercase;
+color: $magentadark;
+font-size: 1.6em;
+margin-bottom: 1em;
+} //h2
+p {
+font-weight: 300;
+text-align: center;
+font-size: 1.2em;
+line-height: 1.3;
+} //p
+} //.why-trust-content
 } //#why-trust-wrap
 
 // DESCRIPCION SERVICIO
 #descripcion-servicio {
-	min-height: 500px;
-  background-color: lighten($greylight, 15);
-  .desc-serv-wrap {
-    @include container(750px);
-    padding: 2em;
-    h2 {
-      font-family: $font_copy;
-      color: $greymed;
-      font-size: 1.7em;
-      font-weight: 300;
-      //display: inline;
-      border-bottom: 1px solid $magentamed;
-      line-height: 1.8;
-    } //h2
-		h3 {
-      font-family: $font_copy;
-      color: $magentadark;
-      font-size: 1.4em;
-      font-weight: 100;
-      display: block;
-      line-height: 1.3;
-      margin-bottom: 0px;
-    } //h3
-    p {
-      margin: 0.5em 0px 1em;
-      line-height: 1.5;
-      color: $greymed;
-      text-align: justify;
-      font-size: 1.1em;
-      font-weight: 300;
-    } //p
-    ul {
-      margin-top: 1em;
-      li {
-        margin-bottom: 1em;
-        margin-left: 2em;
-        font-size: 1em;
-        list-style-type: square;
-        line-height: 1.5;
-        color: $greymed;
-        font-weight: 300;
-      } //li
-    } //ul
+min-height: 500px;
+background-color: lighten($greylight, 15);
+.desc-serv-wrap {
+@include container(750px);
+padding: 2em;
+h2 {
+font-family: $font_copy;
+color: $greymed;
+font-size: 1.7em;
+font-weight: 300;
+//display: inline;
+border-bottom: 1px solid $magentamed;
+line-height: 1.8;
+} //h2
+h3 {
+font-family: $font_copy;
+color: $magentadark;
+font-size: 1.4em;
+font-weight: 100;
+display: block;
+line-height: 1.3;
+margin-bottom: 0px;
+} //h3
+p {
+margin: 0.5em 0px 1em;
+line-height: 1.5;
+color: $greymed;
+text-align: justify;
+font-size: 1.1em;
+font-weight: 300;
+} //p
+ul {
+margin-top: 1em;
+li {
+margin-bottom: 1em;
+margin-left: 2em;
+font-size: 1em;
+list-style-type: square;
+line-height: 1.5;
+color: $greymed;
+font-weight: 300;
+} //li
+} //ul
 
 
 
 
-  } //.desc-serv-wrap
+} //.desc-serv-wrap
 } //#descripcion-servicio
 
 
