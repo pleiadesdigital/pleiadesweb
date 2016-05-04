@@ -43,7 +43,7 @@ SITE HEADER
 				<h1 class="site-title">Pleiades</h1>
 				<h2>marketing digital hecho correctamente</h2>
 				<p><a href="#welcome"><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/icons/arrow.png" alt="down arrow"></a></p>
-			</div>
+			</div><!--class="hgroup"-->
 
 		</div><!-- id="header-wrapper" class="fullheight" -->
 

@@ -15,13 +15,13 @@ body {
     @include breakpoint ($laptop) {
       @include container(950px);
       border-left: none;
-    }
+    } //breakpoint ($laptop)
     @include breakpoint($tablet) {
       @include container(850px);
-    }
+    } //breakpoint($tablet)
     @include breakpoint($iphone) {
       @include container(100%);
-    }
+    } //breakpoint($iphone)
 		h2 {
       font-family: $font_copy;
       text-transform: uppercase;
@@ -32,7 +32,7 @@ body {
       margin-bottom: 20px;
       @include breakpoint($iphone) {
         font-size: 2em;
-      }
+      } //breakpoint($iphone)
     } //h2
     p {
       font-family: $font_copy;
@@ -53,12 +53,12 @@ body {
         font-size: 1.4em;
         padding: 0px 1em;
         line-height: 1.4;
-      }
+      } //breakpoint($tablet)
       @include breakpoint($iphone) {
         font-size: 1.2em;
         padding: 0px 1em;
         line-height: 1.4;
-      }
+      } //breakpoint($iphone)
     } //p
 	} //article
 } //#welcome

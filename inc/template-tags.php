@@ -13,9 +13,6 @@ if ( ! function_exists( 'pleiadesweb_posted_on' ) ) :
  */
 function pleiadesweb_posted_on() {
 
-
-
-
 	// POSTED ON
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
@@ -48,12 +45,11 @@ function pleiadesweb_posted_on() {
 
 	// COMMENTS
 
-    if (! post_password_required() && (comments_open() || '0' != get_comments_number())) { 
+    if (!post_password_required() && (comments_open() || '0' != get_comments_number())) {
         echo ' | <span class="comments-link">';
         comments_popup_link( __('Deja un comentario', 'my-simone'), __('1 comentario', 'my-simone'), __('% comentarios', 'my-simone'));
         echo '</span>';
-    }
-
+    } //!post_password_required()
 }
 endif;
 
