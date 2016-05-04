@@ -32,7 +32,7 @@ get_header(); ?>
 					<div class="about-content">
 						<h2>¿Por qué trabajar con nosotros?</h2>
 						<div class="about-image">
-							<img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/empresa/la-empresa-pleiades-digital.jpg" alt="Servicios de Marketing de vanguardia">
+							<img src="http://pleiadesdigital.com/wp-content/themes/pleiadesweb/images/empresa/la-empresa-pleiades-digital.jpg" alt="Servicios de Marketing de vanguardia">
 						</div>
 						<div class="txt-content">
 							<?php $query = new WP_Query(); ?>
@@ -49,7 +49,7 @@ get_header(); ?>
 					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>
 					<p>Solicita más información o una cotización</p>
 					<div class="cta-button">
-						<a href="http://localhost/~ronyortiz/pleiadesweb/index.php/contacto/">Contáctanos</a>
+						<a href="http://pleiadesdigital.com/contacto/">Contáctanos</a>
 					</div> <!-- .cta-button -->
 				</div>
 			</section>
@@ -68,6 +68,7 @@ get_header(); ?>
 
 <!-- 	SERVICIOS -->
 <?php } elseif (is_page('servicios')) { ?>
+
 		<div id="servicios">
 
 			<!-- INTRO -->
@@ -139,13 +140,13 @@ get_header(); ?>
 					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>
 					<!-- CTA-button -->
 					<div class="cta-services">
-						<a href="http://localhost/~ronyortiz/pleiadesweb/index.php/contacto/">Contáctanos</a>
+						<a href="http://pleiadesdigital.com/contacto/">Contáctanos</a>
 					</div>
 				</div>
 			</article>
 	
 			<!-- CLIENTES -->
-			<article class="clientes">
+			<section class="clientes">
 				<div class="clientes-info">
 					<h2>Portafolio</h2>
 
@@ -197,13 +198,14 @@ get_header(); ?>
 
           <?php wp_reset_postdata(); ?>
 				</div>
-			</article>
+			</section>
 			
 		</div><!-- id="servicios" -->
 
 <!-- 	PREGUNTAS FRECUENTES -->
 <?php } elseif (is_page('preguntas-frecuentes')) { ?>
 		<?php the_post(); ?>
+
 		<div id="preguntas-frecuentes">
 
 			<!-- Page title -->
@@ -216,6 +218,7 @@ get_header(); ?>
 <!-- 	CONTACTO -->
 <?php } elseif (is_page('contacto')) { ?>
 		<?php the_post(); ?>
+
 		<div id="contact-main">
 
 			<!-- Page title -->

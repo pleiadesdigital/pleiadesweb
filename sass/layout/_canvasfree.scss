@@ -582,6 +582,7 @@
 			} //breakpoint($iphone)
 		} //h2
 		.clientes-info {
+			padding: 30px 10%;
 			@include container(80%);
 			@include breakpoint(1200px) {
 				@include container(70%);
@@ -592,9 +593,8 @@
 			@include breakpoint($iphone) {
 				@include container();
 			}
-			padding: 30px 10%;
-		} //.extra-info
-	} //.extra
+		} //.clientes-info
+	} //.clientes
 } //#servicios
 
 /*******************************************

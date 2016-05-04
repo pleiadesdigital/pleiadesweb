@@ -523,3 +523,41 @@ body {
 		} //ul
 	} //.porque-nos-content
 } //#porque-nos
+
+// PORTAFOLIO
+.home {
+  .clientes {
+    @include background-image(linear-gradient(bottom, darken($snow, 20), $white));
+    width: 100%;
+    padding-top: 30px;
+    h2 {
+      font-family: $font_copy;
+      font-size: 2.6em;
+      font-weight: 300;
+      color: $magentadark;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 40px;
+      @include breakpoint($tablet) {
+        font-size: 1.8em;
+      } //breakpoint($tablet)
+      @include breakpoint($iphone) {
+        font-size: 1.4em;
+      } //breakpoint($iphone)
+    } //h2
+    .clientes-info {
+      padding: 30px 10%;
+      @include container(80%);
+      @include breakpoint(1200px) {
+        @include container(70%);
+      }
+      @include breakpoint($tablet) {
+        @include container(90%);
+      }
+      @include breakpoint($iphone) {
+        @include container();
+      }
+    } //.clientes-info
+  } //.clientes
+} //.home
+
