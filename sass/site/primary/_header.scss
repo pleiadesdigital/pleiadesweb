@@ -1,8 +1,8 @@
 header {
 	position: relative;
 	.normalheader {
-    background: url('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg') repeat left top;
-    background-size: contain;
+    background: url('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency-sq.jpg') no-repeat left top;
+    background-size: 100% auto;
     @include breakpoint ($desktop) {
       @include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg');
     } //breakpoint ($desktop)
@@ -142,8 +142,14 @@ header {
 	} //.normalheader
 
 	.fullheight {
-    background: rgba($black, 0.7) url('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg') no-repeat left top;
-    background-size: contain;
+
+    @include breakpoint ($tablet) {
+      background: rgba($black, 0.7) url('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency-sq.jpg') no-repeat left top;
+      background-size: 100% 100%;
+    }
+		@include breakpoint ($iphone) {
+			background: rgba($black, 0.7) url('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency-sq2.jpg') repeat left top;
+		}
     @include breakpoint ($desktop) {
       @include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg');
     }
