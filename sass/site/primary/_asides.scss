@@ -17,7 +17,7 @@
         line-height: 1.4;
         font-size: 1.1em;
         margin-bottom: 5px;
-        color: $bluelight;
+        color: $magentamed;
       } //.widget-title
       li {
         padding: 10px 0px 5px;
@@ -44,7 +44,7 @@
         @include single-transition();
         &:focus {
           outline: none;
-          border: 1px solid lighten($bluelight, 20);
+          border: 1px solid lighten($magentamed, 20);
         }
       }
       .search-submit {
@@ -82,10 +82,10 @@
           cursor: pointer;
         }
         &:hover a {
-          color: $bluelight;
+          color: $magentamed;
         }
         &:hover::before {
-          color: $bluelight;
+          color: $magentamed;
         }
       } //li
     } //.widget_recent_entries
@@ -104,10 +104,10 @@
           cursor: pointer;
         } //&:hover
         &:hover a {
-          color: $bluelight;
+          color: $magentamed;
         } //&:hover a
         &:hover::before {
-          color: $bluelight;
+          color: $magentamed;
         } // &:hover::before
       } //li
     } //.widget_categories
@@ -126,10 +126,10 @@
           cursor: pointer;
         } //&:hover
         &:hover a {
-          color: $bluelight;
+          color: $magentamed;
         } //&:hover a
         &:hover::before {
-          color: $bluelight;
+          color: $magentamed;
         } // &:hover::before
       } //li
     } //.widget_recent_comments
