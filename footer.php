@@ -28,11 +28,12 @@
 				<?php get_sidebar('footer'); ?>
 				<div class="contact-footer">
 					<h2>Ponte en contacto</h2>
-					<p>Edif. Montebello, Bloque C #305</p>
-					<p>Calle 30, Cota Cota</p>
+					<p>Av. Jose Maria Aguirre Achá</p>
+					<p>Esq. calle 7, Los Pinos</p>
 					<p>La Paz - Bolivia</p>
 					<hr>
-					<p>Telf: +591-77799006</p>
+					<p>Telf: +591-2-2792197</p>
+					<p>Móvil: +591-77799006</p>
 					<p>Correo Electrónico: <a href="mailto:info@pleiadesdigital.com" target="_top">info@pleiadesdigital.com</a></p>
 				</div><!--class="contact-footer"-->
 			</div><!--class="footer-content"-->

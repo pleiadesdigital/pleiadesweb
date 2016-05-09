@@ -422,7 +422,7 @@
                 padding: 0px;
                 margin: 0px;
                 font-family: $font_copy;
-                color: $black;
+                color: darken($white, 15);
                 font-weight: 400;
                 @include single-transition();
                 @include transition-duration(0.5s);
@@ -727,32 +727,29 @@
 			@include container();
 			@include clearfix();
 			form {
-				width: 80%;
+				width: 90%;
 				margin: 0px auto;
 				p.input {
-					float: left;
-					display: inline;
+					display: inline-block;
 					padding: 0px;
-					color: $white;
-					@include breakpoint(min-width 700px) {
-						@include span(1 of 2);
-						margin-bottom: 20px;
-					}
-          @include breakpoint($iphone) {
-            font-size: 1.1em;
-          }
+					color: $snow;
+          @include span(1 of 2);
+          min-height: 110px;
+          font-weight: 200;
+          font-size: 1.4em;
+          font-family: $font_copy;
 					@include breakpoint($iphone) {
 						display: block;
 						width: 94%;
 						clear: both;
 						float: none;
 						margin: 20px auto 20px;
+            font-size: 1.1em;
+            min-height: auto;
 					}
 					text-align: center;
-					text-transform: uppercase;
-					font-size: 1.3em;
 					overflow: hidden;
-          font-weight: 300;
+
 					input[type=text],
           input[type=email],
           input[type=tel] {
@@ -774,6 +771,13 @@
             	background-color: lighten($yellowmed, 40);
             }
           } //input[type=text], input[type=email], input[type=tel],textarea, button
+					.wpcf7-not-valid-tip {
+						color: $magentalight;
+            font-size: 0.8em;
+            font-weight: 300;
+            text-align: left;
+            margin-top: 5px;
+					}
 				} //p.input
 				p.last {
 					margin-right: 0px;
@@ -783,11 +787,10 @@
 					clear: both;
 					float: none;
 					text-align: center;
-					text-transform: uppercase;
-					font-size: 1.2em;
+					font-size: 1.4em;
 					margin: 20px auto 0px;
-					color: $white;
-          font-weight: 300;
+					color: $snow;
+          font-weight: 200;
           @include breakpoint($iphone) {
             font-size: 1.1em;
           }
@@ -798,7 +801,7 @@
             background: rgba(lighten($greylight, 15), 0.5);
             padding: 10px;
             margin-top: 5px;
-            font-size: 1.3em;
+            font-size: 1em;
             font-family: $font_copy;
             color: darken($blue, 10);
             width: 100%;
@@ -845,6 +848,15 @@
 					}
 				} //p.send
 
+        //ALERT BOX
+        div.wpcf7-validation-errors {
+          border: 2px solid $magenta;
+          width: 93%;
+          margin: 0px auto;
+          color: $snow;
+          font-size: 1.3em;
+          font-weight: 200;
+        }
 			} //form
 		} //.wpcf7
 	} //#contact-form 

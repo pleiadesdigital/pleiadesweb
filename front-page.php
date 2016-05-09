@@ -14,6 +14,9 @@
 	<section class="scene" id="services">
 	<h2>Nuestros Servicios</h2>
 	<h3>Construimos tu marca con un enfoque de 360˚</h3>
+<!--    <div id="fb-root"></div>-->
+		<div class="fb-like" data-href="https://www.facebook.com/Pleiades-Digital-471671673034420/" data-width="500px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+
 	<div id="showroom">
 
 	<section id="strategy">

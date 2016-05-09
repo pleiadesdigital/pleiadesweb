@@ -5,7 +5,7 @@
 // DOCUMENT READY
 
 	function initialize(){
-		var cpLatLng = new google.maps.LatLng(-16.539997, -68.062502);
+		var cpLatLng = new google.maps.LatLng(-16.545004, -68.071784);
 		var mapOptions = {
 			zoom: 17,
 			scrollwheel: false,
@@ -20,7 +20,7 @@
 			title: "Pleiades"
 		});
 		
-		var content_string = '<h2>Pleiades - Marketing Digital</h2><p>Edif. Montebello, Bloque C #305</p><p>Calle 30, Cota Cota | La Paz - Bolivia</p><p>Teléfono: +591-2-2916262</p>';
+		var content_string = '<h2>Pleiades - Marketing Digital</h2><p>Av. Jose Maria Aguirre Achá	Esq. calle 7</p><p>Los Pinos | La Paz - Bolivia</p><p>Teléfono: +591-2-2916262</p>';
 		var info_window = new google.maps.InfoWindow({
 			content: content_string,
 		})
