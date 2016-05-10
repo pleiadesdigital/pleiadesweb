@@ -665,10 +665,10 @@
       } //h3
 			p {
         color: $grey;
-        font-size: 1.6em;
+        font-size: 1.3em;
         font-weight: 200;
 				@include breakpoint($tablet) {
-				font-size: 1.4em;
+				font-size: 1.2em;
 			}
         @include breakpoint($iphone) {
           font-size: 1.2em;

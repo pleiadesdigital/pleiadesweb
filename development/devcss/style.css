@@ -2384,13 +2384,13 @@ body {
 /* line 666, ../../sass/layout/_canvasfree.scss */
 #contact-main #contact-info .contact-address p {
   color: #7f7f7f;
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 200;
 }
 @media (min-width: 700px) and (max-width: 989px) {
   /* line 666, ../../sass/layout/_canvasfree.scss */
   #contact-main #contact-info .contact-address p {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 }
 @media (max-width: 699px) {
