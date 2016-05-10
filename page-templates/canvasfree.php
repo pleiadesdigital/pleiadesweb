@@ -68,7 +68,6 @@ get_header(); ?>
 
 <!-- 	SERVICIOS -->
 <?php } elseif (is_page('servicios')) { ?>
-
 		<div id="servicios">
 
 			<!-- INTRO -->
@@ -205,7 +204,6 @@ get_header(); ?>
 <!-- 	PREGUNTAS FRECUENTES -->
 <?php } elseif (is_page('preguntas-frecuentes')) { ?>
 		<?php the_post(); ?>
-
 		<div id="preguntas-frecuentes">
 
 			<!-- Page title -->
@@ -218,7 +216,6 @@ get_header(); ?>
 <!-- 	CONTACTO -->
 <?php } elseif (is_page('contacto')) { ?>
 		<?php the_post(); ?>
-
 		<div id="contact-main">
 
 			<!-- Page title -->
@@ -238,16 +235,16 @@ get_header(); ?>
 					<p>Correo Electrónico: <a href="mailto:info@pleiadesdigital.com" target="_top">info@pleiadesdigital.com</a></p>
 				</div><!-- .contact-address -->
 			</div><!-- #contact-info -->
-			
-			<!-- Map -->
-			<div id="contact-map">
-				<div id="map-canvas"></div>
-			</div><!-- id=contact-map -->
 
 			<!-- FORM -->
 			<div class="contact-form">
 				<?php the_content(); ?>
-			</div>
+			</div><!--class="contact-form"-->
+
+			<!-- Map -->
+			<div id="contact-map">
+				<div id="map-canvas"></div>
+			</div><!-- id=contact-map -->
 
 		</div><!-- id="contact-main" -->
 <?php } ?>
