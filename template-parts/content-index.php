@@ -38,7 +38,7 @@
 
         <footer class="entry-footer continue-reading">
             <div class="continue-reading">
-                <a href="<?php echo get_permalink(); ?>" title="<?php echo __('Continue Reading ', 'pleiadesweb') . get_the_title() ?>" rel="bookmark">Continue reading&nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo get_permalink(); ?>" title="<?php echo __('Continue Reading ', 'pleiadesweb') . get_the_title() ?>" rel="bookmark">Continue leyendo&nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </footer><!-- .entry-footer -->
     </div>

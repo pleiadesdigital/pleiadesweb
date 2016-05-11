@@ -36,7 +36,7 @@ body {
     } //h2
     p {
       font-family: $font_copy;
-      color: $grey;
+      color: $greydark;
       font-weight: 200;
       font-size: 1.6em;
       display: block;
@@ -181,13 +181,13 @@ body {
 				} //img
 				h2 {
 					font-family: $font_copy;
-					color: #FFFFFF;
+					color: $white;
 					text-align: center;
 					position: relative;
 					font-size: 1.6em;
 					padding: 15px 10px;
-					background: rgba(0, 0, 0, 0.8);
-					margin: 20px 0px 20px -10px;
+					background: rgba(0, 0, 0, 0.7);
+					margin: 15px 0px 20px -10px;
 					text-transform: none;
 					font-weight: 200;
           @include breakpoint($laptop) {
@@ -378,11 +378,17 @@ body {
 	margin: 0px;
 	width: 100%;
 	min-height: 300px;
-	padding-top: 50px;
+	padding-top: 30px;
 	@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax1.jpg');
+  @include breakpoint($tablet) {
+    background-attachment: scroll;
+  }
+  @include breakpoint($iphone) {
+    background-attachment: scroll;
+  }
 	.cta-front {
 		@include container(70%);
-		padding: 30px 0px;
+		padding: 20px 0px;
         border-right: none;
         @include breakpoint($laptop) {
           border-left: none;
@@ -394,35 +400,46 @@ body {
 		h3 {
 			text-align: center;
 			color: $snow;
-			@include breakpoint($iphone) {
-				font-size: 1.4em;
-				@include text-shadow(0, 0, 0, 'false','transparent');	
-			}
-			text-transform: lowercase;
 			font-family: $font-copy;
 			@include text-shadow();
-			font-weight: 300;
-			font-size: 1.8em;
+			font-weight: 200;
+			font-size: 2.3em;
+      margin-bottom: 2em;
+      @include breakpoint($iphone) {
+        font-size: 1.4em;
+        @include text-shadow(0, 0, 0, 'false','transparent');
+      }
 		} //h3
+    p {
+      text-align: center;
+      color: $snow;
+      font-size: 1.8em;
+      font-weight: 200;
+      margin-top: 1.5em;
+    } //p
+
 		.cta-button {
 			text-align: center;
-			margin-top: 40px;
+      display: block;
+      margin-top: 3em;
 			a {
-				border: 3px solid $snow;
+				border: 3px solid $magenta;
 				@include border-radius(15px); 
 				padding: 10px 25px; 
 				color: $snow;
 				font-weight: 600;
+        //background-color: rgba($magentadark, 0.8);
 				@include single-transition();
 				@include transition-duration(0.5s);
 				&:hover {
 					border: 3px solid $magentamed;
 					//@include background-image(linear-gradient(top left, rgba($bluemed, 0.7), darken(rgba($blue, 0.7), 20)));
-					background-color: rgba($magentadark, 0.3);
-					color: $snow;
+					background-color: rgba($magentadark, 0.5);
+					color: $white;
 				} //&:hover 
 			} //a
 		} //.cta-button
+
 	} //.cta-front
 } //#cta-frontpage
 
@@ -437,20 +454,47 @@ body {
         @include breakpoint($laptop) {
           border-left: none;
         }
-		h2 {
-			margin-top: 20px;
+    h2 {
       font-family: $font_copy;
-			margin-bottom: 40px;
-			font-weight: 300;
       font-size: 2.6em;
-			color: $magentadark;
-			text-transform: uppercase;
-			text-align: center;
-			@include text-shadow();
-			@include breakpoint($iphone) {
-				font-size: 2em;
-			} //breakpoint($iphone)
-		} //h2
+      font-weight: 300;
+      color: $magentadark;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 40px;
+      @include breakpoint($tablet) {
+        font-size: 1.8em;
+      } //breakpoint($tablet)
+      @include breakpoint($iphone) {
+        font-size: 1.4em;
+      } //breakpoint($iphone)
+    } //h2
+    p {
+      font-family: $font_copy;
+      color: $greydark;
+      font-weight: 200;
+      font-size: 1.6em;
+      display: block;
+      text-align: center;
+      margin: 0px auto 20px;
+      padding: 0px 4em;
+      line-height: 1.4;
+      @include breakpoint($laptop) {
+        font-size: 1.6em;
+        padding: 0px 2em;
+        line-height: 1.4;
+      }
+      @include breakpoint($tablet) {
+        font-size: 1.4em;
+        padding: 0px 1em;
+        line-height: 1.4;
+      } //breakpoint($tablet)
+      @include breakpoint($iphone) {
+        font-size: 1.2em;
+        padding: 0px 1em;
+        line-height: 1.4;
+      } //breakpoint($iphone)
+    } //p
 		img {
 			max-width: 50%;
 			max-height: 40%;
@@ -491,7 +535,7 @@ body {
 					float: left;
 					font-size: 30pt;
 					padding-top: 5px;
-					color: $greylight;
+					color: $magentadark;
 					vertical-align: middle;
 					font-weight: 100;
 					@include breakpoint($tablet) {
@@ -510,7 +554,8 @@ body {
           font-weight: 300;
 					font-size: 1.1em;
 					text-align: justify;
-          color: $greymed;
+          color: $greydark;
+          padding: 0px;
 					@include breakpoint($tablet) {
 						font-size: 0.9em;
 					} //breakpoint($iphone)

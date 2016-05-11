@@ -231,7 +231,7 @@
     } //.entry-footer
 
   } //article
-  @include breakpoint($laptop 1199px) {
+  @include breakpoint($laptop) {
     .comments-area {
       article {
         border-left: none;

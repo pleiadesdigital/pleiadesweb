@@ -100,7 +100,12 @@ color: $snow;
       justify-content: center
     ));
     @include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-estrategia-consultoria.jpg");
-
+    @include breakpoint($tablet) {
+      background-attachment: scroll;
+    }
+    @include breakpoint($iphone) {
+      background-attachment: scroll;
+    }
     .text-container {
       height: auto;
       @include breakpoint($iphone) {
@@ -156,6 +161,12 @@ color: $snow;
       justify-content: center
     ));
     @include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-diseno-creativo.jpg");
+    @include breakpoint($tablet) {
+      background-attachment: scroll;
+    }
+    @include breakpoint($iphone) {
+      background-attachment: scroll;
+    }
     .text-container {
       height: auto;
       @include breakpoint($iphone) {
@@ -206,6 +217,12 @@ color: $snow;
       justify-content: center
     ));
     @include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-desarrollo-web.jpg");
+    @include breakpoint($tablet) {
+      background-attachment: scroll;
+    }
+    @include breakpoint($iphone) {
+      background-attachment: scroll;
+    }
     .text-container {
       height: auto;
       @include breakpoint($iphone) {
@@ -255,6 +272,12 @@ color: $snow;
       justify-content: center
     ));
     @include back-image("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/services/desc-internet-marketing.jpg");
+    @include breakpoint($tablet) {
+      background-attachment: scroll;
+    }
+    @include breakpoint($iphone) {
+      background-attachment: scroll;
+    }
     .text-container {
       height: auto;
       @include breakpoint($iphone) {

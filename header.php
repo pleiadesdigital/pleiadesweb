@@ -24,7 +24,7 @@ SITE HEADER
 		<div class="<?php if (is_front_page()) { echo "fullheight"; } else { echo "normalheader"; }?>">
 		
 			<div class="top-header-wrapper">
-				<section class="top-header">
+				<section class="top-header sticky-header">
 					<div class="site-branding">
 						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/logo-pleiades-digital3.png" alt="Pleiades Digital - Online Marketing Agency"></a>
 					</div><!-- class="site-branding" -->

@@ -1,6 +1,6 @@
 // Cover photo
 @mixin back-image($image) {
-  background: rgba($black, 0.7) url($image) no-repeat center center fixed; 
+  background: rgba($black, 0.7) url($image) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -1,6 +1,7 @@
 jQuery(function(){
 	var wheight = jQuery(window).height(); //get height of window
 	jQuery('.fullheight').css('height', wheight);
+
 });
 
 jQuery(window).load(function() {
@@ -20,11 +21,13 @@ jQuery(window).load(function() {
     animationLoop: false,
     slideshow: false,
     sync: "#carousel"
-  });
-});
+  }); // on resize
+
+
+}); // on load
+
 
 //Facebook Original Like Button
-
 
 (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -33,5 +36,32 @@ jQuery(window).load(function() {
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

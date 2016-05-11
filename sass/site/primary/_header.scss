@@ -16,6 +16,7 @@ header {
 			display: block;
 			padding: 0px;
 			background-color: rgba($greydark, 0.3);
+			z-index: 100;
 			@include clearfix;
 			@include breakpoint($laptop) {
 				height: auto;
@@ -34,7 +35,8 @@ header {
 			} //breakpoint($iphone)
 
 			// TOP HEADER
-			section.top-header {
+
+      section.top-header {
 				@include container;
 				display: block;
 				padding: 0px;
@@ -144,11 +146,12 @@ header {
 	.fullheight {
 
     @include breakpoint ($tablet) {
-      background: rgba($black, 0.7) url('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency-sq.jpg') no-repeat left top;
-      background-size: 100% 100%;
+      @include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg');
+			background-attachment: scroll;
     }
 		@include breakpoint ($iphone) {
-			background: rgba($black, 0.7) url('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency-sq2.jpg') repeat left top;
+      @include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg');
+			background-attachment: scroll;
 		}
     @include breakpoint ($desktop) {
       @include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg');
@@ -156,8 +159,6 @@ header {
     @include breakpoint ($laptop) {
       @include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/pleiades-digital-online-marketing-agency.jpg');
     }
-
-
 
 		//min-height: 600px;
 		overflow: hidden;
@@ -190,6 +191,7 @@ header {
 				padding: 0px;
 				margin: 0px;
 			}
+
 			section.top-header {
 				@include container;
 				display: block;
@@ -302,6 +304,12 @@ header {
 				padding-bottom: 0px;
         text-transform: uppercase;
 				@include text-shadow($greydark 0px 0px 20px);
+        @include breakpoint($tablet) {
+          display: none;
+        }
+        @include breakpoint($iphone) {
+          display: none;
+        }
 			} //h1
 			h2 {
 				color: darken($white, 5);
@@ -314,6 +322,12 @@ header {
 				padding: 15px 20px;
 				border: 1px dotted $white;
 				background: rgba($greydark, 0.5);
+        @include breakpoint($tablet) {
+          display: none;
+        }
+        @include breakpoint($iphone) {
+          display: none;
+        }
 			} //h2
 			p {
 				text-align: center;
@@ -324,7 +338,6 @@ header {
 			} //p
 		} //.hgroup 
 	} //.fullheight
-
 
 } //header
 
