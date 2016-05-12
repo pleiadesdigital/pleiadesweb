@@ -128,7 +128,10 @@
 							text-align: justify;
 							font-size: 1em;
 							font-weight: 300;
-							color: $greymed;
+							color: $greydark;
+							strong {
+                font-weight: 600;
+              } //strong
 						} //p
 					} //.txt-content
 				} //breakpoint($desktop)

@@ -72,7 +72,7 @@ gulp.task('sassprod', function(){
 			sass: 'sass',
 			css: '',
 			image: 'images',
-			style: 'expanded',
+			style: 'compressed',
 			comments: true,
 			require: ['susy', 'breakpoint']
 		}) //pipe(compass)
