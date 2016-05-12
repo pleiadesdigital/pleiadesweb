@@ -43,15 +43,17 @@ get_header(); ?>
 				</section><!-- class="about-info" -->
 			</section>
 
-			<!-- CTA -->
-			<section class="cta">
-				<div class="cta-info">
-					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>
-					<p>Solicita más información o una cotización</p>
+			<!-- CALL TO ACTION -->
+			<section id="cta-empresa">
+				<article class="cta-front">
+					<h3>Tenemos las mejores herramientas profesionales<br> para tu empresa</h3>
+					<!-- CTA-button -->
 					<div class="cta-button">
-						<a href="http://pleiadesdigital.com/contacto/">Contáctanos</a>
-					</div> <!-- .cta-button -->
-				</div>
+						<a href="http://localhost/~ronyortiz/pleiadesweb/index.php/contacto/" class="cta-info">Contáctanos</a>
+					</div>
+					<!--        Teléfono-->
+					<p><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;+(591)77799006</p>
+				</article>
 			</section>
 
 			<!-- EXTRA -->
@@ -133,16 +135,18 @@ get_header(); ?>
 				</div><!-- class="serv-desc-info" -->
 			</section><!-- class="serv-desc" -->
 
-			<!-- CTA -->
-			<article class="cta">
-				<div class="cta-info">
-					<h3>Las mejores herramientas profesionales<br> para tu empresa</h3>
+			<!-- CALL TO ACTION -->
+			<section id="cta-services">
+				<article class="cta-front">
+					<h3>Tenemos las mejores herramientas profesionales<br> para tu empresa</h3>
 					<!-- CTA-button -->
-					<div class="cta-services">
-						<a href="http://pleiadesdigital.com/contacto/">Contáctanos</a>
+					<div class="cta-button">
+						<a href="http://localhost/~ronyortiz/pleiadesweb/index.php/contacto/" class="cta-info">Contáctanos</a>
 					</div>
-				</div>
-			</article>
+					<!--        Teléfono-->
+					<p><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;+(591)77799006</p>
+				</article>
+			</section>
 
 			
 		</div><!-- id="servicios" -->

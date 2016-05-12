@@ -222,59 +222,73 @@
 		} //.about-info
 	} //.about
 
-	// CTA
-	.cta {
-		width: 100%;
-		min-height: 400px;
-		padding-top: 100px;
-		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax4.jpg');
-		.cta-info {
-			@include container(90%);
-			h3 {
-				color: $white;
-				font-weight: 500;
-				text-align: center;
-				line-height: 1.4;
-				text-transform: uppercase;
-				font-size: 1.8em;
-                margin-bottom: 10px;
-				@include breakpoint($iphone) {
-					line-height: 1.6;
-					font-weight: 400;
-					font-size: 1.4em;
-					margin-bottom: 20px;
-				} //breakpoint($iphone)
-			} //h3
-            p {
-              color: $magentamed;
-              text-align: center;
-              line-height: 1.2;
-              font-size: 1.4em;
-              font-weight: 700;
-            } //p
-			.cta-button {
-				text-align: center;
-				margin-top: 40px;
-				@include breakpoint($iphone) {
-					margin-top: 40px;
-				}
-				a {
-					border: 3px solid $snow;
-					@include border-radius(15px); 
-					padding: 10px 25px; 
-					color: $snow;
-					font-weight: 600;
-					@include single-transition();
-					@include transition-duration(0.5s);
-					&:hover {
-						border: 3px solid $magentamed;
-						background-color: rgba($magentadark, 0.3);
-						color: $snow;
-					} //&:hover 
-				} //a
-			} //.cta-button
-		}
-	} //.cta
+  // CALL TO ACTION
+  #cta-empresa {
+    margin: 0px;
+    width: 100%;
+    min-height: 300px;
+    padding-top: 30px;
+    @include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax4.jpg');
+    @include breakpoint($tablet) {
+      background-attachment: scroll;
+    }
+    @include breakpoint($iphone) {
+      background-attachment: scroll;
+    }
+    .cta-front {
+      @include container(70%);
+      padding: 20px 0px;
+      border-right: none;
+      @include breakpoint($laptop) {
+        border-left: none;
+      }
+      @include breakpoint($iphone) {
+        padding: 15px 0px 20px 0px;
+        margin-top: 2em;
+      }
+      h3 {
+        text-align: center;
+        color: $snow;
+        font-family: $font-copy;
+        @include text-shadow();
+        font-weight: 400;
+        font-size: 2.3em;
+        margin-bottom: 2em;
+        @include breakpoint($iphone) {
+          font-size: 1.4em;
+          @include text-shadow(0, 0, 0, 'false','transparent');
+        }
+      } //h3
+      p {
+        text-align: center;
+        color: $snow;
+        font-size: 1.8em;
+        font-weight: 200;
+        margin-top: 1.5em;
+      } //p
+
+      .cta-button {
+        text-align: center;
+        display: block;
+        margin-top: 3em;
+        a {
+          border: 3px solid $magenta;
+          @include border-radius(15px);
+          padding: 10px 25px;
+          color: $snow;
+          font-weight: 600;
+          @include single-transition();
+          @include transition-duration(0.5s);
+          &:hover {
+            border: 3px solid $magentamed;
+            background-color: rgba($magentadark, 0.5);
+            color: $white;
+          } //&:hover
+        } //a
+      } //.cta-button
+
+    } //.cta-front
+  } //#cta-empresa
 
 	// EXTRA
 	.extra {
@@ -517,62 +531,74 @@
 			} //ul
 		} //.serv-desc-info
 	} //.serv.desc
-	
-	// CTA
-	.cta {
-		width: 100%;
-		min-height: 400px;
-		padding-top: 100px;
-		@include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax3.jpg');
+
+  // CALL TO ACTION
+  #cta-services {
+    margin: 0px;
+    width: 100%;
+    min-height: 300px;
+    padding-top: 30px;
+    @include back-image('http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/misc/parallax3.jpg');
     @include breakpoint($tablet) {
       background-attachment: scroll;
     }
     @include breakpoint($iphone) {
       background-attachment: scroll;
     }
-		.cta-info {
-			@include container(90%);
-			@include clearfix();
-			h3 {
-				color: $white;
-				font-weight: 600;
-				text-align: center;
-				line-height: 2;
-				text-transform: uppercase;
-				font-size: 1.8em;
-				@include breakpoint($tablet) {
-					font-size: 1.6em;
-					font-weight: 500;
-					line-height: 1.8;
-					padding-top: 10px;
-				}
-				@include breakpoint($iphone) {
-					font-size: 1.5em;
-					font-weight: 400;
-					line-height: 1.6;
-				}
-			} //h3
-			.cta-services {
-				text-align: center;
-				margin-top: 40px;
-				display: block;
-				 a {
-					border: 3px solid $snow;
-					@include border-radius(15px); 
-					padding: 10px 25px; 
-					color: $snow;
-					font-weight: 600;
-					@include single-transition();
-					@include transition-duration(0.5s);
-					&:hover {
+    .cta-front {
+      @include container(70%);
+      padding: 20px 0px;
+      border-right: none;
+      @include breakpoint($laptop) {
+        border-left: none;
+      }
+      @include breakpoint($iphone) {
+        padding: 15px 0px 20px 0px;
+        margin-top: 2em;
+      }
+      h3 {
+        text-align: center;
+        color: $snow;
+        font-family: $font-copy;
+        @include text-shadow();
+        font-weight: 400;
+        font-size: 2.3em;
+        margin-bottom: 2em;
+        @include breakpoint($iphone) {
+          font-size: 1.4em;
+          @include text-shadow(0, 0, 0, 'false','transparent');
+        }
+      } //h3
+      p {
+        text-align: center;
+        color: $snow;
+        font-size: 1.8em;
+        font-weight: 200;
+        margin-top: 1.5em;
+      } //p
+
+      .cta-button {
+        text-align: center;
+        display: block;
+        margin-top: 3em;
+        a {
+          border: 3px solid $magenta;
+          @include border-radius(15px);
+          padding: 10px 25px;
+          color: $snow;
+          font-weight: 600;
+          @include single-transition();
+          @include transition-duration(0.5s);
+          &:hover {
             border: 3px solid $magentamed;
-            background-color: rgba($magentadark, 0.3);
-            color: $snow;
-					} //&:hover 
-				} //a 
-			} //.cta-services
-		} //.cta-info
-	} //.cta
+            background-color: rgba($magentadark, 0.5);
+            color: $white;
+          } //&:hover
+        } //a
+      } //.cta-button
+
+    } //.cta-front
+  } //#cta-frontpage
 
 	// CLIENTES
 	.clientes {

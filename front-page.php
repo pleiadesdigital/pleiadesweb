@@ -97,8 +97,6 @@
 		<section id="cta-frontpage">
 			<article class="cta-front">
 				<h3>Tenemos las mejores herramientas profesionales<br> para tu empresa</h3>
-
-
 				<!-- CTA-button -->
 				<div class="cta-button">
 					<a href="http://localhost/~ronyortiz/pleiadesweb/index.php/contacto/" class="cta-info">Contáctanos</a>
