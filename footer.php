@@ -18,9 +18,9 @@
 
 			<div class="socialmedia">
 				<ul class="group">
-					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/facebook.png" alt="icon for facebook"></a></li>
-					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/twitter.png" alt="icon for twitter"></a></li>
-					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/youtube.png" alt="icon for youtube"></a></li>
+					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/facebook.png" alt="icon for Facebook"></a></li>
+					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/twitter.png" alt="icon for Twitter"></a></li>
+					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/google+.png" alt="icon for Google+"></a></li>
 				</ul>
 			</div><!-- .socialmedia -->
 
