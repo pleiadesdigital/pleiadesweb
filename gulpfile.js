@@ -54,14 +54,14 @@ gulp.task('sassdev', function(){
 	gulp.src(sassSources)
 		.pipe(compass({
 			sass: 'sass',
-			css: 'development/devcss',
+			css: 'prodcss',
 			image: 'images',
-			style: 'expanded',
+			style: 'compressed',
 			comments: true,
 			require: ['susy', 'breakpoint']
 		}) //pipe(compass)
 		.on('error', gutil.log))
-		.pipe(gulp.dest('development/devcss'))
+		.pipe(gulp.dest('prodcss'))
 		.pipe(connect.reload())
 }); //gulp.task('sassdev')
 
@@ -72,7 +72,7 @@ gulp.task('sassprod', function(){
 			sass: 'sass',
 			css: '',
 			image: 'images',
-			style: 'compressed',
+			style: 'expanded',
 			comments: true,
 			require: ['susy', 'breakpoint']
 		}) //pipe(compass)

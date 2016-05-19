@@ -154,6 +154,9 @@
       h3 {
         font-size: 1.4em;
         font-weight: 300;
+        margin: 15px 0px 5px;
+        line-height: 1.5;
+        border-top: 1px solid $greylight;
       } //h3
       h4 {
         font-size: 1.3em;
@@ -187,13 +190,26 @@
           margin: 0px auto;*/
         }
       } //p
+      ul {
+        font-size: 1em;
+        line-height: 1.5;
+        padding-left: 1.5em;
+        li {
+          list-style-type: square;
+          margin: 5px 0px;
+        }
+      } //ul
       img {
         max-width: 100%;
         height: auto;
-      }
+      } //img
       blockquote p {
         font-size: 1.2em;
+      } //blockquote p
+      div.apss-social-share {
+        margin-top: 2em;
       }
+
     } //.entry-content
 
     //FOOTER

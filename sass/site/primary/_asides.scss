@@ -56,7 +56,8 @@
     //ALL INDIVIDUAL WIDGETS
     .widget_recent_entries,
     .widget_categories,
-    .widget_recent_comments {
+    .widget_recent_comments,
+    .widget_nav_menu {
       li {
         &:before {
           display: block;
@@ -92,6 +93,7 @@
 
 
     // WIDGET CATEGORIES
+    /*
     .widget_categories {
       li {
         margin: 0px 0px 0.5em 1.7em;
@@ -111,6 +113,27 @@
         } // &:hover::before
       } //li
     } //.widget_categories
+    */
+    // WIDGET CATEGORIES CUSTOM
+    .widget_nav_menu {
+      li {
+        margin: 0px 0px 0.5em 1.7em;
+        &:before {
+          content: "\f02d";
+          @include single-transition();
+          @include transition-duration(0.3s);
+        } //&:before
+        &:hover {
+          cursor: pointer;
+        } //&:hover
+        &:hover a {
+          color: $magentamed;
+        } //&:hover a
+        &:hover::before {
+          color: $magentamed;
+        } // &:hover::before
+      } //li
+    } //.widget_nav_menu
 
 
     // WIDGET RECENT COMMENTS

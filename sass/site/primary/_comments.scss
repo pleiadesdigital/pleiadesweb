@@ -155,7 +155,7 @@
     //FORM
     .comment-respond {
       .comment-reply-title {
-        color: $blue;
+        color: $magentadark;
         font-family: $font_copy;
         text-transform: uppercase;
         font-weight: 500;
@@ -187,7 +187,7 @@
             @include single-transition();
             &:focus {
               outline: none;
-              border: 1px solid lighten($bluelight, 20);
+              border: 1px solid lighten($magentathin, 20);
               background-color: $white;
             }
           } //textarea
@@ -198,7 +198,7 @@
               float: right;
               width: 40%;
               border: none;
-              background: lighten($bluelight, 20);
+              background: $magentamed;
               color: $snow;
               @include breakpoint($iphone) {
                 width: 50%;
@@ -207,7 +207,7 @@
               }
               @include box-shadow($grey 2px 2px 8px);;
               &:hover {
-                background-color: $bluelight;
+                background-color: $magentadark;
               }
             } //input
           } //.form-submit

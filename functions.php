@@ -23,7 +23,8 @@ if (!function_exists('pleiadesweb_setup')) :
 			'primary' => esc_html__('Primary', 'pleiadesweb'),
 			'social' => esc_html__( 'Social Menu', 'pleiadesweb' ),
 			'sitemap' => esc_html__( 'Site Map', 'pleiadesweb' ),
-			'services' => esc_html__( 'Services', 'pleiadesweb' )
+			'services' => esc_html__( 'Services', 'pleiadesweb' ),
+			'categories' => esc_html__( 'Categories', 'pleiadesweb' )
 		));
 
 		add_theme_support('html5', array(

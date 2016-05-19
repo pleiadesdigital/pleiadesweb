@@ -18,9 +18,8 @@ get_header(); ?>
 					<header class="main-header">
 						<!--			INTRO-->
 						<h2 class="page-title screen-reader-text">Nuestra biblioteca virtual</h2>
-						<p>Fancy taking your digital marketing to the next level? You’re lucky you found us…</p>
 						<?php
-						the_archive_title( '<h2 class="page-title">', '</h2>' );
+						the_archive_title( '<h3 class="page-title">', '</h3>' );
 						the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 
