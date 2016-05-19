@@ -1,3 +1,54 @@
 section.error-404 {
-  border: 3px solid darkgoldenrod;
-}
+  padding: 2em 2em;
+  header {
+    h1 {
+      font-family: $font_copy;
+      font-weight: 400;
+      font-size: 2.5em;
+      text-transform: uppercase;
+      color: $greydark;
+      text-align: center;
+    } //h1
+    h2 {
+      font-family: $font_copy;
+      font-weight: 300;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      color: $greymed;
+      text-align: center;
+    } //h2
+  } //header
+  .page-content {
+    p {
+      text-align: center;
+    } //p
+    // 404 SEARCH
+    .search-form {
+      margin: 2em 0px;
+      span {
+        display: none;
+      } //span
+      input {
+        width: 300px;
+        height: 40px;
+        display: block;
+        border-radius: 5px;
+        padding: 0px 5px;
+        margin: 0px auto;
+        border: 1px solid lighten($greylight, 15);
+        @include single-transition();
+        &:focus {
+          outline: none;
+          border: 1px solid lighten($magentamed, 20);
+        }
+      }
+      .search-submit {
+        display: none;
+      } //.search-submit
+    } // ..search-form
+  } //.page-content
+
+
+} //section.error-404
+
+
