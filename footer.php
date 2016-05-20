@@ -18,9 +18,9 @@
 
 			<div class="socialmedia">
 				<ul class="group">
-					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/facebook.png" alt="icon for Facebook"></a></li>
-					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/twitter.png" alt="icon for Twitter"></a></li>
-					<li><a href="#"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/google+.png" alt="icon for Google+"></a></li>
+					<li><a href="https://www.facebook.com/Pleiades-Digital-471671673034420/" target="_blank"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/facebook.png" target="_blank" alt="icon for Facebook"></a></li>
+					<li><a href="https://twitter.com/pleiadesdigital" target="_blank"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/twitter.png" alt="icon for Twitter"></a></li>
+					<li><a href="https://plus.google.com/+PleiadesDigital" target="_blank"><img class="icon" src="http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/images/socialmedia/google+.png" alt="icon for Google+"></a></li>
 				</ul>
 			</div><!-- .socialmedia -->
 
