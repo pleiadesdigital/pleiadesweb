@@ -18,8 +18,8 @@ get_header(); ?>
 				<header class="main-header">
 					<!--			INTRO-->
 					<h2 class="page-title screen-reader-text">Nuestra biblioteca virtual</h2>
-					<p>Fancy taking your digital marketing to the next level? You’re lucky you found us…</p>
-					<h2 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'pleiadesweb' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
+
+					<h3 class="page-title"><?php printf( esc_html__( 'Resultados de búsqueda para: %s', 'pleiadesweb' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
 
 				</header>
 

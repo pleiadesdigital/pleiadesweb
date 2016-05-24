@@ -3516,12 +3516,19 @@ body {
 .search .site-content .site-main .main-header h3,
 .error404 .site-content .site-main .main-header h3 {
   font-family: "Titillium Web", sans-serif;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 100;
-  color: #a10a57;
+  color: #262626;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 10px;
+}
+/* line 37, sass/layout/_blog.scss */
+.blog .site-content .site-main .main-header h3 span,
+.archive .site-content .site-main .main-header h3 span,
+.search .site-content .site-main .main-header h3 span,
+.error404 .site-content .site-main .main-header h3 span {
+  font-weight: 400;
 }
 @media (min-width: 700px) and (max-width: 989px) {
   /* line 29, sass/layout/_blog.scss */
@@ -3544,7 +3551,7 @@ body {
     font-size: 2em;
   }
 }
-/* line 47, sass/layout/_blog.scss */
+/* line 51, sass/layout/_blog.scss */
 .blog .site-content .site-main .main-header p,
 .archive .site-content .site-main .main-header p,
 .search .site-content .site-main .main-header p,
@@ -3556,7 +3563,7 @@ body {
   color: #7f7f7f;
 }
 @media (min-width: 990px) and (max-width: 1199px) {
-  /* line 47, sass/layout/_blog.scss */
+  /* line 51, sass/layout/_blog.scss */
   .blog .site-content .site-main .main-header p,
   .archive .site-content .site-main .main-header p,
   .search .site-content .site-main .main-header p,
@@ -3578,7 +3585,7 @@ body {
   }
 }
 @media (min-width: 650px) {
-  /* line 47, sass/layout/_blog.scss */
+  /* line 51, sass/layout/_blog.scss */
   .blog .site-content .site-main .main-header p,
   .archive .site-content .site-main .main-header p,
   .search .site-content .site-main .main-header p,
@@ -3589,7 +3596,7 @@ body {
   }
 }
 @media (max-width: 699px) {
-  /* line 47, sass/layout/_blog.scss */
+  /* line 51, sass/layout/_blog.scss */
   .blog .site-content .site-main .main-header p,
   .archive .site-content .site-main .main-header p,
   .search .site-content .site-main .main-header p,
@@ -3600,7 +3607,7 @@ body {
     font-size: 1.1em;
   }
 }
-/* line 73, sass/layout/_blog.scss */
+/* line 77, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid,
 .archive .site-content .site-main #grid,
 .search .site-content .site-main #grid,
@@ -3625,7 +3632,7 @@ body {
 .error404 .site-content .site-main #grid:after {
   clear: both;
 }
-/* line 76, sass/layout/_blog.scss */
+/* line 80, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item,
 .archive .site-content .site-main #grid .grid-item,
 .search .site-content .site-main #grid .grid-item,
@@ -3636,7 +3643,7 @@ body {
   height: auto;
 }
 @media (min-width: 700px) and (max-width: 989px) {
-  /* line 76, sass/layout/_blog.scss */
+  /* line 80, sass/layout/_blog.scss */
   .blog .site-content .site-main #grid .grid-item,
   .archive .site-content .site-main #grid .grid-item,
   .search .site-content .site-main #grid .grid-item,
@@ -3645,7 +3652,7 @@ body {
   }
 }
 @media (max-width: 699px) {
-  /* line 76, sass/layout/_blog.scss */
+  /* line 80, sass/layout/_blog.scss */
   .blog .site-content .site-main #grid .grid-item,
   .archive .site-content .site-main #grid .grid-item,
   .search .site-content .site-main #grid .grid-item,
@@ -3654,7 +3661,7 @@ body {
     margin: 0px 5% 0px;
   }
 }
-/* line 89, sass/layout/_blog.scss */
+/* line 93, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article,
 .archive .site-content .site-main #grid .grid-item article,
 .search .site-content .site-main #grid .grid-item article,
@@ -3663,7 +3670,7 @@ body {
   border-right: none;
 }
 @media (min-width: 990px) and (max-width: 1199px) {
-  /* line 89, sass/layout/_blog.scss */
+  /* line 93, sass/layout/_blog.scss */
   .blog .site-content .site-main #grid .grid-item article,
   .archive .site-content .site-main #grid .grid-item article,
   .search .site-content .site-main #grid .grid-item article,
@@ -3673,7 +3680,7 @@ body {
     padding-left: 0px;
   }
 }
-/* line 97, sass/layout/_blog.scss */
+/* line 101, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box,
 .archive .site-content .site-main #grid .grid-item article .index-box,
 .search .site-content .site-main #grid .grid-item article .index-box,
@@ -3686,7 +3693,7 @@ body {
   border-bottom: 1px solid #bfbfbf;
 }
 @media (max-width: 699px) {
-  /* line 97, sass/layout/_blog.scss */
+  /* line 101, sass/layout/_blog.scss */
   .blog .site-content .site-main #grid .grid-item article .index-box,
   .archive .site-content .site-main #grid .grid-item article .index-box,
   .search .site-content .site-main #grid .grid-item article .index-box,
@@ -3694,14 +3701,14 @@ body {
     margin-bottom: 10px;
   }
 }
-/* line 108, sass/layout/_blog.scss */
+/* line 112, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail,
 .error404 .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail {
   margin-top: 0px;
 }
-/* line 110, sass/layout/_blog.scss */
+/* line 114, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail img,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail img,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-header .single-post-thumbnail img,
@@ -3713,7 +3720,7 @@ body {
   border-radius: 0px;
   padding-top: 0px;
 }
-/* line 119, sass/layout/_blog.scss */
+/* line 123, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title,
@@ -3724,7 +3731,7 @@ body {
   font-weight: 300;
   margin: 0px;
 }
-/* line 125, sass/layout/_blog.scss */
+/* line 129, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a,
@@ -3739,21 +3746,21 @@ body {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 129, sass/layout/_blog.scss */
+/* line 133, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:hover,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:hover,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:hover,
 .error404 .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:hover {
   color: #89094a !important;
 }
-/* line 132, sass/layout/_blog.scss */
+/* line 136, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:visited,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:visited,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:visited,
 .error404 .site-content .site-main #grid .grid-item article .index-box .entry-header .entry-title a:visited {
   color: #7f7f7f;
 }
-/* line 139, sass/layout/_blog.scss */
+/* line 143, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-summary p,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-summary p,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-summary p,
@@ -3763,7 +3770,7 @@ body {
   margin: 1em 0px 0px !important;
   font-weight: 300;
 }
-/* line 147, sass/layout/_blog.scss */
+/* line 151, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-footer,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-footer,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-footer,
@@ -3771,7 +3778,7 @@ body {
   margin-top: 0px !important;
   margin-bottom: 0px;
 }
-/* line 150, sass/layout/_blog.scss */
+/* line 154, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading,
@@ -3781,7 +3788,7 @@ body {
   margin: 0px auto 10px;
   text-align: left;
 }
-/* line 155, sass/layout/_blog.scss */
+/* line 159, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a,
@@ -3796,21 +3803,21 @@ body {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 159, sass/layout/_blog.scss */
+/* line 163, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:hover,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:hover,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:hover,
 .error404 .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:hover {
   color: #89094a !important;
 }
-/* line 162, sass/layout/_blog.scss */
+/* line 166, sass/layout/_blog.scss */
 .blog .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:visited,
 .archive .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:visited,
 .search .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:visited,
 .error404 .site-content .site-main #grid .grid-item article .index-box .entry-footer .continue-reading a:visited {
   color: #7f7f7f;
 }
-/* line 176, sass/layout/_blog.scss */
+/* line 180, sass/layout/_blog.scss */
 .blog .site-content .widget-area,
 .archive .site-content .widget-area,
 .search .site-content .widget-area,
