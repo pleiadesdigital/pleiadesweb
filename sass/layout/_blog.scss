@@ -49,11 +49,13 @@
           } //breakpoint($iphone)
         } //h3
         p {
+          border: 1px solid magenta;
           text-align: center;
           line-height: 1.6;
           font-size: 1.1em;
           font-weight: 300;
           color: $grey;
+          width: 60%;
           @include breakpoint($laptop) {
             @include container(850px);
             display: block;
@@ -71,6 +73,13 @@
             font-size: 1.1em;
           }
         } //p
+        .fb-like {
+          border: 1px solid olivedrab;
+          float: left;
+        } //.fb-like
+
+
+
       } //.main-header
 
       //MASONRY

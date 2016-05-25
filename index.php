@@ -25,6 +25,7 @@ get_header(); ?>
 <!--			INTRO-->
 				<h2 class="page-title screen-reader-text">Nuestra biblioteca virtual</h2>
 				<p>Información sobre marketing digital, estrategia, imagen, y otros temas interesantes vitales para empresas o emprendimientos de cualquier tamaño. </p>
+				<div class="fb-like" data-href="https://www.facebook.com/pleiadesdigital" data-width="350" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
 			</header>
 
 			<?php
