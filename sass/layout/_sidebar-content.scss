@@ -75,6 +75,25 @@
 				width: 28%;
 				float: left;
 			} //breakpoint($laptop 1199px)
+			.fb-like {
+				display: block;
+        margin-top: 1em;
+				float: right;
+        @include breakpoint($laptop) {
+          float: left;
+        }
+        @include breakpoint($tablet) {
+          float: none;
+          margin: 0px auto;
+          padding-top: 2em;
+          text-align: center;
+        }
+        @include breakpoint($iphone) {
+          float: none;
+          margin: 1em auto 0px;
+          text-align: center;
+        }
+			} //.fb-like
 		} //.widget-area
 
 	} //.content-area
