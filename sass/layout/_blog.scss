@@ -124,10 +124,10 @@
                 } //.single-post-thumbnail
                 .entry-title {
                   font-family: $font_copy;
-                  font-size: 1.6em;
+                  font-size: 1.4em;
                   line-height: 1.2;
                   font-weight: 300;
-                  margin: 0px;
+                  margin: 0px 0px 0.5em 0px;
                   a {
                     color: $grey;
                     @include single-transition();
