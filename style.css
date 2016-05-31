@@ -5480,49 +5480,77 @@ header .fullheight .hgroup p img {
   list-style-type: square;
   margin: 5px 0px;
 }
-/* line 203, sass/site/primary/_posts-and-pages.scss */
+/* line 201, sass/site/primary/_posts-and-pages.scss */
+.site-main article .entry-content ul li a {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-bottom: 1px dotted #7f7f7f;
+  line-height: 1;
+}
+/* line 205, sass/site/primary/_posts-and-pages.scss */
+.site-main article .entry-content ul li a:hover {
+  color: #89094a;
+  border-bottom: 1px dotted #89094a;
+}
+/* line 212, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content ol {
   font-size: 1em;
   line-height: 1.5;
   padding-left: 1.5em;
 }
-/* line 207, sass/site/primary/_posts-and-pages.scss */
+/* line 216, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content ol li {
   list-style: decimal;
   padding-left: 2px;
   margin: 5px 0px 0px -2px;
 }
-/* line 213, sass/site/primary/_posts-and-pages.scss */
+/* line 220, sass/site/primary/_posts-and-pages.scss */
+.site-main article .entry-content ol li a {
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-bottom: 1px dotted #7f7f7f;
+  line-height: 1;
+}
+/* line 224, sass/site/primary/_posts-and-pages.scss */
+.site-main article .entry-content ol li a:hover {
+  color: #89094a;
+  border-bottom: 1px dotted #89094a;
+}
+/* line 231, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content img {
   max-width: 100%;
   height: auto;
 }
-/* line 217, sass/site/primary/_posts-and-pages.scss */
+/* line 235, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content blockquote p {
   font-size: 1.2em;
 }
-/* line 220, sass/site/primary/_posts-and-pages.scss */
+/* line 238, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-content div.apss-social-share {
   margin-top: 2em;
 }
-/* line 227, sass/site/primary/_posts-and-pages.scss */
+/* line 245, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer {
   margin-top: 2em !important;
   margin-bottom: 3em;
   line-height: 2;
 }
-/* line 231, sass/site/primary/_posts-and-pages.scss */
+/* line 249, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul {
   padding: 0px;
   margin: 0px;
   list-style: none;
 }
-/* line 235, sass/site/primary/_posts-and-pages.scss */
+/* line 253, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li {
   display: inline-block;
   margin-right: 2em;
 }
-/* line 239, sass/site/primary/_posts-and-pages.scss */
+/* line 257, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li a {
   color: #58555a;
   margin-left: 0.5em;
@@ -5531,7 +5559,7 @@ header .fullheight .hgroup p img {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 244, sass/site/primary/_posts-and-pages.scss */
+/* line 262, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li i {
   color: #58555a;
   -moz-transition: all 1s;
@@ -5539,22 +5567,22 @@ header .fullheight .hgroup p img {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 248, sass/site/primary/_posts-and-pages.scss */
+/* line 266, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li:hover {
   cursor: pointer;
 }
-/* line 251, sass/site/primary/_posts-and-pages.scss */
+/* line 269, sass/site/primary/_posts-and-pages.scss */
 .site-main article .entry-footer ul li:hover i, .site-main article .entry-footer ul li:hover a {
   cursor: pointer;
   color: #89094a;
 }
 @media (min-width: 990px) and (max-width: 1199px) {
-  /* line 263, sass/site/primary/_posts-and-pages.scss */
+  /* line 281, sass/site/primary/_posts-and-pages.scss */
   .site-main .comments-area article {
     border-left: none;
   }
 }
-/* line 270, sass/site/primary/_posts-and-pages.scss */
+/* line 288, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation {
   font-size: 18px;
 }
@@ -5567,7 +5595,7 @@ header .fullheight .hgroup p img {
 .site-main .post-navigation:after {
   clear: both;
 }
-/* line 273, sass/site/primary/_posts-and-pages.scss */
+/* line 291, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box {
   padding: 1em 0px;
   margin-bottom: 2em;
@@ -5584,17 +5612,17 @@ header .fullheight .hgroup p img {
 .site-main .post-navigation .post-nav-box:after {
   clear: both;
 }
-/* line 280, sass/site/primary/_posts-and-pages.scss */
+/* line 298, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .screen-reader-text {
   display: none;
 }
-/* line 284, sass/site/primary/_posts-and-pages.scss */
+/* line 302, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-previous {
   width: 50%;
   float: left;
   padding-right: 15%;
 }
-/* line 288, sass/site/primary/_posts-and-pages.scss */
+/* line 306, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-previous a {
   color: #7f7f7f;
   -moz-transition: all 1s;
@@ -5606,18 +5634,18 @@ header .fullheight .hgroup p img {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 292, sass/site/primary/_posts-and-pages.scss */
+/* line 310, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-previous a:hover {
   color: #89094a;
 }
-/* line 298, sass/site/primary/_posts-and-pages.scss */
+/* line 316, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-next {
   width: 50%;
   float: right;
   padding-left: 15%;
   text-align: right;
 }
-/* line 303, sass/site/primary/_posts-and-pages.scss */
+/* line 321, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-next a {
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -5629,7 +5657,7 @@ header .fullheight .hgroup p img {
   transition-duration: 0.3s;
   color: #7f7f7f;
 }
-/* line 307, sass/site/primary/_posts-and-pages.scss */
+/* line 325, sass/site/primary/_posts-and-pages.scss */
 .site-main .post-navigation .post-nav-box .nav-links .nav-next a:hover {
   color: #89094a;
 }

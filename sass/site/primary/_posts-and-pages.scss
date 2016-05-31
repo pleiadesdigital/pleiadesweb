@@ -198,6 +198,15 @@
         li {
           list-style-type: square;
           margin: 5px 0px;
+          a {
+            @include single-transition();
+            border-bottom: 1px dotted #7f7f7f;
+            line-height: 1;
+            &:hover {
+              color: darken($magentamed, 5);
+              border-bottom: 1px dotted darken($magentamed, 5);
+            } //&:hover
+          } //a
         }
       } //ul
       ol {
@@ -208,6 +217,15 @@
           list-style: decimal;
           padding-left: 2px;
           margin: 5px 0px 0px -2px;
+          a {
+            @include single-transition();
+            border-bottom: 1px dotted #7f7f7f;
+            line-height: 1;
+            &:hover {
+              color: darken($magentamed, 5);
+              border-bottom: 1px dotted darken($magentamed, 5);
+            } //&:hover
+          } //a
         }
       } //ol
       img {
