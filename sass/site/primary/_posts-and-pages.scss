@@ -200,6 +200,16 @@
           margin: 5px 0px;
         }
       } //ul
+      ol {
+        font-size: 1em;
+        line-height: 1.5;
+        padding-left: 1.5em;
+        li {
+          list-style: decimal;
+          padding-left: 2px;
+          margin: 5px 0px 0px -2px;
+        }
+      } //ol
       img {
         max-width: 100%;
         height: auto;
