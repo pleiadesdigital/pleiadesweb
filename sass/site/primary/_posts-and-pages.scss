@@ -238,6 +238,21 @@
       div.apss-social-share {
         margin-top: 2em;
       }
+      iframe {
+        display: block;
+        margin: 0px auto;
+        width: 640px;
+        height: 360px;
+        @include breakpoint($tablet) {
+          width: 80%;
+          height: 320px;
+        }
+        @include breakpoint($iphone) {
+          width: 400px;
+          height: 225px;
+        }
+
+      } //iframe
 
     } //.entry-content
 

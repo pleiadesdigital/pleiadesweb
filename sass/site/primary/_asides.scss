@@ -18,6 +18,9 @@
         font-size: 1.1em;
         margin-bottom: 5px;
         color: $magentamed;
+        @include breakpoint($laptop) {
+          font-size: 1em;
+        }
       } //.widget-title
       li {
         padding: 10px 0px 5px;
@@ -26,6 +29,9 @@
           color: $greydark;
           @include single-transition();
           @include transition-duration(0.3s);
+          @include breakpoint($laptop) {
+            font-size: 0.9em;
+          }
         } //a
       } //li
     } //.widget
@@ -66,6 +72,11 @@
           margin-left: -1.7em;
           font-family: 'fontawesome';
           font-size: 14px;
+          @include breakpoint($laptop) {
+            font-size: 12px;
+            font-weight: normal;
+            padding-top: 4px;
+          }
         } //
       } // li
     } //all individual widgets
@@ -154,6 +165,9 @@
         &:hover::before {
           color: $magentamed;
         } // &:hover::before
+        span {
+          color: $magentadark;
+        }
       } //li
     } //.widget_recent_comments
 
