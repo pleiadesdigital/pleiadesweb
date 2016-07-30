@@ -197,8 +197,21 @@ get_header(); ?>
 			</div><!-- id=contact-map -->
 
 		</div><!-- id="contact-main" -->
-<?php } ?>
 
+<!-- 	QUOTE MAIN -->
+<?php } elseif (is_page('solicite-una-cotizacion')) { ?>
+	<?php the_post(); ?>
+	<div id="quote-main">
+
+		<!-- Page title -->
+		<?php the_title("<h2>", "</h2>", true); ?>
+		<!-- FORM -->
+		<div class="quote-form">
+			<?php the_content(); ?>
+		</div><!--class="contact-form"-->
+
+	</div><!-- id="quote-main" -->
+<?php } ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->

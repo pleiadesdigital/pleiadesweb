@@ -919,3 +919,66 @@
 	} //#contact-map
 
 } //#contact-main
+
+/*******************************************
+// QUOTE FORM
+********************************************/
+
+#quote-main {
+  border: 2px dashed darkmagenta;
+  width: 100%;
+  min-height: 500px;
+  padding-bottom: 0px;
+  .quote-form {
+    border: 1px dotted darkslateblue;
+    display: block;
+    @include container();
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
+
+    #wpcf7-f471-p469-o1 {
+      border: 2px dashed limegreen;
+      form {
+        position: relative;
+        &* {
+          background: transparent;
+        }
+        .quote-ckbox {
+          //border: 1px solid mediumpurple;
+          label {
+            border: 1px dotted firebrick;
+            input[type="checkbox"] {
+              border: none;
+              background: transparent;
+              border-radius: 0;
+              margin: 0px;
+              padding: 0px;
+              display: none;
+            } //input[type="checkbox"]
+          } //label
+        } //.quote-ckbox
+      } //form
+    } //#wpcf7-f471-p469-o1
+
+
+  } //.quote-form
+} //#quote-main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
