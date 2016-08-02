@@ -204,7 +204,7 @@ get_header(); ?>
 	<div id="quote-main">
 
 		<!-- Page title -->
-		<?php the_title("<h2>", "</h2>", true); ?>
+		<?php //the_title("<h2>", "</h2>", true); ?>
 		<!-- FORM -->
 		<div class="quote-form">
 			<?php the_content(); ?>

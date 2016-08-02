@@ -925,41 +925,43 @@
 ********************************************/
 
 #quote-main {
-  border: 2px dashed darkmagenta;
   width: 100%;
   min-height: 500px;
   padding-bottom: 0px;
+
   .quote-form {
-    border: 1px dotted darkslateblue;
     display: block;
+		padding: 2em;
     @include container();
     margin-bottom: 30px;
-    padding-bottom: 20px;
-
-
-    #wpcf7-f471-p469-o1 {
-      border: 2px dashed limegreen;
+    #wpcf7-f480-p469-o1 {
+      form * {
+        background: transparent;
+      } //form *
       form {
-        position: relative;
-        &* {
-          background: transparent;
-        }
-        .quote-ckbox {
-          //border: 1px solid mediumpurple;
+        border: 1px dashed steelblue;
+        p {
           label {
-            border: 1px dotted firebrick;
-            input[type="checkbox"] {
-              border: none;
-              background: transparent;
-              border-radius: 0;
-              margin: 0px;
-              padding: 0px;
-              display: none;
-            } //input[type="checkbox"]
+            span {
+              input[type="text"] {
+                border: none;
+                background: #f7e700;
+              } //input[type="text"]
+            }
           } //label
-        } //.quote-ckbox
+        } //p
+/*        input {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          border: none;
+          background: none;
+          border-radius: 0;
+          padding: 0px;
+          margin: 0px;
+        }*/
+
       } //form
-    } //#wpcf7-f471-p469-o1
+    } //#wpcf7-f479-p469-o1
 
 
   } //.quote-form

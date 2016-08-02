@@ -2796,20 +2796,18 @@ body {
 ********************************************/
 /* line 927, sass/layout/_canvasfree.scss */
 #quote-main {
-  border: 2px dashed darkmagenta;
   width: 100%;
   min-height: 500px;
   padding-bottom: 0px;
 }
 /* line 932, sass/layout/_canvasfree.scss */
 #quote-main .quote-form {
-  border: 1px dotted darkslateblue;
   display: block;
+  padding: 2em;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  padding-bottom: 20px;
 }
 /* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 #quote-main .quote-form:after {
@@ -2817,30 +2815,27 @@ body {
   display: block;
   clear: both;
 }
-/* line 940, sass/layout/_canvasfree.scss */
-#quote-main .quote-form #wpcf7-f471-p469-o1 {
-  border: 2px dashed limegreen;
-}
-/* line 942, sass/layout/_canvasfree.scss */
-#quote-main .quote-form #wpcf7-f471-p469-o1 form {
-  position: relative;
-}
-/* line 944, sass/layout/_canvasfree.scss */
-#quote-main .quote-form #wpcf7-f471-p469-o1 form* {
+/* line 938, sass/layout/_canvasfree.scss */
+#quote-main .quote-form #wpcf7-f480-p469-o1 form * {
   background: transparent;
 }
-/* line 949, sass/layout/_canvasfree.scss */
-#quote-main .quote-form #wpcf7-f471-p469-o1 form .quote-ckbox label {
-  border: 1px dotted firebrick;
+/* line 941, sass/layout/_canvasfree.scss */
+#quote-main .quote-form #wpcf7-f480-p469-o1 form {
+  border: 1px dashed steelblue;
+  /*        input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border: none;
+            background: none;
+            border-radius: 0;
+            padding: 0px;
+            margin: 0px;
+          }*/
 }
-/* line 951, sass/layout/_canvasfree.scss */
-#quote-main .quote-form #wpcf7-f471-p469-o1 form .quote-ckbox label input[type="checkbox"] {
+/* line 946, sass/layout/_canvasfree.scss */
+#quote-main .quote-form #wpcf7-f480-p469-o1 form p label span input[type="text"] {
   border: none;
-  background: transparent;
-  border-radius: 0;
-  margin: 0px;
-  padding: 0px;
-  display: none;
+  background: #f7e700;
 }
 
 /* line 1, sass/layout/_showroom.scss */
