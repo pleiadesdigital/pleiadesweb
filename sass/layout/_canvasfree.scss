@@ -934,32 +934,105 @@
 		padding: 2em;
     @include container();
     margin-bottom: 30px;
+    h2 {
+      text-align: center;
+    } //h2
+    p {
+      text-align: center;
+    } //p
     #wpcf7-f480-p469-o1 {
       form * {
         background: transparent;
       } //form *
       form {
         border: 1px dashed steelblue;
+        @include clearfix;
+        //background: #CCC url("http://localhost/~ronyortiz/pleiadesweb/wp-content/themes/pleiadesweb/assets/papertile.jpg");
+        background: #FFFFFF;
+        width: 500px;
+        margin: 0px auto;
+        padding: 10px;
         p {
+          margin-bottom: 2em;
+          font-family: $font_copy;
           label {
+            display: block;
+            width: 350px;
+            margin: 0px auto 10px;
+            text-align: left;
+            color: $greymed;
+            @include font-size(0.8);
             span {
-              input[type="text"] {
-                border: none;
-                background: #f7e700;
-              } //input[type="text"]
-            }
+              input[type="text"],
+              input[type="email"],
+              input[type="tel"],
+              textarea {
+                display: block;
+                width: 350px;
+                margin: 2px auto 0px;
+                padding: 10px 5px;
+                background: #EEE;
+                border: 1px solid #FFFFFF;
+                @include border-radius(4px);
+                @include background-image(linear-gradient(to bottom, #FFFFFF, #DDDDDD));
+                @include box-shadow(#666666 0px 2px 3px inset, #EEEEEE 0px -5px 3px inset);
+              } //input[type="text"],input[type="email"],textarea
+              input[type="text"]:focus,
+              input[type="email"]:focus,
+              textarea:focus {
+                outline: 2px solid $magentadark;
+                background: #FFFFFF;
+                @include box-shadow(none);
+              } //input[type="text"]:focus,input[type="email"]:focus,textarea:focus
+            } //span
           } //label
+          .email {
+            margin-bottom: 1.5em;
+          } //.email
+          .textarea {
+            margin-top: 1.5em;
+          } //.textarea
+          input[type="submit"] {
+            border: none;
+            padding: 10px 20px;
+            color: #FFFFFF;
+            float: right;
+            margin-top: 10px;
+            color: $greydark;
+            @include border-radius(4px);
+            @include background-image(linear-gradient(to bottom, #FFFFFF, #DDDDDD));
+            @include box-shadow(#666666 0px 2px 3px, #EEEEEE 0px 0px 0px);
+            &:hover {
+              color: #00a0d2;
+            }
+            &:active {
+              @include box-shadow(#666666 0px 2px 3px inset, #EEEEEE 0px -5px 3px inset);
+            }
+          } //input[type="submit"]
         } //p
-/*        input {
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          border: none;
-          background: none;
-          border-radius: 0;
-          padding: 0px;
-          margin: 0px;
-        }*/
-
+        div.wpcf7-response-output {
+          clear: both;
+          border: 1px solid $magentadark;
+          max-width: 350px;
+          margin: 3em auto 1em;
+          padding: 0.5em 0.2em;
+          @include border-radius(4px);
+        }
+        .checkbox { //title
+          font-weight: bold;
+          margin-bottom: 1em;
+        } //.checkbox
+        .wpcf7-checkbox { //checkboxes
+          max-width: 350px;
+          span {
+            margin: 0px;
+            label {
+              margin: 0px auto 1em;
+              border-bottom: 1px solid #CCCCCC;
+              line-height: 1.5;
+            } //label
+          } //span
+        } //.wpcf7-form-control (checkboxes)
       } //form
     } //#wpcf7-f479-p469-o1
 
